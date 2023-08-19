@@ -14,6 +14,15 @@ Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thin
 > - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
 > - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
 
+## Proposta da solução
+
+O projeto visa a criação de um sistema centrado em um quadro Kanban virtual, com o intuito de otimizar e aprimorar a gestão de tarefas e projetos para uma ampla gama de setores e profissionais. Através desse sistema, será possível fornecer uma solução eficaz para organizar atividades externas, implementar metodologias ágeis e promover uma colaboração mais eficiente entre os membros da equipe.
+
+O sistema deve oferecer uma plataforma intuitiva e de fácil acesso, permitindo que indivíduos e grupos definam seus fluxos de trabalho de acordo com suas necessidades específicas. Ao adotar uma abordagem visual, o sistema assume mais facilidade para os usuários acompanharem o progresso das tarefas.
+
+Uma das principais vantagens do sistema proposto é a capacidade de monitorar o status das atividades, permitindo uma visão transparente do progresso de cada etapa. Isso não apenas aumentará a responsabilidade individual, mas também incentivará a colaboração e a troca de conhecimentos entre os colegas de trabalho. Além disso, a implementação de práticas ágeis dentro do sistema possibilitará uma adaptação mais ágil a mudanças e prioridades em constante evolução.
+
+
 ## Objetivos
 
 Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
