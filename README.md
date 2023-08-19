@@ -1,23 +1,25 @@
-# TÍTULO DO PROJETO
+# Seiton
 
-`CURSO`
+`Tecnologia em Análise e Desenvolvimento de Sistemas`
 
-`DISCIPLINA`
+`Desenvolvimento de uma aplicação interativa`
 
-`SEMESTRE`
+`Segundo semestre 2023/02`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+O projeto em questão tem como objetivo desenvolver um quadro Kanban, projetado para atender às necessidades diversas de equipes de diferentes setores. A proposta envolve a criação de uma plataforma digital que permita a visualização, rastreamento e gerenciamento eficaz de tarefas e fluxos de trabalho, buscando capacitar as equipes a alcançar maior eficiência e melhorar a comunicação, contribuindo para um gerenciamento mais eficaz e uma entrega de projetos bem-sucedida.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Bruno Henrique Arantes Dias
+* Gustavo da Silva Candido
+* Marcos Teixeira Dias
+* Pedro Ferreira Andrade
+* Renan Gonçalves Cunha
+* Wesley Correa Gomes
 
 ## Orientador
 
-* Nome completo do professor 1
+* Luciana de Nardin
 
 ## Instruções de utilização
 
