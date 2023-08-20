@@ -1,55 +1,25 @@
 # Introdução
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
 
 ## Problema
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
-
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
-
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
-
-## Proposta da solução
-
-O projeto visa a criação de um sistema centrado em um quadro Kanban virtual, com o intuito de otimizar e aprimorar a gestão de tarefas e projetos para uma ampla gama de setores e profissionais. Através desse sistema, será possível fornecer uma solução eficaz para organizar atividades externas, implementar metodologias ágeis e promover uma colaboração mais eficiente entre os membros da equipe.
-
-O sistema deve oferecer uma plataforma intuitiva e de fácil acesso, permitindo que indivíduos e grupos definam seus fluxos de trabalho de acordo com suas necessidades específicas. Ao adotar uma abordagem visual, o sistema assume mais facilidade para os usuários acompanharem o progresso das tarefas.
-
-Uma das principais vantagens do sistema proposto é a capacidade de monitorar o status das atividades, permitindo uma visão transparente do progresso de cada etapa. Isso não apenas aumentará a responsabilidade individual, mas também incentivará a colaboração e a troca de conhecimentos entre os colegas de trabalho. Além disso, a implementação de práticas ágeis dentro do sistema possibilitará uma adaptação mais ágil a mudanças e prioridades em constante evolução.
-
+Este projeto ajuda na resolução de desafios relacionados à gestão de processos que surgem devido à ausência de uma metodologia sólida. A falta de uma visão clara das tarefas e de seus estágios de progresso pode ocasionar confusão acerca das prioridades vigentes, acarretando atrasos na conclusão. Adicionalmente, a comunicação entre os membros da equipe pode tornar-se desorganizada, gerando erros de coordenação e necessidade de retrabalho, além de prejudicar a capacidade de se adaptar rapidamente a mudanças em ambientes dinâmicos.
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
+O objetivo do projeto é criar uma plataforma flexível, eficiente e visualmente intuitiva para o gerenciamento ágil de tarefas e projetos, permitindo às equipes de diversas áreas e setores, planejar, rastrear e otimizar o fluxo de atividades de forma colaborativa, proporcionando uma abordagem que aumente a transparência, a produtividade e a comunicação entre os membros da equipe.
 
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+* Oferecer uma ferramenta gratuita para o gerenciamento de projetos e tarefas  para os indivíduos
+* Proporcionar aos usuários responsáveis uma visão mais completa do status geral do desenvolvimento de seus projetos
+* Diminuir o risco de falhas (extrapolamento de prazos, perda do controle das atividades e etc.)
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
-
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
-
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+Segundo um estudo da Forbes Insights (2017), 82% dos entrevistados consideraram a capacidade de incorporar abordagens ágeis como um fator importante para implementar iniciativas estratégicas. Além disso, de acordo com o relatório "The State of Agile" (2018), 55% das empresas que escolheram adotar metodologias ágeis o fizeram com o intuito de aprimorar a produtividade. Assim, fica claro que melhorias estratégicas de negócios e aumento da eficiência operacional estão no cerne da adoção de abordagens ágeis. 
+É nesse contexto que a metodologia Kanban emerge como um instrumento para alcançar esses objetivos. Sendo assim, este projeto foi escolhido ao reconhecer a demanda no mercado por ferramentas de gerenciamento organizacional mais focalizadas em representações visuais e concisas, que tem a capacidade de retratar com precisão as etapas de um processo produtivo, evitando a perda de informações valiosas.
 
 ## Público-Alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações
-hierárquicas, etc.
+O projeto fornece uma abordagem eficiente para visualização, rastreamento e gerenciamento de tarefas e processos, buscando capacitar pessoas a maximizar a eficiência de suas atividades e otimizar o fluxo de trabalho, mantendo ainda uma visão clara do progresso.
 
-Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
-
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+Sendo assim, o público-alvo designado para o uso da aplicação são indivíduos que desejam organizar suas atividades pessoais, assim como profissionais autônomos e responsáveis por equipes de diferentes áreas, como desenvolvimento de software, marketing, operações, recursos humanos e outras.
