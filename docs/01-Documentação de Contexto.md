@@ -1,5 +1,10 @@
 # Introdução
 
+No cenário dinâmico da gestão de projetos e processos, onde a eficiência e a agilidade são essenciais, surge a necessidade de superar desafios ocasionados pela falta de uma boa metodologia. O presente projeto tem como principal foco suprir essa necessidade, ao oferecer uma solução que traz aspectos cruciais ligados à visibilidade, coordenação e adaptabilidade. 
+
+A ausência de uma visão clara das tarefas resulta em incertezas quanto às prioridades e prazos. Além disso, uma comunicação caotica entre membros das equipes pode conduzir a erros de coordenação e planejamento, o que também pode prejudicar a capacidade de reajuste rapido na ocorrência de mudanças ao longo das atividades. 
+
+Com a idéia em mente de enfrentar esses desafios, e com base em dados estatísticos que ressaltam a importância das metodologias ágeis em processos de organização, este projeto incorpora a metodologia Kanban visando estabelecer uma plataforma ágil e intuitiva para o gerenciamento de tarefas, empregando representações visuais precisas das etapas do processo produtivo. Dessa forma, esse projeto é destinado a um público diversificado, abrangendo desde indivíduos que buscam maximizar a eficiência de suas atividades pessoais até profissionais de diversas áreas.
 
 ## Problema
 
@@ -16,6 +21,7 @@ O objetivo do projeto é criar uma plataforma flexível, eficiente e visualmente
 ## Justificativa
 
 Segundo um estudo da Forbes Insights (2017), 82% dos entrevistados consideraram a capacidade de incorporar abordagens ágeis como um fator importante para implementar iniciativas estratégicas. Além disso, de acordo com o relatório "The State of Agile" (2018), 55% das empresas que escolheram adotar metodologias ágeis o fizeram com o intuito de aprimorar a produtividade. Assim, fica claro que melhorias estratégicas de negócios e aumento da eficiência operacional estão no cerne da adoção de abordagens ágeis. 
+
 É nesse contexto que a metodologia Kanban emerge como um instrumento para alcançar esses objetivos. Sendo assim, este projeto foi escolhido ao reconhecer a demanda no mercado por ferramentas de gerenciamento organizacional mais focalizadas em representações visuais e concisas, que tem a capacidade de retratar com precisão as etapas de um processo produtivo, evitando a perda de informações valiosas.
 
 ## Público-Alvo
