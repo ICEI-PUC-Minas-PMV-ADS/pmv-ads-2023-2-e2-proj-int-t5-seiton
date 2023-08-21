@@ -1,77 +1,134 @@
 # Especificações do Projeto
 
-<span style="color:red">Pré-requisitos: <a href="1-Documentação de Contexto.md"> Documentação de Contexto</a></span>
+A definição exata do problema e os pontos mais relevantes a serem tratados neste projeto foi consolidada com a participação dos usuários em um trabalho de imersão feito pelos membros da equipe a partir da observação dos usuários em seu local natural e por meio de entrevistas.
 
-Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
+Os detalhes levantados nesse processo foram consolidados na forma de personas e histórias de usuários.
 
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
 
 ## Personas
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
+As personas levantadas durante o processo de entendimento do problema são apresentadas a seguir:
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
+| Informações| MARIANA CUNHA | 
+|-----------|------------| 
+| **Idade:** | 32 anos |
+| **Ocupação:** | Analista de Marketing |
+| **Motivações:** | Procura uma maneira eficiente de planejar, acompanhar e coordenar as tarefas e membros da equipe em projetos complexos |
+| **Frustrações:** | Tem dificuldade em manter uma visão geral clara do progresso do projeto, especialmente quando há muitas tarefas independentes |
+| **Aplicativos:** | *Instagram <br> *Facebook <br> *Aplicativos de bancos |
+| **Como o sistema pode facilitar o trabalho?** | Um sistema de organização que permite a criação de quadros de tarefas interligados, atribuição de responsabilidades claras |
 
-> **Links Úteis**:
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
+| Informações| DAVID DIEGO | 
+|-----------|------------| 
+| **Idade:** | 33 anos |
+| **Ocupação:** | FreeLancer |
+| **Motivações:** | Busca uma forma de gerenciar múltiplos Projetos e clientes de maneira eficiente. |
+| **Frustrações:** | Enfrenta dificuldade em equilibrar tarefas de diferentes projetos e lembrar de prazos específicos. Muitas vezes, esquece de tarefas importantes ou se sente sobrecarregado |
+| **Aplicativos:** | *Instagram <br> *Facebook |
+| **Como o sistema pode facilitar o trabalho?** | Um Aplicativo de organização que permite criação de listas de tarefas separadas por projetos |
+
+| Informações| ANDRÉ DORIZOTO | 
+|-----------|------------| 
+| **Idade:** | 45 anos |
+| **Ocupação:** | Empreendedor |
+| **Motivações:** | Procura uma maneira de planejar e monitorar as etapas do crescimento do seu negócio, incluindo tarefas de marketing, desenvolvimento de produtos e gerenciamento financeiro |
+| **Frustrações:** | Enfrenta dificuldades em manter uma visão geral do progresso de várias áreas do seu negócio,lidar com prioridades em constante mudança e manter equipe alinhada |
+| **Aplicativos:** | *Instagram <br> *Facebook |
+| **Como o sistema pode facilitar o trabalho?** | Um aplicativo de organização que oferece a capacidade de criar quadros personalizados para diferentes áreas do negócio |
+
+| Informações| SOFIA SANTOS | 
+|-----------|------------| 
+| **Idade:** | 54 anos |
+| **Ocupação:** | Gerente de Recursos Humanos |
+| **Motivações:** | Sofia quer agilizar o processo de recrutamento,acompanhar o progresso dos candidatos e facilitar a colaboração entre os membros da equipe de RH |
+| **Frustrações:** | Sofia enfrenta dificuldades em coordenar entrevistas,coletar feedback de múltiplos avaliadores e manter uma visão clara de recrutamento |
+| **Aplicativos:** | *Instagram <br> *Facebook |
+| **Como o sistema pode facilitar o trabalho?** | Um sistema que permite criação de quadros de recrutamento, agendamento de entrevistas,compartilhamento de notas sobre candidatos |
+
+| Informações| BIANCA AKANA | 
+|-----------|------------| 
+| **Idade:** | 35 anos |
+| **Ocupação:** | Arquiteta |
+| **Motivações:** | Bianca Trabalha como arquiteta há 8 anos e busca uma ferramenta que auxilie ela em sua área de atuação |
+| **Frustrações:** | Dificuldades para organizar projetos, tempo de entrega e com isso prejudicando na sua produtividade |
+| **Aplicativos:** | *Instagram <br> *Facebook <br> *Microsoft Teams|
+| **Como o sistema pode facilitar o trabalho?** | Ajudando na parte organizacional, tempo de entrega e produtividade |
+
+| Informações| LUÍS PAULO MARTINS | 
+|-----------|------------| 
+| **Idade:** | 18 anos |
+| **Ocupação:** | Estudante |
+| **Motivações:** | Luís Paulo busca um sistema que o ajude a organizar seus estudos |
+| **Frustrações:** | Dificuldade em organização de tempo e de matérias para melhorar no seu desempenho estudantil |
+| **Aplicativos:** | *Instagram <br> *Facebook <br> *Whatsapp <br> *LinkedIn|
+| **Como o sistema pode facilitar o trabalho?** | Esse sistema pode me auxiliar no controle de tempo e organização das minhas tarefas para melhor desempenho acadêmico |
+
+| Informações| HENRIQUE RODRIGUES | 
+|-----------|------------| 
+| **Idade:** | 43 anos |
+| **Ocupação:** | Gerente de Projetos |
+| **Motivações:** | Henrique busca um sistema que auxilie ele a melhorar o controle de sua equipe para atingir os objetivos almejados da empresa |
+| **Frustrações:** | Henrique enfrenta dificuldades em atingir os objetivos propostos pela empresa por não ter organização da sua equipe |
+| **Aplicativos:** | *Instagram <br> *Facebook <br> *Microsoft Teams |
+| **Como o sistema pode facilitar o trabalho?** | Melhorando o desempenho da equipe e auxiliando na entrega de projetos e objetivos destinados para sua equipe |
+
+| Informações| MARIANA MOURA| 
+|-----------|------------| 
+| **Idade:** | 27 anos |
+| **Ocupação:** | SCRUM Master |
+| **Motivações:** | Mariana quer obter a certificação para que sua equipe consiga fazer tudo aquilo que foi destinado sem terem projetos demais |
+| **Frustrações:** | Dificuldade no gerenciamento da equipe e de seus projetos que causam falta de comprimento por não ter esse controle |
+| **Aplicativos:** | *Instagram <br> *Facebook |
+| **Como o sistema pode facilitar o trabalho?** | Melhorando o domínio sobre a equipe e tendo controle de quais compromissos são pegos por sua equipe sem deixar faltar com o comprimento de algum deles |
+
 
 ## Histórias de Usuários
 
-Com base na análise das personas forma identificadas as seguintes histórias de usuários:
+Com base na compreensão do dia-a-dia das funções identificadas para o projeto, as histórias de usuário estão documentadas a seguir:
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
+| Sofia Santos | Busco um site simples e intuitivo que facilite a organização de recrutamento | Para que eu consiga facilidade no meu dia dia |
+| André Dorizotto | Quero um site que me ajuda na organização da minha empresa | Para melhorar a produtividade dos meus funcionários |
+| David Diego | Organizar e facilitar a minha rotinas com os meus clientes | Controle de projetos simultâneos |
+| Marina Cunha | Uma maneira eficiente de coordenar a minha equipe | Organizações de projetos |
+| Bianca Akana | Um site que auxilie na minha organização assim como simples de se entender | Para melhor desempenho e produtividade em minha área de atuação |
+| Luis Paulo Martins | Um site que me ajude na organização dos meus estudos | Para me ajudar a realizar o meu sonho de estar ingressando na universidade |
+| Henrique Rodrigues | Um site que me ajude a melhorar o controle de minha equipe e assim ter um rendimento mais alto | Melhorar o desempenho meu e da minha equipe tendo o controle das atividades |
+| Mariana Moura | Busco um site que me auxilie a ter o controle dos compromissos da minha equipe | Para obter o melhor rendimento de minha equipe e não ocorrer a sobrecarga |
 
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
-
-> **Links Úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-> - [User Stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
-> - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
-> - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
 
 ## Requisitos
 
-As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto.
-
+O escopo funcional do projeto é definido por meio dos requisitos funcionais que descrevem as possibilidades interação dos usuários, bem como os requisitos não funcionais descrevem os aspectos que o sistema deverá apresentar de maneira geral. Estes requisitos são apresentados a seguir.
+ 
 ### Requisitos Funcionais
+
+A tabela a seguir apresenta os requisitos do projeto, identificando a prioridade em que os mesmos devem ser entregues: 
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+|RF-01| O site deverá conter um sistema de cadastro e login do usuário | ALTA | 
+|RF-02| Os usuários devem poder criar novas tarefas no quadro Kanban, especificando informações como título, descrição e prazo | ALTA |
+|RF-03| Os usuários devem poder remover tarefas que já foram finalizadas ou que ainda estejam em algum estágio fluxo se assim desejarem | ALTA |
+|RF-04| O quadro deve permitir a criação de colunas personalizadas que representam diferentes estágios do fluxo de trabalho. Os usuários devem poder adicionar, renomear ou remover colunas conforme necessário | ALTA |
+|RF-05| As tarefas devem ser movidas entre as colunas para refletir o progresso do trabalho. Os usuários devem poder arrastar e soltar as tarefas de uma coluna para outra | ALTA |
+|RF-06| As tarefas devem conter uma indicação de prioridade que poderá ser alterada pelo usuário dentro de cada coluna para indicar a ordem em que devem ser concluídas | ALTA |
+|RF-07| O sistema deverá permitir aos usuários que vejam os detalhes da tarefa para ter acesso a descrição completa e as demais informações inseridas na tarefa | ALTA |
+|RF-08| As tarefas deverão ter campo de título, descrição, cor referente a prioridade e nome da pessoa a quem a mesma foi atribuída | ALTA |
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+|RNF-01| O site deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge) | ALTA | 
+|RNF-02| O site deverá ser responsivo nas resoluções 1920 x 1080 e 1366 x 768 | ALTA |
+|RNF-03| Resposta rápida ao interagir com as tarefas, como arrastar e soltar | ALTA |
+|RNF-04| Capacidade de lidar com múltiplos usuários simultaneamente sem degradação significativa no desempenho | ALTA |
+|RNF-05| Interface intuitiva e amigável, mesmo para usuários não técnicos | ALTA |
+|RNF-06| Navegação clara e lógica, facilitando o acesso às informações e a movimentação das tarefas | ALTA |
+|RNF-07| O site deve ter bom nível de contraste entre os elementos da tela em conformidade | MÉDIA |
 
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
 
 ## Restrições
 
@@ -79,25 +136,12 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
+|01| O projeto deverá ser entregue no final do semestre letivo |
+|02| O sistema não deverá ser terceirizado |
 
-
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
-
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
 
 ## Diagrama de Casos de Uso
 
-O diagrama de casos de uso é o próximo passo após a elicitação de requisitos, que utiliza um modelo gráfico e uma tabela com as descrições sucintas dos casos de uso e dos atores. Ele contempla a fronteira do sistema e o detalhamento dos requisitos funcionais com a indicação dos atores, casos de uso e seus relacionamentos. 
+O diagrama de casos de uso é uma representação visual crucial na modelagem de sistemas, destacando as interações entre usuários e as funcionalidades do sistema. Ele esclarece requisitos e promove a comunicação eficaz entre stakeholders, contribuindo para a compreensão geral do projeto. Com isso, temos o diagrama referente à este projeto mostrado a seguir:
 
-As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de Casos de Uso”.
-
-> **Links Úteis**:
-> - [Criando Casos de Uso](https://www.ibm.com/docs/pt-br/elm/6.0?topic=requirements-creating-use-cases)
-> - [Como Criar Diagrama de Caso de Uso: Tutorial Passo a Passo](https://gitmind.com/pt/fazer-diagrama-de-caso-uso.html/)
-> - [Lucidchart](https://www.lucidchart.com/)
-> - [Astah](https://astah.net/)
-> - [Diagrams](https://app.diagrams.net/)
+<img src="./img/diagrama-casos.png">
