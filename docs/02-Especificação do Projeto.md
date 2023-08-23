@@ -9,16 +9,7 @@ Os detalhes levantados nesse processo foram consolidados na forma de personas e 
 
 As personas levantadas durante o processo de entendimento do problema são apresentadas a seguir:
 
-| Informações| MARIANA CUNHA | 
-|-----------|------------| 
-| **Idade:** | 32 anos |
-| **Ocupação:** | Analista de Marketing |
-| **Motivações:** | Procura uma maneira eficiente de planejar, acompanhar e coordenar as tarefas e membros da equipe em projetos complexos |
-| **Frustrações:** | Tem dificuldade em manter uma visão geral clara do progresso do projeto, especialmente quando há muitas tarefas independentes |
-| **Aplicativos:** | *Instagram <br> *Facebook <br> *Aplicativos de bancos |
-| **Como o sistema pode facilitar o trabalho?** | Um sistema de organização que permite a criação de quadros de tarefas interligados, atribuição de responsabilidades claras |
-
-| Informações| DAVID DIEGO | 
+| <img src="./img/persona1.jpg"> | DAVID DIEGO | 
 |-----------|------------| 
 | **Idade:** | 33 anos |
 | **Ocupação:** | FreeLancer |
@@ -27,7 +18,7 @@ As personas levantadas durante o processo de entendimento do problema são apres
 | **Aplicativos:** | *Instagram <br> *Facebook |
 | **Como o sistema pode facilitar o trabalho?** | Um Aplicativo de organização que permite criação de listas de tarefas separadas por projetos |
 
-| Informações| ANDRÉ DORIZOTO | 
+| <img src="./img/persona2.jpg"> | ANDRÉ DORIZOTO | 
 |-----------|------------| 
 | **Idade:** | 45 anos |
 | **Ocupação:** | Empreendedor |
@@ -36,7 +27,7 @@ As personas levantadas durante o processo de entendimento do problema são apres
 | **Aplicativos:** | *Instagram <br> *Facebook |
 | **Como o sistema pode facilitar o trabalho?** | Um aplicativo de organização que oferece a capacidade de criar quadros personalizados para diferentes áreas do negócio |
 
-| Informações| SOFIA SANTOS | 
+| <img src="./img/persona3.jpg"> | SOFIA SANTOS | 
 |-----------|------------| 
 | **Idade:** | 54 anos |
 | **Ocupação:** | Gerente de Recursos Humanos |
@@ -45,7 +36,7 @@ As personas levantadas durante o processo de entendimento do problema são apres
 | **Aplicativos:** | *Instagram <br> *Facebook |
 | **Como o sistema pode facilitar o trabalho?** | Um sistema que permite criação de quadros de recrutamento, agendamento de entrevistas,compartilhamento de notas sobre candidatos |
 
-| Informações| BIANCA AKANA | 
+| <img src="./img/persona4.jpg">| BIANCA AKANA | 
 |-----------|------------| 
 | **Idade:** | 35 anos |
 | **Ocupação:** | Arquiteta |
@@ -54,7 +45,7 @@ As personas levantadas durante o processo de entendimento do problema são apres
 | **Aplicativos:** | *Instagram <br> *Facebook <br> *Microsoft Teams|
 | **Como o sistema pode facilitar o trabalho?** | Ajudando na parte organizacional, tempo de entrega e produtividade |
 
-| Informações| LUÍS PAULO MARTINS | 
+| <img src="./img/persona5.jpg"> | LUÍS PAULO MARTINS | 
 |-----------|------------| 
 | **Idade:** | 18 anos |
 | **Ocupação:** | Estudante |
@@ -62,25 +53,6 @@ As personas levantadas durante o processo de entendimento do problema são apres
 | **Frustrações:** | Dificuldade em organização de tempo e de matérias para melhorar no seu desempenho estudantil |
 | **Aplicativos:** | *Instagram <br> *Facebook <br> *Whatsapp <br> *LinkedIn|
 | **Como o sistema pode facilitar o trabalho?** | Esse sistema pode me auxiliar no controle de tempo e organização das minhas tarefas para melhor desempenho acadêmico |
-
-| Informações| HENRIQUE RODRIGUES | 
-|-----------|------------| 
-| **Idade:** | 43 anos |
-| **Ocupação:** | Gerente de Projetos |
-| **Motivações:** | Henrique busca um sistema que auxilie ele a melhorar o controle de sua equipe para atingir os objetivos almejados da empresa |
-| **Frustrações:** | Henrique enfrenta dificuldades em atingir os objetivos propostos pela empresa por não ter organização da sua equipe |
-| **Aplicativos:** | *Instagram <br> *Facebook <br> *Microsoft Teams |
-| **Como o sistema pode facilitar o trabalho?** | Melhorando o desempenho da equipe e auxiliando na entrega de projetos e objetivos destinados para sua equipe |
-
-| Informações| MARIANA MOURA| 
-|-----------|------------| 
-| **Idade:** | 27 anos |
-| **Ocupação:** | SCRUM Master |
-| **Motivações:** | Mariana quer obter a certificação para que sua equipe consiga fazer tudo aquilo que foi destinado sem terem projetos demais |
-| **Frustrações:** | Dificuldade no gerenciamento da equipe e de seus projetos que causam falta de comprimento por não ter esse controle |
-| **Aplicativos:** | *Instagram <br> *Facebook |
-| **Como o sistema pode facilitar o trabalho?** | Melhorando o domínio sobre a equipe e tendo controle de quais compromissos são pegos por sua equipe sem deixar faltar com o comprimento de algum deles |
-
 
 ## Histórias de Usuários
 
