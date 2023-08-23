@@ -9,7 +9,7 @@ Os detalhes levantados nesse processo foram consolidados na forma de personas e 
 
 As personas levantadas durante o processo de entendimento do problema são apresentadas a seguir:
 
-| <img src="./img/persona1.jpg"> | DAVID DIEGO | 
+| <img src="./img/persona01.jpg"> | DAVID DIEGO | 
 |-----------|------------| 
 | **Idade:** | 33 anos |
 | **Ocupação:** | FreeLancer |
@@ -18,7 +18,7 @@ As personas levantadas durante o processo de entendimento do problema são apres
 | **Aplicativos:** | *Instagram <br> *Facebook |
 | **Como o sistema pode facilitar o trabalho?** | Um Aplicativo de organização que permite criação de listas de tarefas separadas por projetos |
 
-| <img src="./img/persona2.jpg"> | ANDRÉ DORIZOTO | 
+| <img src="./img/persona02.jpg"> | ANDRÉ DORIZOTO | 
 |-----------|------------| 
 | **Idade:** | 45 anos |
 | **Ocupação:** | Empreendedor |
@@ -27,7 +27,7 @@ As personas levantadas durante o processo de entendimento do problema são apres
 | **Aplicativos:** | *Instagram <br> *Facebook |
 | **Como o sistema pode facilitar o trabalho?** | Um aplicativo de organização que oferece a capacidade de criar quadros personalizados para diferentes áreas do negócio |
 
-| <img src="./img/persona3.jpg"> | SOFIA SANTOS | 
+| <img src="./img/persona03.jpg"> | SOFIA SANTOS | 
 |-----------|------------| 
 | **Idade:** | 54 anos |
 | **Ocupação:** | Gerente de Recursos Humanos |
@@ -36,7 +36,7 @@ As personas levantadas durante o processo de entendimento do problema são apres
 | **Aplicativos:** | *Instagram <br> *Facebook |
 | **Como o sistema pode facilitar o trabalho?** | Um sistema que permite criação de quadros de recrutamento, agendamento de entrevistas,compartilhamento de notas sobre candidatos |
 
-| <img src="./img/persona4.jpg">| BIANCA AKANA | 
+| <img src="./img/persona04.jpg">| BIANCA AKANA | 
 |-----------|------------| 
 | **Idade:** | 35 anos |
 | **Ocupação:** | Arquiteta |
@@ -45,7 +45,7 @@ As personas levantadas durante o processo de entendimento do problema são apres
 | **Aplicativos:** | *Instagram <br> *Facebook <br> *Microsoft Teams|
 | **Como o sistema pode facilitar o trabalho?** | Ajudando na parte organizacional, tempo de entrega e produtividade |
 
-| <img src="./img/persona5.jpg"> | LUÍS PAULO MARTINS | 
+| <img src="./img/persona05.jpg"> | LUÍS PAULO MARTINS | 
 |-----------|------------| 
 | **Idade:** | 18 anos |
 | **Ocupação:** | Estudante |
