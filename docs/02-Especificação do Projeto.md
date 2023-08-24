@@ -13,46 +13,46 @@ As personas levantadas durante o processo de entendimento do problema são apres
 |-----------|------------| 
 | **Idade:** | 33 anos |
 | **Ocupação:** | FreeLancer |
-| **Motivações:** | Busca uma forma de gerenciar múltiplos Projetos e clientes de maneira eficiente. |
-| **Frustrações:** | Enfrenta dificuldade em equilibrar tarefas de diferentes projetos e lembrar de prazos específicos. Muitas vezes, esquece de tarefas importantes ou se sente sobrecarregado |
-| **Aplicativos:** | *Instagram <br> *Facebook |
-| **Como o sistema pode facilitar o trabalho?** | Um Aplicativo de organização que permite criação de listas de tarefas separadas por projetos |
+| **Motivações:** | Deseja se tornar um profissional eficiente e multitarefas |
+| **Frustrações:** | Se sente sobrecarregado e incapaz de equilibrar prazos e tarefas de diferentes projetos |
+| **Aplicativos:** | *Instagram <br> *Facebook <br> *LinkedIn |
+| **Como o sistema pode facilitar o trabalho?** | Proporcionando a capacidade de criar e organizar listas de tarefas separadas por projetos |
 
 | <img src="./img/persona02.jpg"> | ANDRÉ DORIZOTO | 
 |-----------|------------| 
 | **Idade:** | 45 anos |
 | **Ocupação:** | Empreendedor |
-| **Motivações:** | Procura uma maneira de planejar e monitorar as etapas do crescimento do seu negócio, incluindo tarefas de marketing, desenvolvimento de produtos e gerenciamento financeiro |
-| **Frustrações:** | Enfrenta dificuldades em manter uma visão geral do progresso de várias áreas do seu negócio,lidar com prioridades em constante mudança e manter equipe alinhada |
-| **Aplicativos:** | *Instagram <br> *Facebook |
-| **Como o sistema pode facilitar o trabalho?** | Um aplicativo de organização que oferece a capacidade de criar quadros personalizados para diferentes áreas do negócio |
+| **Motivações:** | Quer ser um gestor proativo e organizado em seu negócio |
+| **Frustrações:** | Não consegue visualizar de maneira clara os vários aspectos de seu negócio, sendo incapaz de lidar com prioridades em constante mudança e manter equipe alinhada |
+| **Aplicativos:** | *Instagram <br> *Facebook <br> *Zoom |
+| **Como o sistema pode facilitar o trabalho?** | Permitir criar quadros personalizados para diferentes áreas do negócio |
 
 | <img src="./img/persona03.jpg"> | SOFIA SANTOS | 
 |-----------|------------| 
 | **Idade:** | 54 anos |
 | **Ocupação:** | Gerente de Recursos Humanos |
-| **Motivações:** | Sofia quer agilizar o processo de recrutamento,acompanhar o progresso dos candidatos e facilitar a colaboração entre os membros da equipe de RH |
-| **Frustrações:** | Sofia enfrenta dificuldades em coordenar entrevistas,coletar feedback de múltiplos avaliadores e manter uma visão clara de recrutamento |
-| **Aplicativos:** | *Instagram <br> *Facebook |
-| **Como o sistema pode facilitar o trabalho?** | Um sistema que permite criação de quadros de recrutamento, agendamento de entrevistas,compartilhamento de notas sobre candidatos |
+| **Motivações:** | Quer se tornar uma gerente mais eficiênte, que possa estar ciente de todos os procedimentos da área e facilitar a colaboração entre os membros de sua equipe |
+| **Frustrações:** | Não recebe a situação dos procedimentos do setor com clareza e sua equipe se encontra em uma situação de comunicação desorganizada |
+| **Aplicativos:** | *Instagram <br> *Facebook <br> LinkedIn <br> Vagas |
+| **Como o sistema pode facilitar o trabalho?** | Permitir criar quadros e tarefas personalizadas |
 
 | <img src="./img/persona04.jpg">| BIANCA AKANA | 
 |-----------|------------| 
 | **Idade:** | 35 anos |
 | **Ocupação:** | Arquiteta |
-| **Motivações:** | Bianca Trabalha como arquiteta há 8 anos e busca uma ferramenta que auxilie ela em sua área de atuação |
-| **Frustrações:** | Dificuldades para organizar projetos, tempo de entrega e com isso prejudicando na sua produtividade |
-| **Aplicativos:** | *Instagram <br> *Facebook <br> *Microsoft Teams|
-| **Como o sistema pode facilitar o trabalho?** | Ajudando na parte organizacional, tempo de entrega e produtividade |
+| **Motivações:** | Tornar seus projetos arquitetonicos mais organizados e claros |
+| **Frustrações:** | Se sente pouco produtiva devido aos processos de seus projetos estarem desorganizados |
+| **Aplicativos:** | *Instagram <br> *Facebook <br> *Microsoft Teams <br> *AutoCad |
+| **Como o sistema pode facilitar o trabalho?** | Permitir organizar as tarefas em colunas |
 
 | <img src="./img/persona05.jpg"> | LUÍS PAULO MARTINS | 
 |-----------|------------| 
-| **Idade:** | 18 anos |
+| **Idade:** | 16 anos |
 | **Ocupação:** | Estudante |
-| **Motivações:** | Luís Paulo busca um sistema que o ajude a organizar seus estudos |
-| **Frustrações:** | Dificuldade em organização de tempo e de matérias para melhorar no seu desempenho estudantil |
+| **Motivações:** | Ser um estudante mais proativo |
+| **Frustrações:** | Ser desorganizado e consequentemente ruim nos estudos |
 | **Aplicativos:** | *Instagram <br> *Facebook <br> *Whatsapp <br> *LinkedIn|
-| **Como o sistema pode facilitar o trabalho?** | Esse sistema pode me auxiliar no controle de tempo e organização das minhas tarefas para melhor desempenho acadêmico |
+| **Como o sistema pode facilitar o trabalho?** | Permitir o controle de tempo e organização das tarefas acadêmicas |
 
 ## Histórias de Usuários
 
@@ -60,14 +60,16 @@ Com base na compreensão do dia-a-dia das funções identificadas para o projeto
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-| Sofia Santos | Busco um site simples e intuitivo que facilite a organização de recrutamento | Para que eu consiga facilidade no meu dia dia |
-| André Dorizotto | Quero um site que me ajuda na organização da minha empresa | Para melhorar a produtividade dos meus funcionários |
-| David Diego | Organizar e facilitar a minha rotinas com os meus clientes | Controle de projetos simultâneos |
-| Marina Cunha | Uma maneira eficiente de coordenar a minha equipe | Organizações de projetos |
-| Bianca Akana | Um site que auxilie na minha organização assim como simples de se entender | Para melhor desempenho e produtividade em minha área de atuação |
-| Luis Paulo Martins | Um site que me ajude na organização dos meus estudos | Para me ajudar a realizar o meu sonho de estar ingressando na universidade |
-| Henrique Rodrigues | Um site que me ajude a melhorar o controle de minha equipe e assim ter um rendimento mais alto | Melhorar o desempenho meu e da minha equipe tendo o controle das atividades |
-| Mariana Moura | Busco um site que me auxilie a ter o controle dos compromissos da minha equipe | Para obter o melhor rendimento de minha equipe e não ocorrer a sobrecarga |
+| DAVID DIEGO |  |  |
+| DAVID DIEGO |  |  |
+| ANDRÉ DORIZOTO |  |  |
+| ANDRÉ DORIZOTO |  |  |
+| SOFIA SANTOS |  |  |
+| SOFIA SANTOS |  |  |
+| BIANCA AKANA |  |  |
+| BIANCA AKANA |  |  |
+| LUÍS PAULO MARTINS |  |  |
+| LUÍS PAULO MARTINS |  |  |
 
 
 ## Requisitos
