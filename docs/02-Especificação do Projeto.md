@@ -9,50 +9,50 @@ Os detalhes levantados nesse processo foram consolidados na forma de personas e 
 
 As personas levantadas durante o processo de entendimento do problema são apresentadas a seguir:
 
-| <img src="./img/persona01.jpg"> | DAVID DIEGO | 
+| <img src="./img/personas01.jpg"> | DAVID DIEGO | 
 |-----------|------------| 
 | **Idade:** | 33 anos |
 | **Ocupação:** | FreeLancer |
-| **Motivações:** | Deseja se tornar um profissional eficiente e multitarefas |
-| **Frustrações:** | Se sente sobrecarregado e incapaz de equilibrar prazos e tarefas de diferentes projetos |
+| **Motivações:** | Ser capaz de gerenciar vários projetos simultaneamente, entregar trabalhos de qualidade, estabelecer prazos realistas|
+| **Frustrações:** | Tem dificuldade em manter o controle de diferentes projetos, falta de visibilidade sobre o fluxo de trabalho, prazos apertados |
 | **Aplicativos:** | *Instagram <br> *Facebook <br> *LinkedIn |
-| **Como o sistema pode facilitar o trabalho?** | Proporcionando a capacidade de criar e organizar listas de tarefas separadas por projetos |
+| **Como o sistema pode facilitar o trabalho?** | permitir o acompanhamento claro dos projetos, visualização de prazos e gestão mais eficaz do tempo |
 
-| <img src="./img/persona02.jpg"> | ANDRÉ DORIZOTO | 
+| <img src="./img/personas02.jpg"> | ANDRÉ DORIZOTO | 
 |-----------|------------| 
 | **Idade:** | 45 anos |
-| **Ocupação:** | Empreendedor |
-| **Motivações:** | Quer ser um gestor proativo e organizado em seu negócio |
-| **Frustrações:** | Não consegue visualizar de maneira clara os vários aspectos de seu negócio, sendo incapaz de lidar com prioridades em constante mudança e manter equipe alinhada |
-| **Aplicativos:** | *Instagram <br> *Facebook <br> *Zoom |
-| **Como o sistema pode facilitar o trabalho?** | Permitir criar quadros personalizados para diferentes áreas do negócio |
+| **Ocupação:** | Desenvolvedor |
+| **Motivações:** | Ser capaz de contribuir para o sucesso dos projetos da empresa, receber feedback construtivo e cuidar de sua carreira |
+| **Frustrações:** | Falta de clareza nas tarefas, dificuldade em acompanhar prioridades, falta de uma boa orientação para seus colegas de equipe |
+| **Aplicativos:** | *Instagram <br> *Facebook <br> *Zoom <br> *Visual Studio Code |
+| **Como o sistema pode facilitar o trabalho?** | Fornecer tarefas claras e bem definidas, priorização visível e receber feedback direto das atividades |
 
-| <img src="./img/persona03.jpg"> | SOFIA SANTOS | 
+| <img src="./img/personas03.jpg"> | SOFIA SANTOS | 
 |-----------|------------| 
 | **Idade:** | 54 anos |
 | **Ocupação:** | Gerente de Recursos Humanos |
-| **Motivações:** | Quer se tornar uma gerente mais eficiênte, que possa estar ciente de todos os procedimentos da área e facilitar a colaboração entre os membros de sua equipe |
-| **Frustrações:** | Não recebe a situação dos procedimentos do setor com clareza e sua equipe se encontra em uma situação de comunicação desorganizada |
+| **Motivações:** | Poder agilizar o processo de recrutamento, acompanhar o desenvolvimento dos funcionários, garantir conformidade com treinamentos obrigatórios |
+| **Frustrações:** | Dificuldade em coordenar várias etapas do recrutamento, falta de clareza sobre a comunicação e progressão dos funcionários |
 | **Aplicativos:** | *Instagram <br> *Facebook <br> LinkedIn <br> Vagas |
-| **Como o sistema pode facilitar o trabalho?** | Permitir criar quadros e tarefas personalizadas |
+| **Como o sistema pode facilitar o trabalho?** | Permitir criar quadros e tarefas personalizadas para monitorar o progresso dos funcionários em treinamentos |
 
-| <img src="./img/persona04.jpg">| BIANCA AKANA | 
+| <img src="./img/personas04.jpg">| BIANCA AKANA | 
 |-----------|------------| 
 | **Idade:** | 35 anos |
 | **Ocupação:** | Arquiteta |
-| **Motivações:** | Tornar seus projetos arquitetonicos mais organizados e claros |
-| **Frustrações:** | Se sente pouco produtiva devido aos processos de seus projetos estarem desorganizados |
+| **Motivações:** |  Ter colaboração eficiente com sua equipe, otimizar seus projetos, manter prazos e entregar resultados de alta qualidade aos clientes |
+| **Frustrações:** | Sobrecarregamento por múltiplos projetos simultâneos, comunicação caotica entre os membros da equipe e falta de um acompanhamento claro do progresso dos projetos |
 | **Aplicativos:** | *Instagram <br> *Facebook <br> *Microsoft Teams <br> *AutoCad |
-| **Como o sistema pode facilitar o trabalho?** | Permitir organizar as tarefas em colunas |
+| **Como o sistema pode facilitar o trabalho?** | Permitir que ela crie quadros separados para cada projeto, uma atribuição clara de tarefas a membros da equipe e adicionar prazos |
 
-| <img src="./img/persona05.jpg"> | LUÍS PAULO MARTINS | 
+| <img src="./img/personas05.jpg"> | LUÍS PAULO MARTINS | 
 |-----------|------------| 
 | **Idade:** | 16 anos |
 | **Ocupação:** | Estudante |
-| **Motivações:** | Ser um estudante mais proativo |
-| **Frustrações:** | Ser desorganizado e consequentemente ruim nos estudos |
+| **Motivações:** | Ser capaz de gerenciar tarefas acadêmicas, equilibrar estudos e vida pessoal, melhorar o desempenho acadêmico |
+| **Frustrações:** | Dificuldade em organizar tarefas de diferentes materias, procrastinação |
 | **Aplicativos:** | *Instagram <br> *Facebook <br> *Whatsapp |
-| **Como o sistema pode facilitar o trabalho?** | Permitir o controle de tempo e organização das tarefas acadêmicas |
+| **Como o sistema pode facilitar o trabalho?** | Permitir estruturar tarefas por disciplina, definir prazos claros, identificar o progresso e separar momentos para estudo, trabalho e lazer, incentivando um planejamento mais eficiente |
 
 ## Histórias de Usuários
 
@@ -60,16 +60,16 @@ Com base na compreensão do dia-a-dia das funções identificadas para o projeto
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-| DAVID DIEGO |  |  |
-| DAVID DIEGO |  |  |
-| ANDRÉ DORIZOTO |  |  |
-| ANDRÉ DORIZOTO |  |  |
-| SOFIA SANTOS |  |  |
-| SOFIA SANTOS |  |  |
-| BIANCA AKANA |  |  |
-| BIANCA AKANA |  |  |
-| LUÍS PAULO MARTINS |  |  |
-| LUÍS PAULO MARTINS |  |  |
+| DAVID DIEGO | criar diferentes quadros Kanban para cada cliente ou projeto | acompanhar o progresso de várias atividades ao mesmo tempo |
+| DAVID DIEGO | visualizar claramente o fluxo de trabalho | melhorar a eficiência do desenvolvimento do projeto |
+| ANDRÉ DORIZOTO | poder ver todas as tarefas atribuídas aos menbros da equipe | ter uma visão clara das responsabilidades de cada membro |
+| ANDRÉ DORIZOTO |  adicionar e modificar o status de cada uma das tarefas | melhorar a comunicação com a equipe |
+| SOFIA SANTOS | criar quadros para o processos de recrutamento, com etapas bem definidas | manter o controle dos candidatos |
+| SOFIA SANTOS | gerenciar os status de cada tarefa dos quadros | monitorar o progresso dos recrutamentos |
+| BIANCA AKANA | poder criar quadros personalizáveis que me permitam adaptar as colunas e etapas do fluxo de trabalho de acordo com as necessidades de cada projeto | para uma experiência mais flexível e adaptavel |
+| BIANCA AKANA | atribuir tarefas específicas a membros da equipe no quadro | garantir que a carga de trabalho seja distribuída de forma eficiente |
+| LUÍS PAULO MARTINS | criar um quadro para cada disciplina | organizar as tarefas de estudo, projetos e prazos |
+| LUÍS PAULO MARTINS | marcar o status das tarefas no quadro | acompanhar o progresso acadêmico |
 
 
 ## Requisitos
