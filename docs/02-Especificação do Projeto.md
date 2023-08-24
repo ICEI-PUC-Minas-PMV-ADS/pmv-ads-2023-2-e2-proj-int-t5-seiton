@@ -82,26 +82,31 @@ A tabela a seguir apresenta os requisitos do projeto, identificando a prioridade
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-01| O site deverá conter um sistema de cadastro e login do usuário | ALTA | 
-|RF-02| Os usuários devem poder criar novas tarefas no quadro Kanban, especificando informações como título, descrição e prazo | ALTA |
-|RF-03| Os usuários devem poder remover tarefas que já foram finalizadas ou que ainda estejam em algum estágio fluxo se assim desejarem | ALTA |
-|RF-04| O quadro deve permitir a criação de colunas personalizadas que representam diferentes estágios do fluxo de trabalho. Os usuários devem poder adicionar, renomear ou remover colunas conforme necessário | ALTA |
-|RF-05| As tarefas devem ser movidas entre as colunas para refletir o progresso do trabalho. Os usuários devem poder arrastar e soltar as tarefas de uma coluna para outra | ALTA |
-|RF-06| As tarefas devem conter uma indicação de prioridade que poderá ser alterada pelo usuário dentro de cada coluna para indicar a ordem em que devem ser concluídas | ALTA |
-|RF-07| O sistema deverá permitir aos usuários que vejam os detalhes da tarefa para ter acesso a descrição completa e as demais informações inseridas na tarefa | ALTA |
-|RF-08| As tarefas deverão ter campo de título, descrição, cor referente a prioridade e nome da pessoa a quem a mesma foi atribuída | ALTA |
+|RF-01| A aplicação deve oferecer gerenciamento de usuários. | ALTA | 
+|RF-02| A aplicação deve deve permitir que usuários realizem cadastros na plataforma. | ALTA |
+|RF-03| A aplicação deve permitir que usuários pré cadastrados realizem login. | ALTA |
+|RF-04| A aplicação deve permitir o gerenciamento das tarefas. | ALTA |
+|RF-05| A aplicação deve oferecer o gerenciamento das colunas. | ALTA |
+|RF-06| A aplicação deve permitir que as tarefas sejam movidas entre as colunas para refletir o progresso do trabalho. | ALTA |
+|RF-07| As tarefas devem conter uma indicação de prioridade que poderá ser alterada pelo usuário dentro de cada coluna para indicar a ordem em que devem ser concluídas. | ALTA |
+|RF-08| Deve ser possível definir limites para o número máximo de tarefas permitidas em cada coluna. | ALTA |
+|RF-09| A aplicação deverá permitir aos usuários que vejam os detalhes da tarefa para ter acesso a descrição completa e as demais informações inseridas na tarefa.| ALTA |
+|RF-10| As tarefas deverão ter campo de titulo, descrição, cor referente a prioridade e nome da pessoa a quem a mesma foi Atribuída. | ALTA |
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-01| O site deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge) | ALTA | 
-|RNF-02| O site deverá ser responsivo nas resoluções 1920 x 1080 e 1366 x 768 | ALTA |
-|RNF-03| Resposta rápida ao interagir com as tarefas, como arrastar e soltar | ALTA |
-|RNF-04| Capacidade de lidar com múltiplos usuários simultaneamente sem degradação significativa no desempenho | ALTA |
-|RNF-05| Interface intuitiva e amigável, mesmo para usuários não técnicos | ALTA |
-|RNF-06| Navegação clara e lógica, facilitando o acesso às informações e a movimentação das tarefas | ALTA |
-|RNF-07| O site deve ter bom nível de contraste entre os elementos da tela em conformidade | MÉDIA |
+|RNF-01| O site deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge). | ALTA | 
+|RNF-02| O site deverá ser responsivo nas resoluções 1920 x 1080 e 1366 x 768. | ALTA |
+|RNF-03| A aplicação deve ter resposta rápida ao interagir com as tarefas, como arrastar e soltar, atribuir responsáveis etc. | ALTA |
+|RNF-04| A aplicação deve ter capacidade de lidar com múltiplos usuários simultaneamente sem degradação significativa no desempenho. | ALTA |
+|RNF-05| Interface intuitiva e amigável, mesmo para usuários não técnicos. | ALTA |
+|RNF-06| Navegação clara e lógica, facilitando o acesso às informações e a movimentação das tarefas. | ALTA |
+|RNF-07| A aplicação deve ter bom nível de contraste entre os elementos da tela em conformidade. | MÉDIA |
+|RNF-08| A aplicação será desenvolvida utilizando o padrão mvc. | ALTA |
+|RNF-09| A aplicação será desenvolvida utilizando as linguagens Html, Css, JavaScript, C#, Asp.Net, MySql. | ALTA |
+|RNF-10| A aplicação será desenvolvida utilizando banco de dados relacional. | ALTA |
 
 
 ## Restrições
@@ -110,8 +115,9 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue no final do semestre letivo |
-|02| O sistema não deverá ser terceirizado |
+|01| O projeto deverá ser entregue no final do semestre letivo. |
+|02| O sistema não deverá ser terceirizado. |
+|03| As colunas não poderão ter mais de 20 tarefas. |
 
 
 ## Diagrama de Casos de Uso
