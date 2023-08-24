@@ -22,9 +22,9 @@ Em relação aos objetivos específicos, este projeto pretende:
 
 ## Justificativa
 
-Segundo um estudo da Forbes Insights (2017), 82% dos entrevistados consideraram a capacidade de incorporar abordagens ágeis como um fator importante para implementar iniciativas estratégicas. Além disso, de acordo com o relatório "The State of Agile" (2018), 55% das empresas que escolheram adotar metodologias ágeis o fizeram com o intuito de aprimorar a produtividade. Assim, fica claro que melhorias estratégicas de negócios e aumento da eficiência operacional estão no cerne da adoção de abordagens ágeis.
+De acordo com a pesquisa "State of Agile Report" publicada pela Digital.ai (2020), a falta de visibilidade e transparência nos projetos foi identificada como um dos principais obstáculos para o sucesso das iniciativas ágeis. Esse efeito pode ser observado no relatório "Pulse of the Profession" do Project Management Institute (2020), onde é destacado que, em média, 11,4% do investimento de uma organização é desperdiçado devido a projetos mal executados, além de organizações que subestimaram a gestão de projetos como uma competência estratégica terem apresentado falha completa em cerca de 67% de seus projetos.
 
-É nesse contexto que a metodologia Kanban emerge como um instrumento para alcançar esses objetivos. Sendo assim, este projeto foi escolhido ao reconhecer a demanda no mercado por ferramentas de gerenciamento organizacional mais focalizadas em representações visuais e concisas, que tem a capacidade de retratar com precisão as etapas de um processo produtivo, evitando a perda de informações valiosas.
+Dessa forma, torna-se evidente que melhorias estratégicas e o aumento da eficiência operacional estão no cerne da adoção de abordagens ágeis. É nesse contexto que a metodologia Kanban emerge como um instrumento para alcançar esses objetivos. Portanto, este projeto foi escolhido ao reconhecer a demanda no mercado por ferramentas de gerenciamento organizacional mais focalizadas em representações visuais e concisas, que possuam a capacidade de retratar com precisão as etapas de um processo produtivo, evitando a perda de informações valiosas.
 
 ## Público-Alvo
 
