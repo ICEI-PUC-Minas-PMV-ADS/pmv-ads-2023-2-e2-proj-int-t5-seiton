@@ -51,7 +51,7 @@ As personas levantadas durante o processo de entendimento do problema são apres
 | **Ocupação:** | Estudante |
 | **Motivações:** | Ser um estudante mais proativo |
 | **Frustrações:** | Ser desorganizado e consequentemente ruim nos estudos |
-| **Aplicativos:** | *Instagram <br> *Facebook <br> *Whatsapp <br> *LinkedIn|
+| **Aplicativos:** | *Instagram <br> *Facebook <br> *Whatsapp |
 | **Como o sistema pode facilitar o trabalho?** | Permitir o controle de tempo e organização das tarefas acadêmicas |
 
 ## Histórias de Usuários
