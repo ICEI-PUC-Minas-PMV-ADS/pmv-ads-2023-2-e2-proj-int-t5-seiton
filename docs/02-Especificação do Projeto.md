@@ -60,7 +60,7 @@ Com base na compreensão do dia-a-dia das funções identificadas para o projeto
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-| DAVID DIEGO | criar diferentes quadros Kanban para cada cliente ou projeto | acompanhar o progresso de várias atividades ao mesmo tempo |
+| DAVID DIEGO | criar diferentes quadros para cada cliente ou projeto | acompanhar o progresso de várias atividades ao mesmo tempo |
 | DAVID DIEGO | visualizar claramente o fluxo de trabalho | melhorar a eficiência do desenvolvimento do projeto |
 | ANDRÉ DORIZOTO | poder ver todas as tarefas atribuídas aos menbros da equipe | ter uma visão clara das responsabilidades de cada membro |
 | ANDRÉ DORIZOTO |  adicionar e modificar o status de cada uma das tarefas | melhorar a comunicação com a equipe |
