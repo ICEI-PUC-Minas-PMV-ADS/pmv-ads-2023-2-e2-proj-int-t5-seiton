@@ -1,7 +1,5 @@
 # Referências
 
-Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.
+Project Management Institute. **Ahead of the Curve**, Forging a Future-Focused Culture, *Pulse of the Profession*. 2020. Disponível em: https://www.pmi.org/learning/library/forging-future-focused-culture-11908. Acesso em: 24 ago. 2023.
 
-> **Links Úteis**:
-> - [Formato ABNT](https://www.normastecnicas.com/abnt/trabalhos-academicos/referencias/)
-> - [Referências Bibliográficas da ABNT](https://comunidade.rockcontent.com/referencia-bibliografica-abnt/)
+State of Agile. **State of Agile Report**. 14. ed. Digital.ai, 2020. Disponível em: https://www.qagile.pl/wp-content/uploads/2020/06/14th-annual-state-of-agile-report.pdf. Acesso em: 24 ago. 2023.
