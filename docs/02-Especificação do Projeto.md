@@ -93,7 +93,7 @@ A tabela a seguir apresenta os requisitos do projeto, identificando a prioridade
 |RF-09| A aplicação deverá permitir aos que os usuários vejam os detalhes da tarefa para ter acesso a descrição completa e as demais informações inseridas.|ALTA|
 |RF-10| As tarefas deverão ter campo de titulo, descrição, cor referente a prioridade e nome da pessoa a quem a mesma foi atribuída. |ALTA|
 |RF-11| A aplicação deve exibir um alerta que requisite a confirmação do usuário para toda exclusão feita por ele |ALTA|
-|RF-12| A aplicação deverá permitir a visualização de informações do projeto como porcentagem do progresso, total geral de tarefas, total de tarefas em cada coluna |ALTA|
+|RF-12| A aplicação deverá permitir a visualização de detalhes do projeto como porcentagem do progresso, total geral de tarefas, total de tarefas em cada coluna |ALTA|
 
 ### Requisitos não Funcionais
 
@@ -125,4 +125,4 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 O diagrama de casos de uso é uma representação visual crucial na modelagem de sistemas, destacando as interações entre usuários e as funcionalidades do sistema. Ele esclarece requisitos e promove a comunicação eficaz entre stakeholders, contribuindo para a compreensão geral do projeto. Sendo assim, temos o diagrama referente à este projeto apresentado a seguir:
 
-<img src="./img/Diagrama.jpeg">
+<img src="./img/Diagrama_de_caso.png">
