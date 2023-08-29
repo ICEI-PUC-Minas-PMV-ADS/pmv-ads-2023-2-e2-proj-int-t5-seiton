@@ -82,30 +82,31 @@ A tabela a seguir apresenta os requisitos do projeto, identificando a prioridade
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-1| A aplicação deve oferecer gerenciamento de usuários. |ALTA|
-|RF-2| A aplicação deverá apresentar uma mensagem de confirmação do cadastro. |ALTA|
-|RF-3| A aplicação deve permitir que usuários pré cadastrados realizem login. |ALTA|
-|RF-4| A aplicação deverá realizar a verificação da senha. |ALTA|
-|RF-5| A aplicação deverá apresentar uma mensagem de erro caso as informações inseridas sejam invalidas. |ALTA|
-|RF-6| A aplicação deve permitir o gerenciamento de projetos. |ALTA|
-|RF-7| A aplicação deve permitir o gerenciamento das tarefas dentro do projeto. |ALTA|
-|RF-8| A aplicação deve permitir que seja alterado o status das tarefas entre as colunas. |ALTA|
-|RF-9| A aplicação deverá permitir aos que os usuários vejam os detalhes da tarefa para ter acesso a descrição completa e as demais informações inseridas.|ALTA|
+|RF-01| A aplicação deve oferecer gerenciamento de usuários. |ALTA|
+|RF-02| A aplicação deverá apresentar uma mensagem de confirmação do cadastro. |ALTA|
+|RF-03| A aplicação deve permitir que usuários pré cadastrados realizem login. |ALTA|
+|RF-04| A aplicação deverá realizar a verificação da senha. |ALTA|
+|RF-05| A aplicação deverá apresentar uma mensagem de erro caso as informações inseridas sejam invalidas. |ALTA|
+|RF-06| A aplicação deve permitir o gerenciamento de projetos. |ALTA|
+|RF-07| A aplicação deve permitir o gerenciamento das tarefas dentro do projeto. |ALTA|
+|RF-08| A aplicação deve permitir que seja alterado o status das tarefas entre as colunas. |ALTA|
+|RF-09| A aplicação deverá permitir aos que os usuários vejam os detalhes da tarefa para ter acesso a descrição completa e as demais informações inseridas.|ALTA|
 |RF-10| As tarefas deverão ter campo de titulo, descrição, cor referente a prioridade e nome da pessoa a quem a mesma foi atribuída. |ALTA|
 |RF-11| A aplicação deve exibir um alerta que requisite a confirmação do usuário para toda exclusão feita por ele |ALTA|
+|RF-12| A aplicação deverá permitir a visualização de informações do projeto como porcentagem do progresso, total geral de tarefas, total de tarefas em cada coluna |ALTA|
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-1| O site deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge). |ALTA|
-|RNF-2| O site deverá ser responsivo nas resoluções 1920 x 1080 e 1366 x 768. |ALTA|
-|RNF-4| A aplicação deve ter capacidade de lidar com até 6 usuários simultaneamente sem degradação significativa no desempenho. |ALTA|
-|RNF-5| Interface intuitiva e amigável, mesmo para usuários não técnicos. |ALTA|
-|RNF-6| Navegação clara e lógica, facilitando o acesso às informações e a movimentação das tarefas. |ALTA|
-|RNF-7| A aplicação deve ter bom nível de contraste entre os elementos da tela em conformidade. |MÉDIA|
-|RNF-8| A aplicação será desenvolvida utilizando o padrão mvc. |ALTA|
-|RNF-9| A aplicação será desenvolvida utilizando as linguagens Html, Css, JavaScript, C#, Asp.Net, MySql. |ALTA|
+|RNF-01| O site deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge). |ALTA|
+|RNF-02| O site deverá ser responsivo nas resoluções 1920 x 1080 e 1366 x 768. |ALTA|
+|RNF-04| A aplicação deve ter capacidade de lidar com até 6 usuários simultaneamente sem degradação significativa no desempenho. |ALTA|
+|RNF-05| Interface intuitiva e amigável, mesmo para usuários não técnicos. |ALTA|
+|RNF-06| Navegação clara e lógica, facilitando o acesso às informações e a movimentação das tarefas. |ALTA|
+|RNF-07| A aplicação deve ter bom nível de contraste entre os elementos da tela em conformidade. |MÉDIA|
+|RNF-08| A aplicação será desenvolvida utilizando o padrão mvc. |ALTA|
+|RNF-09| A aplicação será desenvolvida utilizando as linguagens Html, Css, JavaScript, C#, Asp.Net, MySql. |ALTA|
 |RNF-10| A aplicação será desenvolvida utilizando banco de dados relacional. |ALTA|
 
 
