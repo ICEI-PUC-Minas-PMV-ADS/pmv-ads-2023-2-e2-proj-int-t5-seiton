@@ -101,13 +101,13 @@ A tabela a seguir apresenta os requisitos do projeto, identificando a prioridade
 |-------|-------------------------|----|
 |RNF-01| O site deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge). |ALTA|
 |RNF-02| O site deverá ser responsivo nas resoluções 1920 x 1080 e 1366 x 768. |ALTA|
-|RNF-04| A aplicação deve ter capacidade de lidar com até 6 usuários simultaneamente sem degradação significativa no desempenho. |ALTA|
-|RNF-05| Interface intuitiva e amigável, mesmo para usuários não técnicos. |ALTA|
-|RNF-06| Navegação clara e lógica, facilitando o acesso às informações e a movimentação das tarefas. |ALTA|
-|RNF-07| A aplicação deve ter bom nível de contraste entre os elementos da tela em conformidade. |MÉDIA|
-|RNF-08| A aplicação será desenvolvida utilizando o padrão mvc. |ALTA|
-|RNF-09| A aplicação será desenvolvida utilizando as linguagens Html, Css, JavaScript, C#, Asp.Net, MySql. |ALTA|
-|RNF-10| A aplicação será desenvolvida utilizando banco de dados relacional. |ALTA|
+|RNF-03| A aplicação deve ter capacidade de lidar com até 6 usuários simultaneamente sem degradação significativa no desempenho. |ALTA|
+|RNF-04| Interface intuitiva e amigável, mesmo para usuários não técnicos. |ALTA|
+|RNF-05| Navegação clara e lógica, facilitando o acesso às informações e a movimentação das tarefas. |ALTA|
+|RNF-06| A aplicação deve ter bom nível de contraste entre os elementos da tela em conformidade. |MÉDIA|
+|RNF-07| A aplicação será desenvolvida utilizando o padrão mvc. |ALTA|
+|RNF-08| A aplicação será desenvolvida utilizando as linguagens Html, Css, JavaScript, C#, Asp.Net, MySql. |ALTA|
+|RNF-09| A aplicação será desenvolvida utilizando banco de dados relacional. |ALTA|
 
 
 ## Restrições
