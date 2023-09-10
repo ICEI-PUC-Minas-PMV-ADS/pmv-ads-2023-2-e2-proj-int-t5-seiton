@@ -46,7 +46,7 @@ A distribuição de tarefas da equipe está sendo organizada no GitHub Project, 
 - `In Review (atualizado semanalmente)`: O que precisa ser revisado junto ao orientador.
 - `Done`: Tudo o que foi finalizado.
 
-<img src="./img/quadrogithub.png">
+<img src="./img/quadroprojects.png">
 
 ### Ferramentas
 
