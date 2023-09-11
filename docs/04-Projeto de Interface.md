@@ -23,19 +23,19 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Diagramas d
 ## Wireframes
 
 ## Tela de login
-![Exemplo de Wireframe](img/login.png)
+![Exemplo de Wireframe](img/login.jng)
 
 ## Criar conta
-![Exemplo de Wireframe](img/criar_conta.png)
+![Exemplo de Wireframe](img/criar_conta.jng)
 
 ## Tela principal
-![Exemplo de Wireframe](img/tela_principalpng)
+![Exemplo de Wireframe](img/tela_principal.jng)
 
 ## Mover tarefas
-![Exemplo de Wireframe](img/mover_tarefa.png)
+![Exemplo de Wireframe](img/mover_tarefa.jng)
 
 ## Editar tarefas
-![Exemplo de Wireframe](img/editar_tarefa.png)
+![Exemplo de Wireframe](img/editar_tarefa.jng)
 
 São protótipos usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface.
  
