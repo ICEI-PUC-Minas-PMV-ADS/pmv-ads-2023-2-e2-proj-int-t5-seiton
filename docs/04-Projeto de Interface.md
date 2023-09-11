@@ -28,6 +28,7 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Diagramas d
 ## Criar conta
 ![Exemplo de Wireframe](img/criar_conta.jng)
 
+
 ## Tela principal
 ![Exemplo de Wireframe](img/tela_principal.jng)
 
