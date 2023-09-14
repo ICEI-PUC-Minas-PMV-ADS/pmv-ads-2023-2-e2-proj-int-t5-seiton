@@ -31,7 +31,7 @@ Possibilita que o usuário efetue o processo de autenticação, concedendo-lhe a
 ## Criar conta
 
 Permite a criação de uma nova conta por parte do membro designado como "Master" dentro do grupo, sendo necessário fornecer os dados de registro, incluindo endereço de e-mail, nome de usuário e senha.
-<br>
+<br><br>
 ![Exemplo de Wireframe](img/criar_conta.jpg)
 
 
@@ -40,14 +40,14 @@ Permite a criação de uma nova conta por parte do membro designado como "Master
 Após o usuário criar ou ingressar em um grupo, a primeira tela a ser exibida será a tela principal, na qual serão apresentadas colunas de acordo com as necessidades específicas do projeto. Nestas colunas, serão registradas as informações relativas às tarefas, proporcionando a capacidade de edição a qualquer momento pelo responsável pela atividade. Isso incluirá a definição do nível de prioridade e do status do desenvolvimento.
 
 O menu lateral fornecerá um acesso rápido aos projetos em andamento. Ao selecionar um projeto específico, as colunas pertinentes a esse projeto serão exibidas, ajustando-se automaticamente ao contexto do projeto escolhido.
-<br>
+<br><br>
 ![Exemplo de Wireframe](img/tela_principal1.jpg)
 
 
 ## Editar tarefas
 
 Ao acionar a opção "Editar Tarefa", um modal será exibido, permitindo que o usuário responsável faça a edição das informações de acordo com as necessidades e o status atual do desenvolvimento da tarefa em questão.
-<br>
+<br><br>
 ![Exemplo de Wireframe](img/editar_tarefa1.jpg)
 
 <!-- São protótipos usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface.
