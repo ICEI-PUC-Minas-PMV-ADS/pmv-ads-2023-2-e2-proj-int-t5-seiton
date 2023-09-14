@@ -25,8 +25,8 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Diagramas d
 ## Tela de login
 
 Possibilita que o usuário efetue o processo de autenticação, concedendo-lhe acesso ao conjunto de projetos mediante a inserção das informações de identificação, ou seja, nome de usuário e senha do grupo.
-<br>
-![Exemplo de Wireframe](img/login.jpg)
+<br><br>
+![Exemplo de Wireframe](img/login1.jpg)
 
 ## Criar conta
 
