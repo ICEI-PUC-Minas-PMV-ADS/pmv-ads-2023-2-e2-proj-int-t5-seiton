@@ -83,17 +83,13 @@ A tabela a seguir apresenta os requisitos do projeto, identificando a prioridade
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
 |RF-01| A aplicação deve oferecer gerenciamento de usuários. |ALTA|
-|RF-02| A aplicação deverá apresentar uma mensagem de confirmação do cadastro. |ALTA|
-|RF-03| A aplicação deve permitir que usuários pré cadastrados realizem login. |ALTA|
-|RF-04| A aplicação deverá realizar a verificação da senha. |ALTA|
-|RF-05| A aplicação deverá apresentar uma mensagem de erro caso as informações inseridas sejam invalidas. |ALTA|
-|RF-06| A aplicação deve permitir o gerenciamento de projetos. |ALTA|
-|RF-07| A aplicação deve permitir o gerenciamento das tarefas dentro do projeto. |ALTA|
-|RF-08| A aplicação deve permitir que seja alterado o status das tarefas entre as colunas. |ALTA|
-|RF-09| A aplicação deverá permitir aos que os usuários vejam os detalhes da tarefa para ter acesso a descrição completa e as demais informações inseridas.|ALTA|
-|RF-10| As tarefas deverão ter campo de titulo, descrição, cor referente a prioridade e nome da pessoa a quem a mesma foi atribuída. |ALTA|
-|RF-11| A aplicação deve exibir um alerta que requisite a confirmação do usuário para toda exclusão feita por ele |ALTA|
-|RF-12| A aplicação deverá permitir a visualização de detalhes do projeto como porcentagem do progresso, total geral de tarefas, total de tarefas em cada coluna |ALTA|
+|RF-02| A aplicação deve permitir que usuários pré cadastrados realizem login. |ALTA|
+|RF-03| A aplicação deve permitir o gerenciamento de projetos. |ALTA|
+|RF-04| A aplicação deve permitir o gerenciamento das tarefas dentro do projeto, no qual toda tarefa criada deverá obrigatoriamente ser associada a uma coluna. |ALTA|
+|RF-05| As tarefas deverão ter campo de titulo, descrição, cor referente a prioridade e nome da pessoa a quem a mesma foi atribuída. |ALTA|
+|RF-06| A aplicação deve permitir que seja alterado o status das tarefas entre as colunas. |ALTA|
+|RF-07| A aplicação deverá permitir aos que os usuários vejam os detalhes da tarefa para ter acesso a descrição completa e as demais informações inseridas.|ALTA|
+|RF-08| A aplicação deverá permitir a visualização do andamento do projeto por meio de informações como a porcentagem de progresso, total geral de tarefas, total de tarefas em cada coluna |ALTA|
 
 ### Requisitos não Funcionais
 
@@ -108,6 +104,7 @@ A tabela a seguir apresenta os requisitos do projeto, identificando a prioridade
 |RNF-07| A aplicação será desenvolvida utilizando o padrão mvc. |ALTA|
 |RNF-08| A aplicação será desenvolvida utilizando as linguagens Html, Css, JavaScript, C#, Asp.Net, MySql. |ALTA|
 |RNF-09| A aplicação será desenvolvida utilizando banco de dados relacional. |ALTA|
+|RNF-10| O usuário só terá acesso aos projetos criados por ele. |ALTA|
 
 
 ## Restrições
@@ -125,4 +122,4 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 O diagrama de casos de uso é uma representação visual crucial na modelagem de sistemas, destacando as interações entre usuários e as funcionalidades do sistema. Ele esclarece requisitos e promove a comunicação eficaz entre stakeholders, contribuindo para a compreensão geral do projeto. Sendo assim, temos o diagrama referente à este projeto apresentado a seguir:
 
-<img src="./img/Diagrama_de_caso">
+<img src="./img/Diagrama_de_caso.png">
