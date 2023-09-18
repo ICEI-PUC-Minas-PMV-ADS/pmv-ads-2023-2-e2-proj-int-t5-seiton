@@ -21,7 +21,7 @@ Possibilita que o usuário efetue o processo de autenticação, concedendo-lhe a
 
 Permite a criação de uma nova conta por parte do membro designado como "Master" dentro do grupo, sendo necessário fornecer os dados de registro, incluindo endereço de e-mail, nome de usuário e senha.
 <br><br>
-![Exemplo de Wireframe](img/criar_conta.jpg)
+![Exemplo de Wireframe](img/criar_usuario2.jpg)
 
 
 ## Tela principal
