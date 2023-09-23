@@ -13,7 +13,7 @@ O projeto segue a seguinte convenção para o nome de branches:
 - `main`: versão estável já testada do software
 - `dev`: versão de desenvolvimento do software
 
-<img src="./img/gitflow.png">
+<img src="./img/gitflow.png"> <sub> Figura 01 - Controle de Versão <sub>
 
 Quanto à gerência de issues, o projeto adota a seguinte convenção para
 etiquetas:
@@ -46,7 +46,7 @@ A distribuição de tarefas da equipe está sendo organizada no GitHub Project, 
 - `In Review (atualizado semanalmente)`: O que precisa ser revisado junto ao orientador.
 - `Done`: Tudo o que foi finalizado.
 
-<img src="./img/quadroprojects.png">
+<img src="./img/quadroprojects.png"> <sub> Figura 02 - Kanban GitHub <sub>
 
 ### Ferramentas
 
