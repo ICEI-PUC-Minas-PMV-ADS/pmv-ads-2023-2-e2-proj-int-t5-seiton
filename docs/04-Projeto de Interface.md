@@ -9,7 +9,7 @@ O diagrama apresenta o estudo do fluxo de interação do usuário com o sistema.
 
 Abaixo o diagrama de fluxo com o caminho a ser percorrido pelo usuário final do site.
 
-![Diagrama de Fluxo](img/DiagramaFluxo3.jpeg) <sub> Figura 01 - Diagrama de Fluxo <sub>
+![Diagrama de Fluxo](img/DiagramaFluxo3.jpeg) <sub> **Figura 01** - Diagrama de Fluxo <sub>
 
 ## Wireframes
 
