@@ -28,7 +28,7 @@ As ferramentas empregadas no projeto são:
 
 - `Editor de código`: Visual Code Studio
 - `Ferramentas de comunicação`: WhatsApp, Discord e Microsoft Teams
-- `Ferramentas de desenho de tela (interface, _wireframing_)`: Canvas, Figma
+- `Ferramentas de desenho de tela (interface, _wireframing_)`: Canva, Figma
 - `Ferramentas de desenho de Digrama`: MySQL WorkBench, LucidChart
 
 Para o desenvolvimento da aplicação será utilizado um conjunto de tecnologias web, incluindo HTML, CSS, JavaScript, C#, ASP.NET e MySQL. A escolha dessas tecnologias é fundamentada na capacidade de oferecer uma experiência robusta e interativa aos usuários, bem como na eficiência na manipulação de dados.
