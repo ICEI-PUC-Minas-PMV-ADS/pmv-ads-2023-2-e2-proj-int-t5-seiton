@@ -122,4 +122,4 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 O diagrama de casos de uso é uma representação visual crucial na modelagem de sistemas, destacando as interações entre usuários e as funcionalidades do sistema. Ele esclarece requisitos e promove a comunicação eficaz entre stakeholders, contribuindo para a compreensão geral do projeto. Sendo assim, temos o diagrama referente à este projeto apresentado a seguir:
 
-<img src="./img/Diagrama_de_caso.png">
+<img src="./img/Diagrama_de_caso.png"> <sub> Figura 01 - Diagrama de Casos de Uso <sub>
