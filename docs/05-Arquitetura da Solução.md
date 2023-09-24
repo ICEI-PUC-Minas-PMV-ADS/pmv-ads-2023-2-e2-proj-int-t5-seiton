@@ -12,7 +12,7 @@ O diagrama de classes ilustra graficamente como será a estrutura do software, e
 
 O Modelo ER representa através de um diagrama como as entidades (coisas, objetos) se relacionam entre si na aplicação interativa.
 
-<img src="./img/Diagrama_entidade_relacionamento.png"> <sub> Figura 02 - Modelo ER (Projeto Conceitual) <sub>
+<img src="./img/Diagrama_entidade_relacionamento2.png"> <sub> Figura 02 - Modelo ER (Projeto Conceitual) <sub>
 
 ## Projeto da Base de Dados
 
