@@ -48,3 +48,69 @@ Tem como foco a capacidade da aplicação de executar suas tarefas com qualidade
 A satisfação tem como foco a avaliação pessoal do usuário quanto à utilização da plataforma, a escala de avaliação vai de 1 a 5, e avalia:
 -	Satisfação da execução de uma tarefa.
 -	Satisfação do teste em sua totalidade.
+
+
+
+Segue o roteiro das tarefas de teste                                        
+
+
+| **Caso de Teste** 	| **CTU-01 – Cadastro Usuário** 	|
+|:---:	|:---:	|
+| **Perfil** 	| Usuário (todos)	|
+| **Objetivo do Teste** 	| Avaliar a tela de cadastro de usuário 	|
+| **Passos** 	| 1. Acessar navegador;<br>2. Informar o endereço do site;<br>3. Acessar página inicial;<br>4. Clicar em “criar conta”;<br>5. Preencher os campos obrigatórios (e-mail, usuário, senha e confirmação de senha);<br>6. Clicar em "Criar". 	|
+|  	|  	|
+| **Caso de Teste** 	| **CTU-02 – Login de usuário** 	|
+| **Perfil** 	| Usuário (todos) 	|
+| **Objetivo do Teste** 	| Avaliar a tela de Login de usuário 	|
+| **Passos** 	| 1. Acessar navegador;<br>2. Informar o endereço do site;<br>3. Acessar página inicial;<br>4. Preencher os campos obrigatórios (Usuário e senha);<br>5. Clicar em "Login". 	|
+|  	|  	|
+| **Caso de Teste** 	| **CTU-03 – Visualizar Projetos** 	|
+| **Perfil** 	| Usuário 	|
+| **Objetivo do Teste** 	| Avaliar o acesso à tela principal de visualização de projetos 	|
+| **Passos** 	| 1. Acessar navegador;<br>2. Informar o endereço do site;<br>3. Acessar página inicial;<br>4. Efetuar Login;<br>5. Visualizar página inicial contendo todos os projetos. 	|
+|  	|  	|
+| **Caso de Teste** 	| **CTU-04 – Gerenciamento de Projetos**|
+| **Perfil** 	| Usuário 	|
+| **Objetivo do Teste** 	| Avaliar acesso à função de gerenciamento de projetos 	|
+| **Passos** 	| 1. Acessar Navegador;<br>2. Informar o endereço do Site;<br>3. Acessar página inicial;<br>4. Efetuar Login;<br>5. Visualizar página inicial contendo todos os projetos.;<br>6. Clicar no projeto desejado 	|
+|  	|  	|
+| **Caso de Teste** 	| **CTU-05 – Criar Projetos** 	|
+| **Perfil** 	| Usuário 	|
+| **Objetivo do Teste** 	| valiar se os projetos estão sendo criados 	|
+| **Passos** 	| 1. Acessar navegador;<br>2. Informar o endereço do site;<br>3. Acessar página inicial;<br>4. Efetuar Login;<br>5. Visualizar página inicial contendo todos os projetos;<br>6. Clicar no botão “criar projetos 	|
+|  	|  	|
+| **Caso de Teste** 	| **CTU-06 – Dados do Projeto(Relatório)** 	|
+| **Perfil** 	| Usuário 	|
+| **Objetivo do Teste** 	| Avaliar se o relatório dos projetos está sendo corretamente exibido 	|
+| **Passos** 	| 1. Acessar navegador;<br>2. Informar o endereço do site;<br>3. Acessar página inicial;<br>4. Efetuar Login;<br>5. Visualizar página inicial contendo todos os projetos;<br>6. Clicar no projeto desejado;<br>7. Clicar no botão de relatório. 	|
+|  	|  	|
+| **Caso de Teste** 	| **CTU-07 – Gerenciar Tarefas** 	|
+| **Perfil** 	| Usuário 	|
+| **Objetivo do Teste** 	| Avaliar o acesso ao gerenciamento de tarefas dentro da coluna 	|
+| **Passos** 	| 1. Acessar navegador;<br>2. Informar o endereço do site;<br>3. Acessar página inicial;<br>4. Efetuar Login;<br>5. Clicar no projeto desejado;<br>6. Interagir com as tarefas do projeto 	|
+|  	|  	|
+| **Caso de Teste** 	| **CTU-08 – Gerenciar Colunas** 	|
+| **Perfil** 	| Usuário 	|
+| **Objetivo do Teste** 	| Avaliar o acesso ao gerenciamento de colunas dentro do projeto 	|
+| **Passos** 	| 1. Acessar navegador;<br>2. Informar o endereço do site;<br>3. Acessar página inicial;<br>4. Efetuar Login;<br>5. Clicar no projeto desejado;<br>6. Interagir com a coluna desejada. 	|
+|  	|  	|
+| **Caso de Teste** 	| **CTU-09 – Criar Colunas** 	|
+| **Perfil** 	| Usuário 	|
+| **Objetivo do Teste** 	| Avaliar se o usuário consegue criar colunas 	|
+| **Passos** 	| 1. Acessar navegador;<br>2. Informar o endereço do site;<br>3. Acessar página inicial;<br>4. Efetuar Login;<br>5. Clicar no projeto desejado;<br>6. Clicar no botão de adicionar coluna. 	|
+|  	|  	|
+| **Caso de Teste** 	| **CTU-10 - Adicionar Tarefas** 	|
+| **Perfil** 	| Usuário 	|
+| **Objetivo do Teste** 	| Avaliar se a tarefa foi adicionada corretamente 	|
+| **Passos** 	| 1. Acessar navegador;<br>2. Informar o endereço do site;<br>3. Acessar página inicial;<br>4. Efetuar Login;<br>5. Clicar no projeto desejado;<br>6. Clicar na coluna desejada;<br>7. Clicar no botão de adicionar tarefa.	|
+|  	|  	|
+| **Caso de Teste** 	| **CTU-11 – Dados da tarefa** 	|
+| **Perfil** 	| Usuário 	|
+| **Objetivo do Teste** 	| Avaliar se os dados da tarefa estão corretamente exibidos 	|
+| **Passos** 	| 1. Acessar navegador;<br>2. Informar o endereço do site;<br>3. Acessar página inicial;<br>4. Efetuar Login;<br>5. Clicar no projeto desejado;<br>3. Visualizar os dados da tarefa desejada. 	|
+|  	|  	|
+| **Caso de Teste** 	| **CTU-12 – Alterar tarefas entre colunas** 	|
+| **Perfil** 	| Avaliar o fluxo de tarefas entre as colunas	|
+| **Objetivo do Teste** 	| Verificar se usuários com deficiências visuais conseguem utilizar todas as ferramentas do site 	|
+| **Ações necessárias** 	| 1. Acessar navegador;<br>2. Informar o endereço do site;<br>3. Acessar página inicial;<br>4. Efetuar Login;<br> 5. Clicar no projeto desejado; <br> 6.Clicar na tarefa desejada; <br> 7. clicar para mover tarefa para outra coluna. 	|
