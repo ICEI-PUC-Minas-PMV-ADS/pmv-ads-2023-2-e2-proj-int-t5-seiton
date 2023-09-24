@@ -54,7 +54,8 @@ As ferramentas empregadas no projeto são:
 
 - `Editor de código`: Visual Code Studio
 - `Ferramentas de comunicação`: WhatsApp, Discord e Microsoft Teams
-- `Ferramentas de desenho de tela (gráficos, interface, _wireframing_)`: Lucidchart, Canvas, Figma
+- `Ferramentas de desenho de tela (interface, _wireframing_)`: Canvas, Figma
+- `Ferramentas de desenho de Digrama`: MySQL WorkBench, LucidChart
 
 O editor de código foi escolhido porque ele possui uma integração com o
 sistema de versão. As ferramentas de comunicação utilizadas possuem
