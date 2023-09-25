@@ -1,31 +1,52 @@
 # Plano de Testes de Software
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Especificação do Projeto</a></span>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>
+Os requisitos para realização dos testes são:
 
-Apresente os cenários de testes utilizados na realização dos testes da sua aplicação. Escolha cenários de testes que demonstrem os requisitos sendo satisfeitos.
+- Navegador da Internet - Chrome, Firefox, Edge, Opera e Safari.
+- Conectividade de Internet para acesso à plataforma.
 
-Não deixe de enumerar os casos de teste de forma sequencial e de garantir que o(s) requisito(s) associado(s) a cada um deles está(ão) correto(s) - de acordo com o que foi definido na seção "2 - Especificação do Projeto". 
 
-Por exemplo:
+Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
  
-| **Caso de Teste** 	| **CT-01 – Cadastrar perfil** 	|
+| **Caso de Teste** 	| **CT-01 – Cadastro de Usuário** 	|
 |:---:	|:---:	|
-|	Requisito Associado 	| RF-00X - A aplicação deve apresentar, na página principal, a funcionalidade de cadastro de usuários para que esses consigam criar e gerenciar seu perfil. |
-| Objetivo do Teste 	| Verificar se o usuário consegue se cadastrar na aplicação. |
-| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html<br> - Clicar em "Criar conta" <br> - Preencher os campos obrigatórios (e-mail, nome, sobrenome, celular, CPF, senha, confirmação de senha) <br> - Aceitar os termos de uso <br> - Clicar em "Registrar" |
-|Critério de Êxito | - O cadastro foi realizado com sucesso. |
+|	Requisito Associado 	| RF-01 - A aplicação deve oferecer gerenciamento de usuários. |
+| Objetivo do Teste 	| Verificar se o usuário consegue efetuar cadastro na aplicação. |
+| Passos 	| - Acessar navegador <br> - Informar o endereço do site<br> - Preencher os campos obrigatórios (e-mail, usuário, senha e confirmação de senha) <br> - Clicar em "Login" |
+|Critério de Êxito | - O usuário se cadastra com sucesso. |
 |  	|  	|
-| Caso de Teste 	| CT-02 – Efetuar login	|
-|Requisito Associado | RF-00Y	- A aplicação deve possuir opção de fazer login, sendo o login o endereço de e-mail. |
-| Objetivo do Teste 	| Verificar se o usuário consegue realizar login. |
-| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html<br> - Clicar no botão "Entrar" <br> - Preencher o campo de e-mail <br> - Preencher o campo da senha <br> - Clicar em "Login" |
+| Caso de Teste 	| CT-02 – Login de Usuário	|
+|Requisito Associado | RF-02	- A aplicação deve permitir que usuários pré-cadastrados realizem login. |
+| Objetivo do Teste 	| Verificar se o usuário consegue efetuar Login na aplicação. |
+| Passos 	| - Acessar navegador <br> - Informar o endereço do site<br> - Preencher corretamente os campos obrigatórios (e-mail e senha) <br> - Clicar em "Login" |
 |Critério de Êxito | - O login foi realizado com sucesso. |
-
- 
-> **Links Úteis**:
-> - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Práticas e Técnicas de Testes Ágeis](http://assiste.serpro.gov.br/serproagil/Apresenta/slides.pdf)
-> -  [Teste de Software: Conceitos e tipos de testes](https://blog.onedaytesting.com.br/teste-de-software/)
-> - [Criação e Geração de Planos de Teste de Software](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
-> - [UX Tools](https://uxdesign.cc/ux-user-research-and-user-testing-tools-2d339d379dc7)
+|  	|  	|
+| Caso de Teste 	| CT-03 – Visualização de Projetos	|
+|Requisito Associado | RF-03	- A aplicação deve permitir o gerenciamento de projetos. |
+| Objetivo do Teste 	| Verificar se o usuário consegue visualizar seus projetos. |
+| Passos 	| - Acessar o navegador <br> - Informar o endereço do site<br> - Realizar login <br> - Acessar tela principal de projetos |
+|Critério de Êxito | - O usuário consegue acessar a tela inicial e visualizar todos os seus projetos. |
+|  	|  	|
+| Caso de Teste 	| CT-04 – Gerenciamento de Projetos	|
+|Requisito Associado | RF-03	- A aplicação deve permitir o gerenciamento de projetos. |
+| Objetivo do Teste 	| Verificar se o usuário consegue acessar seus projetos para possíveis edições. |
+| Passos 	| - Acessar o navegador <br> - Informar o endereço do site<br> - Realizar login <br> - Acessar tela principal de projetos <br> - Selecionar projeto desejado |
+|Critério de Êxito | - O usuário consegue acessar a tela inicial e visualizar todos os seus projetos. |
+|  	|  	|
+| Caso de Teste 	| CT-05 – Gerenciamento de Tarefas	|
+|Requisito Associado | - RF-04	- A aplicação deve permitir o gerenciamento das tarefas dentro do projeto, no qual toda tarefa criada deverá obrigatoriamente ser associada a uma coluna. <br> - RF-06	- A aplicação deve permitir que seja alterado o status das tarefas entre as colunas. |
+| Objetivo do Teste 	| Verificar se o usuário consegue manipular as tarefas do projeto. |
+| Passos 	| - Acessar o navegador <br> - Informar o endereço do site<br> - Realizar login <br> - Acessar tela principal de projetos <br> - Selecionar projeto desejado <br> - Excluir ou adicionar tarefa |
+|Critério de Êxito | - O usuário consegue manipular as tarefas do projeto. |
+|  	|  	|
+| Caso de Teste 	| CT-06 – Visualização de detalhes das tarefas	|
+|Requisito Associado | - RF-05 – As tarefas deverão ter campo de título, descrição, cor referente a prioridade e nome da pessoa a quem a mesma foi atribuída. <br> - RF-07 – A aplicação deverá permitir aos que os usuários vejam os detalhes da tarefa para ter acesso a descrição completa e as demais informações inseridas. |
+| Objetivo do Teste 	| Verificar se o usuário tem acesso a todas as informações vinculadas às tarefas. |
+| Passos 	| - Acessar o navegador <br> - Informar o endereço do site<br> - Realizar login <br> - Acessar tela principal de projetos <br> - Selecionar projeto desejado <br> - Selecionar a tarefa desejada |
+|Critério de Êxito | - O usuário consegue acessar e visualizar todos os detalhes das tarefas desejadas. |
+|  	|  	|
+| Caso de Teste 	| CT-07 – Alteração de Status de Tarefas	|
+|Requisito Associado | RF-08	- A aplicação deverá permitir a visualização do andamento do projeto por meio de informações como a porcentagem de progresso, total geral de tarefas e total de tarefas em cada coluna. |
+| Objetivo do Teste 	| Verificar se o usuário consegue visualizar os dados gerais do projeto desejado. |
+| Passos 	| - Acessar o navegador <br> - Informar o endereço do site<br> - Realizar login <br> - Acessar tela principal de projetos <br> - Selecionar projeto desejado <br> - Selecionar tarefa desejada <br> - Movimentar a tarefa entre colunas |
+|Critério de Êxito | - O usuário consegue alterar os status da tarefa desejada. |
