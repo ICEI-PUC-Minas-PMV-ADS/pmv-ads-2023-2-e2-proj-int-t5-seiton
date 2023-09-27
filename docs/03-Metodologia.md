@@ -20,8 +20,7 @@ etiquetas:
 
 - `documentation`: melhorias ou acréscimos à documentação
 - `bug`: uma funcionalidade encontra-se com problemas
-- `enhancement`: uma funcionalidade precisa ser melhorada
-- `feature`: uma nova funcionalidade precisa ser introduzida
+- `development`: desenvolvimento de uma funcionalidade
 
 A introdução de novas funcionalidades, desenvolvimento, testes e correções de bugs serão realizados na branch Develop e somente quando houver uma nova versão do projeto é que será feito o merge com a branch Master. Dessa forma, somente quando as alterações forem testadas e aprovadas na branch Develop é que será permitido transferir para a branch Master.
 
@@ -40,7 +39,8 @@ Os membros do grupo foram divididos entre os seguintes papéis:
 A distribuição de tarefas da equipe está sendo organizada no GitHub Project, que se encontra estruturado nos seguintes tópicos:
 
 - `Backlog`: todas as atividades que devem ser realizadas no projeto, desde a documentação até o desenvolvimento final do site.
-- `To do (atualizado a cada vencimento de prazo)`: Apresenta o prazo da sprint atual e o que foi definido previamente para ser  realizado até o final da mesma.
+- `Sprint Backlog`: todas as atividades que devem ser realizadas no projeto até o prazo final da etapa.
+- `To do (atualizado a cada vencimento de prazo)`: Apresenta o prazo das atividades dessa semana.
 - `In progress`: O que está sendo feito.
 - `Problems`: Correção de bugs e problemas.
 - `In Review (atualizado semanalmente)`: O que precisa ser revisado junto ao orientador.
