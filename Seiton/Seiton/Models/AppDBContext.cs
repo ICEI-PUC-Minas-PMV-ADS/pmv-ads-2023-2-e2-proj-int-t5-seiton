@@ -14,6 +14,6 @@ namespace Seiton.Models
         public AppDBContext(DbContextOptions<AppDBContext> options) : base(options) { }
 
         public DbSet<Usuario> Usuarios { get; set; }
-
+        public object Usuario { get; internal set; }
     }
 }
