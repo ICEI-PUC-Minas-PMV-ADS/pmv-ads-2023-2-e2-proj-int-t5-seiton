@@ -28,7 +28,7 @@ Permite a criação de uma nova conta por parte do membro designado como "Master
 
 ## Tela principal
 
-Após o usuário criar ou ingressar em um grupo, a primeira tela a ser exibida será a tela principal, na qual serão apresentadas colunas de acordo com as necessidades específicas do projeto. Nestas colunas, serão registradas as informações relativas às tarefas, proporcionando a capacidade de edição a qualquer momento pelo responsável pela atividade. Isso incluirá a definição do nível de prioridade e do status do desenvolvimento.
+Após o usuário criar ou ingressar em um grupo, a primeira tela a ser exibida será a tela principal, caso o usuário já tenha criado projetos serão apresentadas colunas de acordo com as necessidades específicas do projeto. Caso o usuário não tenha criado nenhum projeto, serão apresentados 3 colunas por padrão, na qual podem ser adicionadas novas colunas. Nestas colunas, serão registradas as informações relativas às tarefas, proporcionando a capacidade de edição a qualquer momento pelo responsável pela atividade. Isso incluirá a definição do nível de prioridade e do status do desenvolvimento.
 
 O menu lateral fornecerá um acesso rápido aos projetos em andamento. Ao selecionar um projeto específico, as colunas pertinentes a esse projeto serão exibidas, ajustando-se automaticamente ao contexto do projeto escolhido.
 <br><br>
