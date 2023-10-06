@@ -17,7 +17,7 @@ namespace Seiton.Controllers
         // GET: Usuarios
         public async Task<IActionResult> Index()
         {
-              return View(await _context.Usuarios.ToListAsync());
+            return View(await _context.Usuarios.ToListAsync());
 
         }
 
@@ -104,46 +104,37 @@ namespace Seiton.Controllers
             return View(usuario);
         }
 
-        // GET: Usuarios/Delete
-        public async Task<IActionResult> Delete(int? id)
-        {
-            if (id == null || _context.Usuarios == null)
-            {
-                return NotFound();
-            }
-
-            var usuario = await _context.Usuarios
-                .FirstOrDefaultAsync(m => m.Id == id);
-            if (usuario == null)
-            {
-                return NotFound();
-            }
-
-            return View(usuario);
-        }
-
-        // POST: Usuarios/Delete
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
-        {
-            if (_context.Usuarios == null)
-            {
-                return Problem("Entity set 'AppDbContext.Usuarios'  is null.");
-            }
-            var usuario = await _context.Usuarios.FindAsync(id);
-            if (usuario != null)
-            {
-                _context.Usuarios.Remove(usuario);
-            }
-
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
-        }
 
         private bool UsuarioExists(int id)
         {
-          return _context.Usuarios.Any(e => e.Id == id);
+            return _context.Usuarios.Any(e => e.Id == id);
+        }
+
+        public async Task<IActionResult> Edit(int? id)
+        {
+            if (id == null) 
+                return NotFound();
+
+            var dados =  await _context.Usuarios.FindAsync(id);
+
+            if (dados == null)
+                return NotFound();
+            
+            return View(dados);
+        }
+        [HttpPost]
+        public async Task<IActionResult> Edit(int id, Usuario usuario) 
+        {
+           if (id != usuario.Id)
+                return NotFound();
+
+            if (ModelState.IsValid)
+            {
+                _context.Update(usuario);
+                await _context.SaveChangesAsync();
+                return RedirectToAction("Index");
+            }
+                return View();
         }
     }
 }
