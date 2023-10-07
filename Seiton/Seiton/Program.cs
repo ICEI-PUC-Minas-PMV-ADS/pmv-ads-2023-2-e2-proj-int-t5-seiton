@@ -18,8 +18,7 @@ namespace Seiton
             builder.Services.AddDbContext<AppDBContext>(options =>
                 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-
-            // Cookies  /////////////////////////////////////////////
+            // Cookies
 
             builder.Services.Configure<CookiePolicyOptions>(options =>
             {
@@ -32,11 +31,6 @@ namespace Seiton
                     options.AccessDeniedPath = "/Usuarios/AccessDenied/";
                     options.LoginPath = "/Usuarios/Login/";
                 });
-
-
-
-            ///////////////////////////////////////////////
-
 
             var app = builder.Build();
 
@@ -53,7 +47,6 @@ namespace Seiton
 
             app.UseRouting();
 
-            app.UseAuthentication();
             app.UseAuthorization();
 
             app.MapControllerRoute(

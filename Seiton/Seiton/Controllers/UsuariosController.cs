@@ -1,8 +1,9 @@
-﻿using Microsoft.AspNetCore.Authentication;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Seiton.Models;
 using System.Security.Claims;
+using Microsoft.AspNetCore.Authentication;
+
 namespace Seiton.Controllers
 {
     public class UsuariosController : Microsoft.AspNetCore.Mvc.Controller
@@ -17,32 +18,34 @@ namespace Seiton.Controllers
         // GET: Usuarios
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Usuarios.ToListAsync());
+              return View(await _context.Usuarios.ToListAsync());
+
 
         }
 
-
-        ///////  LOGIN ////////
-       
-        
-        public IActionResult Login() {
+        //  LOGIN
+        public IActionResult Login()
+        {
             return View();
         }
 
         [HttpPost]
-        public async Task<IActionResult> Login(Usuario usuario) {
+        public async Task<IActionResult> Login(Usuario usuario)
+        {
 
             var dados = await _context.Usuarios
                 .FindAsync(usuario.Id);
 
-            if (dados == null) {
+            if (dados == null)
+            {
                 ViewBag.Message = "Usuário e/ou senha inválidos!";
                 return View();
             }
 
             bool senhaOk = BCrypt.Net.BCrypt.Verify(usuario.Senha, dados.Senha);
 
-            if (senhaOk) {
+            if (senhaOk)
+            {
                 var claims = new List<Claim> {
                     new Claim(ClaimTypes.Name, dados.NomeUsuario),
                      new Claim(ClaimTypes.NameIdentifier, dados.Id.ToString()),
@@ -52,7 +55,8 @@ namespace Seiton.Controllers
                 var usuarioIdentity = new ClaimsIdentity(claims, "login");
                 ClaimsPrincipal principal = new ClaimsPrincipal(usuarioIdentity);
 
-                var props = new AuthenticationProperties {
+                var props = new AuthenticationProperties
+                {
 
                     AllowRefresh = true,
                     ExpiresUtc = DateTime.UtcNow.ToLocalTime().AddHours(8),
@@ -64,7 +68,8 @@ namespace Seiton.Controllers
                 return Redirect("/");
             }
 
-            else {
+            else
+            {
                 ViewBag.Message = "Usuário e/ou senha inválidos!";
             }
 
@@ -74,14 +79,12 @@ namespace Seiton.Controllers
 
         ////////////   LOGOUT   //////////// 
 
-        public async Task<IActionResult> Logout() {
+        public async Task<IActionResult> Logout()
+        {
             await HttpContext.SignOutAsync();
 
             return RedirectToAction("Login", "Usuarios");
         }
-
-
-        ////////////////////////////////////
 
         // GET: Usuarios/Create
         public IActionResult Create()
@@ -96,7 +99,6 @@ namespace Seiton.Controllers
         {
             if (ModelState.IsValid)
             {
-                usuario.Senha = BCrypt.Net.BCrypt.HashPassword(usuario.Senha);
                 _context.Add(usuario);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -104,37 +106,98 @@ namespace Seiton.Controllers
             return View(usuario);
         }
 
-
-        private bool UsuarioExists(int id)
-        {
-            return _context.Usuarios.Any(e => e.Id == id);
-        }
-
+        // GET: Usuarios/Edit
         public async Task<IActionResult> Edit(int? id)
         {
-            if (id == null) 
+            if (id == null || _context.Usuarios == null)
+            {
                 return NotFound();
+            }
 
-            var dados =  await _context.Usuarios.FindAsync(id);
-
-            if (dados == null)
+            var usuario = await _context.Usuarios.FindAsync(id);
+            if (usuario == null)
+            {
                 return NotFound();
-            
-            return View(dados);
+            }
+            return View(usuario);
         }
+
+        // POST: Usuarios/Edit/5
+        // To protect from overposting attacks, enable the specific properties you want to bind to.
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
-        public async Task<IActionResult> Edit(int id, Usuario usuario) 
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,Senha,Perfil")] Usuario usuario)
         {
-           if (id != usuario.Id)
+            if (id != usuario.Id)
+            {
                 return NotFound();
+            }
 
             if (ModelState.IsValid)
             {
-                _context.Update(usuario);
-                await _context.SaveChangesAsync();
-                return RedirectToAction("Index");
+                try
+                {
+                    usuario.Senha = BCrypt.Net.BCrypt.HashPassword(usuario.Senha);
+                    _context.Update(usuario);
+                    await _context.SaveChangesAsync();
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!UsuarioExists(usuario.Id))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
+                return RedirectToAction(nameof(Index));
             }
-                return View();
+            return View(usuario);
+        }
+
+        // GET: Usuarios/Delete
+        public async Task<IActionResult> Delete(int? id)
+        {
+            if (id == null || _context.Usuarios == null)
+            {
+                return NotFound();
+            }
+
+            var usuario = await _context.Usuarios
+                .FirstOrDefaultAsync(m => m.Id == id);
+            if (usuario == null)
+            {
+                return NotFound();
+            }
+
+            return View(usuario);
+        }
+
+        // POST: Usuarios/Delete
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmed(int id)
+        {
+            if (_context.Usuarios == null)
+            {
+                return Problem("Entity set 'AppDbContext.Usuarios'  is null.");
+            }
+            var usuario = await _context.Usuarios.FindAsync(id);
+            if (usuario != null)
+            {
+                _context.Usuarios.Remove(usuario);
+            }
+
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
+
+        private bool UsuarioExists(int id)
+        {
+          return _context.Usuarios.Any(e => e.Id == id);
         }
     }
 }
