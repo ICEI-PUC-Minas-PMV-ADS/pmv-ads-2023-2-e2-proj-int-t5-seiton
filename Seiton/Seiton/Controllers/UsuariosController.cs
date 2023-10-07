@@ -34,7 +34,7 @@ namespace Seiton.Controllers
         {
 
             var dados = await _context.Usuarios
-                .FindAsync(usuario.Id);
+                .FirstOrDefaultAsync(u => u.NomeUsuario == usuario.NomeUsuario);
 
             if (dados == null)
             {
@@ -77,7 +77,7 @@ namespace Seiton.Controllers
         }
 
 
-        ////////////   LOGOUT   //////////// 
+        //  LOGOUT 
 
         public async Task<IActionResult> Logout()
         {
@@ -99,6 +99,7 @@ namespace Seiton.Controllers
         {
             if (ModelState.IsValid)
             {
+                usuario.Senha = BCrypt.Net.BCrypt.HashPassword(usuario.Senha);
                 _context.Add(usuario);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
