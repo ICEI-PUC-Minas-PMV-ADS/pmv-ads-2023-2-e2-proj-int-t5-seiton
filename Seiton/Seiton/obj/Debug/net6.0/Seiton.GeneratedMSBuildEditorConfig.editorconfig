@@ -9,57 +9,57 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Seiton
 build_property.RootNamespace = Seiton
-build_property.ProjectDir = C:\Users\marco\Desktop\Nova pasta\pmv-ads-2023-2-e2-proj-int-t5-seiton\Seiton\Seiton\
+build_property.ProjectDir = C:\Users\Wesley\Desktop\Nova pasta\pmv-ads-2023-2-e2-proj-int-t5-seiton\Seiton\Seiton\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
-build_property.MSBuildProjectDirectory = C:\Users\marco\Desktop\Nova pasta\pmv-ads-2023-2-e2-proj-int-t5-seiton\Seiton\Seiton
+build_property.MSBuildProjectDirectory = C:\Users\Wesley\Desktop\Nova pasta\pmv-ads-2023-2-e2-proj-int-t5-seiton\Seiton\Seiton
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/marco/Desktop/Nova pasta/pmv-ads-2023-2-e2-proj-int-t5-seiton/Seiton/Seiton/Views/Home/Index.cshtml]
+[C:/Users/Wesley/Desktop/Nova pasta/pmv-ads-2023-2-e2-proj-int-t5-seiton/Seiton/Seiton/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/marco/Desktop/Nova pasta/pmv-ads-2023-2-e2-proj-int-t5-seiton/Seiton/Seiton/Views/Home/Privacy.cshtml]
+[C:/Users/Wesley/Desktop/Nova pasta/pmv-ads-2023-2-e2-proj-int-t5-seiton/Seiton/Seiton/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/marco/Desktop/Nova pasta/pmv-ads-2023-2-e2-proj-int-t5-seiton/Seiton/Seiton/Views/Shared/Error.cshtml]
+[C:/Users/Wesley/Desktop/Nova pasta/pmv-ads-2023-2-e2-proj-int-t5-seiton/Seiton/Seiton/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/marco/Desktop/Nova pasta/pmv-ads-2023-2-e2-proj-int-t5-seiton/Seiton/Seiton/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Wesley/Desktop/Nova pasta/pmv-ads-2023-2-e2-proj-int-t5-seiton/Seiton/Seiton/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/marco/Desktop/Nova pasta/pmv-ads-2023-2-e2-proj-int-t5-seiton/Seiton/Seiton/Views/Usuarios/Create.cshtml]
+[C:/Users/Wesley/Desktop/Nova pasta/pmv-ads-2023-2-e2-proj-int-t5-seiton/Seiton/Seiton/Views/Usuarios/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/marco/Desktop/Nova pasta/pmv-ads-2023-2-e2-proj-int-t5-seiton/Seiton/Seiton/Views/Usuarios/Delete.cshtml]
+[C:/Users/Wesley/Desktop/Nova pasta/pmv-ads-2023-2-e2-proj-int-t5-seiton/Seiton/Seiton/Views/Usuarios/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/marco/Desktop/Nova pasta/pmv-ads-2023-2-e2-proj-int-t5-seiton/Seiton/Seiton/Views/Usuarios/Edit.cshtml]
+[C:/Users/Wesley/Desktop/Nova pasta/pmv-ads-2023-2-e2-proj-int-t5-seiton/Seiton/Seiton/Views/Usuarios/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/marco/Desktop/Nova pasta/pmv-ads-2023-2-e2-proj-int-t5-seiton/Seiton/Seiton/Views/Usuarios/Index.cshtml]
+[C:/Users/Wesley/Desktop/Nova pasta/pmv-ads-2023-2-e2-proj-int-t5-seiton/Seiton/Seiton/Views/Usuarios/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/marco/Desktop/Nova pasta/pmv-ads-2023-2-e2-proj-int-t5-seiton/Seiton/Seiton/Views/Usuarios/Login.cshtml]
+[C:/Users/Wesley/Desktop/Nova pasta/pmv-ads-2023-2-e2-proj-int-t5-seiton/Seiton/Seiton/Views/Usuarios/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/marco/Desktop/Nova pasta/pmv-ads-2023-2-e2-proj-int-t5-seiton/Seiton/Seiton/Views/_ViewImports.cshtml]
+[C:/Users/Wesley/Desktop/Nova pasta/pmv-ads-2023-2-e2-proj-int-t5-seiton/Seiton/Seiton/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/marco/Desktop/Nova pasta/pmv-ads-2023-2-e2-proj-int-t5-seiton/Seiton/Seiton/Views/_ViewStart.cshtml]
+[C:/Users/Wesley/Desktop/Nova pasta/pmv-ads-2023-2-e2-proj-int-t5-seiton/Seiton/Seiton/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/marco/Desktop/Nova pasta/pmv-ads-2023-2-e2-proj-int-t5-seiton/Seiton/Seiton/Views/Shared/_Layout.cshtml]
+[C:/Users/Wesley/Desktop/Nova pasta/pmv-ads-2023-2-e2-proj-int-t5-seiton/Seiton/Seiton/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-3tqsu3lft6
