@@ -1,8 +1,14 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Seiton.Models;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Seiton.Controllers
 {
@@ -33,8 +39,8 @@ namespace Seiton.Controllers
         public async Task<IActionResult> Login(Usuario usuario)
         {
 
-            var dados = await _context.Usuarios
-                .FirstOrDefaultAsync(u => u.NomeUsuario == usuario.NomeUsuario);
+            var dados = await _context.Usuarios.FirstOrDefaultAsync
+                (u => u.NomeUsuario == usuario.NomeUsuario);
 
             if (dados == null)
             {
@@ -46,10 +52,11 @@ namespace Seiton.Controllers
 
             if (senhaOk)
             {
-                var claims = new List<Claim> {
+                var claims = new List<Claim> 
+                {
                     new Claim(ClaimTypes.Name, dados.NomeUsuario),
-                     new Claim(ClaimTypes.NameIdentifier, dados.Id.ToString()),
-                      new Claim(ClaimTypes.Role, dados.Email.ToString())
+                    new Claim(ClaimTypes.NameIdentifier, dados.Id.ToString()),
+                    new Claim(ClaimTypes.Name, dados.Email)
                 };
 
                 var usuarioIdentity = new ClaimsIdentity(claims, "login");
@@ -57,7 +64,6 @@ namespace Seiton.Controllers
 
                 var props = new AuthenticationProperties
                 {
-
                     AllowRefresh = true,
                     ExpiresUtc = DateTime.UtcNow.ToLocalTime().AddHours(8),
                     IsPersistent = true,
@@ -123,12 +129,10 @@ namespace Seiton.Controllers
             return View(usuario);
         }
 
-        // POST: Usuarios/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        // POST: Usuarios/Edit
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,Senha,Perfil")] Usuario usuario)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,NomeUsuario,Email,Senha")] Usuario usuario)
         {
             if (id != usuario.Id)
             {
