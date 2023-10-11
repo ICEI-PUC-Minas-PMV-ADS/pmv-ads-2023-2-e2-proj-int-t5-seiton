@@ -9,3 +9,4 @@ Layout padrão da aplicação que será utilizado em todas as páginas com a def
 <img src="./img/Tela_de_login1.png">
 <img src="./img/Tela_principal1.png">
 <img src="./img/Modal_da_tarefa1.png">
+<img src="./img/Modal_do_relatório1.png">
