@@ -7,7 +7,7 @@ Neste documento está apresentado o layout padrão da aplicação que será util
 
 Esta paleta de cores foi escolhida pois transmite uma aura de sofisticação e modernidade. Além de destacar os elementos que compõem a aplicação.
 <br><br>
-![Template](img/Paleta_Cores.png) <sub> Figura 01 - Paleta de Cores <sub>
+![Template](img/Paleta_de_Cores.png) <sub> Figura 01 - Paleta de Cores <sub>
 
 ## Tipografia
 
