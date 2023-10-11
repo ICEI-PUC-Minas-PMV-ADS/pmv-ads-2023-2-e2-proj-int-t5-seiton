@@ -3,29 +3,32 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Seiton.Models
 {
-    [Table("Projeto")]
+    [Table("Projetos")]
     public class Projeto
     {
         [Key]
         public int Id { get; set; }
 
-        [Required(ErrorMessage = "O campo IdProjeto é obrigatorio")]
-
-        public string IdProjeto { get; set; }
-
-        [Required(ErrorMessage = "O campo Nome_Projeto é obrigatorio")]
+        [Required(ErrorMessage = "O nome do projeto é obrigatorio")]
+        [Display(Name = "Nome de Projeto")]
         public string nome_projeto { get; set; }
 
-        [Required(ErrorMessage = "O campo quant_Colunas é obrigatorio")]
-        public string quant_colunas { get; set; }
+        [Required(ErrorMessage = "A quantidade de colunas é obrigatoria")]
+        [Display(Name = "Quantidade de Colunas")]
+        public QuantColunas quant_colunas { get; set; }
 
-        [ForeignKey("Usuarios")]
-        public int id { get; set; }
+        [Display(Name = "Usuário")]
+        public int IdUsuario { get; set; }
 
+        [ForeignKey("IdUsuario")]
+        public Usuario Usuario { get; set; }
+    }
 
+    public enum QuantColunas 
+    {
+        Tres = 3,
+        Quatro = 4,
+        Cinco = 5
     }
 
 }
-
-
-

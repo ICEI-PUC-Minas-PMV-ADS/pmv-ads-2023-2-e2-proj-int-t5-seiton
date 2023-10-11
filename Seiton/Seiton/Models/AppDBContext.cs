@@ -1,5 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Seiton.Models;
 
 namespace Seiton.Models
 {
@@ -16,7 +15,8 @@ namespace Seiton.Models
 
         public DbSet<Usuario> Usuarios { get; set; }
         public object Usuario { get; internal set; }
-        public DbSet<Seiton.Models.Projeto> Projeto { get; set; }
+
+        public DbSet<Projeto> Projetos { get; set; }
 
     }
 }

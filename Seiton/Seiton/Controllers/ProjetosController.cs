@@ -9,7 +9,7 @@ using Seiton.Models;
 
 namespace Seiton.Controllers
 {
-    public class ProjetosController : ControllerBase
+    public class ProjetosController : Microsoft.AspNetCore.Mvc.Controller
     {
         private readonly AppDBContext _context;
 
@@ -21,23 +21,20 @@ namespace Seiton.Controllers
         // GET: Projetos
         public async Task<IActionResult> Index()
         {
-              return View(await _context.Projeto.ToListAsync());
-        }
-
-        private IActionResult View(List<Projeto> projetos)
-        {
-            throw new NotImplementedException();
+            var appDBContext = _context.Projetos.Include(p => p.Usuario);
+            return View(await appDBContext.ToListAsync());
         }
 
         // GET: Projetos/Details/5
         public async Task<IActionResult> Details(int? id)
         {
-            if (id == null || _context.Projeto == null)
+            if (id == null || _context.Projetos == null)
             {
                 return NotFound();
             }
 
-            var projeto = await _context.Projeto
+            var projeto = await _context.Projetos
+                .Include(p => p.Usuario)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (projeto == null)
             {
@@ -50,17 +47,8 @@ namespace Seiton.Controllers
         // GET: Projetos/Create
         public IActionResult Create()
         {
+            ViewData["IdUsuario"] = new SelectList(_context.Usuarios, "Id", "Nome");
             return View();
-        }
-
-        private IActionResult View()
-        {
-            throw new NotImplementedException();
-        }
-
-        private IActionResult View(Projeto projeto)
-        {
-            throw new NotImplementedException();
         }
 
         // POST: Projetos/Create
@@ -68,7 +56,7 @@ namespace Seiton.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,IdProjeto,nome_projeto,quant_colunas,id")] Projeto projeto)
+        public async Task<IActionResult> Create([Bind("Id,nome_projeto,quant_colunas,IdUsuario")] Projeto projeto)
         {
             if (ModelState.IsValid)
             {
@@ -76,22 +64,24 @@ namespace Seiton.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["IdUsuario"] = new SelectList(_context.Usuarios, "Id", "Nome", projeto.IdUsuario);
             return View(projeto);
         }
 
         // GET: Projetos/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
-            if (id == null || _context.Projeto == null)
+            if (id == null || _context.Projetos == null)
             {
                 return NotFound();
             }
 
-            var projeto = await _context.Projeto.FindAsync(id);
+            var projeto = await _context.Projetos.FindAsync(id);
             if (projeto == null)
             {
                 return NotFound();
             }
+            ViewData["IdUsuario"] = new SelectList(_context.Usuarios, "Id", "Nome", projeto.IdUsuario);
             return View(projeto);
         }
 
@@ -100,7 +90,7 @@ namespace Seiton.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,IdProjeto,nome_projeto,quant_colunas,id")] Projeto projeto)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,nome_projeto,quant_colunas,IdUsuario")] Projeto projeto)
         {
             if (id != projeto.Id)
             {
@@ -127,18 +117,20 @@ namespace Seiton.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["IdUsuario"] = new SelectList(_context.Usuarios, "Id", "Nome", projeto.IdUsuario);
             return View(projeto);
         }
 
         // GET: Projetos/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id == null || _context.Projeto == null)
+            if (id == null || _context.Projetos == null)
             {
                 return NotFound();
             }
 
-            var projeto = await _context.Projeto
+            var projeto = await _context.Projetos
+                .Include(p => p.Usuario)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (projeto == null)
             {
@@ -153,14 +145,14 @@ namespace Seiton.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            if (_context.Projeto == null)
+            if (_context.Projetos == null)
             {
-                return Problem("Entity set 'AppDBContext.Projeto'  is null.");
+                return Problem("Entity set 'AppDBContext.Projetos'  is null.");
             }
-            var projeto = await _context.Projeto.FindAsync(id);
+            var projeto = await _context.Projetos.FindAsync(id);
             if (projeto != null)
             {
-                _context.Projeto.Remove(projeto);
+                _context.Projetos.Remove(projeto);
             }
             
             await _context.SaveChangesAsync();
@@ -169,7 +161,7 @@ namespace Seiton.Controllers
 
         private bool ProjetoExists(int id)
         {
-          return _context.Projeto.Any(e => e.Id == id);
+          return _context.Projetos.Any(e => e.Id == id);
         }
     }
 }
