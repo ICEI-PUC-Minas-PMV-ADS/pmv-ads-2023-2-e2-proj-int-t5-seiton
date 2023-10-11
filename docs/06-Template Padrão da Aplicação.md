@@ -4,7 +4,8 @@
 
 Layout padrão da aplicação que será utilizado em todas as páginas com a definição de identidade visual, aspectos de responsividade e iconografia. <br />
 
-<img src="./img/Tela_de_cadastro.png">
-<img src="./img/Tela_de_login.png">
-<img src="./img/Tela_principal.png">
-<img src="./img/Modal_da_tarefa.png">
+<img src="./img/Index.png">
+<img src="./img/Tela_de_cadastro1.png">
+<img src="./img/Tela_de_login1.png">
+<img src="./img/Tela_principal1.png">
+<img src="./img/Modal_da_tarefa1.png">
