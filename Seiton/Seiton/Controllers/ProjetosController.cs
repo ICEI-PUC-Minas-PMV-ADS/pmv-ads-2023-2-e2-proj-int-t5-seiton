@@ -1,11 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Seiton.Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace Seiton.Controllers
 {
@@ -25,7 +25,7 @@ namespace Seiton.Controllers
             return View(await appDBContext.ToListAsync());
         }
 
-        // GET: Projetos/Details/5
+        // GET: Projetos/Details
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.Projetos == null)
@@ -47,13 +47,11 @@ namespace Seiton.Controllers
         // GET: Projetos/Create
         public IActionResult Create()
         {
-            ViewData["IdUsuario"] = new SelectList(_context.Usuarios, "Id", "Nome");
+            ViewData["IdUsuario"] = new SelectList(_context.Usuarios, "Id", "NomeUsuario");
             return View();
         }
 
         // POST: Projetos/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,nome_projeto,quant_colunas,IdUsuario")] Projeto projeto)
@@ -64,11 +62,11 @@ namespace Seiton.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["IdUsuario"] = new SelectList(_context.Usuarios, "Id", "Nome", projeto.IdUsuario);
+            ViewData["IdUsuario"] = new SelectList(_context.Usuarios, "Id", "NomeUsuario", projeto.IdUsuario);
             return View(projeto);
         }
 
-        // GET: Projetos/Edit/5
+        // GET: Projetos/Edit
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.Projetos == null)
@@ -81,13 +79,11 @@ namespace Seiton.Controllers
             {
                 return NotFound();
             }
-            ViewData["IdUsuario"] = new SelectList(_context.Usuarios, "Id", "Nome", projeto.IdUsuario);
+            ViewData["IdUsuario"] = new SelectList(_context.Usuarios, "Id", "NomeUsuario", projeto.IdUsuario);
             return View(projeto);
         }
 
-        // POST: Projetos/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        // POST: Projetos/Edit
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("Id,nome_projeto,quant_colunas,IdUsuario")] Projeto projeto)
@@ -117,11 +113,11 @@ namespace Seiton.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["IdUsuario"] = new SelectList(_context.Usuarios, "Id", "Nome", projeto.IdUsuario);
+            ViewData["IdUsuario"] = new SelectList(_context.Usuarios, "Id", "NomeUsuario", projeto.IdUsuario);
             return View(projeto);
         }
 
-        // GET: Projetos/Delete/5
+        // GET: Projetos/Delete
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.Projetos == null)
@@ -140,7 +136,7 @@ namespace Seiton.Controllers
             return View(projeto);
         }
 
-        // POST: Projetos/Delete/5
+        // POST: Projetos/Delete
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
