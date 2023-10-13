@@ -2,4 +2,46 @@
     ViewData["Title"] = "Home Page";
 }
 
-<h1>Projeto Seiton - Página Inicial</h1>
+<style>
+
+    img{
+        height: 90vh;
+        margin-left: 12%;
+    }
+
+    .Acessos{
+        text-align: right;
+        margin-top: 1%;
+    }
+
+    .Acessos a{
+        font-size: 1.7rem;
+        font-family: sans-serif;
+        margin-right: 1%;
+        text-decoration: none
+    }
+
+
+
+</style>
+
+<header>
+    <div class="container-fluid">
+            @if (User.Identity.IsAuthenticated)
+            {
+                <div class="Acessos">
+                    <h1>Olá, @User.Identity.Name |</h1>
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Logout">Sair</a>
+                </div>
+            }
+            else
+            {
+                <div class="Acessos">
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Login">Login</a>
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Create">Cadastrar</a>
+                    </div>
+                <img src="/img/Logo.png"/>
+            }
+    </div>
+
+</header>

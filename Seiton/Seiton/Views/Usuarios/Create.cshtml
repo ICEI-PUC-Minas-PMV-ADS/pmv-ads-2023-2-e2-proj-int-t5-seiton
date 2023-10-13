@@ -102,6 +102,12 @@
         margin-top: 5%;
     }
 
+    h1 {
+        font-size: 2rem;
+        font-family: sans-serif;
+        color: white;
+    }
+
 </style>
 
 <div id="bacground">
@@ -110,11 +116,7 @@
 <img src="/img/Office.png"/>
 
 <div class="col-md-4">
-    <div class="ip-link">
-        <a asp-area="" asp-controller="Usuarios" asp-action="Create">Cadastrar</a>
-        <span>/</span>
-        <a asp-area ="" asp-controller="Usuarios" asp-action="Login">Logar</a>
-    </div>
+    <h1>Cadastrar</h1>
     <form asp-action="Create">
         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
         <div class="form-group">

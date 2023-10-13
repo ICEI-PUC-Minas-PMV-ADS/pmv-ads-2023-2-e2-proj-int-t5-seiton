@@ -25,8 +25,6 @@ namespace Seiton.Controllers
         public async Task<IActionResult> Index()
         {
               return View(await _context.Usuarios.ToListAsync());
-
-
         }
 
         //  LOGIN
@@ -71,7 +69,7 @@ namespace Seiton.Controllers
 
                 await HttpContext.SignInAsync(principal, props);
 
-                return Redirect("/");
+                return RedirectToAction("Logado", "Home");
             }
 
             else
@@ -89,7 +87,7 @@ namespace Seiton.Controllers
         {
             await HttpContext.SignOutAsync();
 
-            return RedirectToAction("Login", "Usuarios");
+            return RedirectToAction("Index", "Home");
         }
 
         // GET: Usuarios/Create
@@ -108,7 +106,7 @@ namespace Seiton.Controllers
                 usuario.Senha = BCrypt.Net.BCrypt.HashPassword(usuario.Senha);
                 _context.Add(usuario);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(Login));
             }
             return View(usuario);
         }

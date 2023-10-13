@@ -11,14 +11,14 @@ using Seiton.Models;
 namespace Seiton.Migrations
 {
     [DbContext(typeof(AppDBContext))]
-    [Migration("20231011181248_M02-AddTableProjetos")]
-    partial class M02AddTableProjetos
+    [Migration("20231013180606_M01-AddTables")]
+    partial class M01AddTables
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "6.0.22")
+                .HasAnnotation("ProductVersion", "6.0.23")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
