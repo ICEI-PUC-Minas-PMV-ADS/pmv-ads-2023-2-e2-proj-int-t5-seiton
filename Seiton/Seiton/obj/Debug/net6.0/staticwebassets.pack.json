@@ -5,12 +5,20 @@
       "PackagePath": "staticwebassets\\Seiton.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\marco\\Desktop\\Nova pasta\\pmv-ads-2023-2-e2-proj-int-t5-seiton\\Seiton\\Seiton\\wwwroot\\css\\LoginStyle.css",
+      "PackagePath": "staticwebassets\\css\\LoginStyle.css"
+    },
+    {
       "Id": "C:\\Users\\marco\\Desktop\\Nova pasta\\pmv-ads-2023-2-e2-proj-int-t5-seiton\\Seiton\\Seiton\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
       "Id": "C:\\Users\\marco\\Desktop\\Nova pasta\\pmv-ads-2023-2-e2-proj-int-t5-seiton\\Seiton\\Seiton\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\marco\\Desktop\\Nova pasta\\pmv-ads-2023-2-e2-proj-int-t5-seiton\\Seiton\\Seiton\\wwwroot\\img\\Office.png",
+      "PackagePath": "staticwebassets\\img\\Office.png"
     },
     {
       "Id": "C:\\Users\\marco\\Desktop\\Nova pasta\\pmv-ads-2023-2-e2-proj-int-t5-seiton\\Seiton\\Seiton\\wwwroot\\js\\site.js",

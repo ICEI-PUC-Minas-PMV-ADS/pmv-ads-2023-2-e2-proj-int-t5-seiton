@@ -3,9 +3,11 @@ using Microsoft.EntityFrameworkCore;
 using Seiton.Models;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Seiton.Controllers
 {
+  
     public class UsuariosController : Microsoft.AspNetCore.Mvc.Controller
     {
         private readonly AppDBContext _context;

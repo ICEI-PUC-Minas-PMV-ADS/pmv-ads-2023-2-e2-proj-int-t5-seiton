@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "mrDkDFDb+vaGfCGDFy/izNkRwdnz6EFjvAxzMX84Vks=",
+  "Hash": "HOUzi1cg5litNsfmQgKVybrZEDujRvmYuh4Ur9b9qLI=",
   "Source": "Seiton",
   "BasePath": "_content/Seiton",
   "Mode": "Default",
@@ -51,6 +51,23 @@
       "OriginalItemSpec": "C:\\Users\\marco\\Desktop\\Nova pasta\\pmv-ads-2023-2-e2-proj-int-t5-seiton\\Seiton\\Seiton\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Seiton.bundle.scp.css"
     },
     {
+      "Identity": "C:\\Users\\marco\\Desktop\\Nova pasta\\pmv-ads-2023-2-e2-proj-int-t5-seiton\\Seiton\\Seiton\\wwwroot\\css\\LoginStyle.css",
+      "SourceId": "Seiton",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\marco\\Desktop\\Nova pasta\\pmv-ads-2023-2-e2-proj-int-t5-seiton\\Seiton\\Seiton\\wwwroot\\",
+      "BasePath": "_content/Seiton",
+      "RelativePath": "css/LoginStyle.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\LoginStyle.css"
+    },
+    {
       "Identity": "C:\\Users\\marco\\Desktop\\Nova pasta\\pmv-ads-2023-2-e2-proj-int-t5-seiton\\Seiton\\Seiton\\wwwroot\\css\\site.css",
       "SourceId": "Seiton",
       "SourceType": "Discovered",
@@ -83,6 +100,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\marco\\Desktop\\Nova pasta\\pmv-ads-2023-2-e2-proj-int-t5-seiton\\Seiton\\Seiton\\wwwroot\\img\\Office.png",
+      "SourceId": "Seiton",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\marco\\Desktop\\Nova pasta\\pmv-ads-2023-2-e2-proj-int-t5-seiton\\Seiton\\Seiton\\wwwroot\\",
+      "BasePath": "_content/Seiton",
+      "RelativePath": "img/Office.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Office.png"
     },
     {
       "Identity": "C:\\Users\\marco\\Desktop\\Nova pasta\\pmv-ads-2023-2-e2-proj-int-t5-seiton\\Seiton\\Seiton\\wwwroot\\js\\site.js",
