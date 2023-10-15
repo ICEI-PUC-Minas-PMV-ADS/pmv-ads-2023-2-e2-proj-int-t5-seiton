@@ -18,6 +18,11 @@ namespace Seiton.Controller
             return View();
         }
 
+        public IActionResult Logado()
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();

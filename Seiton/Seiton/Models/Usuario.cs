@@ -18,5 +18,7 @@ namespace Seiton.Models
 
         [Required(ErrorMessage = "Insira uma senha")]
         public string Senha { get; set; }
+
+        public ICollection<Projeto> Projetos { get; set; }
     }
 }

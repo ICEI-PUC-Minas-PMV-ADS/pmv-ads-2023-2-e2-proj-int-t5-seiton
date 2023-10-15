@@ -11,17 +11,42 @@ using Seiton.Models;
 namespace Seiton.Migrations
 {
     [DbContext(typeof(AppDBContext))]
-    [Migration("20230928193537_M01-AddTableUsuario")]
-    partial class M01AddTableUsuario
+    [Migration("20231013180606_M01-AddTables")]
+    partial class M01AddTables
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "6.0.22")
+                .HasAnnotation("ProductVersion", "6.0.23")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
+
+            modelBuilder.Entity("Seiton.Models.Projeto", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int>("IdUsuario")
+                        .HasColumnType("int");
+
+                    b.Property<string>("nome_projeto")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("quant_colunas")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("IdUsuario");
+
+                    b.ToTable("Projetos");
+                });
 
             modelBuilder.Entity("Seiton.Models.Usuario", b =>
                 {
@@ -46,6 +71,22 @@ namespace Seiton.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Usuarios");
+                });
+
+            modelBuilder.Entity("Seiton.Models.Projeto", b =>
+                {
+                    b.HasOne("Seiton.Models.Usuario", "Usuario")
+                        .WithMany("Projetos")
+                        .HasForeignKey("IdUsuario")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Usuario");
+                });
+
+            modelBuilder.Entity("Seiton.Models.Usuario", b =>
+                {
+                    b.Navigation("Projetos");
                 });
 #pragma warning restore 612, 618
         }

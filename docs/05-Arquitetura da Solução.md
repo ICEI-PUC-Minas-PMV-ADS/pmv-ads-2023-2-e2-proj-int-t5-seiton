@@ -6,7 +6,7 @@ Definição de como o software é estruturado em termos dos componentes que faze
 
 O diagrama de classes ilustra graficamente como será a estrutura do software, e como cada uma das classes da sua estrutura estarão interligadas. Essas classes servem de modelo para materializar os objetos que executarão na memória.
 
-<img src="./img/Diagrama_ clases.png"> <sub> Figura 01 - Diagrama de Classes <sub>
+<img src="./img/Diagrama_de_classes.png"> <sub> Figura 01 - Diagrama de Classes <sub>
 
 ## Modelo ER (Projeto Conceitual)
 

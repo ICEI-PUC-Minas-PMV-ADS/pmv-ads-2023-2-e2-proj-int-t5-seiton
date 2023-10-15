@@ -16,5 +16,8 @@ namespace Seiton.Models
         public DbSet<Usuario> Usuarios { get; set; }
         public object Usuario { get; internal set; }
 
+        public DbSet<Projeto> Projetos { get; set; }
+        public object Projeto { get; internal set; }
+
     }
 }

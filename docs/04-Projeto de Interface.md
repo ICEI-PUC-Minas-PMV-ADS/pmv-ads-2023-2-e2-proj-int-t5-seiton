@@ -8,46 +8,45 @@ Visão geral da interação do usuário pelas telas do sistema e protótipo inte
 O diagrama apresenta o estudo do fluxo de interação do usuário com o sistema. Isso permite que o design das interações e fluxos de tela sejam bem planejados e gerem impacto na qualidade do design do wireframe interativo desenvolvido.
 
 Abaixo o diagrama de fluxo com o caminho a ser percorrido pelo usuário final do site.
-
-![Diagrama de Fluxo](img/Diagrama_fluxo4.png) <sub> **Figura 01** - Diagrama de Fluxo <sub>
+<br><br>
+![Diagrama de Fluxo](img/Diagrama_Flux.png) <sub> Figura 01 - Diagrama de Fluxo <sub>
 
 ## Wireframes
 
-## Tela de login
+## Tela Inicial
+
+Página apresentada assim que se acessa o site. Onde é possivel o usuário realizar o cadastro e/ou login para começar a utilizar a aplicação do site.
+<br><br>
+![Wireframe](img/Tela_inicial2.png) <sub> Figura 02 - Tela Inicial <sub>
+
+## Tela de Cadastro (RF-01)
+
+Permite a criação de uma nova conta por parte do membro designado como "Master" dentro do grupo, sendo necessário fornecer os dados de registro, incluindo nome de usuário, endereço de e-mail e senha.
+<br><br>
+![Wireframe](img/Tela_cadastro2.png) <sub> Figura 03 - Tela de Cadastro <sub>
+
+## Tela de Login (RF-02)
 
 Possibilita que o usuário efetue o processo de autenticação, concedendo-lhe acesso ao conjunto de projetos mediante a inserção das informações de identificação, ou seja, nome de usuário e senha do grupo.
 <br><br>
-![Exemplo de Wireframe](img/login1.jpg) <sub> Figura 02 - Tela de login <sub>
+![Wireframe](img/Tela_login2.png) <sub> Figura 04 - Tela de Login <sub>
 
-## Criar conta
-
-Permite a criação de uma nova conta por parte do membro designado como "Master" dentro do grupo, sendo necessário fornecer os dados de registro, incluindo endereço de e-mail, nome de usuário e senha.
-<br><br>
-![Exemplo de Wireframe](img/criar_usuario2.jpg) <sub> Figura 03 - Criar conta <sub>
-
-
-## Tela principal
+## Tela Principal (RF-03, RF-04, RF-05)
 
 Após o usuário criar ou ingressar em um grupo, a primeira tela a ser exibida será a tela principal, caso o usuário já tenha criado projetos serão apresentadas colunas de acordo com as necessidades específicas do projeto. Caso o usuário não tenha criado nenhum projeto, serão apresentados 3 colunas por padrão, na qual podem ser adicionadas novas colunas. Nestas colunas, serão registradas as informações relativas às tarefas, proporcionando a capacidade de edição a qualquer momento pelo responsável pela atividade. Isso incluirá a definição do nível de prioridade e do status do desenvolvimento.
 
 O menu lateral fornecerá um acesso rápido aos projetos em andamento. Ao selecionar um projeto específico, as colunas pertinentes a esse projeto serão exibidas, ajustando-se automaticamente ao contexto do projeto escolhido.
 <br><br>
-![Exemplo de Wireframe](img/tela_principal1.jpg) <sub> Figura 04 - Tela principal <sub>
+![Wireframe](img/Tela_principal2.png) <sub> Figura 05 - Tela Principal <sub>
 
-
-## Editar tarefas
+## Editar Tarefas (RF-06, RF-07)
 
 Ao acionar a opção "Editar Tarefa", um modal será exibido, permitindo que o usuário responsável faça a edição das informações de acordo com as necessidades e o status atual do desenvolvimento da tarefa em questão.
 <br><br>
-![Exemplo de Wireframe](img/editar_tarefa1.jpg) <sub> Figura 05 - Editar tarefas <sub>
+![Wireframe](img/Modal_tarefa2.png) <sub> Figura 06 - Editar Tarefas <sub>
 
-<!-- São protótipos usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface.
- 
-> **Links Úteis**:
-> - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
-> - [Ferramentas de Wireframes](https://rockcontent.com/blog/wireframes/)
-> - [MarvelApp](https://marvelapp.com/developers/documentation/tutorials/)
-> - [Figma](https://www.figma.com/)
-> - [Adobe XD](https://www.adobe.com/br/products/xd.html#scroll)
-> - [Axure](https://www.axure.com/edu) (Licença Educacional)
-> - [InvisionApp](https://www.invisionapp.com/) (Licença Educacional) -->
+## Relatório do Progresso (RF-08)
+
+Ao acionar a opção "Relatório" no projeto, um modal será exibido, permitindo que o usuário visualize o andamento do projeto por meio de informações como a porcentagem de progresso, total geral de tarefas, total de tarefas em cada coluna.
+<br><br>
+![Wireframe](img/Modal_relatorio2.png) <sub> Figura 07 - Relatório de Progresso <sub>
