@@ -29,10 +29,12 @@
     <div class="container-fluid">
             @if (User.Identity.IsAuthenticated)
             {
+
                 <div class="Acessos">
                     <h1>Olá, @User.Identity.Name |</h1>
                     <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Logout">Sair</a>
                 </div>
+                
             }
             else
             {

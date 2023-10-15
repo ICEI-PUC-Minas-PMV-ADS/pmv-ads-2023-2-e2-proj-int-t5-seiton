@@ -15,20 +15,10 @@ namespace Seiton.Models
 
         [Required(ErrorMessage = "A quantidade de colunas é obrigatoria")]
         [Display(Name = "Quantidade de Colunas")]
-        public QuantColunas quant_colunas { get; set; }
+        public int quant_colunas { get; set; }
+        public Projeto() { quant_colunas = 5; }
 
-        [Display(Name = "Usuário")]
-        public int IdUsuario { get; set; }
+        public ICollection<Uniao> Unioes { get; set; }
 
-        [ForeignKey("IdUsuario")]
-        public Usuario Usuario { get; set; }
     }
-
-    public enum QuantColunas 
-    {
-        Tres = 3,
-        Quatro = 4,
-        Cinco = 5
-    }
-
 }

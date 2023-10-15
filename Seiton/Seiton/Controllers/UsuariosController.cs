@@ -9,10 +9,11 @@ using Seiton.Models;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
+using System.Security.Cryptography.X509Certificates;
 
 namespace Seiton.Controllers
 {
-  
     public class UsuariosController : Microsoft.AspNetCore.Mvc.Controller
     {
         private readonly AppDBContext _context;
@@ -70,7 +71,7 @@ namespace Seiton.Controllers
 
                 await HttpContext.SignInAsync(principal, props);
 
-                return RedirectToAction("Logado", "Home");
+                return RedirectToAction("Logado", "Logados");
             }
 
             else
