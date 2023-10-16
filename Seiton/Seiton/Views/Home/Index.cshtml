@@ -6,7 +6,7 @@
 
     img{
         height: 90vh;
-        margin-left: 12%;
+        margin-left: 18%;
     }
 
     .Acessos{
@@ -21,29 +21,17 @@
         text-decoration: none
     }
 
-
-
 </style>
 
 <header>
     <div class="container-fluid">
-            @if (User.Identity.IsAuthenticated)
-            {
-
-                <div class="Acessos">
-                    <h1>Olá, @User.Identity.Name |</h1>
-                    <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Logout">Sair</a>
-                </div>
-                
-            }
-            else
-            {
-                <div class="Acessos">
-                    <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Login">Login</a>
-                    <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Create">Cadastrar</a>
-                    </div>
-                <img src="/img/Logo.png"/>
-            }
+        <div class="Acessos">
+            <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Login">Login</a>
+            <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Create">Cadastro</a>
+        </div>
     </div>
-
 </header>
+
+<body>
+    <img src="/img/Logo.png" />
+</body>

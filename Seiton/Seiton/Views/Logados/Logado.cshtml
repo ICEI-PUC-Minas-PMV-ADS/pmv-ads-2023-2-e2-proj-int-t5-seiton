@@ -1,10 +1,8 @@
-﻿
+﻿@model List<int>
 @{
     ViewData["Title"] = "Logado";
+
 }
-
-@model List<int>
-
 <style>
     * {
         margin: 0;
@@ -14,22 +12,50 @@
         display: inline;
     }
 
-    .body {
+    .header {
         float: right;
         width: 87.5%;
         height: 99.6vh;
     }
 
     .Acessos {
+        display: inline;
         text-align: right;
+        font-family: sans-serif;
+        float: right;
         margin-top: 1%;
     }
 
-        .Acessos a {
+        .Acessos .profile-menu {
+        }
+
+        .Acessos .profile-button {
+            cursor: pointer;
+        }
+
+            .Acessos .profile-button #seta {
+                width: 5%
+            }
+
+        .Acessos .menu-items {
+            display: none;
+            background-color: #ffffff;
+            border: 1px solid #bcbcbc;
+            text-decoration: none
+        }
+
+            .Acessos .menu-items li {
+                list-style: none;
+            }
+
+        .Acessos h1 {
             font-size: 1.7rem;
-            font-family: sans-serif;
             margin-right: 1%;
             text-decoration: none
+        }
+
+        .Acessos #foto-perfil {
+            width: 10%
         }
 
     .side-bar-background {
@@ -52,22 +78,24 @@
 </style>
 
 <div class="Container">
-    <div class="body">
-        <div class="container-fluid">
+    <div class="header">
             @if (User.Identity.IsAuthenticated)
             {
-
                 <div class="Acessos">
-                    <h1>Olá, @User.Identity.Name |</h1>
-                    <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Logout">Sair</a>
+                    <div class="profile-menu">
+                        <div class="profile-button">
+                            <img src="/img/down-arrow.png" id="seta">
+                        </div>
+                        <ul class="menu-items">
+                            <li><a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Edit" asp-route-id="@ViewData["userId"]">Editar</a></li>
+                            <li><a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Delete" asp-route-id="@ViewData["userId"]">Apagar</a></li>
+                            <li><a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Logout">Sair</a></li>
+                        </ul>
+                    </div>
+                    <h1>@User.Identity.Name</h1>
+                    <img src="/img/man.png" id="foto-perfil">
                 </div>
-
             }
-        </div>
-
-        <div class="Container">
-        </div>
-
     </div>
 
     <div class="side-bar-background">
@@ -81,10 +109,19 @@
             </ul>
 
             <a class="nav-link text-dark" asp-area="" asp-controller="Projetos" asp-action="Create">@ViewBag.ProjectUsuario</a>
-
         </div>
     </div>
-
 </div>
 
+<script>
+    // Animação do menu de gerenciamento do usuário
+    document.querySelector('.profile-button').addEventListener('click', function () {
+        var menu = document.querySelector('.menu-items');
+        if (menu.style.display === 'block') {
+            menu.style.display = 'none';
+        } else {
+            menu.style.display = 'block';
+        }
+    });
 
+</script>

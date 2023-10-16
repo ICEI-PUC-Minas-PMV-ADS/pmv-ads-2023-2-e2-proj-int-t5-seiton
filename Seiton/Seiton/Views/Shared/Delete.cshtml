@@ -1,9 +1,5 @@
 ﻿@model Seiton.Models.Usuario
 
-@{
-    ViewData["Title"] = "Delete";
-}
-
 <style>
     .modal {
         display: flex;
@@ -67,14 +63,16 @@
     }
 
 </style>
-
+<!DOCTYPE html>
+<html lang="pt-br">
+<body>
 <div>
     <div id="myModal" class="modal">
-        <div id="modalContent" class="modal-content">
+        <div class="modal-content">
             <h1>Apagar Usuário</h1>
             <p>Deseja realmente apagar seu usuário?</p>
             <p class="aviso">(Atenção! Todos os projetos serão perdidos)</p>
-            <form asp-action="Delete">
+            <form asp-controller="Usuarios" asp-action="Delete">
                 <input type="hidden" asp-for="Id" />
                 <a asp-controller="Logados" asp-action="Logado">Voltar</a> |
                 <input class="btn" type="submit" value="Apagar"/>
@@ -82,3 +80,5 @@
         </div>
     </div>
 </div>
+</body>
+</html>

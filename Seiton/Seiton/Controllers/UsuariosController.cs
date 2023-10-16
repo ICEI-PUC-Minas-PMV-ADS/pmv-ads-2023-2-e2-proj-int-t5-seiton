@@ -26,7 +26,7 @@ namespace Seiton.Controllers
         // GET: Usuarios
         public async Task<IActionResult> Index()
         {
-              return View(await _context.Usuarios.ToListAsync());
+            return View(await _context.Usuarios.ToListAsync());
         }
 
         //  LOGIN
@@ -55,8 +55,7 @@ namespace Seiton.Controllers
                 var claims = new List<Claim> 
                 {
                     new Claim(ClaimTypes.Name, dados.NomeUsuario),
-                    new Claim(ClaimTypes.NameIdentifier, dados.Id.ToString()),
-                    new Claim(ClaimTypes.Name, dados.Email)
+                    new Claim(ClaimTypes.NameIdentifier, dados.Id.ToString())
                 };
 
                 var usuarioIdentity = new ClaimsIdentity(claims, "login");
@@ -158,7 +157,7 @@ namespace Seiton.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("Logado", "Logados");
             }
             return View(usuario);
         }
@@ -197,7 +196,7 @@ namespace Seiton.Controllers
             }
 
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction("Index", "Home");
         }
 
         private bool UsuarioExists(int id)

@@ -9,14 +9,14 @@ namespace Seiton.Models
         [Key]
         public int Id { get; set; }
 
-        [Required(ErrorMessage = "Um nome de usuário é requerido")]
+        [Required(ErrorMessage = "Nome de usuário requerido!")]
         [Display(Name = "Nome de Usuário")]
         public string NomeUsuario { get; set; }
 
-        [Required(ErrorMessage = "Um email é requerido")]
+        [Required(ErrorMessage = "Email requerido!")]
         public string Email { get; set; }
 
-        [Required(ErrorMessage = "Uma senha é requerida")]
+        [Required(ErrorMessage = "Senha requerida!")]
         public string Senha { get; set; }
 
         public ICollection<Uniao> Unioes { get; set; }

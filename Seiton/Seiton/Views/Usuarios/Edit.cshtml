@@ -4,35 +4,102 @@
     ViewData["Title"] = "Edit";
 }
 
-<h1>Editar Usuário</h1>
+<style>
+    .modal {
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #bcbcbc
+    }
 
-<h4>Usuário</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Edit">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="Id" />
-            <div class="form-group">
-                <label asp-for="NomeUsuario" class="control-label"></label>
-                <input asp-for="NomeUsuario" class="form-control" />
-                <span asp-validation-for="NomeUsuario" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Email" class="control-label"></label>
-                <input asp-for="Email" class="form-control" />
-                <span asp-validation-for="Email" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Senha" class="control-label"></label>
-                <input asp-for="Senha" class="form-control" />
-                <span asp-validation-for="Senha" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <a asp-action="Index" class="btn btn-info">Voltar</a> |
-                <input type="submit" value="Salvar" class="btn btn-success" />
-            </div>
-        </form>
+    .modal-content {
+        text-align: center;
+        font-family: sans-serif;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: none;
+        border-radius: 15px;
+        background-color: #ffffff;
+        padding: 20px;
+    }
+
+        .modal-content a {
+            margin-top: 5%;
+            font-size: 1.2rem;
+            text-decoration: none;
+            border-radius: 5px;
+            border: none;
+            padding: 5px;
+            width: 15%;
+            background-color: #4EAAFF;
+            color: white;
+            cursor: pointer;
+        }
+
+            .modal-content a:hover {
+                background-color: #2A6092;
+            }
+
+        .modal-content .btn {
+            margin-top: 5%;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            border: none;
+            padding: 5px;
+            width: 28%;
+            background-color: #4EAAFF;
+            color: white;
+            cursor: pointer;
+        }
+
+            .modal-content .btn:hover {
+                background-color: #37C936;
+            }
+
+    .form-group {
+        display: block;
+    }
+
+    .aviso {
+            
+        color: #D51414;
+    }
+
+</style>
+
+<div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <h1>Editar Usuário</h1>
+            <form asp-action="Edit">
+                <div asp-validation-summary="ModelOnly" class="aviso"></div>
+                <input type="hidden" asp-for="Id" />
+                <div class="form-group">
+                    <label asp-for="NomeUsuario" class="control-label">Nome: </label>
+                    <input asp-for="NomeUsuario" class="form-control" />
+                </div>
+                <span asp-validation-for="NomeUsuario" class="aviso"></span>
+                <div class="form-group">
+                    <label asp-for="Email" class="control-label">E-mail: </label>
+                    <input asp-for="Email" class="form-control" />
+                </div>
+                <span asp-validation-for="Email" class="aviso"></span>
+                <div class="form-group">
+                    <label asp-for="Senha" class="control-label">Senha: </label>
+                    <input asp-for="Senha" class="form-control" value=""/>
+                </div>
+                <span asp-validation-for="Senha" class="aviso"></span>
+                <div>
+                    <a asp-controller="Logados" asp-action="Logado">Voltar</a> |
+                    <input class="btn" type="submit" value="Salvar"/>
+                </div>
+            </form>
+        </div>
     </div>
 </div>
 
