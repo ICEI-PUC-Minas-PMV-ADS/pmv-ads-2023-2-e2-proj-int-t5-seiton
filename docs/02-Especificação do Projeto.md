@@ -84,7 +84,7 @@ A tabela a seguir apresenta os requisitos do projeto, identificando a prioridade
 |------|-----------------------------------------|----|
 |RF-01| A aplicação deve oferecer gerenciamento de usuários. |ALTA|
 |RF-02| A aplicação deve permitir que usuários pré cadastrados realizem login. |ALTA|
-|RF-03| A aplicação deve permitir o gerenciamento de projetos. Quando um projeto for criado, a esse projeto serão associadas 3 colunas por padrão: To do, in progress, Done, na qual poderão ser adicionadas novas colunas.|ALTA|
+|RF-03| A aplicação deve permitir o gerenciamento de projetos. Quando um projeto for criado, a esse projeto serão associadas 5 colunas fixas, nas quais será possível alterar o nome e a cor. |ALTA|
 |RF-04| A aplicação deve permitir o gerenciamento das tarefas dentro do projeto, no qual toda tarefa criada deverá obrigatoriamente ser associada a uma coluna. |ALTA|
 |RF-05| As tarefas deverão ter campo de titulo, descrição, cor referente a prioridade e nome da pessoa a quem a mesma foi atribuída. |ALTA|
 |RF-06| A aplicação deve permitir que seja alterado o status das tarefas entre as colunas. |ALTA|
