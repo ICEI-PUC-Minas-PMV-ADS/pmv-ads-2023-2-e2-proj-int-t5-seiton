@@ -9,7 +9,7 @@ O diagrama apresenta o estudo do fluxo de interação do usuário com o sistema.
 
 Abaixo o diagrama de fluxo com o caminho a ser percorrido pelo usuário final do site.
 <br><br>
-![Diagrama de Fluxo](img/Diagrama_Flux.png) <sub> Figura 01 - Diagrama de Fluxo <sub>
+![Diagrama de Fluxo](img/Diagrama_Flux2.png) <sub> Figura 01 - Diagrama de Fluxo <sub>
 
 ## Wireframes
 
@@ -33,7 +33,7 @@ Possibilita que o usuário efetue o processo de autenticação, concedendo-lhe a
 
 ## Tela Principal (RF-03, RF-04, RF-05)
 
-Após o usuário criar ou ingressar em um grupo, a primeira tela a ser exibida será a tela principal, caso o usuário já tenha criado projetos serão apresentadas colunas de acordo com as necessidades específicas do projeto. Caso o usuário não tenha criado nenhum projeto, serão apresentados 3 colunas por padrão, na qual podem ser adicionadas novas colunas. Nestas colunas, serão registradas as informações relativas às tarefas, proporcionando a capacidade de edição a qualquer momento pelo responsável pela atividade. Isso incluirá a definição do nível de prioridade e do status do desenvolvimento.
+Após o usuário criar ou ingressar em um grupo, a primeira tela a ser exibida será a tela principal, caso o usuário já tenha criado projetos serão apresentadas colunas de acordo com as necessidades específicas do projeto. Nestas colunas, serão registradas as informações relativas às tarefas, proporcionando a capacidade de edição a qualquer momento pelo responsável pela atividade. Isso incluirá a definição do nível de prioridade e do status do desenvolvimento.
 
 O menu lateral fornecerá um acesso rápido aos projetos em andamento. Ao selecionar um projeto específico, as colunas pertinentes a esse projeto serão exibidas, ajustando-se automaticamente ao contexto do projeto escolhido.
 <br><br>
