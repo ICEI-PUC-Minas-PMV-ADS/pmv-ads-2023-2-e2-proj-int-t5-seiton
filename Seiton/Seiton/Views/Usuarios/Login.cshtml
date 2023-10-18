@@ -3,39 +3,67 @@
 @{
     ViewData["Title"] = "Login";
 }
-<div id="bacground">
-</div>
+<html>
+<head>
+    <link rel="stylesheet" href="~/css/LoginStyle.css" />
+</head>
+<body>
 
-<img src="/img/Office.png" />
+<div id="box1">
+    <div id="boxAll">
 
+       <div class="imgOffice">
+           <img src="~/img/Office.png" alt="Banner de login" id="imgLogin" />
+       </div>
 
-<div class="row">
-    <div class="col-md-4">
-        <h1>Entrar</h1>
-        <form asp-action="Login">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <h3>Nome do usuário</h3>
-                <input asp-for="NomeUsuario" class="form-control" placeholder="Digite seu nome de usuário" />
-                <span asp-validation-for="NomeUsuario" class="text-danger"></span>
-            </div>
+<header class="titulo">
+    <h1>Logar</h1>  
+</header>
 
-            <div class="form-group">
-                <h3>Senha</h3>
-                <input asp-for="Senha" class="form-control" type="password" placeholder="Digite sua senha" />
-                <span asp-validation-for="Senha" class="text-danger"></span>
-            </div>
+<main class="formulario">
 
-            <input type="submit" value="Acessar" class="btn-success" />
+        <div class="row">
+           <div class="col-md-4">
+              <form asp-action="Login">
+              <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
-        </form>
+        <p>Nome de usuário</p>
+           <div class="form-group1">                             
+              <input asp-for="NomeUsuario" class="form-control" placeholder="Digite seu usuário:" />
+              <span asp-validation-for="NomeUsuario" class="text-danger"></span>
+           </div>
 
-        <h3>@ViewBag.Message</h3>
+        <p>Senha</p>
+           <div class="form-group2">                              
+              <input asp-for="Senha" class="form-control" placeholder="Digite sua senha:" type="password" />
+              <span asp-validation-for="Senha" class="text-danger"></span>
+           </div>
+                       
+            <input type="submit" value="Entrar" class="btn btn-success" />
+                           
+              </form>
+           </div>
+        </div>
+</main>
+
+<nav class="criarAcc">
+     <a class="text-create-1" asp-area="" asp-controller="Usuarios" asp-action="Create">Criar conta</a>
+</nav>
     </div>
+
 </div>
+<h3>@ViewBag.Message</h3>
+
+</body>
+</html>
 
 @section Scripts {
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
 }
+
+
+
+
+
