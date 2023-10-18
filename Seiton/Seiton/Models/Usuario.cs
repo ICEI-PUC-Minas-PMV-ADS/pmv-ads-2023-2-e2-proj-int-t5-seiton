@@ -19,6 +19,7 @@ namespace Seiton.Models
         [Required(ErrorMessage = "Senha requerida!")]
         public string Senha { get; set; }
 
-        public ICollection<Uniao> Unioes { get; set; }
+        public ICollection<Projeto> Projeto { get; set; }
     }
+
 }

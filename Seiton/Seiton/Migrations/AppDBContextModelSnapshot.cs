@@ -29,6 +29,9 @@ namespace Seiton.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
+                    b.Property<int>("IdUsuario")
+                        .HasColumnType("int");
+
                     b.Property<string>("nome_projeto")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -38,30 +41,9 @@ namespace Seiton.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Projetos");
-                });
-
-            modelBuilder.Entity("Seiton.Models.Uniao", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<int>("IdProjeto")
-                        .HasColumnType("int");
-
-                    b.Property<int>("IdUsuario")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("IdProjeto");
-
                     b.HasIndex("IdUsuario");
 
-                    b.ToTable("Unioes");
+                    b.ToTable("Projetos");
                 });
 
             modelBuilder.Entity("Seiton.Models.Usuario", b =>
@@ -89,33 +71,20 @@ namespace Seiton.Migrations
                     b.ToTable("Usuarios");
                 });
 
-            modelBuilder.Entity("Seiton.Models.Uniao", b =>
+            modelBuilder.Entity("Seiton.Models.Projeto", b =>
                 {
-                    b.HasOne("Seiton.Models.Projeto", "Projeto")
-                        .WithMany("Unioes")
-                        .HasForeignKey("IdProjeto")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("Seiton.Models.Usuario", "Usuario")
-                        .WithMany("Unioes")
+                        .WithMany("Projeto")
                         .HasForeignKey("IdUsuario")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Projeto");
-
                     b.Navigation("Usuario");
-                });
-
-            modelBuilder.Entity("Seiton.Models.Projeto", b =>
-                {
-                    b.Navigation("Unioes");
                 });
 
             modelBuilder.Entity("Seiton.Models.Usuario", b =>
                 {
-                    b.Navigation("Unioes");
+                    b.Navigation("Projeto");
                 });
 #pragma warning restore 612, 618
         }

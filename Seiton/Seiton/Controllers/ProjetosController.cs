@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.WebEncoders.Testing;
 using Seiton.Models;
 using System.Security.Claims;
 
@@ -15,10 +16,11 @@ namespace Seiton.Controllers
             _context = context;
         }
 
+
         // GET: Projetos
         public async Task<IActionResult> Index()
         {
-              return View(await _context.Projetos.ToListAsync());
+            return View(await _context.Projetos.ToListAsync());
         }
 
         // GET: Projetos/Details/5
@@ -54,34 +56,12 @@ namespace Seiton.Controllers
             
             if (ModelState.IsValid)
             {
+                var userId = int.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier));
+                projeto.IdUsuario = userId;
+
                 _context.Add(projeto);
                 await _context.SaveChangesAsync();
-
-                // coletando id do usuário logado
-                var userId = int.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier));
-
-                // coletando id do ultimo projeto criado na tabela de projetos
-                var projectId = 
-                    (from p in _context.Projetos
-                        orderby p.Id descending
-                        select p.Id)
-                        .Take(1)
-                        .ToList();
-                // iterando sobre os elementos na tabela projetos
-                foreach(var cont_project in projectId)
-                {
-                    // adicionando os dados na tabela unioes
-                    var projects = new Uniao()
-                    {
-                        IdUsuario = userId,
-                        IdProjeto = cont_project,
-                    };
-
-                    _context.Add(projects);
-                }
-
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("Logado", "Logados");
             }
             return View(projeto);
         }

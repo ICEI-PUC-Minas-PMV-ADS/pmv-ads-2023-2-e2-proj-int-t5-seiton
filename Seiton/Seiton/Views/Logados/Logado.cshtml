@@ -1,127 +1,36 @@
-﻿@model List<int>
-@{
+﻿@{
     ViewData["Title"] = "Logado";
-
 }
-<style>
-    * {
-        margin: 0;
-    }
-
-    Container {
-        display: inline;
-    }
-
-    .header {
-        float: right;
-        width: 87.5%;
-        height: 99.6vh;
-    }
-
-    .Acessos {
-        display: inline;
-        text-align: right;
-        font-family: sans-serif;
-        float: right;
-        margin-top: 1%;
-    }
-
-        .Acessos .profile-menu {
-        }
-
-        .Acessos .profile-button {
-            cursor: pointer;
-        }
-
-            .Acessos .profile-button #seta {
-                width: 5%
-            }
-
-        .Acessos .menu-items {
-            display: none;
-            background-color: #ffffff;
-            border: 1px solid #bcbcbc;
-            text-decoration: none
-        }
-
-            .Acessos .menu-items li {
-                list-style: none;
-            }
-
-        .Acessos h1 {
-            font-size: 1.7rem;
-            margin-right: 1%;
-            text-decoration: none
-        }
-
-        .Acessos #foto-perfil {
-            width: 10%
-        }
-
-    .side-bar-background {
-        height: 99.6vh;
-        width: 12%;
-        float: left;
-        background-color: #F2F2F2;
-        box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.25);
-        border-radius: 0px 10px 10px 0px;
-    }
-
-        .side-bar-background .white-blue {
-            background-color: #2A6092;
-            height: 98%;
-            width: 100%;
-            border-radius: 0px 500px 10px 500px;
-            border-top: 20px solid #4EAAFF;
-        }
-
-</style>
+@model List<string>
+<link rel="stylesheet" type="text/css" href="/css/Logado.css" media="screen" />
 
 <div class="Container">
     <div class="header">
-            @if (User.Identity.IsAuthenticated)
-            {
-                <div class="Acessos">
-                    <div class="profile-menu">
-                        <div class="profile-button">
-                            <img src="/img/down-arrow.png" id="seta">
-                        </div>
-                        <ul class="menu-items">
-                            <li><a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Edit" asp-route-id="@ViewData["userId"]">Editar</a></li>
-                            <li><a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Delete" asp-route-id="@ViewData["userId"]">Apagar</a></li>
-                            <li><a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Logout">Sair</a></li>
-                        </ul>
-                    </div>
-                    <h1>@User.Identity.Name</h1>
-                    <img src="/img/man.png" id="foto-perfil">
-                </div>
-            }
+        @if (User.Identity.IsAuthenticated)
+        {
+                <details>
+                    <summary><img src="/img/man.png" class="foto-perfil" /></summary>
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Edit" asp-route-id="@ViewData["userId"]">Editar</a>
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Delete" asp-route-id="@ViewData["userId"]">Apagar</a>
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Logout">Sair</a>
+                </details>
+                <h1>@User.Identity.Name</h1>
+        }
     </div>
 
     <div class="side-bar-background">
         <div class="white-blue">
-
             <ul>
-                @foreach (var projectId in Model)
+                @foreach (var projeto in Model)
                 {
-                    <li>@projectId</li>
+                    <li><a class="project-name" asp-area="" asp-controller="Usuarios" asp-action="Edit">@projeto</a></li>
                 }
             </ul>
-
-            <a class="nav-link text-dark" asp-area="" asp-controller="Projetos" asp-action="Create">@ViewBag.ProjectUsuario</a>
+            <div class="adicionar">
+                <span class="material-symbols-outlined">add</span>
+                <a asp-controller="Projetos" asp-action="Create">Novo</a>
+            </div>
+            <hr />
         </div>
     </div>
 </div>
-
-<script>
-    // Animação do menu de gerenciamento do usuário
-    document.querySelector('.profile-button').addEventListener('click', function () {
-        var menu = document.querySelector('.menu-items');
-        if (menu.style.display === 'block') {
-            menu.style.display = 'none';
-        } else {
-            menu.style.display = 'block';
-        }
-    });
-
-</script>

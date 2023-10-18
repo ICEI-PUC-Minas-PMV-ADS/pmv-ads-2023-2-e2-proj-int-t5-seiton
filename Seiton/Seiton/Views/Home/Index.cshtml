@@ -1,37 +1,16 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+<link rel="stylesheet" type="text/css" href="/css/Index.css" media="screen" />
 
-<style>
-
-    img{
-        height: 90vh;
-        margin-left: 18%;
-    }
-
-    .Acessos{
-        text-align: right;
-        margin-top: 1%;
-    }
-
-    .Acessos a{
-        font-size: 1.7rem;
-        font-family: sans-serif;
-        margin-right: 1%;
-        text-decoration: none
-    }
-
-</style>
-
-<header>
-    <div class="container-fluid">
-        <div class="Acessos">
-            <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Login">Login</a>
-            <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Create">Cadastro</a>
-        </div>
+<div class="container-fluid">
+    <div class="Acessos">
+        <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Login">Login</a>
+        <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Create">Cadastro</a>
     </div>
-</header>
+</div>
 
-<body>
-    <img src="/img/Logo.png" />
-</body>
+
+
+<img src="/img/Logo.png" />
+

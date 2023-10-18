@@ -19,15 +19,16 @@ namespace Seiton.Controllers
         {
             ViewData["userId"] = int.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier));
             ViewData["userName"] = User.FindFirstValue(ClaimTypes.Name);
-            
-            var idUsuario = int.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier));
 
-            var idProjectUsuario = (from u in _context.Unioes
-                                    where u.IdUsuario == idUsuario
-                                    select u.IdProjeto)
-                                      .ToList();
+            var userId = int.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier));
 
-            return View(idProjectUsuario);
+            var FkUsuarioId = (from p in _context.Projetos
+                               where p.IdUsuario == userId
+                               select p.nome_projeto)
+                                 .ToList();
+
+
+            return View(FkUsuarioId);
         }
 
     }

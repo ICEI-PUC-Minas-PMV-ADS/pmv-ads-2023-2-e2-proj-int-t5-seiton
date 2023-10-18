@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Security.Claims;
 
 namespace Seiton.Models
 {
@@ -18,7 +19,14 @@ namespace Seiton.Models
         public int quant_colunas { get; set; }
         public Projeto() { quant_colunas = 5; }
 
-        public ICollection<Uniao> Unioes { get; set; }
+        public int IdUsuario { get; set; }
+
+        [ForeignKey("IdUsuario")]
+        public Usuario Usuario { get; set; }
+    }
+
+    public class ProjetosID
+    {
 
     }
 }
