@@ -23,6 +23,12 @@ Container {
         margin-top: -3.1%
     }
 
+.white-blue h1{
+    margin-top: 7%;
+    position: absolute;
+    font-size: 1.8rem;
+    margin-left: 0.5%;
+}
 
 details {
     display: flex;

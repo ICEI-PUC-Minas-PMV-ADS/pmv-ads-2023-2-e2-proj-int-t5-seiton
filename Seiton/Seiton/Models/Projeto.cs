@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Security.Claims;
 
@@ -14,7 +15,6 @@ namespace Seiton.Models
         [Display(Name = "Nome de Projeto")]
         public string nome_projeto { get; set; }
 
-        [Required(ErrorMessage = "A quantidade de colunas é obrigatoria")]
         [Display(Name = "Quantidade de Colunas")]
         public int quant_colunas { get; set; }
         public Projeto() { quant_colunas = 5; }
@@ -23,10 +23,8 @@ namespace Seiton.Models
 
         [ForeignKey("IdUsuario")]
         public Usuario Usuario { get; set; }
+
+        public ICollection<Coluna> Colunas { get; set; }
     }
 
-    public class ProjetosID
-    {
-
-    }
 }
