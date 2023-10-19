@@ -8,13 +8,14 @@
     <div class="header">
         @if (User.Identity.IsAuthenticated)
         {
-                <details>
-                    <summary><img src="/img/man.png" class="foto-perfil" /></summary>
-                    <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Edit" asp-route-id="@ViewData["userId"]">Editar</a>
-                    <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Delete" asp-route-id="@ViewData["userId"]">Apagar</a>
-                    <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Logout">Sair</a>
-                </details>
-                <h1>@User.Identity.Name</h1>
+            <details>
+                <summary><img src="/img/man.png" class="foto-perfil" /></summary>
+                <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Edit" asp-route-id="@ViewData["userId"]">Editar</a>
+                <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Delete" asp-route-id="@ViewData["userId"]">Apagar</a>
+                <a asp-controller="Projetos" asp-action="Index">Index-Projetos</a>
+                <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Logout">Sair</a>
+            </details>
+            <h1>@User.Identity.Name</h1>
         }
     </div>
 
