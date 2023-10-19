@@ -27,10 +27,10 @@ body{
 }
 
 #imgLogin { /* Imagem do banner */
-    width: 106%;
+    width: 360px;
     margin-top: -45px;
-    margin-left: -10px;
-    position: relative;
+    margin-left:0px;
+
 }
 
 .titulo { /* Titulo logar GRID AREA */
@@ -51,7 +51,7 @@ body{
     background-color: rgb(78,170,255);
     color: white;
     width: 43%;
-    height: 20px;
+    height: 25px;
     font-size: 11pt;
     transition: 1s;
     margin: 18px 25%;
@@ -59,7 +59,7 @@ body{
     font-family: 'Arimo';
     border-radius:5px;
     border:none;
-    box-shadow:0px 2px 0px 0px rgb(0,0,0, 0.2)
+    box-shadow:0px 2px 0px 0px rgb(0,0,0, 0.2);
 }
 
 .btn:hover {
@@ -72,7 +72,7 @@ h1 { /* Titulo LOGAR */
     color: white;
     font-size: 15pt;
     margin-left: 20px;
-    margin-top: 7px
+    margin-top: 7px;
 }
 
 
@@ -81,7 +81,7 @@ h3 { /* Msg usuario ou senha inválidos */
     font-size: 11pt;
     text-align: center;
     margin-left: 30%;
-    margin-top: -4%;
+    margin-top: -65px;
 }
 
 p { /* Txt nome e senha */
