@@ -8,8 +8,7 @@ body{
     display: grid;
     grid-template-areas:
         "img titulo"
-        "img formulario"
-        "img criarAcc";
+        "img formulario";
     grid-template-rows: 40px 220px 21px;
     grid-template-columns: 350px 250px;
 }
@@ -30,6 +29,7 @@ body{
 #imgLogin { /* Imagem do banner */
     width: 106%;
     margin-top: -45px;
+    margin-left: -10px;
     position: relative;
 }
 
@@ -42,15 +42,7 @@ body{
 .formulario { /* Formulario usuario e senha GRID AREA */
     grid-area: formulario;
     background-color: rgb(42,96,144);
-}
-
-
-.criarAcc { /* Botão de criar conta GRID AREA */
-    grid-area: criarAcc;
-    background-color: rgb(42,96,144);
     border-radius: 0px 0px 20px 0;
-    display: flex;
-    justify-content: flex-end;
 }
 
 
@@ -103,6 +95,7 @@ p { /* Txt nome e senha */
 .col-md-4 { /* Formulário ( Tamanho) */
     width: 80%;
     margin-left: 20px;
+    margin-top:-35px;
     
 }
 
