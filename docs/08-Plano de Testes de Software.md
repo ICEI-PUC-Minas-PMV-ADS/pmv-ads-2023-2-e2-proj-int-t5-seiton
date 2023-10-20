@@ -18,7 +18,7 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 | Caso de Teste 	| CT-02 – Login de Usuário	|
 |Requisito Associado | RF-02	- A aplicação deve permitir que usuários pré-cadastrados realizem login. |
 | Objetivo do Teste 	| Verificar se o usuário consegue efetuar Login na aplicação. |
-| Passos 	| - Acessar navegador <br> - Informar o endereço do site<br> - Preencher corretamente os campos obrigatórios (Usuário e senha) <br> - Clicar em "Login" |
+| Passos 	| - Acessar navegador <br> - Informar o endereço do site<br> - Preencher corretamente os campos obrigatórios (Nome de usuário e senha) <br> - Clicar em "Login" |
 |Critério de Êxito | - O login foi realizado com sucesso. |
 |  	|  	|
 | Caso de Teste 	| CT-03 – Visualização de Projetos	|
