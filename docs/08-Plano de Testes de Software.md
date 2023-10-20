@@ -12,7 +12,7 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-01 - A aplicação deve oferecer gerenciamento de usuários. |
 | Objetivo do Teste 	| Verificar se o usuário consegue efetuar cadastro na aplicação. |
-| Passos 	| - Acessar navegador <br> - Informar o endereço do site<br> - Preencher os campos obrigatórios (e-mail, usuário, senha) <br> - Clicar em "Login" |
+| Passos 	| - Acessar navegador <br> - Informar o endereço do site<br> - Preencher os campos obrigatórios (e-mail, usuário e senha) <br> - Clicar em "Login" |
 |Critério de Êxito | - O usuário se cadastra com sucesso. |
 |  	|  	|
 | Caso de Teste 	| CT-02 – Login de Usuário	|
