@@ -14,18 +14,18 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 | Objetivo do Teste 	| Verificar se o usuário consegue efetuar cadastro na aplicação. |
 | Passos 	| - Acessar navegador <br> - Informar o endereço do site<br> - Preencher os campos obrigatórios (e-mail, usuário e senha) <br> - Clicar em "Login" |
 |Critério de Êxito | - O usuário se cadastra com sucesso. |
-|  	|  	|
-| Caso de Teste 	| CT-02 – Editar Usuário	|
-|Requisito Associado | RF-02	- A aplicação deve oferecer gerenciamento de usuários. |
-| Objetivo do Teste 	| Verificar se o usuário consegue editar suas informações de perfil(Nome de usuário, e-mail e senha. |
-| Passos 	| - Acessar navegador <br> - Informar o endereço do site<br> - Preencher corretamente os campos obrigatórios (Nome de usuário e senha) <br> - Clicar em "Login" <br> - Clicar no ícone de perfil no canto superior esquerdo <br> - Selecionar "Editar" <br> - Efetuar as mudanças desejadas na conta <br> - Clicar em "Salvar" |
-|Critério de Êxito | - O login foi realizado com sucesso. |
-|  	|  	|
-| Caso de Teste 	| CT-03 – Login de Usuário	|
+
+| Caso de Teste 	| CT-02 – Login de Usuário	|
 |Requisito Associado | RF-02	- A aplicação deve permitir que usuários pré-cadastrados realizem login. |
 | Objetivo do Teste 	| Verificar se o usuário consegue efetuar Login na aplicação. |
 | Passos 	| - Acessar navegador <br> - Informar o endereço do site<br> - Preencher corretamente os campos obrigatórios (Nome de usuário e senha) <br> - Clicar em "Login" |
 |Critério de Êxito | - O login foi realizado com sucesso. |
+|  	|  	|
+| Caso de Teste 	| CT-03 – Editar Usuário	|
+|Requisito Associado | RF-01	- A aplicação deve oferecer gerenciamento de usuários. |
+| Objetivo do Teste 	| Verificar se o usuário consegue editar suas informações de perfil(Nome de usuário, e-mail e senha. |
+| Passos 	| - Acessar navegador <br> - Informar o endereço do site<br> - Preencher corretamente os campos obrigatórios (Nome de usuário e senha) <br> - Clicar em "Login" <br> - Clicar no ícone de perfil no canto superior esquerdo <br> - Selecionar "Editar" <br> - Efetuar as mudanças desejadas na conta <br> - Clicar em "Salvar" |
+|Critério de Êxito | - O usuário conseguiu alterar os dados desejados. |
 |  	|  	|
 | Caso de Teste 	| CT-04 – Visualização de Projetos	|
 |Requisito Associado | RF-03	- A aplicação deve permitir o gerenciamento de projetos. |
