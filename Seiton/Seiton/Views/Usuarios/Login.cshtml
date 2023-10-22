@@ -9,47 +9,50 @@
 </head>
 <body>
 
-    <div id="box1">
-        <div id="boxAll">
+<div id="box1">
+    <div id="boxAll">
 
-            <div class="imgOffice">
-                <img src="~/img/Office.png" alt="Banner de login" id="imgLogin" />
+       <div class="imgOffice">
+           <img src="~/img/Office.png" alt="Banner de login" id="imgLogin" />
+       </div>
+
+<header class="titulo">
+    <h1>Logar</h1>  
+</header>
+
+<main class="formulario">
+
+        <div class="row">
+           <div class="col-md-4">
+              <form asp-action="Login">
+              <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+        <p>Nome de usuário</p>
+           <div class="form-group1">                             
+              <input asp-for="NomeUsuario" class="form-control" placeholder="Digite seu usuário:" />
+              <span asp-validation-for="NomeUsuario" class="text-danger"></span>
+           </div>
+
+        <p>Senha</p>
+           <div class="form-group2">                              
+              <input asp-for="Senha" class="form-control" placeholder="Digite sua senha:" type="password" />
+              <span asp-validation-for="Senha" class="text-danger"></span>
+           </div>
+
+           <div class="botoes2">
+           <a class="voltar2" asp-area="" asp-controller="Home" asp-action="Index">Voltar</a>
+            <input type="submit" value="Entrar" class="btn btn-success" />
             </div>
-
-            <header class="titulo">
-                <h1>Logar</h1>
-            </header>
-
-            <main class="formulario">
-
-                <div class="row">
-                    <div class="col-md-4">
-                        <form asp-action="Login">
-                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-
-                            <p>Nome de usuário</p>
-                            <div class="form-group1">
-                                <input asp-for="NomeUsuario" class="form-control" placeholder="Digite seu usuário:" />
-                                <span asp-validation-for="NomeUsuario" class="text-danger"></span>
-                            </div>
-
-                            <p>Senha</p>
-                            <div class="form-group2">
-                                <input asp-for="Senha" class="form-control" placeholder="Digite sua senha:" type="password" />
-                                <span asp-validation-for="Senha" class="text-danger"></span>
-                            </div>
-
-                            <input type="submit" value="Entrar" class="btn btn-success" />
-
-                        </form>
-                    </div>
-                </div>
-            </main>
-
+                           
+              </form>
+           </div>
         </div>
+</main>
 
     </div>
-    <h3>@ViewBag.Message</h3>
+
+</div>
+<h3>@ViewBag.Message</h3>
 
 </body>
 </html>
@@ -59,3 +62,8 @@
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
 }
+
+
+
+
+

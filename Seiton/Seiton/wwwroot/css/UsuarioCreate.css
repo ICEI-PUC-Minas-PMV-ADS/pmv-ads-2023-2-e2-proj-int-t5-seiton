@@ -22,26 +22,26 @@ body {
 }
 
 .form-group { /*Formulario de Cadastro*/
-    margin-bottom: 1%;
+    margin-top:0px;
 }
 
-    .form-group h3 { /*Grupo de Formulario*/
+   h3{ /*Grupo de Formulario*/
         color: white;
         font-size: 1.2rem;
-        margin-bottom: 4%;
+        margin-top: -1px;
         font-family: 'Arimo';
     }
 
     .form-group input { /*Input do Formulario*/
         background-color: transparent;
         border: none;
-        width: 100%;
+        width: 80%;
         font-size: 1.1rem;
         border-bottom: 2px solid white;
         border-radius: 0px;
         color: white;
+        margin-top:-20px;
     }
-
 
 
         .form-group input:focus { /*Input do Formulario*/
@@ -52,8 +52,7 @@ body {
         }
 
 .btn-success { /* Botão de Cadastrar*/
-    margin-top: 5%;
-    margin-left: 35%;
+    margin-left: 10%;
     font-size: 1rem;
     border-radius: 5px;
     border: none;
@@ -62,7 +61,8 @@ body {
     background-color: #4EAAFF;
     color: white;
     cursor: pointer;
-    font-weight: bold;
+  
+    transition: 1s;
 }
 
     .btn-success:hover { /*Animação ao passar mouse em cima do cadastrar*/
@@ -97,10 +97,8 @@ h1 { /* Titulo */
 
 h3 { /*Nome,email,senha,(texto)*/
     font-size: 11pt !important;
+  
 }
-
-
-
 
 .field-validation-error {
     color: red;
@@ -111,3 +109,33 @@ h3 { /*Nome,email,senha,(texto)*/
     color: rgb(198, 198, 198);
     font-size: 10pt;
 }
+
+.botoes{
+    margin-top:10px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:230px;
+    margin-left:10px
+}
+.voltar {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    transition: 1s;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    padding: 4px;
+    width: 20%;
+    background-color: steelblue;
+    color: white;
+    cursor: pointer;
+}
+
+    .voltar:hover {
+        background-color: powderblue;
+    }
+

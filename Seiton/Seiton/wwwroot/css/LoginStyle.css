@@ -27,7 +27,7 @@ body{
 }
 
 #imgLogin { /* Imagem do banner */
-    width: 106%;
+    width:365px;
     margin-top: -45px;
     margin-left: -10px;
     position: relative;
@@ -51,10 +51,9 @@ body{
     background-color: rgb(78,170,255);
     color: white;
     width: 43%;
-    height: 25px;
+    height: 20px;
     font-size: 11pt;
     transition: 1s;
-    margin: 18px 25%;
     position: relative;
     font-family: 'Arimo';
     border-radius:5px;
@@ -80,8 +79,9 @@ h3 { /* Msg usuario ou senha inválidos */
     color: red;
     font-size: 11pt;
     text-align: center;
-    margin-left: 30%;
-    margin-top: -4%;
+    margin-left: 25%;
+    margin-top: -5%;
+    position:relative;
 }
 
 p { /* Txt nome e senha */
@@ -89,31 +89,37 @@ p { /* Txt nome e senha */
     color: white;
     display: flex;
     font-size: 12pt;
+
 }
 
 
 .col-md-4 { /* Formulário ( Tamanho) */
     width: 80%;
     margin-left: 20px;
-    margin-top:-35px;
+    margin-top:-18px;
     
 }
 
 .form-group1 input { /* Formulário nome ( Bordas) */
+  
+    width:80%;
     border: none;
-    height: 30px;
+    height: 3px;
     border-bottom: 1px solid white;
     background-color: rgb(42,96,144);
     color: white;
+    border-radius: 0px;
  
 }
 
 .form-group2 input { /* Formulário senha ( Bordas) */
+    width: 80%;
     border: none;
-    height: 30px;
+    height: 3px;
     border-bottom: 1px solid white;
     background-color: rgb(42,96,144);
     color: white;
+    border-radius: 0px;
 }
 
 
@@ -174,3 +180,35 @@ p { /* Txt nome e senha */
 ::placeholder{
     color: rgb(198, 198, 198);
 }
+
+.botoes2{
+    margin-top:10px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:15px;
+}
+
+.voltar2 {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align: center;
+    background-color: steelblue;
+    color: white;
+    width: 25%;
+    height: 20px;
+    font-size: 11pt;
+    transition: 1s;
+    position: relative;
+    font-family: 'Arimo';
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 2px 0px 0px rgb(0,0,0, 0.2);
+    text-decoration: none;
+}
+
+.voltar2:hover {
+    background-color: powderblue;
+}
+

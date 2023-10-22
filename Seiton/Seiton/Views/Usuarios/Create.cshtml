@@ -20,7 +20,7 @@
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                 <div class="form-group">
                     <h3>Nome do usuário</h3>
-                    <input asp-for="NomeUsuario" class="form-control" placeholder="Digite seu nome de usuário" pattern="[A-Za-z0-9].{5,}" title=" Insira Um nome de Usuario com pelo menos 5 Caracteres (A-Z a-z) , Não é permitido caracteres especiais Ex: !#$%&*()_+ )" />
+                    <input asp-for="NomeUsuario" class="form-control" placeholder="Digite seu nome de usuário" pattern="[A-Za-z0-9].{5,}" title=" Insira Um nome de Usuario com pelo menos 6 Caracteres. Não é permitido caracteres especiais Ex: !#$%&*()_+ )" />
                     <span asp-validation-for="NomeUsuario" class="text-danger"></span>
                 </div>
                 <div class="form-group">
@@ -34,7 +34,10 @@
                     <span asp-validation-for="Senha" class="text-danger"></span>
                 </div>
 
+                <div class="botoes">
+                <a class="voltar" asp-area="" asp-controller="Home" asp-action="Index">Voltar</a>
                 <input type="submit" value="Cadastrar" class="btn-success" />
+                </div>
 
             </form>
         </main>
