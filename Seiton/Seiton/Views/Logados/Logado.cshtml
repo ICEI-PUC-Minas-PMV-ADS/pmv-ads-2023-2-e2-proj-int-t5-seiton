@@ -1,32 +1,20 @@
 ﻿@{
     ViewData["Title"] = "Logado";
 }
-@model List<string>
+@model ViewModel
 <link rel="stylesheet" type="text/css" href="/css/Logado.css" media="screen" />
 
 <div class="Container">
-    <div class="header">
-        @if (User.Identity.IsAuthenticated)
-        {
-            <details>
-                <summary><img src="/img/man.png" class="foto-perfil" /></summary>
-                <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Edit" asp-route-id="@ViewData["userId"]">Editar</a>
-                <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Delete" asp-route-id="@ViewData["userId"]">Apagar</a>
-                <a asp-controller="Projetos" asp-action="Index">Index-Projetos</a>
-                <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Logout">Sair</a>
-            </details>
-            <h1>@User.Identity.Name</h1>
-        }
-    </div>
-
+    
     <div class="side-bar-background">
         <div class="white-blue">
             <h1>Projetos</h1>
             <ul>
-                @foreach (var projeto in Model)
+                @foreach (var projeto in Model.Nome_projeto.Zip(Model.ProjetoId, (nomeProjeto, ProjetoId) => new { NomeProjeto = nomeProjeto, ProjetoId = ProjetoId}))
                 {
-                    <li><a class="project-name" asp-area="" asp-controller="Usuarios" asp-action="Edit">@projeto</a></li>
+                    <li><a class="project-name" asp-area="" asp-route-id="@projeto.ProjetoId" data-projeto-id="@projeto.ProjetoId">@projeto.NomeProjeto</a></li>
                 }
+                
             </ul>
             <div class="adicionar">
                 <span class="material-symbols-outlined">add</span>
@@ -35,4 +23,39 @@
             <hr />
         </div>
     </div>
+
+    <div class="Container_Body">
+        <div class="header">
+            @if (User.Identity.IsAuthenticated)
+            {
+                    <h1>@User.Identity.Name</h1>
+                    <details>
+                        <summary><img src="/img/man.png" class="foto-perfil" /></summary>
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Edit" asp-route-id="@ViewData["userId"]">Editar</a>
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Delete" asp-route-id="@ViewData["userId"]">Apagar</a>
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Logout">Sair</a>
+                    </details>
+            }
+        </div>
+
+        <div class="info_container">
+            <h1>Projeto:</h1>
+            <h4>@User.Identity.Name</h4>
+        </div>
+
+        <div class="colum_container">
+            @if (Model.NomeColuna != null)
+            {
+                @foreach (var teste in Model.NomeColuna)
+                {
+                    <div class="coluna">
+                        <div class="color_colum"><div class="icolor_colum"></div></div>
+                        <h3>@teste</h3>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+
+
 </div>

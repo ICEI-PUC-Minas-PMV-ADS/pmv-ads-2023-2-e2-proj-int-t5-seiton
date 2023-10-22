@@ -19,10 +19,10 @@ namespace Seiton.Models
         public DbSet<Projeto> Projetos { get; set; }
         public object Projeto { get; internal set; }
 
-        public DbSet<Coluna> Colunas { get; set; }
+        public DbSet<Colunas> Colunas { get; set; }
         public object Coluna { get; internal set; }
 
-        public DbSet<Tarefa> Tarefas { get; set; }
+        public DbSet<Tarefas> Tarefas { get; set; }
         public object Tarefa { get; internal set; }
 
     }

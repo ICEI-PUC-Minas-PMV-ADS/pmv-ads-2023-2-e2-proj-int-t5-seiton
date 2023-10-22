@@ -54,6 +54,15 @@ namespace Seiton
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}");
 
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllerRoute(
+                name: "Projeto",
+                pattern: "{controller=Logados}/{action=Logado}/{id}");
+
+
+            });
+
             app.Run();
         }
     }

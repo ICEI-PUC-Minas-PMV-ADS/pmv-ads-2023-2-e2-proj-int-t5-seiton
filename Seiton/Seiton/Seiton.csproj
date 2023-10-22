@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <Content Remove="Views\Shared\Delete.cshtml" />
+    <Content Remove="wwwroot\css\Logado - Cópia.css" />
   </ItemGroup>
 
   <ItemGroup>
@@ -21,6 +22,10 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.16" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Migrations\" />
   </ItemGroup>
 
 </Project>

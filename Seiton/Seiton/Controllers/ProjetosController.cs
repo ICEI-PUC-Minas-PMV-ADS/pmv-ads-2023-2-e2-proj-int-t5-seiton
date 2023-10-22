@@ -58,10 +58,31 @@ namespace Seiton.Controllers
             {
                 var userId = int.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier));
                 projeto.IdUsuario = userId;
-
                 _context.Add(projeto);
                 await _context.SaveChangesAsync();
+
+                var maxID = _context.Projetos.Max(projeto => projeto.Id);
+
+
+                string[] names = new string[] { "Backlog", "To do", "In progress", "Testing", "Done",};
+                string[] color = new string[] { "Backlog", "To do", "In progress", "Testing", "Done", };
+
+                foreach (string item in names)
+                {
+                    var Coluna = new Colunas
+                    {
+                        nome_coluna = item,
+                        cor_coluna = "Vermelho",
+                        quant_tarefas = 0,
+                        IdProjeto = maxID
+                    };
+
+
+                    _context.Colunas.Add(Coluna);
+                }
+                    await _context.SaveChangesAsync();
                 return RedirectToAction("Logado", "Logados");
+
             }
             return View(projeto);
         }

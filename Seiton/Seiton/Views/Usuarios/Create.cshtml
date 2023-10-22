@@ -3,39 +3,47 @@
 @{
     ViewData["Title"] = "Create";
 }
+<html>
+<head>
+    <link rel="stylesheet" href="~/css/UsuarioCreate.css" />
+</head>
+<body>
+    <div id="bacground">
+    </div>
 
-<div id="bacground">
-</div>
+    <img src="/img/Office.png" />
 
-<img src="/img/Office.png"/>
+    <div class="col-md-4">
+        <header><h1>Cadastrar</h1> </header>
+        <main>
+            <form asp-action="Create">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <h3>Nome do usuário</h3>
+                    <input asp-for="NomeUsuario" class="form-control" placeholder="Digite seu nome de usuário" pattern="[A-Za-z0-9].{5,}" title=" Insira Um nome de Usuario com pelo menos 5 Caracteres (A-Z a-z) , Não é permitido caracteres especiais Ex: !#$%&*()_+ )" />
+                    <span asp-validation-for="NomeUsuario" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <h3>E-mail</h3>
+                    <input asp-for="Email" class="form-control" placeholder="Digite seu e-mail" type="email" pattern=".{14,}" title="Seu email precisa conter pelo menos 15 caracteres" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <h3>Senha</h3>
+                    <input asp-for="Senha" class="form-control" type="password" placeholder="Digite sua senha" pattern="[A-Za-z0-9].{5,}" title="Insira um senha de usuário que contenha pelo menos 6 caracteres (Não é permitido caracteres especiais Ex: !#$%&*()_+)" />
+                    <span asp-validation-for="Senha" class="text-danger"></span>
+                </div>
 
-<div class="col-md-4">
-    <header><h1>Cadastrar</h1> </header>  
-   <main>  <form asp-action="Create">
-        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-        <div class="form-group">
-            <h3>Nome do usuário</h3>
-                <input asp-for="NomeUsuario" class="form-control" placeholder="Digite seu nome de usuário" pattern="[A-Za-z0-9].{5,}" title=" Insira Um nome de Usuario com pelo menos 5 Caracteres (A-Z a-z) , Não é permitido caracteres especiais Ex: !#$%&*()_+ )" />
-            <span asp-validation-for="NomeUsuario" class="text-danger"></span>
-        </div>
-        <div class="form-group">
-            <h3>E-mail</h3>
-                <input asp-for="Email" class="form-control" placeholder="Digite seu e-mail" type="email" pattern=".{14,}" title="Seu email precisa conter pelo menos 15 caracteres" />
-            <span asp-validation-for="Email" class="text-danger"></span>
-        </div>
-        <div class="form-group">
-            <h3>Senha</h3>
-                <input asp-for="Senha" class="form-control" type="password" placeholder="Digite sua senha" pattern="[A-Za-z0-9].{5,}" title="Insira um senha de usuário que contenha pelo menos 6 caracteres (Não é permitido caracteres especiais Ex: !#$%&*()_+)" />
-            <span asp-validation-for="Senha" class="text-danger"></span>
-        </div>
+                <input type="submit" value="Cadastrar" class="btn-success" />
 
-        <input type="submit" value="Cadastrar" class="btn-success" />
-
-    </form>
-    </main>
-</div>
- 
+            </form>
+        </main>
+    </div>
+</body>
+</html>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

@@ -1,0 +1,113 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Lobster&display=swap');
+
+body {
+    font-family: 'Arimo';
+}
+
+#bacground { /*Fundo do Formulario*/
+    width: calc(100vw / 4 * 2.5);
+    height: calc(100vh / 4 * 2.2);
+    margin-left: calc(100vw / 6);
+    margin-top: 10%;
+    position: absolute;
+    z-index: -1;
+    border-radius: 60px 50px 60px 350px;
+    background-color: #2A6092;
+}
+
+.col-md-4 { /* Container Principal */
+    margin-left: 55%;
+    padding-top: 12%;
+    width: 20%;
+}
+
+.form-group { /*Formulario de Cadastro*/
+    margin-bottom: 1%;
+}
+
+    .form-group h3 { /*Grupo de Formulario*/
+        color: white;
+        font-size: 1.2rem;
+        margin-bottom: 4%;
+        font-family: 'Arimo';
+    }
+
+    .form-group input { /*Input do Formulario*/
+        background-color: transparent;
+        border: none;
+        width: 100%;
+        font-size: 1.1rem;
+        border-bottom: 2px solid white;
+        border-radius: 0px;
+        color: white;
+    }
+
+
+
+        .form-group input:focus { /*Input do Formulario*/
+            color: white;
+            background-color: transparent;
+            box-shadow: none;
+            outline: 0;
+        }
+
+.btn-success { /* Botão de Cadastrar*/
+    margin-top: 5%;
+    margin-left: 35%;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    padding: 3px;
+    width: 35%;
+    background-color: #4EAAFF;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+    .btn-success:hover { /*Animação ao passar mouse em cima do cadastrar*/
+        background-color: #37C936;
+    }
+
+.ip-link {
+    padding-bottom: 5%;
+}
+
+    .ip-link a, span {
+        font-family: 'Arimo';
+        color: white;
+        font-size: 1.5rem;
+        text-decoration: none;
+    }
+
+img { /*Imagem do Banner*/
+    width: 35%;
+    position: absolute;
+    margin-left: 18%;
+    margin-top: 5%;
+}
+
+h1 { /* Titulo */
+    font-size: 1.2rem;
+    padding-bottom: 10px;
+    font-family: 'Arimo';
+    color: white;
+    margin-top: -10px;
+}
+
+h3 { /*Nome,email,senha,(texto)*/
+    font-size: 11pt !important;
+}
+
+
+
+
+.field-validation-error {
+    color: red;
+    font-size: 10pt;
+}
+
+::placeholder {
+    color: rgb(198, 198, 198);
+    font-size: 10pt;
+}

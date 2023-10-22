@@ -21,7 +21,7 @@ namespace Seiton.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("Seiton.Models.Coluna", b =>
+            modelBuilder.Entity("Seiton.Models.Colunas", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -32,8 +32,8 @@ namespace Seiton.Migrations
                     b.Property<int>("IdProjeto")
                         .HasColumnType("int");
 
-                    b.Property<int>("cor_coluna")
-                        .HasColumnType("int");
+                    b.Property<string>("cor_coluna")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("nome_coluna")
                         .HasColumnType("nvarchar(max)");
@@ -45,7 +45,7 @@ namespace Seiton.Migrations
 
                     b.HasIndex("IdProjeto");
 
-                    b.ToTable("Coluna");
+                    b.ToTable("Colunas");
                 });
 
             modelBuilder.Entity("Seiton.Models.Projeto", b =>
@@ -73,7 +73,7 @@ namespace Seiton.Migrations
                     b.ToTable("Projetos");
                 });
 
-            modelBuilder.Entity("Seiton.Models.Tarefa", b =>
+            modelBuilder.Entity("Seiton.Models.Tarefas", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -100,7 +100,7 @@ namespace Seiton.Migrations
 
                     b.HasIndex("IdColuna");
 
-                    b.ToTable("Tarefa");
+                    b.ToTable("Tarefas");
                 });
 
             modelBuilder.Entity("Seiton.Models.Usuario", b =>
@@ -128,7 +128,7 @@ namespace Seiton.Migrations
                     b.ToTable("Usuarios");
                 });
 
-            modelBuilder.Entity("Seiton.Models.Coluna", b =>
+            modelBuilder.Entity("Seiton.Models.Colunas", b =>
                 {
                     b.HasOne("Seiton.Models.Projeto", "Projeto")
                         .WithMany("Colunas")
@@ -150,9 +150,9 @@ namespace Seiton.Migrations
                     b.Navigation("Usuario");
                 });
 
-            modelBuilder.Entity("Seiton.Models.Tarefa", b =>
+            modelBuilder.Entity("Seiton.Models.Tarefas", b =>
                 {
-                    b.HasOne("Seiton.Models.Coluna", "Colunas")
+                    b.HasOne("Seiton.Models.Colunas", "Colunas")
                         .WithMany("Tarefas")
                         .HasForeignKey("IdColuna")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -161,7 +161,7 @@ namespace Seiton.Migrations
                     b.Navigation("Colunas");
                 });
 
-            modelBuilder.Entity("Seiton.Models.Coluna", b =>
+            modelBuilder.Entity("Seiton.Models.Colunas", b =>
                 {
                     b.Navigation("Tarefas");
                 });
