@@ -28,7 +28,7 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 |Critério de Êxito | - O usuário conseguiu alterar os dados desejados. |
 |  	|  	|
 |  	|  	|
-| Caso de Teste 	| CT-04 – Criação de Projetos de Projetos	|
+| Caso de Teste 	| CT-04 – Criação de Projetos	|
 |Requisito Associado | RF-03	- A aplicação deve permitir o gerenciamento de projetos. Quando um projeto for criado, a esse projeto serão associadas 5 colunas fixas, nas quais será possível alterar o nome e a cor. |
 | Objetivo do Teste 	| Verificar se o usuário consegue criar projetos. |
 | Passos 	| - Acessar o navegador <br> - Informar o endereço do site<br> - Realizar login <br> - Acessar tela principal de projetos <br> - Clicar em "+Novo" na barra lateral esquerda <br> - Preencher os dados do projeto <br> - Clicar em novo |
