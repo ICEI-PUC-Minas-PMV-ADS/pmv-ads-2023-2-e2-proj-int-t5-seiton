@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Renan\\OneDrive\\Desktop\\Main\\pmv-ads-2023-2-e2-proj-int-t5-seiton\\Seiton\\Seiton\\Seiton.csproj": {}
+    "C:\\Users\\Renan\\OneDrive\\Desktop\\main\\pmv-ads-2023-2-e2-proj-int-t5-seiton\\Seiton\\Seiton\\Seiton.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Renan\\OneDrive\\Desktop\\Main\\pmv-ads-2023-2-e2-proj-int-t5-seiton\\Seiton\\Seiton\\Seiton.csproj": {
+    "C:\\Users\\Renan\\OneDrive\\Desktop\\main\\pmv-ads-2023-2-e2-proj-int-t5-seiton\\Seiton\\Seiton\\Seiton.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Renan\\OneDrive\\Desktop\\Main\\pmv-ads-2023-2-e2-proj-int-t5-seiton\\Seiton\\Seiton\\Seiton.csproj",
+        "projectUniqueName": "C:\\Users\\Renan\\OneDrive\\Desktop\\main\\pmv-ads-2023-2-e2-proj-int-t5-seiton\\Seiton\\Seiton\\Seiton.csproj",
         "projectName": "Seiton",
-        "projectPath": "C:\\Users\\Renan\\OneDrive\\Desktop\\Main\\pmv-ads-2023-2-e2-proj-int-t5-seiton\\Seiton\\Seiton\\Seiton.csproj",
+        "projectPath": "C:\\Users\\Renan\\OneDrive\\Desktop\\main\\pmv-ads-2023-2-e2-proj-int-t5-seiton\\Seiton\\Seiton\\Seiton.csproj",
         "packagesPath": "C:\\Users\\Renan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Renan\\OneDrive\\Desktop\\Main\\pmv-ads-2023-2-e2-proj-int-t5-seiton\\Seiton\\Seiton\\obj\\",
+        "outputPath": "C:\\Users\\Renan\\OneDrive\\Desktop\\main\\pmv-ads-2023-2-e2-proj-int-t5-seiton\\Seiton\\Seiton\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Renan\\AppData\\Roaming\\NuGet\\NuGet.Config",
