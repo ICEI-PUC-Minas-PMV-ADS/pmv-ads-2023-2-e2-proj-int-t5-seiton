@@ -58,7 +58,7 @@ Segue o roteiro das tarefas de teste
 |:---:	|:---:	|
 | **Perfil** 	| Usuário (todos)	|
 | **Objetivo do Teste** 	| Avaliar a tela de cadastro de usuário 	|
-| **Passos** 	| 1. Acessar navegador;<br>2. Informar o endereço do site;<br>3. Acessar página inicial;<br>4. Clicar em “Cadastrar”;<br>5. Preencher os campos obrigatórios (e-mail, usuário, senha);<br>6. Clicar em "Cadastrar". 	|
+| **Passos** 	| 1. Acessar navegador;<br>2. Informar o endereço do site;<br>3. Acessar página inicial;<br>4. Clicar em “Cadastrar”;<br>5. Preencher os campos obrigatórios (e-mail, usuário e senha);<br>6. Clicar em "Cadastrar". 	|
 |  	|  	|
 | **Caso de Teste** 	| **CTU-02 – Login de usuário** 	|
 | **Perfil** 	| Usuário (todos) 	|
