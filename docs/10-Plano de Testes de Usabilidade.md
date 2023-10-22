@@ -65,9 +65,9 @@ Segue o roteiro das tarefas de teste
 | **Objetivo do Teste** 	| Avaliar a tela de Login de usuário 	|
 | **Passos** 	| 1. Acessar navegador;<br>2. Informar o endereço do site;<br>3. Acessar página inicial;<br>4. Preencher os campos obrigatórios (Usuário e senha);<br>5. Clicar em "Entrar". 	|
 |  	|  	|
-| Caso de Teste 	| CT-03 – Editar Usuário	|
+| Caso de Teste 	| CTU-03 – Editar Usuário	|
 | Objetivo do Teste 	| Avaliar o processo de alteração das informações de perfil |
-| Passos 	| - Acessar navegador <br> - Informar o endereço do site<br> - Preencher corretamente os campos obrigatórios (Nome de usuário e senha) <br> - Clicar em "Login" <br> - Clicar no ícone de perfil no canto superior esquerdo <br> - Selecionar "Editar" <br> - Efetuar as mudanças desejadas na conta <br> - Clicar em "Salvar" |
+| Passos 	| - Acessar navegador <br> - Informar o endereço do site<br> - Preencher corretamente os campos obrigatórios (Nome de usuário e senha) <br> - Clicar em "Entrar" <br> - Clicar no ícone de perfil no canto superior esquerdo <br> - Selecionar "Editar" <br> - Efetuar as mudanças desejadas na conta <br> - Clicar em "Salvar" |
 |  	|  	|
 | **Caso de Teste** 	| **CTU-04 – Visualizar Projetos** 	|
 | **Perfil** 	| Usuário 	|
