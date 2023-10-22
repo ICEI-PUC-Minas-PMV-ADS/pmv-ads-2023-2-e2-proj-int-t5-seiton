@@ -11168,19 +11168,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\pferr\\.nuget\\packages\\": {}
+    "C:\\Users\\Renan\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pferr\\Desktop\\Eixo 2\\pmv-ads-2023-2-e2-proj-int-t5-seiton\\Seiton\\Seiton\\Seiton.csproj",
+      "projectUniqueName": "C:\\Users\\Renan\\OneDrive\\Desktop\\Main\\pmv-ads-2023-2-e2-proj-int-t5-seiton\\Seiton\\Seiton\\Seiton.csproj",
       "projectName": "Seiton",
-      "projectPath": "C:\\Users\\pferr\\Desktop\\Eixo 2\\pmv-ads-2023-2-e2-proj-int-t5-seiton\\Seiton\\Seiton\\Seiton.csproj",
-      "packagesPath": "C:\\Users\\pferr\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pferr\\Desktop\\Eixo 2\\pmv-ads-2023-2-e2-proj-int-t5-seiton\\Seiton\\Seiton\\obj\\",
+      "projectPath": "C:\\Users\\Renan\\OneDrive\\Desktop\\Main\\pmv-ads-2023-2-e2-proj-int-t5-seiton\\Seiton\\Seiton\\Seiton.csproj",
+      "packagesPath": "C:\\Users\\Renan\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Renan\\OneDrive\\Desktop\\Main\\pmv-ads-2023-2-e2-proj-int-t5-seiton\\Seiton\\Seiton\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\pferr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Renan\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
