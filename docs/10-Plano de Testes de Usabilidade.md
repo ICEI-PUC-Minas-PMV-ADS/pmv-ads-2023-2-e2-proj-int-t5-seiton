@@ -65,36 +65,40 @@ Segue o roteiro das tarefas de teste
 | **Objetivo do Teste** 	| Avaliar a tela de Login de usuário 	|
 | **Passos** 	| 1. Acessar navegador;<br>2. Informar o endereço do site;<br>3. Acessar página inicial;<br>4. Preencher os campos obrigatórios (Usuário e senha);<br>5. Clicar em "Entrar". 	|
 |  	|  	|
-| Caso de Teste 	| CTU-03 – Editar Usuário	|
+| Caso de Teste 	| **CTU-03 – Editar Usuário**	|
 | Objetivo do Teste 	| Avaliar o processo de alteração das informações de perfil |
-| Passos 	| - Acessar navegador <br> - Informar o endereço do site<br> - Preencher corretamente os campos obrigatórios (Nome de usuário e senha) <br> - Clicar em "Entrar" <br> - Clicar no ícone de perfil no canto superior esquerdo <br> - Selecionar "Editar" <br> - Efetuar as mudanças desejadas na conta <br> - Clicar em "Salvar" |
+| Passos 	| - Acessar navegador <br> - Informar o endereço do site<br> - Preencher corretamente os campos obrigatórios (Nome de usuário e senha) <br> - Clicar em "Entrar" <br> - Clicar no ícone de perfil no canto superior direito <br> - Selecionar "Editar" <br> - Efetuar as mudanças desejadas na conta <br> - Clicar em "Salvar" |
 |  	|  	|
-| **Caso de Teste** 	| **CTU-04 – Visualizar Projetos** 	|
+| Caso de Teste 	| **CTU-04 – Remover usuário**	|
+| Objetivo do Teste 	| Avaliar o processo de exclusão do usuário |
+| Passos 	| - Acessar navegador <br> - Informar o endereço do site<br> - Preencher corretamente os campos obrigatórios (Nome de usuário e senha) <br> - Clicar em "Entrar" <br> - Clicar no ícone de perfil no canto superior direito <br> - Selecionar "Apagar" <br> - Clicar em "Apagar" |
+|  	|  	|
+| **Caso de Teste** 	| **CTU-05 – Visualizar Projetos** 	|
 | **Perfil** 	| Usuário 	|
 | **Objetivo do Teste** 	| Avaliar o acesso à tela principal de visualização de projetos 	|
 | **Passos** 	| 1. Acessar navegador;<br>2. Informar o endereço do site;<br>3. Acessar página inicial;<br>4. Efetuar Login;<br>5. Visualizar página inicial contendo todos os projetos. 	|
 |  	|  	|
-| **Caso de Teste** 	| **CTU-05 – Gerenciamento de Projetos**|
+| **Caso de Teste** 	| **CTU-06 – Gerenciamento de Projetos**|
 | **Perfil** 	| Usuário 	|
 | **Objetivo do Teste** 	| Avaliar acesso à função de gerenciamento de projetos 	|
 | **Passos** 	| 1. Acessar Navegador;<br>2. Informar o endereço do Site;<br>3. Acessar página inicial;<br>4. Efetuar Login;<br>5. Visualizar página inicial contendo todos os projetos.;<br>6. Clicar no projeto desejado 	|
 |  	|  	|
-| **Caso de Teste** 	| **CTU-06 – Criar Projetos** 	|
+| **Caso de Teste** 	| **CTU-07 – Criar Projetos** 	|
 | **Perfil** 	| Usuário 	|
 | **Objetivo do Teste** 	| valiar se os projetos estão sendo criados 	|
 | **Passos** 	| 1. Acessar navegador;<br>2. Informar o endereço do site;<br>3. Acessar página inicial;<br>4. Efetuar Login;<br>5. Visualizar página inicial contendo todos os projetos;<br>6. Clicar no botão “criar projetos 	|
 |  	|  	|
-| **Caso de Teste** 	| **CTU-07 – Dados do Projeto(Relatório)** 	|
+| **Caso de Teste** 	| **CTU-08 – Dados do Projeto(Relatório)** 	|
 | **Perfil** 	| Usuário 	|
 | **Objetivo do Teste** 	| Avaliar se o relatório dos projetos está sendo corretamente exibido 	|
 | **Passos** 	| 1. Acessar navegador;<br>2. Informar o endereço do site;<br>3. Acessar página inicial;<br>4. Efetuar Login;<br>5. Visualizar página inicial contendo todos os projetos;<br>6. Clicar no projeto desejado;<br>7. Clicar no botão de relatório. 	|
 |  	|  	|
-| **Caso de Teste** 	| **CTU-08 – Gerenciar Tarefas** 	|
+| **Caso de Teste** 	| **CTU-09 – Gerenciar Tarefas** 	|
 | **Perfil** 	| Usuário 	|
 | **Objetivo do Teste** 	| Avaliar o acesso ao gerenciamento de tarefas dentro da coluna 	|
 | **Passos** 	| 1. Acessar navegador;<br>2. Informar o endereço do site;<br>3. Acessar página inicial;<br>4. Efetuar Login;<br>5. Clicar no projeto desejado;<br>6. Interagir com as tarefas do projeto 	|
 |  	|  	|
-| **Caso de Teste** 	| **CTU-09 – Gerenciar Colunas** 	|
+| **Caso de Teste** 	| **CTU-10 – Gerenciar Colunas** 	|
 | **Perfil** 	| Usuário 	|
 | **Objetivo do Teste** 	| Avaliar o acesso ao gerenciamento de colunas dentro do projeto 	|
 | **Passos** 	| 1. Acessar navegador;<br>2. Informar o endereço do site;<br>3. Acessar página inicial;<br>4. Efetuar Login;<br>5. Clicar no projeto desejado;<br>6. Interagir com a coluna desejada. 	|
