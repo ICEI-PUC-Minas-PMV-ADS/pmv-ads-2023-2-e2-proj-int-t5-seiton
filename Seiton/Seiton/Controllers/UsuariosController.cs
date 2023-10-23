@@ -35,7 +35,7 @@ namespace Seiton.Controllers
             var dados = await _context.Usuarios.FirstOrDefaultAsync
                 (u => u.NomeUsuario == usuario.NomeUsuario);
 
-            if (dados == null)
+            if (dados == null || string.IsNullOrEmpty(usuario.Senha) || string.IsNullOrEmpty(dados.Senha))
             {
                 ViewBag.Message = "Usuário e/ou senha inválidos!";
                 return View();
