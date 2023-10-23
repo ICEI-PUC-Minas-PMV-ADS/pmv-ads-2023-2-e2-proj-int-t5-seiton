@@ -4,7 +4,7 @@
 
 | Testes 	| CT-01 – Cadastrar perfil	|
 |:---:	|:---:	|
-|	Vídeo 	| <video src="https://user-images.githubusercontent.com/81396458/167744526-c554da2e-b6f0-4b64-8834-175ce31cc208.mp4"> |
+|	Vídeo 	| https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t5-seiton/assets/142539156/e069bb69-2912-456b-9485-d6abb60df51a |
 
 ## Avaliação
 
