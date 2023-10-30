@@ -3,14 +3,32 @@
 }
 <link rel="stylesheet" type="text/css" href="/css/Index.css" media="screen" />
 
-<div class="container-fluid">
+<div id="conatinerHome">
+
+    <main id="bannerProject">
+<header id="headerLogo">
+         <img src="/img/Logo.png" id="imgLogo" />
+</header>
+
+
     <div class="Acessos">
-        <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Login">Login</a>
-        <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Create">Cadastro</a>
+        <div class="txt">
+            <p>Simplifique, otimize e conquiste seus objetivos de maneira incrível!</p>
+            </div>
+            <div id="botoesHome">
+        <a class="btnCadastro" asp-area="" asp-controller="Usuarios" asp-action="Create">Cadastrar</a>
+                <a class="btnLogin" asp-area="" asp-controller="Usuarios" asp-action="Login">Login</a>
+
     </div>
+    </div>
+
+    <div class="imagemBanner">
+            <img src="~/img/imgBanner3.png" alt="Banner de login" id="imgBanner3" />
+    </div>
+
+</main>
+
 </div>
 
 
-
-<img src="/img/Logo.png" />
 

@@ -11168,19 +11168,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\pferr\\.nuget\\packages\\": {}
+    "C:\\Users\\marco\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pferr\\Desktop\\Eixo 2\\pmv-ads-2023-2-e2-proj-int-t5-seiton\\Seiton\\Seiton\\Seiton.csproj",
+      "projectUniqueName": "C:\\Users\\marco\\Desktop\\Segunda\\pmv-ads-2023-2-e2-proj-int-t5-seiton\\Seiton\\Seiton\\Seiton.csproj",
       "projectName": "Seiton",
-      "projectPath": "C:\\Users\\pferr\\Desktop\\Eixo 2\\pmv-ads-2023-2-e2-proj-int-t5-seiton\\Seiton\\Seiton\\Seiton.csproj",
-      "packagesPath": "C:\\Users\\pferr\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pferr\\Desktop\\Eixo 2\\pmv-ads-2023-2-e2-proj-int-t5-seiton\\Seiton\\Seiton\\obj\\",
+      "projectPath": "C:\\Users\\marco\\Desktop\\Segunda\\pmv-ads-2023-2-e2-proj-int-t5-seiton\\Seiton\\Seiton\\Seiton.csproj",
+      "packagesPath": "C:\\Users\\marco\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\marco\\Desktop\\Segunda\\pmv-ads-2023-2-e2-proj-int-t5-seiton\\Seiton\\Seiton\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\pferr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\marco\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -11256,7 +11261,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }

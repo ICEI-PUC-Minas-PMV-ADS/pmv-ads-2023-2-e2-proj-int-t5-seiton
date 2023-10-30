@@ -93,17 +93,27 @@ namespace Seiton.Controllers
         // POST: Usuarios/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,NomeUsuario,Email,Senha")] Usuario usuario)
-        {
-            if (ModelState.IsValid)
-            {
-                usuario.Senha = BCrypt.Net.BCrypt.HashPassword(usuario.Senha);
-                _context.Add(usuario);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Login));
+        public async Task<IActionResult> Create([Bind("Id, NomeUsuario, Email, Senha, ConfirmacaoSenha")] Usuario usuario) {
+            if (ModelState.IsValid) {
+                // Verifique se o nome de usuário já existe no banco de dados.
+                if (_context.Usuarios.Any(u => u.NomeUsuario == usuario.NomeUsuario)) {
+                    ModelState.AddModelError(string.Empty, "O nome de usuário já está em uso. Escolha outro nome de usuário.");
+                    return View(usuario);
+                }
+
+                if (usuario.Senha == usuario.ConfirmacaoSenha) {
+                    usuario.Senha = BCrypt.Net.BCrypt.HashPassword(usuario.Senha);
+                    _context.Add(usuario);
+                    await _context.SaveChangesAsync();
+                    return RedirectToAction(nameof(Login));
+                }
+                else {
+                    ModelState.AddModelError(string.Empty, "A senha e a confirmação de senha não coincidem.");
+                }
             }
             return View(usuario);
         }
+
 
         // GET: Usuarios/Edit
         public async Task<IActionResult> Edit(int? id)

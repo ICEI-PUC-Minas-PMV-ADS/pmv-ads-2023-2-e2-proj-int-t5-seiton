@@ -1,30 +1,140 @@
-﻿* {
-    margin: 0px;
-    padding: 0px;
-}
-img {
-    width: 60%;
-    position: relative;
-}
+﻿@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Lobster&family=Poppins&display=swap');
 
-.container-fluid{
-    width: 98vw;
-}
 
-.Acessos {
-    margin-top: 1%;
+#conatinerHome {
+    font-family: 'Arimo';
     display: flex;
-    float: right;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    color: white;
 }
 
-    .Acessos a {
-        font-size: 1.7rem;
-        font-family: sans-serif;
-        margin-right: 8%;
-        color: #343434;
-        text-decoration: none
+#bannerProject { /* Container */
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "acesso imagem";
+
+    grid-template-rows: 150px 440px;
+    grid-template-columns: 500px 400px;
+   
+
+}
+
+#headerLogo { /* Logo GRID*/
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+
+}
+
+.Acessos { /* Grid área de acesso ao login e cadastro*/
+    grid-area: acesso;
+    background-color: green;
+    width: 100%;
+    border-radius: 25px 0px 0px 25px;
+    background-color: rgb(42, 96, 146);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column
+}
+
+.imagemBanner { /* Imagem de dentro do banner GRID */
+    grid-area: imagem;
+    background-color: rgb(42, 96, 146);
+    border-radius: 0px 25px 25px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#imgLogo { /* Imagem logo */
+    width: 25%;
+    position: relative;
+  
+}
+
+p{ /* Texto chamativo*/
+    font-size:21.4pt;
+  font-weight:bold;
+}
+
+    p::first-letter { /* Primeira letra do texto*/
+        font-size: 160%;
     }
 
-        .Acessos a:hover {
-            color: #4EAAFF;
-        }
+
+.txt { /* Container do texto*/
+    font-family: 'Poppins', sans-serif;
+    margin: 0 auto;
+    width: 70%
+}
+
+#imgBanner3 { /* Imagem de dentro do banner*/
+    width: 130%;
+    margin-right: 100px;
+}
+
+#botoesHome{ /* Container dos botoes*/
+    width:99%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:40px;
+    margin-top:0px;
+    position: relative;
+    
+
+}
+
+.btnCadastro { /*Botão cadastrar*/
+    background-color: darkorange;
+    width: 17%;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    font-size: 13pt;
+    border-radius: 20px;
+    transition: 1s;
+ 
+}
+
+.btnLogin { /* Botão login*/
+    transition: 1s;
+    padding: 5px;
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    font-size: 13pt;
+    border-radius: 20px;
+    border: 1px solid white;
+
+}
+
+.btnCadastro:hover {
+    transform: scale(1.1);
+    transform-origin: center;
+}
+
+.btnLogin:hover {
+    transform: scale(1.1);
+    transform-origin: center;
+}
+
+
+@media screen and (max-width: 760px) {
+
+    #conatinerHome {
+        width: 100vh;
+        height: 100vh;
+    }
+}

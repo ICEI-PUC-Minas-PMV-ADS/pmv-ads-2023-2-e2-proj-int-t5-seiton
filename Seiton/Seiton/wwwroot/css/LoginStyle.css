@@ -1,23 +1,24 @@
 ﻿@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Lobster&display=swap');
 
 
-body{
-    font-family:Arimo;
+body {
+    font-family: 'Arimo';
 }
 #boxAll { /* Container 2 */
     display: grid;
     grid-template-areas:
         "img titulo"
         "img formulario";
-    grid-template-rows: 40px 220px 21px;
-    grid-template-columns: 350px 250px;
+    grid-template-rows: 70px 250px;
+    grid-template-columns: 380px 350px;
+
 }
 
 #box1 { /* Container 1 */
     display: flex;
     align-items: center;
     justify-content: center;
-    margin:5%;
+    margin:10% auto;
 }
 
 .imgOffice { /* Imagem do banner GRID AREA */
@@ -27,9 +28,9 @@ body{
 }
 
 #imgLogin { /* Imagem do banner */
-    width:365px;
+    width:430px;
     margin-top: -45px;
-    margin-left: -10px;
+    margin-left: 0px;
     position: relative;
 }
 
@@ -46,16 +47,47 @@ body{
 }
 
 
+.botoes2 { /* Container dos botões*/
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-left:-40px;
+}
+
+.voltar2 { /* Botão voltar*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: steelblue;
+    color: white;
+    width: 20%;
+    height: 25px;
+    font-size: 11pt;
+    transition: 1s;
+    position: relative;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 2px 0px 0px rgb(0,0,0, 0.2);
+    text-decoration: none;
+}
+
+    .voltar2:hover {
+        background-color: rgb(98, 98, 98);
+    }
+
+
 .btn { /* Botão ENTRAR */
     text-align: center;
     background-color: rgb(78,170,255);
     color: white;
-    width: 43%;
-    height: 20px;
+    width: 20%;
+    height: 25px;
     font-size: 11pt;
     transition: 1s;
     position: relative;
-    font-family: 'Arimo';
     border-radius:5px;
     border:none;
     box-shadow:0px 2px 0px 0px rgb(0,0,0, 0.2)
@@ -66,36 +98,54 @@ body{
     background-color: rgb(35, 159, 64);
 }
 
-h1 { /* Titulo LOGAR */
-    font-family: 'Arimo';
+#goToCreate2 {
+    padding: 35px;
     color: white;
-    font-size: 15pt;
-    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    font-size:9pt;
+}
+
+    #goToCreate2:hover {
+        color: deepskyblue;
+    }
+
+h1 { /* Titulo LOGAR */
+    color: white;
+    font-size: 20pt;
+    margin-left: 50px;
     margin-top: 7px
 }
 
 
 h3 { /* Msg usuario ou senha inválidos */
-    color: red;
+    color: rgb(255, 10, 50);
     font-size: 11pt;
     text-align: center;
-    margin-left: 25%;
-    margin-top: -5%;
-    position:relative;
+    justify-content: center;
+    position: relative;
 }
 
 p { /* Txt nome e senha */
-    font-family: 'Arimo';
     color: white;
     display: flex;
-    font-size: 12pt;
+    font-size: 14pt;
 
 }
+
+    p::first-letter{
+        font-size:150%;
+    }
+
+    ::placeholder { /* Mensagem placeholder*/
+        color: rgb(198, 198, 198);
+        font-size: 11pt;
+    }
 
 
 .col-md-4 { /* Formulário ( Tamanho) */
     width: 80%;
-    margin-left: 20px;
+    margin-left: 50px;
     margin-top:-18px;
     
 }
@@ -145,70 +195,25 @@ p { /* Txt nome e senha */
     color: deepskyblue;
 }
 
-/*#Senha-error {  Msg Insira uma senha 
-    font-family:Arial;
-    color: red;
-    font-size: 12pt;
+.text-danger { /* Texto da mensagem de usuario e senha requerido*/
+    color: rgb(255, 10, 50);
+    font-size: 11pt;
 }
 
-#NomeUsuario-error {  Msg Insira um usuario 
-    color: red;
-    font-size: 12pt;
-}
-*/
-
-.text-danger {
-    color: red;
-    font-size: 10pt;
-}
-
-.form-group1 {
+.form-group1 { /* Formulário input*/
     margin-top: -16px;
     margin-bottom: 20px;
 }
 
-.form-group2{
+.form-group2 { /* Formulário input*/
     margin-top: -16px;
 }
 
-.border-top{
-    display: flex;
-    justify-content: center;
-    margin-top: 60px;
+
+@media screen and (max-width: 760px){
+    #boxAll { /* Container 2 */
+     width:50%;
+    }
 }
 
-::placeholder{
-    color: rgb(198, 198, 198);
-}
-
-.botoes2{
-    margin-top:10px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    gap:15px;
-}
-
-.voltar2 {
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align: center;
-    background-color: steelblue;
-    color: white;
-    width: 25%;
-    height: 20px;
-    font-size: 11pt;
-    transition: 1s;
-    position: relative;
-    font-family: 'Arimo';
-    border-radius: 5px;
-    border: none;
-    box-shadow: 0px 2px 0px 0px rgb(0,0,0, 0.2);
-    text-decoration: none;
-}
-
-.voltar2:hover {
-    background-color: powderblue;
-}
 

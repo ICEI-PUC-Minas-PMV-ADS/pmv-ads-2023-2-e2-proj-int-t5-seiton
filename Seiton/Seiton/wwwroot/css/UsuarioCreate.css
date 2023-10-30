@@ -1,141 +1,188 @@
 ﻿@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Lobster&display=swap');
 
 body {
-    font-family: 'Arimo';
+    font-family: Arimo;
 }
 
-#bacground { /*Fundo do Formulario*/
-    width: calc(100vw / 4 * 2.5);
-    height: calc(100vh / 4 * 2.2);
-    margin-left: calc(100vw / 6);
-    margin-top: 10%;
-    position: absolute;
-    z-index: -1;
-    border-radius: 60px 50px 60px 350px;
-    background-color: #2A6092;
+#containerPrincipal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 11% auto;
+
 }
 
-.col-md-4 { /* Container Principal */
-    margin-left: 55%;
-    padding-top: 12%;
-    width: 20%;
+.containerForm { /* Formulario container */
+    display: grid;
+    grid-template-areas:
+        "imagem titulo"
+        "imagem formulario";
+    grid-template-rows: 50px 290px;
+    grid-template-columns: 380px 350px;
+    
 }
 
-.form-group { /*Formulario de Cadastro*/
-    margin-top:0px;
+.imgOffice2 { /* Grid da imagem*/
+    grid-area: imagem;
+    background-color: rgb(42,96,144);
+    border-radius: 20px 0px 0px 58%;
 }
 
-   h3{ /*Grupo de Formulario*/
-        color: white;
-        font-size: 1.2rem;
-        margin-top: -1px;
-        font-family: 'Arimo';
-    }
+.titulo2 { /*Grid do titulo*/
+    grid-area: titulo;
+    background-color: rgb(42,96,144);
+    border-radius: 0px 20px 0px 0;
+}
 
-    .form-group input { /*Input do Formulario*/
-        background-color: transparent;
-        border: none;
-        width: 80%;
-        font-size: 1.1rem;
-        border-bottom: 2px solid white;
-        border-radius: 0px;
-        color: white;
-        margin-top:-20px;
-    }
+#formulario2 { /* Grid da área formulario*/
+    grid-area: formulario;
+    background-color: rgb(42,96,144);
+    border-radius: 0px 0px 20px 0;
+    overflow: auto; /* Adiciona uma barra de rolagem quando necessário */
 
+}
 
-        .form-group input:focus { /*Input do Formulario*/
-            color: white;
-            background-color: transparent;
-            box-shadow: none;
-            outline: 0;
-        }
+    #imgLogin2 { /* Imagem do banner*/
+    width:116%;
+    margin-top: -45px;
+    position: relative;
+}
 
-.btn-success { /* Botão de Cadastrar*/
-    margin-left: 10%;
-    font-size: 1rem;
-    border-radius: 5px;
+.formAll { /* Todo o formulário */
+    margin-left: 60px;
+}
+
+.form-group1-create input { /* Todo o formulário */
+    display: block;
+    width: 75%;
     border: none;
-    padding: 3px;
-    width: 35%;
-    background-color: #4EAAFF;
+    height: 3px;
+    border-bottom: 1px solid white;
+    background-color: rgb(42,96,144);
     color: white;
-    cursor: pointer;
-  
-    transition: 1s;
+    border-radius: 0px;
+    outline: none;
 }
 
-    .btn-success:hover { /*Animação ao passar mouse em cima do cadastrar*/
-        background-color: #37C936;
-    }
-
-.ip-link {
-    padding-bottom: 5%;
-}
-
-    .ip-link a, span {
-        font-family: 'Arimo';
-        color: white;
-        font-size: 1.5rem;
-        text-decoration: none;
-    }
-
-img { /*Imagem do Banner*/
-    width: 35%;
-    position: absolute;
-    margin-left: 18%;
-    margin-top: 5%;
-}
-
-h1 { /* Titulo */
-    font-size: 1.2rem;
-    padding-bottom: 10px;
-    font-family: 'Arimo';
+.form-group2-create input { /* Todo o formulário */
+    display: block;
+    width: 75%;
+    border: none;
+    height: 3px;
+    border-bottom: 1px solid white;
+    background-color: rgb(42,96,144);
     color: white;
-    margin-top: -10px;
+    border-radius: 0px;
+    outline: none;
 }
 
-h3 { /*Nome,email,senha,(texto)*/
-    font-size: 11pt !important;
-  
+.form-group3-create input { /* Todo o formulário */
+    display: block;
+    width: 75%;
+    border: none;
+    height: 3px;
+    border-bottom: 1px solid white;
+    background-color: rgb(42,96,144);
+    color: white;
+    border-radius: 0px;
+    outline: none;
 }
 
-.field-validation-error {
-    color: red;
-    font-size: 10pt;
-}
-
-::placeholder {
+::placeholder { /* Mensagem placeholder*/
     color: rgb(198, 198, 198);
-    font-size: 10pt;
+    font-size: 11pt;
 }
 
-.botoes{
-    margin-top:10px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    width:230px;
-    margin-left:10px
-}
-.voltar {
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    transition: 1s;
+
+h1 { /*  Titulo */
+    margin-left: 60px;
     color: white;
-    text-decoration: none;
-    font-size: 1rem;
-    border-radius: 5px;
-    border: none;
-    padding: 4px;
-    width: 20%;
+    font-size: 20pt;
+    margin-top: 7px
+}
+
+p { /* Textos nome, email e senha*/
+    color: white;
+    display: flex;
+    font-size: 14pt;
+    margin-bottom:0px;
+}
+
+.botoes1 { /* Container dos botões*/
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-left: -40px;
+    margin-bottom:15px;
+}
+
+.voltar1 { /* Botão voltar*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     background-color: steelblue;
     color: white;
-    cursor: pointer;
+    width: 20%;
+    height: 25px;
+    font-size: 11pt;
+    transition: 1s;
+    position: relative;
+    font-family: 'Arimo';
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 2px 0px 0px rgb(0,0,0, 0.2);
+    text-decoration: none;
 }
 
-    .voltar:hover {
-        background-color: powderblue;
+    .voltar1:hover {
+        background-color: rgb(98, 98, 98);
     }
 
+
+.btn1 { /* Botão ENTRAR */
+    text-align: center;
+    background-color: rgb(78,170,255);
+    color: white;
+    width: 20%;
+    height: 25px;
+    font-size: 11pt;
+    transition: 1s;
+    position: relative;
+    font-family: 'Arimo';
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 2px 0px 0px rgb(0,0,0, 0.2)
+}
+
+    .btn1:hover {
+        cursor: pointer;
+        background-color: rgb(35, 159, 64);
+    }
+
+#goToCreate { /* Link para tela criar conta*/
+    padding: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 9pt;
+}
+
+#goToCreate:hover {
+   color:deepskyblue;
+}
+
+.text-danger { /* Mensagem caso o usuario não inserir um campo obrigatório*/
+    color: rgb(255, 10, 50);
+    font-size: 11pt;
+    word-wrap: break-word;
+}
+
+@media screen and (max-width: 760px) {
+    .containerForm { /* Container 2 */
+        width: 110%;
+        
+    }
+}

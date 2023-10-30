@@ -19,7 +19,23 @@ namespace Seiton.Models
         [Required(ErrorMessage = "Senha requerida!")]
         public string Senha { get; set; }
 
+        //[Required(ErrorMessage = "Repita a senha novamente!")]
+        // public string ConfirmarSenha { get; set; }
+
+
+        [Required(ErrorMessage = "Confirmação de senha requerida!")]
+        [Compare("Senha", ErrorMessage = "As senhas não coincidem.")]
+        [Display(Name = "Confirme a Senha")]
+        [DataType(DataType.Password)]
+        [NotMapped] // Isso evita que o campo seja mapeado para o banco de dados.
+        public string ConfirmacaoSenha { get; set; }
+
+
         public ICollection<Projeto> Projeto { get; set; }
+
+
+
+
     }
 
 }

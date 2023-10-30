@@ -42,17 +42,19 @@
            <div class="botoes2">
            <a class="voltar2" asp-area="" asp-controller="Home" asp-action="Index">Voltar</a>
             <input type="submit" value="Entrar" class="btn btn-success" />
-            </div>
-                           
-              </form>
+                                
+        </div>
+                            <h3>@ViewBag.Message</h3>
+                        </form>
            </div>
         </div>
+                <a id="goToCreate2" asp-area="" asp-controller="Usuarios" asp-action="Create">Não possui uma conta? Faça o cadastro!</a>
 </main>
-
+           
     </div>
-
+        
 </div>
-<h3>@ViewBag.Message</h3>
+
 
 </body>
 </html>
