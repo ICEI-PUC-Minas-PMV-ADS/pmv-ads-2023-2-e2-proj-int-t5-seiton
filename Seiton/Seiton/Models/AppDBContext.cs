@@ -11,7 +11,10 @@ namespace Seiton.Models
 
         }
 
-        public AppDBContext(DbContextOptions<AppDBContext> options) : base(options) { }
+        public AppDBContext(DbContextOptions<AppDBContext> options) : base(options) 
+        {
+            Database.EnsureCreated();
+        }
 
         public DbSet<Usuario> Usuarios { get; set; }
         public object Usuario { get; internal set; }

@@ -1,0 +1,73 @@
+﻿/* Estilos para o modal */
+.modal1 {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro com transparência */
+    z-index: 1;
+    font-family: Arimo, sans-serif;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Estilos para o conteúdo do modal */
+.modal-content1 {
+    background-color: #ffffff;
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+    /* Estilo para o título do modal */
+    .modal-content1 h1 {
+        font-size: 25px;
+        margin-bottom: 1px;
+        color: #000000;
+    }
+
+    /* Estilo para os parágrafos no modal */
+    .modal-content1 p {
+        font-size: 16px;
+    }
+
+    /* Estilo para o aviso em itálico */
+    .modal-content1 .aviso {
+        font-style: italic;
+        color: #ff0000; /* Cor vermelha para o aviso */
+        margin-top: 5px;
+    }
+
+    /* Estilo para o botão "Apagar" */
+    .modal-content1 input[type="submit"] {
+        background-color: #4EAAFF;
+        color: #ffffff;
+        border: none;
+        padding: 10px 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 15px;
+    }
+
+        .modal-content1 input[type="submit"]:hover {
+            background-color: #ff0000;
+        }
+
+    /* Estilo para o link "Voltar" */
+    .modal-content1 a {
+        background-color: #4EAAFF;
+        color: #ffffff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 15px;
+        text-decoration: none;
+    }
+        .modal-content1 a:hover {
+            background-color: #2A6092;
+        }

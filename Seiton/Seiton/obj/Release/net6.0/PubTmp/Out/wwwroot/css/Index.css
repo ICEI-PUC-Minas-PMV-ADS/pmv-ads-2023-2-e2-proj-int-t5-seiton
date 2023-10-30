@@ -1,0 +1,30 @@
+﻿* {
+    margin: 0px;
+    padding: 0px;
+}
+img {
+    width: 60%;
+    position: relative;
+}
+
+.container-fluid{
+    width: 98vw;
+}
+
+.Acessos {
+    margin-top: 1%;
+    display: flex;
+    float: right;
+}
+
+    .Acessos a {
+        font-size: 1.7rem;
+        font-family: sans-serif;
+        margin-right: 8%;
+        color: #343434;
+        text-decoration: none
+    }
+
+        .Acessos a:hover {
+            color: #4EAAFF;
+        }
