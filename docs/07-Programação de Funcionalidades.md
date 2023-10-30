@@ -12,4 +12,4 @@ Implementação do sistema descrita por meio dos requisitos funcionais e/ou não
 |RNF-10| acesso aos projetos criados | Logado.cshtml / ViewModel.cs / LogadosController.cs|
 
 # Instruções de acesso
-(Site ainda não hospedado)
+[Projeto Seiton](https://projetoseiton.azurewebsites.net)
