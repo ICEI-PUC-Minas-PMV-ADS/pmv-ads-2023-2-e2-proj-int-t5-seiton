@@ -1,6 +1,9 @@
 ﻿@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arimo&family=Lobster&family=Poppins&display=swap');
 
+body{
+    background-color:gray;
+}
 
 #conatinerHome {
     font-family: 'Arimo';
@@ -131,10 +134,228 @@ p{ /* Texto chamativo*/
 }
 
 
-@media screen and (max-width: 760px) {
+#conatinerHome {
+    min-width: 480px;
+    max-width: 2560px;
+}
 
-    #conatinerHome {
-        width: 100vh;
-        height: 100vh;
+@media screen and (min-width: 481px) and (max-width:768px) {
+
+    #bannerProject { /* Container */
+        grid-template-rows: 10vmax 34vmax;
+        grid-template-columns: 50vmax 40vmax;
+    }
+
+
+    #imgBanner3 { /* Imagem de dentro do banner*/
+        width: 115%;
+        margin-right: 100px;
+    }
+
+    p { /* Texto chamativo*/
+        font-size: 14pt;
+        font-weight: bold;
+    }
+
+    .btnCadastro{
+        width:20%;
+        font-size:10pt;
+    }
+
+    .btnLogin {
+        width: 20%;
+        font-size: 10pt;
+    }
+
+    #imgLogo { /* Imagem logo */
+        width: 15%;
+        position: relative;
+    }
+
+}
+
+@media screen and (min-width: 769px) and (max-width:1024px) {
+
+    #bannerProject { /* Container */
+        grid-template-rows: 11vmax 34vmax;
+        grid-template-columns: 50vmax 40vmax;
+    }
+
+
+    #imgBanner3 { /* Imagem de dentro do banner*/
+        width: 115%;
+        margin-right: 100px;
+    }
+
+    p { /* Texto chamativo*/
+        font-size: 1.7em;
+        font-weight: bold;
+    }
+
+    .btnCadastro {
+        width: 20%;
+        font-size: 13pt;
+    }
+
+    .btnLogin {
+        width: 20%;
+        font-size: 13pt;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width:1200px) {
+
+    #bannerProject { /* Container */
+        grid-template-rows: 11vmax 31vmax;
+        grid-template-columns: 48vmax 35vmax;
+    }
+
+
+    #imgBanner3 { /* Imagem de dentro do banner*/
+        width: 115%;
+        margin-right: 100px;
+    }
+
+    p { /* Texto chamativo*/
+        font-size: 2em;
+        font-weight: bold;
+    }
+
+    .btnCadastro {
+        width: 20%;
+        font-size: 16pt;
+    }
+
+    .btnLogin {
+        width: 20%;
+        font-size: 16pt;
+    }
+}
+
+@media screen and (min-width: 1201px) and (max-width:1366px) {
+
+    #bannerProject { /* Container */
+        grid-template-rows: 15vmax 35vmax;
+        grid-template-columns: 50vmax 40vmax;
+    }
+
+
+    #imgBanner3 { /* Imagem de dentro do banner*/
+        width: 115%;
+        margin-right: 100px;
+    }
+
+    p { /* Texto chamativo*/
+        font-size: 2.4em;
+        font-weight: bold;
+    }
+
+    .btnCadastro {
+        width: 18%;
+        font-size: 1.5em;
+    }
+
+    .btnLogin {
+        width: 18%;
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (min-width: 1880px) and (max-width:1920px) {
+
+    #bannerProject { /* Container */
+        grid-template-rows: 13vmax 38vmax;
+        grid-template-columns: 50vmax 40vmax;
+    }
+
+
+    #imgBanner3 { /* Imagem de dentro do banner*/
+        width: 120%;
+        margin-right: 100px;
+    }
+
+    p { /* Texto chamativo*/
+        font-size: 3.6em;
+        font-weight: bold;
+    }
+
+    .btnCadastro {
+        width: 20%;
+        font-size: 2.5em;
+    }
+
+    .btnLogin {
+        width: 20%;
+        font-size: 2.5em;
+    }
+}
+
+
+@media screen and (min-width: 1367px) and (max-width:1880px) {
+
+    #bannerProject { /* Container */
+        grid-template-rows: 10vmax 31vmax;
+        grid-template-columns: 50vmax 40vmax;
+    }
+
+
+    #imgBanner3 { /* Imagem de dentro do banner*/
+        width: 106%;
+        margin-right: 100px;
+    }
+
+    p { /* Texto chamativo*/
+        font-size: 2.6em;
+        font-weight: bold;
+    }
+
+    .btnCadastro {
+        width: 20%;
+        font-size: 2.0em;
+    }
+
+    .btnLogin {
+        width: 20%;
+        font-size: 2.0em;
+    }
+
+    #imgLogo { /* Imagem logo */
+        width: 18%;
+        position: relative;
+    }
+}
+
+@media screen and (min-width: 1921px) and (max-width:2560px) {
+
+    #bannerProject { /* Container */
+        grid-template-rows: 10vmax 25vmax;
+        grid-template-columns: 50vmax 40vmax;
+    }
+
+
+    #imgBanner3 { /* Imagem de dentro do banner*/
+        width: 83%;
+        margin-right: 100px;
+    }
+
+    p { /* Texto chamativo*/
+        font-size: 3.3em;
+        font-weight: bold;
+    }
+
+    .btnCadastro {
+        width: 17%;
+        font-size: 2.5em;
+    }
+
+    .btnLogin {
+        width: 17%;
+        font-size: 2.5em;
+    }
+
+
+    #imgLogo { /* Imagem logo */
+        width: 17%;
+        position: relative;
     }
 }
