@@ -22,5 +22,6 @@ namespace Seiton.Models
         public Projeto Projeto { get; set; }
 
         public ICollection<Tarefas> Tarefas { get; set; }
+
     }
 }

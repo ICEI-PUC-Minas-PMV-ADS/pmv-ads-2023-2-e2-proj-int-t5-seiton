@@ -60,6 +60,10 @@ namespace Seiton
                 name: "Projeto",
                 pattern: "{controller=Logados}/{action=Logado}/{id}");
 
+                endpoints.MapControllerRoute(
+                name: "ProjetoId",
+                pattern: "{controller=Tarefas}/{action=Create}/{id}");
+
 
             });
 

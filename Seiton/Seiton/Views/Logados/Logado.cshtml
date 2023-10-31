@@ -44,16 +44,58 @@
         </div>
 
         <div class="colum_container">
+            
             @if (Model.NomeColuna != null)
             {
-                @foreach (var teste in Model.NomeColuna)
+                var c = 0;
+                var colunas = Model.NomeColuna.Zip(Model.IdColuna, (nomecoluna, idcoluna) => new { NomeColuna = nomecoluna, IdColuna = idcoluna })
+                .Zip(Model.CorColuna, (coluna, cor) => new { NomeColuna = coluna.NomeColuna, IdColuna = coluna.IdColuna, CorColuna = cor });
+
+                @foreach (var Coluna in colunas)
                 {
-                    <div class="coluna">
-                        <div class="color_colum"><div class="icolor_colum"></div></div>
-                        <h3>@teste</h3>
+                    <div class="columContainerInt">
+                    
+                        <div class="coluna">
+                            <div class="color_colum" style="background-color: @Coluna.CorColuna;"><div class="icolor_colum"></div></div>
+                            <h3>@Coluna.NomeColuna</h3>
+                        </div>
+                            @if (c == 0)
+                            {
+                                <div id="adicionarTarefa" >
+                                    <span class="material-symbols-outlined">
+                                        add
+                                    </span>
+                                    <a asp-area="" asp-controller="Tarefas" asp-action="Create">Nova tarefa</a>
+                                </div>
+                            }
+                            
+                            @foreach (var IdTarefa in Model.IdTarefa)
+                            {
+                                var tarefasCombinadas = Model.NomeTarefas.Zip(Model.descricao, (nomeTarefa, desc) => new { NomeTarefa = nomeTarefa, Descricao = desc })
+                                .Zip(Model.Responsavel, (tarefa, resp) => new { NomeTarefa = tarefa.NomeTarefa, Descricao = tarefa.Descricao, Responsavel = resp });
+
+                                @if (@Coluna.IdColuna == IdTarefa)
+                                {
+                                    foreach (var tarefa in tarefasCombinadas)
+                                    {
+                                        <div class="tarefa">
+                                        <h4>@tarefa.Responsavel</h4>
+                                        <div class="paragrafo2">
+                                            <h2>@tarefa.NomeTarefa</h2>
+                                        </div>
+                                        <hr>
+                                        <div class="paragrafo"><p>@tarefa.Descricao</p></div>
+                                        </div>
+                                    }
+                                }
+                                break;
+                            }
                     </div>
+
+                    c = 1;
                 }
             }
+            
         </div>
     </div>
 

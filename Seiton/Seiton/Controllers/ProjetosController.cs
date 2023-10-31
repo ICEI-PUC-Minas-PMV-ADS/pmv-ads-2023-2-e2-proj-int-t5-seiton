@@ -65,14 +65,14 @@ namespace Seiton.Controllers
 
 
                 string[] names = new string[] { "Backlog", "To do", "In progress", "Testing", "Done",};
-                string[] color = new string[] { "Backlog", "To do", "In progress", "Testing", "Done", };
+                string[] color = new string[] { "#4EAAFF", "#FF4167", "#FFB64F", "#696969", "#37C936CC" };
 
-                foreach (string item in names)
+                for (int i = 0; i < names.Length; i++)
                 {
                     var Coluna = new Colunas
                     {
-                        nome_coluna = item,
-                        cor_coluna = "Vermelho",
+                        nome_coluna = names[i],
+                        cor_coluna = color[i],
                         quant_tarefas = 0,
                         IdProjeto = maxID
                     };

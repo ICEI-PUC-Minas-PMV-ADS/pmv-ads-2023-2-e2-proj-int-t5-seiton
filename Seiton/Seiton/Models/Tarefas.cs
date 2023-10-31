@@ -13,7 +13,7 @@ namespace Seiton.Models
 
         public string descricao { get; set;}
 
-        public int prioridade { get; set; }
+        public prioridadeOp prioridade { get; set; }
 
         public string responsavel { get; set; }
 
@@ -21,5 +21,12 @@ namespace Seiton.Models
 
         [ForeignKey("IdColuna")]
         public Colunas Colunas { get; set; }
+
+        public enum prioridadeOp
+        {
+            Alta = 1,
+            Média = 2,
+            Baixa = 3
+        } 
     }
 }

@@ -32,17 +32,51 @@ namespace Seiton.Controllers
                                 select p.Id)
                                  .ToList();
 
+            // Filtrando colunas
             var NomeColuna = (from c in _context.Colunas
                               where c.IdProjeto == id
                               select c.nome_coluna)
-                     .ToList();
+                              .ToList();
+
+            var IdColuna = (from c in _context.Colunas
+                              where c.IdProjeto == id
+                              select c.Id)
+                              .ToList();
+
+            var CorColuna = (from c in _context.Colunas
+                            where c.IdProjeto == id
+                            select c.cor_coluna)
+                              .ToList();
+
+            // Filtrando tarefas
+            var NomeTarefas = (from t in _context.Tarefas
+                              select t.nome_tarefas)
+                              .ToList();
+
+            var descricao = (from t in _context.Tarefas
+                               select t.descricao)
+                              .ToList();
+
+            var Responsavel = (from t in _context.Tarefas
+                             select t.responsavel)
+                            .ToList();
+
+            var IdTarefa = (from t in _context.Tarefas
+                               select t.IdColuna)
+                           .ToList();
 
 
             var viewModel = new ViewModel
             {
                 Nome_projeto = Nome_projeto,
                 ProjetoId = ProjetoId,
-                NomeColuna = NomeColuna
+                NomeColuna = NomeColuna,
+                IdColuna = IdColuna,
+                IdTarefa = IdTarefa,
+                NomeTarefas = NomeTarefas,
+                descricao = descricao,
+                Responsavel = Responsavel,
+                CorColuna = CorColuna
             };
 
 
