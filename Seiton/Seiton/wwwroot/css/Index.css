@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Arimo&family=Lobster&family=Poppins&display=swap');
 
 body{
-    background-color:gray;
+    background-color:pink;
 }
 
 #conatinerHome {
@@ -235,7 +235,7 @@ p{ /* Texto chamativo*/
 @media screen and (min-width: 1201px) and (max-width:1366px) {
 
     #bannerProject { /* Container */
-        grid-template-rows: 15vmax 35vmax;
+        grid-template-rows: 9vmax 35vmax;
         grid-template-columns: 50vmax 40vmax;
     }
 
@@ -258,6 +258,11 @@ p{ /* Texto chamativo*/
     .btnLogin {
         width: 18%;
         font-size: 1.5em;
+    }
+
+    #imgLogo { /* Imagem logo */
+        width: 15%;
+        position: relative;
     }
 }
 

@@ -28,14 +28,14 @@
               <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
         <p>Nome de usuário</p>
-           <div class="form-group1">                             
-              <input asp-for="NomeUsuario" class="form-control" placeholder="Digite seu usuário:" />
+           <div class="form-group1">
+                                <input asp-for="NomeUsuario" class="form-control" placeholder="Digite seu usuário:" /><br />
               <span asp-validation-for="NomeUsuario" class="text-danger"></span>
            </div>
 
-        <p>Senha</p>
-           <div class="form-group2">                              
-              <input asp-for="Senha" class="form-control" placeholder="Digite sua senha:" type="password" />
+        <p id="senhaTxt">Senha</p>
+           <div class="form-group2">
+                                <input asp-for="Senha" class="form-control" placeholder="Digite sua senha:" type="password" /><br />
               <span asp-validation-for="Senha" class="text-danger"></span>
            </div>
 
@@ -44,11 +44,13 @@
             <input type="submit" value="Entrar" class="btn btn-success" />
                                 
         </div>
-                            <h3>@ViewBag.Message</h3>
+                            <h3> @ViewBag.Message</h3>
                         </form>
            </div>
         </div>
+        <div id="containerGoTo">
                 <a id="goToCreate2" asp-area="" asp-controller="Usuarios" asp-action="Create">Não possui uma conta? Faça o cadastro!</a>
+                </div>
 </main>
            
     </div>

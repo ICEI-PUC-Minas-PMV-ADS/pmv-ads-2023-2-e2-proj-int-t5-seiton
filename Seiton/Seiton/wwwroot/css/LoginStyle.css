@@ -4,20 +4,23 @@
 body{
     font-family:Arimo;
 }
+
 #boxAll { /* Container 2 */
     display: grid;
     grid-template-areas:
         "img titulo"
         "img formulario";
-    grid-template-rows: 40px 220px 21px;
-    grid-template-columns: 350px 250px;
+    grid-template-rows: 4vmax 20vmax;
+    grid-template-columns: 32vmax 23vmax;
 }
 
 #box1 { /* Container 1 */
+    width:97vmax;
+    height:46vmax;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin:5%;
+ 
 }
 
 .imgOffice { /* Imagem do banner GRID AREA */
@@ -27,8 +30,8 @@ body{
 }
 
 #imgLogin { /* Imagem do banner */
-    width:365px;
-    margin-top: -45px;
+    width:32vmax;
+    margin-top: -3.5vmax;
     margin-left: -10px;
     position: relative;
 }
@@ -43,16 +46,65 @@ body{
     grid-area: formulario;
     background-color: rgb(42,96,144);
     border-radius: 0px 0px 20px 0;
+    overflow-y: auto;
 }
 
+.botoes2 {
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.voltar2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: steelblue;
+    color: white;
+    width: 23%;
+    height: 20px;
+    font-size: 1em;
+    transition: 1s;
+    position: relative;
+    font-family: 'Arimo';
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 2px 0px 0px rgb(0,0,0, 0.2);
+    text-decoration: none;
+}
+
+    .voltar2:hover {
+        background-color: powderblue;
+    }
+
+#containerGoTo{
+    display:flex;
+    align-items:flex-end;
+    justify-content:center;
+    width:19vmax;
+    height:5vmax;
+}
+
+#goToCreate2 { /* Link para tela criar conta*/
+    color: white;
+    font-size: 9pt;
+    margin-left: 8%;
+}
+
+    #goToCreate2:hover {
+        color: deepskyblue;
+    }
 
 .btn { /* Botão ENTRAR */
     text-align: center;
     background-color: rgb(78,170,255);
     color: white;
-    width: 43%;
+    width: 23%;
     height: 20px;
-    font-size: 11pt;
+    font-size: 1em;
     transition: 1s;
     position: relative;
     font-family: 'Arimo';
@@ -69,18 +121,17 @@ body{
 h1 { /* Titulo LOGAR */
     font-family: 'Arimo';
     color: white;
-    font-size: 15pt;
+    font-size: 1.5em;
     margin-left: 20px;
-    margin-top: 7px
+    margin-top: 7px;
 }
 
 
 h3 { /* Msg usuario ou senha inválidos */
     color: red;
-    font-size: 11pt;
+    font-size: 0.8em;
     text-align: center;
-    margin-left: 25%;
-    margin-top: -5%;
+    margin-left:0px;
     position:relative;
 }
 
@@ -88,7 +139,7 @@ p { /* Txt nome e senha */
     font-family: 'Arimo';
     color: white;
     display: flex;
-    font-size: 12pt;
+    font-size: 1em;
 
 }
 
@@ -102,7 +153,7 @@ p { /* Txt nome e senha */
 
 .form-group1 input { /* Formulário nome ( Bordas) */
   
-    width:80%;
+    width:95%;
     border: none;
     height: 3px;
     border-bottom: 1px solid white;
@@ -113,7 +164,7 @@ p { /* Txt nome e senha */
 }
 
 .form-group2 input { /* Formulário senha ( Bordas) */
-    width: 80%;
+    width: 95%;
     border: none;
     height: 3px;
     border-bottom: 1px solid white;
@@ -145,21 +196,9 @@ p { /* Txt nome e senha */
     color: deepskyblue;
 }
 
-/*#Senha-error {  Msg Insira uma senha 
-    font-family:Arial;
-    color: red;
-    font-size: 12pt;
-}
-
-#NomeUsuario-error {  Msg Insira um usuario 
-    color: red;
-    font-size: 12pt;
-}
-*/
-
 .text-danger {
     color: red;
-    font-size: 10pt;
+    font-size: 0.8em;
 }
 
 .form-group1 {
@@ -179,36 +218,508 @@ p { /* Txt nome e senha */
 
 ::placeholder{
     color: rgb(198, 198, 198);
+    font-size:1em;
 }
 
-.botoes2{
-    margin-top:10px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    gap:15px;
+
+
+@media screen and (min-width: 481px) and (max-width:768px) {
+
+    #boxAll { /* Container 2 */
+        grid-template-rows: 6vmax 26vmax;
+        grid-template-columns: 39vmax 35vmax;
+    }
+
+    #imgLogin { /* Imagem do banner */
+        width: 43vmax;
+        margin-top: -4.2vmax;
+        margin-left: -15px;
+        position: relative;
+    }
+
+    h1 { /* Titulo LOGAR */
+        font-size: 1.3em;
+        margin-left: 20px;    
+    }
+
+    h3 { /* Msg usuario ou senha inválidos */
+        font-size: 0.7em;
+    }
+
+    p { /* Txt nome e senha */
+
+        display: flex;
+        font-size: 0.9em;
+    }
+
+    .text-danger {
+        color: red;
+        font-size: 0.7em;
+    }
+
+    .voltar2 {
+        width: 23%;
+        height: 17px;
+        font-size: 0.8em;
+    }
+
+    .btn { /* Botão ENTRAR */     
+        width: 23%;
+        height: 17px;
+        font-size: 0.8em;
+    }
+
+    #senhaTxt{
+        margin-top:-8px;
+    }
+
+    #goToCreate2 { /* Link para tela criar conta*/
+        color: white;
+        font-size: 8pt;
+        margin-left: 8%;
+    }
+
+    #containerGoTo {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        width: 30vmax;
+        height: 3vmax;
+    }
 }
 
-.voltar2 {
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align: center;
-    background-color: steelblue;
-    color: white;
-    width: 25%;
-    height: 20px;
-    font-size: 11pt;
-    transition: 1s;
-    position: relative;
-    font-family: 'Arimo';
-    border-radius: 5px;
-    border: none;
-    box-shadow: 0px 2px 0px 0px rgb(0,0,0, 0.2);
-    text-decoration: none;
+@media screen and (min-width: 769px) and (max-width:1024px) {
+
+    #boxAll { /* Container 2 */
+        grid-template-rows: 6vmax 26vmax;
+        grid-template-columns: 39vmax 35vmax;
+    }
+
+    #imgLogin { /* Imagem do banner */
+        width: 42vmax;
+        margin-top: -4.2vmax;
+        margin-left: -15px;
+        position: relative;
+    }
+
+    h1 { /* Titulo LOGAR */
+        font-size: 1.5em;
+        margin-left: 20px;
+    }
+
+    h3 { /* Msg usuario ou senha inválidos */
+        font-size: 1em;
+    }
+
+    p { /* Txt nome e senha */
+
+        display: flex;
+        font-size: 1.2em;
+    }
+
+    .text-danger {
+        color: red;
+        font-size: 1em;
+    }
+
+    .botoes2 {
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .voltar2 {
+        width: 23%;
+        height: 20px;
+        font-size: 0.9em;
+    }
+
+    .btn { /* Botão ENTRAR */
+        width: 23%;
+        height: 20px;
+        font-size: 0.9em;
+    }
+
+    #goToCreate2 { /* Link para tela criar conta*/
+        color: white;
+        font-size:9pt;
+        margin-left: 8%;
+    }
+
+    #containerGoTo {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        width: 30vmax;
+        height: 1.5vmax;
+    }
+
+    ::placeholder {
+        color: rgb(198, 198, 198);
+        font-size: 1.2em;
+    }
 }
 
-.voltar2:hover {
-    background-color: powderblue;
+@media screen and (min-width: 1025px) and (max-width:1200px) {
+
+    #boxAll { /* Container 2 */
+        grid-template-rows: 6vmax 25vmax;
+        grid-template-columns: 39vmax 35vmax;
+    }
+
+    #imgLogin { /* Imagem do banner */
+        width: 42vmax;
+        margin-top: -4.2vmax;
+        margin-left: -15px;
+        position: relative;
+    }
+
+    h1 { /* Titulo LOGAR */
+        font-size: 1.5em;
+        margin-left: 20px;
+    }
+
+    h3 { /* Msg usuario ou senha inválidos */
+        font-size: 1.2em;
+    }
+
+    p { /* Txt nome e senha */
+
+        display: flex;
+        font-size: 1.2em;
+    }
+
+    .text-danger {
+        color: red;
+        font-size: 1.2em;
+    }
+
+    .voltar2 {
+        width: 23%;
+        height: 25px;
+        font-size: 1em;
+    }
+
+    .btn { /* Botão ENTRAR */
+        width: 23%;
+        height: 25px;
+        font-size: 1em;
+    }
+
+    #goToCreate2 { /* Link para tela criar conta*/
+        color: white;
+        font-size: 11pt;
+        margin-left: 8%;
+    }
+
+    #containerGoTo {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        width: 30vmax;
+        height: 2.7vmax;
+    }
+
+    ::placeholder {
+        color: rgb(198, 198, 198);
+        font-size: 1.2em;
+    }
+    
 }
 
+@media screen and (min-width: 1201px) and (max-width:1366px) {
+
+    #boxAll { /* Container 2 */
+        grid-template-rows: 6vmax 25vmax;
+        grid-template-columns: 39vmax 35vmax;
+    }
+
+    #imgLogin { /* Imagem do banner */
+        width: 43vmax;
+        margin-top: -4.2vmax;
+        margin-left: -15px;
+        position: relative;
+    }
+
+    h1 { /* Titulo LOGAR */
+        font-size: 2em;
+        margin-left: 20px;
+    }
+
+    h3 { /* Msg usuario ou senha inválidos */
+        font-size: 1.2em;
+    }
+
+    p { /* Txt nome e senha */
+
+        display: flex;
+        font-size: 1.5em;
+    }
+
+    .text-danger {
+        color: red;
+        font-size: 1.2em;
+    }
+
+    .voltar2 {
+        width: 23%;
+        height: 25px;
+        font-size: 1.3em;
+    }
+
+    .btn { /* Botão ENTRAR */
+        width: 23%;
+        height: 25px;
+        font-size: 1.3em;
+    }
+
+    #goToCreate2 { /* Link para tela criar conta*/
+        color: white;
+        font-size: 13pt;
+        margin-left: 8%;
+    }
+
+    #containerGoTo {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        width: 30vmax;
+        height: 3.7vmax;
+    }
+
+    ::placeholder {
+        color: rgb(198, 198, 198);
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (min-width: 1880px) and (max-width:1920px) {
+
+    #boxAll { /* Container 2 */
+        grid-template-rows: 5vmax 22vmax;
+        grid-template-columns: 34vmax 35vmax;
+    }
+
+    #imgLogin { /* Imagem do banner */
+        width: 36vmax;
+        margin-top: -4.2vmax;
+        margin-left: -15px;
+        position: relative;
+    }
+
+    h1 { /* Titulo LOGAR */
+        font-size: 3em;
+        margin-left: 20px;
+    }
+
+    h3 { /* Msg usuario ou senha inválidos */
+        font-size: 1.5em;
+    }
+
+    p { /* Txt nome e senha */
+
+        display: flex;
+        font-size: 1.9em;
+    }
+
+    .text-danger {
+        color: red;
+        font-size: 1.5em;
+    }
+
+    .botoes2 {
+        margin-top: 13%;
+     
+    }
+
+    .voltar2 {
+        width: 23%;
+        height: 33px;
+        font-size: 1.6em;
+    }
+
+    .btn { /* Botão ENTRAR */
+        width: 23%;
+        height: 33px;
+        font-size: 1.6em;
+    }
+
+    #goToCreate2 { /* Link para tela criar conta*/
+        color: white;
+        font-size: 17pt;
+        margin-left: 8%;
+    }
+
+    #containerGoTo {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        width: 30vmax;
+        height: 4.5vmax;
+    }
+
+    ::placeholder {
+        color: rgb(198, 198, 198);
+        font-size: 1.9em;
+    }
+   
+}
+
+
+@media screen and (min-width: 1367px) and (max-width:1880px) {
+
+    #boxAll { /* Container 2 */
+        grid-template-rows: 5vmax 22vmax;
+        grid-template-columns: 34vmax 35vmax;
+    }
+
+    #imgLogin { /* Imagem do banner */
+        width: 36vmax;
+        margin-top: -4.2vmax;
+        margin-left: -15px;
+        position: relative;
+    }
+
+    h1 { /* Titulo LOGAR */
+        font-size: 2em;
+        margin-left: 20px;
+    }
+
+    h3 { /* Msg usuario ou senha inválidos */
+        font-size: 1.5em;
+    }
+
+    p { /* Txt nome e senha */
+
+        display: flex;
+        font-size: 1.4em;
+    }
+
+    .text-danger {
+        color: red;
+        font-size: 1.5em;
+    }
+
+    .botoes2 {
+        margin-top: 13%;
+    }
+
+    .voltar2 {
+        width: 23%;
+        height: 28px;
+        font-size: 1.3em;
+    }
+
+    .btn { /* Botão ENTRAR */
+        width: 23%;
+        height: 28px;
+        font-size: 1.3em;
+    }
+
+    #goToCreate2 { /* Link para tela criar conta*/
+        color: white;
+        font-size: 13pt;
+        margin-left: 8%;
+    }
+
+    #containerGoTo {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        width: 30vmax;
+        height: 1.8vmax;
+    }
+
+    ::placeholder {
+        color: rgb(198, 198, 198);
+        font-size: 1.4em;
+    }
+
+    .form-group1 input { /* Formulário nome ( Bordas) */
+        height: -20px;
+    }
+
+    .form-group2 input { /* Formulário nome ( Bordas) */
+        height: -25px;
+    }
+   
+}
+
+@media screen and (min-width: 1921px) and (max-width:2560px) {
+
+    #boxAll { /* Container 2 */
+        grid-template-rows: 5vmax 22vmax;
+        grid-template-columns: 34vmax 35vmax;
+    }
+
+    #imgLogin { /* Imagem do banner */
+        width: 36vmax;
+        margin-top: -4.2vmax;
+        margin-left: -15px;
+        position: relative;
+    }
+
+    h1 { /* Titulo LOGAR */
+        font-size: 3em;
+        margin-left: 20px;
+    }
+
+    h3 { /* Msg usuario ou senha inválidos */
+        font-size: 2em;
+    }
+
+    p { /* Txt nome e senha */
+
+        display: flex;
+        font-size: 2.1em;
+    }
+
+    .text-danger {
+        color: red;
+        font-size: 2em;
+    }
+
+    .botoes2 {
+        margin-top: 8%;
+    }
+
+    .voltar2 {
+        width: 23%;
+        height: 40px;
+        font-size: 2em;
+    }
+
+    .btn { /* Botão ENTRAR */
+        width: 23%;
+        height: 40px;
+        font-size: 2em;
+    }
+
+    #goToCreate2 { /* Link para tela criar conta*/
+        color: white;
+        font-size: 19pt;
+        margin-left: 8%;
+    }
+
+    #containerGoTo {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        width: 30vmax;
+        height: 2.5vmax;
+    }
+
+    ::placeholder {
+        color: rgb(198, 198, 198);
+        font-size: 2em;
+    }
+
+    .form-group1 input { /* Formulário nome ( Bordas) */
+        height: 22px;
+    }
+    .form-group2 input { /* Formulário nome ( Bordas) */
+        height: 22px;
+    }
+}
