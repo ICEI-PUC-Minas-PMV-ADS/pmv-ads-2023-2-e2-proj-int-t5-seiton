@@ -2,13 +2,14 @@
 
 body {
     font-family: Arimo;
+    background:orange;
 }
 
 #containerPrincipal {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 11% auto;
+    margin: 4% auto;
 
 }
 
@@ -17,8 +18,8 @@ body {
     grid-template-areas:
         "imagem titulo"
         "imagem formulario";
-    grid-template-rows: 50px 290px;
-    grid-template-columns: 380px 350px;
+    grid-template-rows: 3vmax 27vmax;
+    grid-template-columns: 38vmax 35vmax;
     
 }
 
@@ -43,13 +44,13 @@ body {
 }
 
     #imgLogin2 { /* Imagem do banner*/
-    width:116%;
-    margin-top: -45px;
+    width:109%;
+    margin-top: -55px;
     position: relative;
 }
 
 .formAll { /* Todo o formulário */
-    margin-left: 60px;
+    margin-left: 30px;
 }
 
 .form-group1-create input { /* Todo o formulário */
@@ -95,7 +96,7 @@ body {
 
 
 h1 { /*  Titulo */
-    margin-left: 60px;
+    margin-left: 30px;
     color: white;
     font-size: 20pt;
     margin-top: 7px
@@ -113,7 +114,7 @@ p { /* Textos nome, email e senha*/
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 15px;
+    gap: 30px;
     margin-left: -40px;
     margin-bottom:15px;
 }
@@ -127,7 +128,7 @@ p { /* Textos nome, email e senha*/
     color: white;
     width: 20%;
     height: 25px;
-    font-size: 11pt;
+    font-size: 13pt;
     transition: 1s;
     position: relative;
     font-family: 'Arimo';
@@ -148,7 +149,7 @@ p { /* Textos nome, email e senha*/
     color: white;
     width: 20%;
     height: 25px;
-    font-size: 11pt;
+    font-size: 13pt;
     transition: 1s;
     position: relative;
     font-family: 'Arimo';
@@ -167,7 +168,7 @@ p { /* Textos nome, email e senha*/
     color: white;
     display: flex;
     justify-content: center;
-    font-size: 9pt;
+    font-size: 10pt;
 }
 
 #goToCreate:hover {
@@ -180,9 +181,500 @@ p { /* Textos nome, email e senha*/
     word-wrap: break-word;
 }
 
-@media screen and (max-width: 760px) {
-    .containerForm { /* Container 2 */
-        width: 110%;
-        
+
+@media screen and (min-width: 481px) and (max-width:768px) {
+
+    .containerForm { /* Formulario container */
+        grid-template-rows: 5vmax 27vmax;
+        grid-template-columns: 38vmax 37vmax;
     }
+
+    #imgLogin2 { /* Imagem do banner*/
+        width: 109%;
+        margin-top: -33px;
+        position: relative;
+    }
+
+    ::placeholder { /* Mensagem placeholder*/
+        color: rgb(198, 198, 198);
+        font-size: 1.1em;
+    }
+
+    h1 { /*  Titulo */
+        font-size: 1.3em;
+        margin-top: 7px
+    }
+
+    p { /* Textos nome, email e senha*/
+        font-size: 1.2em;
+        margin-bottom: 0px;
+    }
+
+    .botoes1 { /* Container dos botões*/
+        margin-top: 9%;
+        margin-left: -40px;
+        margin-bottom: 15px;
+    }
+
+    .voltar1 { /* Botão voltar*/
+        width: 20%;
+        height: 20px;
+        font-size: 9pt;
+    }
+
+    .btn1 { /* Botão ENTRAR */
+        width: 20%;
+        height: 20px;
+        font-size: 9pt;
+    }
+
+    #goToCreate { /* Link para tela criar conta*/
+        font-size: 0.9em;
+        padding: 10px;
+    }
+
+    .text-danger { /* Mensagem caso o usuario não inserir um campo obrigatório*/
+        font-size: 11pt;
+    }
+
+ 
+}
+
+@media screen and (min-width: 769px) and (max-width:1024px) {
+
+    .containerForm { /* Formulario container */
+        grid-template-rows: 4vmax 27vmax;
+        grid-template-columns: 38vmax 35vmax;
+    }
+
+    #imgLogin2 { /* Imagem do banner*/
+        width: 109%;
+        margin-top: -45px;
+        position: relative;
+    }
+
+    ::placeholder { /* Mensagem placeholder*/
+        color: rgb(198, 198, 198);
+        font-size: 1.3em;
+    }
+
+    h1 { /*  Titulo */
+        font-size: 1.6em;
+        margin-top: 7px
+    }
+
+    p { /* Textos nome, email e senha*/
+        font-size: 1.3em;
+        margin-bottom: 0px;
+    }
+
+    .botoes1 { /* Container dos botões*/
+        margin-top: 5%;
+        margin-left: -40px;
+        margin-bottom: 15px;
+    }
+
+    .voltar1 { /* Botão voltar*/
+        width: 22%;
+        height: 25px;
+        font-size: 12pt;
+    }
+
+    .btn1 { /* Botão ENTRAR */
+        width: 22%;
+        height: 25px;
+        font-size: 12pt;
+    }
+
+    #goToCreate { /* Link para tela criar conta*/
+        font-size: 0.9em;
+        padding: 10px;
+    }
+
+    .text-danger { /* Mensagem caso o usuario não inserir um campo obrigatório*/
+        font-size: 12pt;
+    }
+
+    .form-group1-create input { /* Todo o formulário */
+
+        width: 75%;
+        height: 20px;
+    }
+
+    .form-group2-create input { /* Todo o formulário */
+        width: 75%;
+        height: 20px;
+    }
+
+    .form-group3-create input { /* Todo o formulário */
+        width: 75%;
+        height: 20px;
+    }
+    
+}
+
+@media screen and (min-width: 1025px) and (max-width:1200px) {
+
+    .containerForm { /* Formulario container */
+        grid-template-rows: 4vmax 27vmax;
+        grid-template-columns: 38vmax 35vmax;
+    }
+
+    #imgLogin2 { /* Imagem do banner*/
+        width: 109%;
+        margin-top: -60px;
+        position: relative;
+    }
+
+    ::placeholder { /* Mensagem placeholder*/
+        color: rgb(198, 198, 198);
+        font-size: 1.6em;
+    }
+
+    h1 { /*  Titulo */
+        font-size: 2.2em;
+        margin-top: 7px
+    }
+
+    p { /* Textos nome, email e senha*/
+        font-size: 1.7em;
+        margin-bottom: 0px;
+    }
+
+    .botoes1 { /* Container dos botões*/
+        margin-top: 5%;
+        margin-left: -40px;
+        margin-bottom: 15px;
+    }
+
+    .voltar1 { /* Botão voltar*/
+        width: 25%;
+        height: 33px;
+        font-size: 17pt;
+    }
+
+    .btn1 { /* Botão ENTRAR */
+        width: 25%;
+        height: 33px;
+        font-size: 17pt;
+    }
+
+    #goToCreate { /* Link para tela criar conta*/
+        font-size: 1.3em;
+        padding: 10px;
+    }
+
+    .text-danger { /* Mensagem caso o usuario não inserir um campo obrigatório*/
+        font-size: 13pt;
+    }
+
+    .form-group1-create input { /* Todo o formulário */
+
+        width: 75%;
+        height: 20px;
+    }
+
+    .form-group2-create input { /* Todo o formulário */
+        width: 75%;
+        height: 20px;
+    }
+
+    .form-group3-create input { /* Todo o formulário */
+        width: 75%;
+        height: 20px;
+    }
+
+}
+
+@media screen and (min-width: 1201px) and (max-width:1366px) {
+
+    .containerForm { /* Formulario container */
+        grid-template-rows: 4vmax 27vmax;
+        grid-template-columns: 38vmax 35vmax;
+    }
+
+    #imgLogin2 { /* Imagem do banner*/
+        width: 109%;
+        margin-top: -60px;
+        position: relative;
+    }
+
+    ::placeholder { /* Mensagem placeholder*/
+        color: rgb(198, 198, 198);
+        font-size: 1.6em;
+    }
+
+    h1 { /*  Titulo */
+        font-size: 2.2em;
+        margin-top: 7px
+    }
+
+    p { /* Textos nome, email e senha*/
+        font-size: 1.8em;
+        margin-bottom: 0px;
+    }
+
+    .botoes1 { /* Container dos botões*/
+        margin-top: 5%;
+        margin-left: -40px;
+        margin-bottom: 15px;
+    }
+
+    .voltar1 { /* Botão voltar*/
+        width: 22%;
+        height: 33px;
+        font-size: 17pt;
+    }
+
+    .btn1 { /* Botão ENTRAR */
+        width: 22%;
+        height: 33px;
+        font-size: 17pt;
+    }
+
+    #goToCreate { /* Link para tela criar conta*/
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    .text-danger { /* Mensagem caso o usuario não inserir um campo obrigatório*/
+        font-size: 14pt;
+    }
+
+    .form-group1-create input { /* Todo o formulário */
+
+        width: 75%;
+        height: 20px;
+    }
+
+    .form-group2-create input { /* Todo o formulário */
+        width: 75%;
+        height: 20px;
+    }
+
+    .form-group3-create input { /* Todo o formulário */
+        width: 75%;
+        height: 20px;
+    }
+  
+}
+
+@media screen and (min-width: 1880px) and (max-width:1920px) {
+
+    .containerForm { /* Formulario container */
+        grid-template-rows: 4vmax 27vmax;
+        grid-template-columns: 38vmax 35vmax;
+    }
+
+    #imgLogin2 { /* Imagem do banner*/
+        width: 109%;
+        margin-top: -80px;
+        position: relative;
+    }
+
+    ::placeholder { /* Mensagem placeholder*/
+        color: rgb(198, 198, 198);
+        font-size: 2.0em;
+    }
+
+    h1 { /*  Titulo */
+        font-size: 2.5em;
+        margin-top: 7px
+    }
+
+    p { /* Textos nome, email e senha*/
+        font-size: 2em;
+        margin-bottom: 0px;
+    }
+
+    .botoes1 { /* Container dos botões*/
+        margin-top: 5%;
+        margin-left: -40px;
+        margin-bottom: 15px;
+    }
+
+    .voltar1 { /* Botão voltar*/
+        width: 17%;
+        height: 33px;
+        font-size: 17pt;
+    }
+
+    .btn1 { /* Botão ENTRAR */
+        width: 17%;
+        height: 33px;
+        font-size: 17pt;
+    }
+
+    #goToCreate { /* Link para tela criar conta*/
+        font-size: 1.3em;
+        padding: 10px;
+    }
+
+    .text-danger { /* Mensagem caso o usuario não inserir um campo obrigatório*/
+        font-size: 18pt;
+    }
+
+    .form-group1-create input { /* Todo o formulário */
+
+        width: 75%;
+        height: 20px;
+    }
+
+    .form-group2-create input { /* Todo o formulário */
+        width: 75%;
+        height: 20px;
+    }
+
+    .form-group3-create input { /* Todo o formulário */
+        width: 75%;
+        height: 20px;
+    }
+}
+
+
+@media screen and (min-width: 1367px) and (max-width:1880px) {
+
+
+    .containerForm { /* Formulario container */
+        grid-template-rows: 4vmax 27vmax;
+        grid-template-columns: 38vmax 35vmax;
+    }
+
+    #imgLogin2 { /* Imagem do banner*/
+        width: 109%;
+        margin-top: -55px;
+        position: relative;
+    }
+
+    ::placeholder { /* Mensagem placeholder*/
+        color: rgb(198, 198, 198);
+        font-size: 2.0em;
+    }
+
+    h1 { /*  Titulo */
+        font-size: 2.5em;
+        margin-top: 7px
+    }
+
+    p { /* Textos nome, email e senha*/
+        font-size: 2em;
+        margin-bottom: 0px;
+    }
+
+    .botoes1 { /* Container dos botões*/
+        margin-top: 5%;
+        margin-left: -40px;
+        margin-bottom: 15px;
+    }
+
+    .voltar1 { /* Botão voltar*/
+        width: 17%;
+        height: 33px;
+        font-size: 17pt;
+    }
+
+    .btn1 { /* Botão ENTRAR */
+        width: 17%;
+        height: 33px;
+        font-size: 17pt;
+    }
+
+    #goToCreate { /* Link para tela criar conta*/
+        font-size: 1.3em;
+        padding: 10px;
+    }
+
+    .text-danger { /* Mensagem caso o usuario não inserir um campo obrigatório*/
+        font-size: 18pt;
+    }
+
+    .form-group1-create input { /* Todo o formulário */
+
+        width: 75%;
+        height: 20px;
+    }
+
+    .form-group2-create input { /* Todo o formulário */
+        width: 75%;
+        height: 20px;
+    }
+
+    .form-group3-create input { /* Todo o formulário */
+        width: 75%;
+        height: 20px;
+    }
+}
+
+@media screen and (min-width: 1921px) and (max-width:2560px) {
+
+    .containerForm { /* Formulario container */
+        grid-template-rows: 4vmax 27vmax;
+        grid-template-columns: 38vmax 35vmax;
+    }
+
+    #imgLogin2 { /* Imagem do banner*/
+        width: 109%;
+        margin-top: -55px;
+        position: relative;
+    }
+
+    ::placeholder { /* Mensagem placeholder*/
+        color: rgb(198, 198, 198);
+        font-size: 2.0em;
+    }
+
+    h1 { /*  Titulo */
+        font-size: 3.5em;
+        margin-top: 7px
+    }
+
+    p { /* Textos nome, email e senha*/
+        font-size: 2.5em;
+        margin-bottom: 0px;
+    }
+
+    .botoes1 { /* Container dos botões*/
+        margin-top: 5%;
+        margin-left: -40px;
+        margin-bottom: 15px;
+    }
+
+    .voltar1 { /* Botão voltar*/
+        width: 15%;
+        height: 33px;
+        font-size: 17pt;
+    }
+
+    .btn1 { /* Botão ENTRAR */
+        width: 15%;
+        height: 33px;
+        font-size: 17pt;  
+    }
+
+    #goToCreate { /* Link para tela criar conta*/
+        font-size: 1.7em;
+        padding:40px;
+    }
+
+    .text-danger { /* Mensagem caso o usuario não inserir um campo obrigatório*/
+        font-size: 19pt;
+    }
+
+    .form-group1-create input { /* Todo o formulário */
+
+        width: 75%;
+        height: 20px;
+
+    }
+
+    .form-group2-create input { /* Todo o formulário */
+        width: 75%;
+        height: 20px;
+    }
+
+    .form-group3-create input { /* Todo o formulário */
+        width: 75%;
+        height: 20px;
+    }
+
 }

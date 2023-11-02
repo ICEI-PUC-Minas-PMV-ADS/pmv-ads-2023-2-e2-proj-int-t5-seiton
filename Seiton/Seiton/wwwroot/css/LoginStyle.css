@@ -16,7 +16,7 @@ body{
 
 #box1 { /* Container 1 */
     width:97vmax;
-    height:46vmax;
+    height:40vmax;
     display: flex;
     align-items: center;
     justify-content: center;
