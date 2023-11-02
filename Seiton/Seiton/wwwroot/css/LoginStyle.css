@@ -152,15 +152,14 @@ p { /* Txt nome e senha */
 }
 
 .form-group1 input { /* Formulário nome ( Bordas) */
-  
-    width:95%;
+
+    width: 95%;
     border: none;
     height: 3px;
     border-bottom: 1px solid white;
     background-color: rgb(42,96,144);
-    color: white;
+    color: lightblue;
     border-radius: 0px;
- 
 }
 
 .form-group2 input { /* Formulário senha ( Bordas) */
@@ -169,7 +168,7 @@ p { /* Txt nome e senha */
     height: 3px;
     border-bottom: 1px solid white;
     background-color: rgb(42,96,144);
-    color: white;
+    color: lightblue;
     border-radius: 0px;
 }
 
@@ -238,7 +237,7 @@ p { /* Txt nome e senha */
     }
 
     h1 { /* Titulo LOGAR */
-        font-size: 1.3em;
+        font-size: 2em;
         margin-left: 20px;    
     }
 
@@ -249,7 +248,7 @@ p { /* Txt nome e senha */
     p { /* Txt nome e senha */
 
         display: flex;
-        font-size: 0.9em;
+        font-size: 1.6em;
     }
 
     .text-danger {
@@ -286,12 +285,27 @@ p { /* Txt nome e senha */
         width: 30vmax;
         height: 3vmax;
     }
+
+    ::placeholder {
+        color: rgb(198, 198, 198);
+        font-size: 16pt;
+    }
+
+    .form-group1 input { /* Formulário nome ( Bordas) */
+        height: 8px;
+        font-size: 16pt;
+    }
+
+    .form-group2 input { /* Formulário nome ( Bordas) */
+        height: 8px;
+        font-size: 16pt;
+    }
 }
 
 @media screen and (min-width: 769px) and (max-width:1024px) {
 
     #boxAll { /* Container 2 */
-        grid-template-rows: 6vmax 26vmax;
+        grid-template-rows: 5.4vmax 26vmax;
         grid-template-columns: 39vmax 35vmax;
     }
 
@@ -303,7 +317,7 @@ p { /* Txt nome e senha */
     }
 
     h1 { /* Titulo LOGAR */
-        font-size: 1.5em;
+        font-size: 2.5em;
         margin-left: 20px;
     }
 
@@ -314,7 +328,7 @@ p { /* Txt nome e senha */
     p { /* Txt nome e senha */
 
         display: flex;
-        font-size: 1.2em;
+        font-size: 1.8em;
     }
 
     .text-danger {
@@ -358,8 +372,18 @@ p { /* Txt nome e senha */
 
     ::placeholder {
         color: rgb(198, 198, 198);
-        font-size: 1.2em;
+        font-size: 20pt;
     }
+    .form-group1 input { /* Formulário nome ( Bordas) */
+       height:8px;
+        font-size: 20pt;
+    }
+
+    .form-group2 input { /* Formulário nome ( Bordas) */
+        height: 8px;
+        font-size: 20pt;
+    }
+
 }
 
 @media screen and (min-width: 1025px) and (max-width:1200px) {
@@ -377,7 +401,7 @@ p { /* Txt nome e senha */
     }
 
     h1 { /* Titulo LOGAR */
-        font-size: 1.5em;
+        font-size: 2.5em;
         margin-left: 20px;
     }
 
@@ -388,12 +412,16 @@ p { /* Txt nome e senha */
     p { /* Txt nome e senha */
 
         display: flex;
-        font-size: 1.2em;
+        font-size: 1.7em;
     }
 
     .text-danger {
         color: red;
         font-size: 1.2em;
+    }
+
+    .botoes2 {
+        margin-top: 23px;
     }
 
     .voltar2 {
@@ -419,12 +447,22 @@ p { /* Txt nome e senha */
         align-items: flex-end;
         justify-content: center;
         width: 30vmax;
-        height: 2.7vmax;
+        height: 1.1vmax;
     }
 
     ::placeholder {
         color: rgb(198, 198, 198);
-        font-size: 1.2em;
+        font-size: 20pt;
+    }
+
+    .form-group1 input { /* Formulário nome ( Bordas) */
+        height: 14px;
+        font-size: 20pt;
+    }
+
+    .form-group2 input { /* Formulário nome ( Bordas) */
+        height: 14px;
+        font-size: 20pt;
     }
     
 }
@@ -444,7 +482,7 @@ p { /* Txt nome e senha */
     }
 
     h1 { /* Titulo LOGAR */
-        font-size: 2em;
+        font-size: 3em;
         margin-left: 20px;
     }
 
@@ -455,7 +493,7 @@ p { /* Txt nome e senha */
     p { /* Txt nome e senha */
 
         display: flex;
-        font-size: 1.5em;
+        font-size: 2em;
     }
 
     .text-danger {
@@ -486,12 +524,22 @@ p { /* Txt nome e senha */
         align-items: flex-end;
         justify-content: center;
         width: 30vmax;
-        height: 3.7vmax;
+        height: 1.3vmax;
     }
 
     ::placeholder {
         color: rgb(198, 198, 198);
-        font-size: 1.5em;
+        font-size: 26pt;
+    }
+
+    .form-group1 input { /* Formulário nome ( Bordas) */
+        height: 14px;
+        font-size: 26pt;
+    }
+
+    .form-group2 input { /* Formulário nome ( Bordas) */
+        height: 14px;
+        font-size: 26pt;
     }
 }
 
@@ -510,7 +558,7 @@ p { /* Txt nome e senha */
     }
 
     h1 { /* Titulo LOGAR */
-        font-size: 3em;
+        font-size: 3.5em;
         margin-left: 20px;
     }
 
@@ -521,7 +569,7 @@ p { /* Txt nome e senha */
     p { /* Txt nome e senha */
 
         display: flex;
-        font-size: 1.9em;
+        font-size: 2.4em;
     }
 
     .text-danger {
@@ -530,7 +578,7 @@ p { /* Txt nome e senha */
     }
 
     .botoes2 {
-        margin-top: 13%;
+        margin-top: 5%;
      
     }
 
@@ -557,13 +605,24 @@ p { /* Txt nome e senha */
         align-items: flex-end;
         justify-content: center;
         width: 30vmax;
-        height: 4.5vmax;
+        height: 1.5vmax;
     }
 
     ::placeholder {
         color: rgb(198, 198, 198);
-        font-size: 1.9em;
+        font-size: 26pt;
     }
+
+    .form-group1 input { /* Formulário nome ( Bordas) */
+        height: 22px;
+        font-size: 26pt;
+    }
+
+    .form-group2 input { /* Formulário nome ( Bordas) */
+        height: 22px;
+        font-size: 26pt;
+    }
+
    
 }
 
@@ -583,7 +642,7 @@ p { /* Txt nome e senha */
     }
 
     h1 { /* Titulo LOGAR */
-        font-size: 2em;
+        font-size: 3.3em;
         margin-left: 20px;
     }
 
@@ -594,7 +653,7 @@ p { /* Txt nome e senha */
     p { /* Txt nome e senha */
 
         display: flex;
-        font-size: 1.4em;
+        font-size: 2.4em;
     }
 
     .text-danger {
@@ -603,18 +662,18 @@ p { /* Txt nome e senha */
     }
 
     .botoes2 {
-        margin-top: 13%;
+        margin-top: 4%;
     }
 
     .voltar2 {
         width: 23%;
-        height: 28px;
+        height: 30px;
         font-size: 1.3em;
     }
 
     .btn { /* Botão ENTRAR */
         width: 23%;
-        height: 28px;
+        height: 30px;
         font-size: 1.3em;
     }
 
@@ -633,16 +692,17 @@ p { /* Txt nome e senha */
     }
 
     ::placeholder {
-        color: rgb(198, 198, 198);
-        font-size: 1.4em;
+        font-size: 29px;
     }
 
     .form-group1 input { /* Formulário nome ( Bordas) */
-        height: -20px;
+        height: 22px;
+        font-size: 29px;
     }
 
     .form-group2 input { /* Formulário nome ( Bordas) */
-        height: -25px;
+        height: 22px;
+        font-size: 29px;
     }
    
 }
@@ -662,7 +722,7 @@ p { /* Txt nome e senha */
     }
 
     h1 { /* Titulo LOGAR */
-        font-size: 3em;
+        font-size: 4em;
         margin-left: 20px;
     }
 
@@ -673,7 +733,7 @@ p { /* Txt nome e senha */
     p { /* Txt nome e senha */
 
         display: flex;
-        font-size: 2.1em;
+        font-size: 2.7em;
     }
 
     .text-danger {
@@ -682,18 +742,18 @@ p { /* Txt nome e senha */
     }
 
     .botoes2 {
-        margin-top: 8%;
+        margin-top: 11%;
     }
 
     .voltar2 {
         width: 23%;
-        height: 40px;
+        height: 45px;
         font-size: 2em;
     }
 
     .btn { /* Botão ENTRAR */
         width: 23%;
-        height: 40px;
+        height: 45px;
         font-size: 2em;
     }
 
@@ -713,13 +773,15 @@ p { /* Txt nome e senha */
 
     ::placeholder {
         color: rgb(198, 198, 198);
-        font-size: 2em;
+        font-size: 38px;
     }
 
     .form-group1 input { /* Formulário nome ( Bordas) */
         height: 22px;
+        font-size: 38px;
     }
     .form-group2 input { /* Formulário nome ( Bordas) */
         height: 22px;
+        font-size: 38px;
     }
 }

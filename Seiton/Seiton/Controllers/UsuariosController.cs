@@ -37,7 +37,7 @@ namespace Seiton.Controllers
 
             if (dados == null || string.IsNullOrEmpty(usuario.Senha) || string.IsNullOrEmpty(dados.Senha))
             {
-                ViewBag.Message = "Usuário e/ou senha inválidos!";
+                ViewBag.Message = "*Usuário e/ou senha inválidos!";
                 return View();
             }
 
@@ -68,7 +68,7 @@ namespace Seiton.Controllers
 
             else
             {
-                ViewBag.Message = "Usuário e/ou senha inválidos!";
+                ViewBag.Message = "*Usuário e/ou senha inválidos!";
             }
 
             return View();
@@ -97,7 +97,7 @@ namespace Seiton.Controllers
             if (ModelState.IsValid) {
                 // Verifique se o nome de usuário já existe no banco de dados.
                 if (_context.Usuarios.Any(u => u.NomeUsuario == usuario.NomeUsuario)) {
-                    ModelState.AddModelError(string.Empty, "O nome de usuário já está em uso. Escolha outro nome de usuário.");
+                    ModelState.AddModelError(string.Empty, "*O nome de usuário já está em uso. Escolha outro nome de usuário.");
                     return View(usuario);
                 }
 
@@ -108,7 +108,7 @@ namespace Seiton.Controllers
                     return RedirectToAction(nameof(Login));
                 }
                 else {
-                    ModelState.AddModelError(string.Empty, "A senha e a confirmação de senha não coincidem.");
+                    ModelState.AddModelError(string.Empty, "*A senha e a confirmação de senha não coincidem.");
                 }
             }
             return View(usuario);

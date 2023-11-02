@@ -2,7 +2,7 @@
 
 body {
     font-family: Arimo;
-    background:orange;
+    background-color:cadetblue;
 }
 
 #containerPrincipal {
@@ -63,6 +63,7 @@ body {
     color: white;
     border-radius: 0px;
     outline: none;
+    color: lightblue;
 }
 
 .form-group2-create input { /* Todo o formulário */
@@ -75,6 +76,7 @@ body {
     color: white;
     border-radius: 0px;
     outline: none;
+    color: lightblue;
 }
 
 .form-group3-create input { /* Todo o formulário */
@@ -87,6 +89,7 @@ body {
     color: white;
     border-radius: 0px;
     outline: none;
+    color: lightblue;
 }
 
 ::placeholder { /* Mensagem placeholder*/
@@ -196,17 +199,20 @@ p { /* Textos nome, email e senha*/
     }
 
     ::placeholder { /* Mensagem placeholder*/
-        color: rgb(198, 198, 198);
-        font-size: 1.1em;
+        font-size: 18px;
+    }
+
+    .form-control {
+        font-size: 18px;
     }
 
     h1 { /*  Titulo */
-        font-size: 1.3em;
+        font-size: 1.8em;
         margin-top: 7px
     }
 
     p { /* Textos nome, email e senha*/
-        font-size: 1.2em;
+        font-size: 1.4em;
         margin-bottom: 0px;
     }
 
@@ -254,17 +260,20 @@ p { /* Textos nome, email e senha*/
     }
 
     ::placeholder { /* Mensagem placeholder*/
-        color: rgb(198, 198, 198);
-        font-size: 1.3em;
+        font-size: 20px;
+    }
+
+    .form-control {
+        font-size: 20px;
     }
 
     h1 { /*  Titulo */
-        font-size: 1.6em;
+        font-size: 1.8em;
         margin-top: 7px
     }
 
     p { /* Textos nome, email e senha*/
-        font-size: 1.3em;
+        font-size: 1.5em;
         margin-bottom: 0px;
     }
 
@@ -327,8 +336,11 @@ p { /* Textos nome, email e senha*/
     }
 
     ::placeholder { /* Mensagem placeholder*/
-        color: rgb(198, 198, 198);
-        font-size: 1.6em;
+        font-size: 25px;
+    }
+
+    .form-control {
+        font-size: 25px;
     }
 
     h1 { /*  Titulo */
@@ -337,7 +349,7 @@ p { /* Textos nome, email e senha*/
     }
 
     p { /* Textos nome, email e senha*/
-        font-size: 1.7em;
+        font-size: 1.9em;
         margin-bottom: 0px;
     }
 
@@ -400,8 +412,11 @@ p { /* Textos nome, email e senha*/
     }
 
     ::placeholder { /* Mensagem placeholder*/
-        color: rgb(198, 198, 198);
-        font-size: 1.6em;
+        font-size: 27px;
+    }
+
+    .form-control {
+        font-size: 27px;
     }
 
     h1 { /*  Titulo */
@@ -410,7 +425,7 @@ p { /* Textos nome, email e senha*/
     }
 
     p { /* Textos nome, email e senha*/
-        font-size: 1.8em;
+        font-size: 1.9em;
         margin-bottom: 0px;
     }
 
@@ -473,17 +488,20 @@ p { /* Textos nome, email e senha*/
     }
 
     ::placeholder { /* Mensagem placeholder*/
-        color: rgb(198, 198, 198);
-        font-size: 2.0em;
+        font-size: 27px;
+    }
+
+    .form-control {
+        font-size: 27px;
     }
 
     h1 { /*  Titulo */
-        font-size: 2.5em;
+        font-size: 2.8em;
         margin-top: 7px
     }
 
     p { /* Textos nome, email e senha*/
-        font-size: 2em;
+        font-size: 2.3em;
         margin-bottom: 0px;
     }
 
@@ -542,22 +560,25 @@ p { /* Textos nome, email e senha*/
 
     #imgLogin2 { /* Imagem do banner*/
         width: 109%;
-        margin-top: -55px;
+        margin-top: -80px;
         position: relative;
     }
 
     ::placeholder { /* Mensagem placeholder*/
-        color: rgb(198, 198, 198);
-        font-size: 2.0em;
+        font-size: 27px;
+    }
+
+    .form-control {
+        font-size: 27px;
     }
 
     h1 { /*  Titulo */
-        font-size: 2.5em;
+        font-size: 2.8em;
         margin-top: 7px
     }
 
     p { /* Textos nome, email e senha*/
-        font-size: 2em;
+        font-size: 2.3em;
         margin-bottom: 0px;
     }
 
@@ -614,22 +635,28 @@ p { /* Textos nome, email e senha*/
 
     #imgLogin2 { /* Imagem do banner*/
         width: 109%;
-        margin-top: -55px;
+        margin-top: -100px;
         position: relative;
     }
 
     ::placeholder { /* Mensagem placeholder*/
         color: rgb(198, 198, 198);
-        font-size: 2.0em;
+        font-size: 29px;
     }
 
+    .form-control{
+        font-size:29px;
+        
+    }
+
+
     h1 { /*  Titulo */
-        font-size: 3.5em;
+        font-size: 3.7em;
         margin-top: 7px
     }
 
     p { /* Textos nome, email e senha*/
-        font-size: 2.5em;
+        font-size: 2.8em;
         margin-bottom: 0px;
     }
 
@@ -641,13 +668,13 @@ p { /* Textos nome, email e senha*/
 
     .voltar1 { /* Botão voltar*/
         width: 15%;
-        height: 33px;
+        height: 35px;
         font-size: 17pt;
     }
 
     .btn1 { /* Botão ENTRAR */
         width: 15%;
-        height: 33px;
+        height: 35px;
         font-size: 17pt;  
     }
 
@@ -664,7 +691,7 @@ p { /* Textos nome, email e senha*/
 
         width: 75%;
         height: 20px;
-
+    
     }
 
     .form-group2-create input { /* Todo o formulário */
@@ -675,6 +702,8 @@ p { /* Textos nome, email e senha*/
     .form-group3-create input { /* Todo o formulário */
         width: 75%;
         height: 20px;
+        
     }
+
 
 }
