@@ -2,7 +2,7 @@
 
 body {
     font-family: Arimo;
-    background-color:cadetblue;
+  
 }
 
 #containerPrincipal {
@@ -640,13 +640,11 @@ p { /* Textos nome, email e senha*/
     }
 
     ::placeholder { /* Mensagem placeholder*/
-        color: rgb(198, 198, 198);
         font-size: 29px;
     }
 
     .form-control{
-        font-size:29px;
-        
+        font-size:29px;   
     }
 
 
