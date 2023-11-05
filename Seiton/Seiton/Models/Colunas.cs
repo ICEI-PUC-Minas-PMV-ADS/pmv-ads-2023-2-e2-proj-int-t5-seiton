@@ -1,6 +1,10 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Security.Claims;
+using System.Collections.Generic;
+using System.Runtime.Intrinsics.X86;
+using System.Security.Cryptography;
+using System;
 
 namespace Seiton.Models
 {
@@ -23,5 +27,13 @@ namespace Seiton.Models
 
         public ICollection<Tarefas> Tarefas { get; set; }
 
+    }
+    public class cores
+    {
+        public const string ArgentinianBlue = "#4EAAFF";
+        public const string Folly = "#FF4167";
+        public const string HunyadiYellow = "#FFB64F";
+        public const string DimGray = "#696969";
+        public const string LimeGreen = "#37C936";
     }
 }

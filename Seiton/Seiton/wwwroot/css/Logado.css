@@ -86,6 +86,9 @@ details {
         border-top: 20px solid #4EAAFF;
     }
 
+    .side-bar-background .foto-buttons {
+        width: 18%;
+    }
 
 
 /* Lista de projetos */
@@ -95,10 +98,11 @@ details {
 }
 
     .white-blue h1 {
-        margin-top: 11%;
+        margin-top: 8%;
         position: absolute;
         font-size: 1.8rem;
         margin-left: 0.5%;
+        color: white;
     }
 
 
@@ -107,6 +111,7 @@ details {
     }
 
         .white-blue ul li .project-name {
+            margin-left: -25%;
             color: white;
             text-decoration: none;
             font-size: 1.8rem;
@@ -170,11 +175,16 @@ details {
     }
 
 
+/* Colunas do Projeto */
 .colum_container {
     display: flex;
     height: 75%;
     width: 100%;
 }
+
+    .colum_container .foto-buttons {
+        width: 98%;
+    }
 
     .colum_container .coluna {
         margin-top: 5%;
@@ -250,6 +260,7 @@ details {
         font-family: sans-serif;
     }
 
+/* Ficha das Tarefas */
 .tarefa {
     margin-top: 8%;
     padding: 5%;

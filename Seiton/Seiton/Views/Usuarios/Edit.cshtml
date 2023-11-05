@@ -5,8 +5,8 @@
 }
 
 <div>
-    <div class="modal2">
-        <div class="modal-content2">
+    <div class="modal">
+        <div class="modal-content">
             <h1>Editar Usuário</h1>
             <hr />
             <form asp-action="Edit">
@@ -24,12 +24,12 @@
                 <span asp-validation-for="Email" class="aviso"></span>
                 <div class="form-group">
                     <label asp-for="Senha" class="control-label">Senha: </label>
-                    <input asp-for="Senha" class="form-control" value=""/>
+                    <input asp-for="Senha" class="form-control" value="" />
                 </div>
                 <span asp-validation-for="Senha" class="aviso"></span>
                 <div>
                     <a asp-controller="Logados" asp-action="Logado">Voltar</a> |
-                    <input class="btn" type="submit" value="Salvar"/>
+                    <input class="btn" type="submit" value="Salvar" />
                 </div>
             </form>
         </div>
@@ -37,5 +37,7 @@
 </div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }
