@@ -1,5 +1,5 @@
 ﻿/* Estilos para o modal */
-.modal1 {
+.modal {
     display: flex;
     position: fixed;
     top: 0;
@@ -8,42 +8,43 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro com transparência */
     z-index: 1;
+    text-align: center;
     font-family: Arimo, sans-serif;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     text-align: center;
 }
 
 /* Estilos para o conteúdo do modal */
-.modal-content1 {
+.modal-content {
     background-color: #ffffff;
-    width: 300px;
-    padding: 10px;
+    width: 400px;
+    padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
     /* Estilo para o título do modal */
-    .modal-content1 h1 {
+    .modal-content h1 {
         font-size: 25px;
         margin-bottom: 1px;
         color: #000000;
     }
 
     /* Estilo para os parágrafos no modal */
-    .modal-content1 p {
+    .modal-content p {
         font-size: 16px;
     }
 
     /* Estilo para o aviso em itálico */
-    .modal-content1 .aviso {
+    .modal-content .aviso {
         font-style: italic;
         color: #ff0000; /* Cor vermelha para o aviso */
         margin-top: 5px;
     }
 
-    /* Estilo para o botão "Apagar" */
-    .modal-content1 input[type="submit"] {
+    /* Estilo para os botões "Submit" */
+    .modal-content input[type="submit"] {
         background-color: #4EAAFF;
         color: #ffffff;
         border: none;
@@ -53,12 +54,12 @@
         font-size: 15px;
     }
 
-        .modal-content1 input[type="submit"]:hover {
-            background-color: #ff0000;
+        .modal-content input[type="submit"]:hover {
+            background-color: #37C936;
         }
 
     /* Estilo para o link "Voltar" */
-    .modal-content1 a {
+    .modal-content a {
         background-color: #4EAAFF;
         color: #ffffff;
         border: none;
@@ -68,6 +69,29 @@
         font-size: 15px;
         text-decoration: none;
     }
-        .modal-content1 a:hover {
+
+        .modal-content a:hover {
             background-color: #2A6092;
         }
+
+/* Estilo para o aviso em vermelho */
+.aviso {
+    color: #ff0000; /* Cor vermelha para os avisos */
+    font-size: 14px;
+    font-style: italic;
+}
+
+/* Estilo para rótulos de controle */
+.control-label {
+    font-weight: bold;
+}
+
+/* Estilo para campos de entrada de formulário */
+.form-control {
+    width: 100px;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+}

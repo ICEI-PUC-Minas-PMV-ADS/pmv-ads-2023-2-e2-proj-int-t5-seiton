@@ -15,12 +15,11 @@ body{
 }
 
 #box1 { /* Container 1 */
-    width:97vmax;
-    height:40vmax;
+    width: 97vmax;
+    height: 95vmin;
     display: flex;
     align-items: center;
     justify-content: center;
- 
 }
 
 .imgOffice { /* Imagem do banner GRID AREA */
@@ -503,13 +502,13 @@ p { /* Txt nome e senha */
 
     .voltar2 {
         width: 23%;
-        height: 25px;
+        height: 28px;
         font-size: 1.3em;
     }
 
     .btn { /* Botão ENTRAR */
         width: 23%;
-        height: 25px;
+        height: 28px;
         font-size: 1.3em;
     }
 
@@ -529,17 +528,17 @@ p { /* Txt nome e senha */
 
     ::placeholder {
         color: rgb(198, 198, 198);
-        font-size: 26pt;
+        font-size: 18pt;
     }
 
     .form-group1 input { /* Formulário nome ( Bordas) */
         height: 14px;
-        font-size: 26pt;
+        font-size: 20pt;
     }
 
     .form-group2 input { /* Formulário nome ( Bordas) */
         height: 14px;
-        font-size: 26pt;
+        font-size: 20pt;
     }
 }
 

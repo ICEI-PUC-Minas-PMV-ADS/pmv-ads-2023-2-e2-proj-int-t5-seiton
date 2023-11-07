@@ -232,18 +232,18 @@ p{ /* Texto chamativo*/
 @media screen and (min-width: 1201px) and (max-width:1366px) {
 
     #bannerProject { /* Container */
-        grid-template-rows: 9vmax 35vmax;
+        grid-template-rows: 9vmax 33vmax;
         grid-template-columns: 50vmax 40vmax;
     }
 
 
     #imgBanner3 { /* Imagem de dentro do banner*/
-        width: 115%;
+        width: 110%;
         margin-right: 100px;
     }
 
     p { /* Texto chamativo*/
-        font-size: 2.4em;
+        font-size: 2.2em;
         font-weight: bold;
     }
 
@@ -266,18 +266,18 @@ p{ /* Texto chamativo*/
 @media screen and (min-width: 1880px) and (max-width:1920px) {
 
     #bannerProject { /* Container */
-        grid-template-rows: 13vmax 38vmax;
+        grid-template-rows: 13vmax 30vmax;
         grid-template-columns: 50vmax 40vmax;
     }
 
 
     #imgBanner3 { /* Imagem de dentro do banner*/
-        width: 120%;
+        width: 100%;
         margin-right: 100px;
     }
 
     p { /* Texto chamativo*/
-        font-size: 3.6em;
+        font-size: 3em;
         font-weight: bold;
     }
 

@@ -2,6 +2,7 @@
 
 body {
     font-family: Arimo;
+ 
   
 }
 
@@ -9,7 +10,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 4% auto;
+    width: 97vmax;
+    height: 97vmin;
 
 }
 
@@ -412,7 +414,7 @@ p { /* Textos nome, email e senha*/
     }
 
     ::placeholder { /* Mensagem placeholder*/
-        font-size: 27px;
+        font-size: 22px;
     }
 
     .form-control {
