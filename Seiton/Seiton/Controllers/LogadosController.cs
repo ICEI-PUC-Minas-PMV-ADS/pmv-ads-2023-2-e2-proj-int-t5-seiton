@@ -1,6 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http.Extensions;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.CodeAnalysis;
 using Seiton.Models;
+using System;
 using System.Security.Claims;
 
 namespace Seiton.Controllers
@@ -16,16 +18,51 @@ namespace Seiton.Controllers
         }
         public ActionResult Logado(int id)
         {
+            string caminho = HttpContext.Request.Path;
+
             ViewData["userId"] = int.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier));
             ViewData["userName"] = User.FindFirstValue(ClaimTypes.Name);
 
+            //ViewData["NomeProjeto"]
+
             var userId = int.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier));
+
+            try
+            {
+                var idVd = int.Parse(caminho.Split('/').LastOrDefault());
+
+                var Nome_projetoVD = (from p in _context.Projetos
+                                      where p.Id == idVd
+                                      select p.nome_projeto)
+                     .ToList();
+
+                foreach (var VD in Nome_projetoVD)
+                {
+                    ViewData["NomeProjeto"] = VD;
+                }
+
+            }
+            catch (Exception e)
+            {
+                var idVd = 0;
+
+                var Nome_projetoVD = (from p in _context.Projetos
+                                      where p.Id == idVd
+                                      select p.nome_projeto)
+                     .ToList();
+
+                foreach (var VD in Nome_projetoVD)
+                {
+                    ViewData["NomeProjeto"] = VD;
+                }
+            }
 
             // Filtrando o nome do projeto pelo id do usuario
             var Nome_projeto = (from p in _context.Projetos
                                where p.IdUsuario == userId
                                select p.nome_projeto)
                                  .ToList();
+
 
             var ProjetoId = (from p in _context.Projetos
                                 where p.IdUsuario == userId

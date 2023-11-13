@@ -1,6 +1,7 @@
 ﻿@{
     ViewData["Title"] = "Logado";
 }
+
 @model ViewModel
 <link rel="stylesheet" type="text/css" href="/css/Logado.css" media="screen" />
 
@@ -13,7 +14,7 @@
                 @foreach (var projeto in Model.Nome_projeto.Zip(Model.ProjetoId, (nomeProjeto, ProjetoId) => new { NomeProjeto = nomeProjeto, ProjetoId = ProjetoId }))
                 {
                     <li>
-                        <a class="project-name" asp-area="" asp-route-id="@projeto.ProjetoId" data-projeto-id="@projeto.ProjetoId">@projeto.NomeProjeto</a>
+                        <a class="project-name" asp-area="" asp-route-id="@projeto.ProjetoId">@projeto.NomeProjeto</a>
                         <a asp-area="" asp-controller="Projetos" asp-action="Edit" asp-route-id="@projeto.ProjetoId"><img src="/img/edit.png" class="foto-buttons" /></a>
                         <a asp-area="" asp-controller="Projetos" asp-action="Delete" asp-route-id="@projeto.ProjetoId"><img src="/img/delete.png" class="foto-buttons" /></a>
                     </li>
@@ -29,22 +30,23 @@
     </div>
 
     <div class="Container_Body">
-        <div class="header">
             @if (User.Identity.IsAuthenticated)
             {
-                <h1>@ViewData["userName"]</h1>
-                    <details>
-                        <summary><img src="/img/man.png" class="foto-perfil" /></summary>
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Edit" asp-route-id="@ViewData["userId"]">Editar</a>
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Delete" asp-route-id="@ViewData["userId"]">Apagar</a>
+                <h1 class="project-name-dropdown">@ViewData["userName"]</h1>
+
+            <div class="dropdown" onclick="joaquim()">
+                    <img class="dropdown-image" src="/img/man.png" alt="Imagem de Menu">
+                    <div class="dropdown-content">
+                        <button class="nav-link text-dark" asp-area="" onclick="ModalOpen(@ViewData["userId"], '/Usuarios/Edit/')">Editar</button>
+                        <button class="nav-link text-dark" asp-area="" onclick="ModalOpen(@ViewData["userId"], '/Usuarios/Delete/')">Apagar</button>
                         <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Logout">Sair</a>
-                    </details>
+                    </div>
+                </div>
             }
-        </div>
 
         <div class="info_container">
             <h1>Projeto:</h1>
-            <h4>Quadro Kanban</h4>
+            <h4>@ViewData["NomeProjeto"]</h4>
 
         </div>
 
@@ -63,8 +65,10 @@
                         <div class="coluna">
                             <div class="color_colum" style="background-color: @Coluna.CorColuna;"><div class="icolor_colum"></div></div>
                             <h3>@Coluna.NomeColuna</h3>
-                            <a asp-area="" asp-controller="Colunas" asp-action="Edit" asp-route-id="@Coluna.IdColuna"><img src="/img/edit.png" class="foto-buttons"/></a>
-                        
+                            <a asp-area="" asp-controller="Colunas" asp-action="Edit" asp-route-id="@Coluna.IdColuna"><img src="/img/edit.png" class="foto-buttons" /></a>
+                            <button type="button" id="openModalBtn" onclick="ModalOpen(@Coluna.IdColuna, '/Colunas/Edit/')">Modal</button>
+
+                            
                         </div>
                             @if (c == 0)
                             {
@@ -104,4 +108,13 @@
             }
         </div>
     </div>
+
+    <!-- Modal -->
+    <div id="myModalE" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModalBtn">&times;</span>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
 </div>

@@ -1,5 +1,8 @@
 ﻿body {
-    
+}
+
+#myModal {
+    width: 400px;
 }
 
 * {
@@ -18,58 +21,71 @@
         padding: 0;
         display: block;
     }
-    /*Menu do usuário*/
-.header {
-    width: 12%;
-    display: inline;
-    margin-left: 72%;
-    margin-top: 2%;
-    z-index: 2;
+
+/*Menu do usuário*/
+
+.project-name-dropdown {
+    color: #343434;
     position: absolute;
+    margin-left: 80vw;
+    margin-top: 4.5vh;
+    font-size: 1.6rem;
+    font-family: sans-serif;
 }
 
-    .header .foto-perfil {
-        width: 40%;
-        margin-left: 22%;
-        margin-top: -100%;
-    }
-
-    .header h1 {
-        color: black;
-        float: right;
-        padding-top: 2%;
-        font-size: 1.6rem;
-        font-family: sans-serif;
-    }
-
-details {
-    display: flex;
-    margin-top: 22%;
-    margin-right: 4%;
-    width: 55%;
-    float: right;
-    background-color: #B5B5B5;
-    border-radius: 5px;
+/* Estilize o contêiner do dropdown */
+.dropdown {
+    position: absolute;
+    display: inline-block;
+    margin-left: 76vw;
+    margin-top: 3vh;
 }
 
-    details a {
+/* Estilize a imagem que aciona o menu suspenso */
+.dropdown-image {
+    cursor: pointer;
+    width: 55px;
+}
+
+
+/* Estilize o menu suspenso oculto */
+.dropdown-content {
+    display: none; 
+    position: absolute;
+    margin-left: -5vw;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+    /* Estilize os itens do menu suspenso */
+    .dropdown-content a, button {
+        color: #333;
+        padding: 12px 16px;
         text-decoration: none;
         font-family: sans-serif;
-        font-size: 1.2rem;
-        padding: 5px;
-        color: #343434;
-        padding-left: 10px;
-        display: flex;
+        font-size: 0.8rem;
+        display: block;
+
     }
-        details a:hover{
-            color: white;
+
+    .dropdown-content button {
+        width: 100%;
+        background-color: white;
+        cursor: pointer;
+        border: none;
+        text-align: left;
+    }
+
+        /* Altere a cor do link quando passar o mouse sobre ele */
+        .dropdown-content a:hover, button:hover {
+            background-color: #ddd;
         }
 
-        details summary {
-            list-style: none;
-        }
 
- /*Barra lateral com os projetos*/
+
+/*Barra lateral com os projetos*/
 .side-bar-background {
     width: 12%;
     float: left;
@@ -86,9 +102,15 @@ details {
         border-top: 20px solid #4EAAFF;
     }
 
-    .side-bar-background .foto-buttons {
-        width: 18%;
-    }
+        .side-bar-background .white-blue h1 {
+            margin-top: 11%;
+            position: absolute;
+            font-family: sans-serif;
+            font-size: 2rem;
+            color: white;
+            margin-left: 0.5%;
+        }
+
 
 
 /* Lista de projetos */
@@ -97,39 +119,29 @@ details {
     list-style-type: none;
 }
 
-    .white-blue h1 {
-        margin-top: 8%;
-        position: absolute;
-        font-size: 1.8rem;
-        margin-left: 0.5%;
+
+.white-blue ul li {
+    margin-top: 10px;
+}
+
+    .white-blue ul li .project-name {
         color: white;
+        text-decoration: none;
+        font-size: 1.8rem;
+        font-family: sans-serif;
     }
 
-
-    .white-blue ul li {
-        margin-top: 10px;
-    }
-
-        .white-blue ul li .project-name {
-            margin-left: -25%;
-            color: white;
-            text-decoration: none;
-            font-size: 1.8rem;
-            font-family: sans-serif;
+        .white-blue ul li .project-name:hover {
+            color: yellow;
         }
-
-            .white-blue ul li .project-name:hover {
-                color: yellow;
-            }
 
 
 /* Botão de adicionar */
-    .white-blue .adicionar {
-        margin-top: 10%;
-        display: flex;
-        text-align: center;
-
-    }
+.white-blue .adicionar {
+    margin-top: 10%;
+    display: flex;
+    text-align: center;
+}
 
     .white-blue .adicionar a {
         color: white;
@@ -138,22 +150,21 @@ details {
         text-decoration: none;
         margin-top: 2%;
         font-family: sans-serif;
-
     }
 
-        .white-blue .adicionar span {
-            font-size: 1.5rem;
-            margin-top: 2%;
-            color:white;
-            padding-left: 30%;
-        }
-
-
-    .white-blue hr{
-        width: 70%;
-        margin-left: 14%;
-        margin-top: 8%;
+    .white-blue .adicionar span {
+        font-size: 1.5rem;
+        margin-top: 2%;
+        color: white;
+        padding-left: 30%;
     }
+
+
+.white-blue hr {
+    width: 70%;
+    margin-left: 14%;
+    margin-top: 8%;
+}
 
 .info_container {
     display: flex;
@@ -162,29 +173,24 @@ details {
 
     .info_container h1 {
         font-size: 1.7rem;
-        color: black;
+        color: #343434;
         font-family: sans-serif;
         margin-left: 2%;
     }
+
     .info_container h4 {
         font-size: 1.7rem;
-        margin-top: -15px;
         margin-left: 10px;
-        color: black;
+        color: #343434;
         font-family: sans-serif;
     }
 
 
-/* Colunas do Projeto */
 .colum_container {
     display: flex;
     height: 75%;
     width: 100%;
 }
-
-    .colum_container .foto-buttons {
-        width: 98%;
-    }
 
     .colum_container .coluna {
         margin-top: 5%;
@@ -196,16 +202,17 @@ details {
     }
 
         .colum_container .coluna h3 {
-            float:right;
+            float: right;
             margin-top: 1%;
             margin-left: 4%;
+            color: #343434;
         }
 
         .colum_container .coluna .color_colum {
             margin-left: 8%;
             border-radius: 50px;
             justify-content: center;
-            align-items:center;
+            align-items: center;
             display: flex;
             height: 30px;
             width: 30px;
@@ -213,20 +220,20 @@ details {
 
             .colum_container .coluna .color_colum .icolor_colum {
                 background-color: white;
-                z-index: 5;
+                z-index: 1;
                 border-radius: 50px;
                 height: 20px;
                 width: 20px;
             }
 
-    .info_container {
-        border-top: 1px solid #BEBEBE;
-        border-bottom: 1px solid #BEBEBE;
-        background-color: #F5F5F5;
-        height: 10%;
-        margin-top: 8%;
-        width: 100%;
-    }
+.info_container {
+    border-top: 1px solid #BEBEBE;
+    border-bottom: 1px solid #BEBEBE;
+    background-color: #F5F5F5;
+    height: 10%;
+    margin-top: 8%;
+    width: 100%;
+}
 
 
 .columContainerInt {
@@ -251,8 +258,8 @@ details {
     #adicionarTarefa span {
         color: rgba(55, 201, 54, 1);
         font-size: 2rem;
-        
     }
+
     #adicionarTarefa a {
         color: rgba(55, 201, 54, 1);
         font-size: 1.2rem;
@@ -260,7 +267,6 @@ details {
         font-family: sans-serif;
     }
 
-/* Ficha das Tarefas */
 .tarefa {
     margin-top: 8%;
     padding: 5%;
@@ -273,6 +279,7 @@ details {
     box-shadow: -7px 7px 20px 0px rgba(0,0,0,0.2);
     -webkit-box-shadow: -7px 5px 22px -2px rgba(0,0,0,0.2);
 }
+
     .tarefa .paragrafo {
         width: 90%;
         margin-top: 5%;
@@ -284,7 +291,7 @@ details {
         text-align: center;
     }
 
-    .tarefa h4{
+    .tarefa h4 {
         margin-right: 70%;
     }
 
@@ -292,3 +299,39 @@ details {
         width: 95%;
         margin-top: 5%;
     }
+
+
+/* Configuação dos modais */
+.modal {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.modal-content {
+    position: absolute;
+    -webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.26);
+    -moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.26);
+    box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.26);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fefefe;
+    padding: 20px;
+    border: none;
+    width: 80%;
+    max-width: 600px;
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}

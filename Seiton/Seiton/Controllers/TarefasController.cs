@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Seiton.Models;
+using SQLitePCL;
 
 namespace Seiton.Controllers
 {
@@ -43,6 +44,9 @@ namespace Seiton.Controllers
         // GET: Tarefas/Create
         public IActionResult Create()
         {
+
+
+
             ViewData["IdColuna"] = new SelectList(_context.Colunas, "Id", "Id");
             return View();
         }
