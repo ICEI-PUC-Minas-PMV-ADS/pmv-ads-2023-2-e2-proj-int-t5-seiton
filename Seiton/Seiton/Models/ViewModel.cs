@@ -11,6 +11,7 @@
 
         // Tarefas
         public List<int> IdTarefa { get; set; }
+        public List<int> Prioridade { get; set; }
         public List<string> NomeTarefas { get; set; }
         public List<string> descricao { get; set; }
         public List<string> Responsavel { get; set; }

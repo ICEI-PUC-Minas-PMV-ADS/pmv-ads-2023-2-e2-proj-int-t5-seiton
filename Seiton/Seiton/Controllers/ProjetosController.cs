@@ -68,7 +68,6 @@ namespace Seiton.Controllers
 
                 var maxID = _context.Projetos.Max(projeto => projeto.Id);
 
-
                 string[] names = new string[] { "Backlog", "To do", "In progress", "Testing", "Done",};
                 string[] color = new string[] { "#4EAAFF", "#FF4167", "#FFB64F", "#696969", "#37C936" };
 
@@ -82,11 +81,10 @@ namespace Seiton.Controllers
                         IdProjeto = maxID
                     };
 
-
                     _context.Colunas.Add(Coluna);
                 }
                     await _context.SaveChangesAsync();
-                return RedirectToAction("Logado", "Logados");
+                return RedirectToAction("Logado", "Logados", new { id = maxID });
 
             }
             return View(projeto);
@@ -137,7 +135,8 @@ namespace Seiton.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction("Logado", "Logados");
+                
+                return RedirectToAction("Logado", "Logados", new { id });
             }
             ViewData["IdUsuario"] = new SelectList(_context.Usuarios, "Id", "NomeUsuario", projeto.IdUsuario);
             return View(projeto);

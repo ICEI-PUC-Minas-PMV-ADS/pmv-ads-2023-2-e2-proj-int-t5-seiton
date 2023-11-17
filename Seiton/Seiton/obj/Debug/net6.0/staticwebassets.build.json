@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "i6e+Yuun58ijaZ12uI6oz8bo2C9vhncvqeY8gN6ioSE=",
+  "Hash": "xXoQtx+XKhuB5qAAElTlGOwH6xT5c+cCUzptOlsk9S8=",
   "Source": "Seiton",
   "BasePath": "_content/Seiton",
   "Mode": "Default",
@@ -170,6 +170,23 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "C:\\Users\\admcl\\OneDrive\\Área de Trabalho\\Wesley\\pmv-ads-2023-2-e2-proj-int-t5-seiton\\Seiton\\Seiton\\wwwroot\\img\\arrow.png",
+      "SourceId": "Seiton",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\admcl\\OneDrive\\Área de Trabalho\\Wesley\\pmv-ads-2023-2-e2-proj-int-t5-seiton\\Seiton\\Seiton\\wwwroot\\",
+      "BasePath": "_content/Seiton",
+      "RelativePath": "img/arrow.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\arrow.png"
+    },
+    {
       "Identity": "C:\\Users\\admcl\\OneDrive\\Área de Trabalho\\Wesley\\pmv-ads-2023-2-e2-proj-int-t5-seiton\\Seiton\\Seiton\\wwwroot\\img\\delete.png",
       "SourceId": "Seiton",
       "SourceType": "Discovered",
@@ -255,6 +272,23 @@
       "OriginalItemSpec": "wwwroot\\img\\Logo.png"
     },
     {
+      "Identity": "C:\\Users\\admcl\\OneDrive\\Área de Trabalho\\Wesley\\pmv-ads-2023-2-e2-proj-int-t5-seiton\\Seiton\\Seiton\\wwwroot\\img\\logout.png",
+      "SourceId": "Seiton",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\admcl\\OneDrive\\Área de Trabalho\\Wesley\\pmv-ads-2023-2-e2-proj-int-t5-seiton\\Seiton\\Seiton\\wwwroot\\",
+      "BasePath": "_content/Seiton",
+      "RelativePath": "img/logout.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\logout.png"
+    },
+    {
       "Identity": "C:\\Users\\admcl\\OneDrive\\Área de Trabalho\\Wesley\\pmv-ads-2023-2-e2-proj-int-t5-seiton\\Seiton\\Seiton\\wwwroot\\img\\man.png",
       "SourceId": "Seiton",
       "SourceType": "Discovered",
@@ -287,6 +321,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\Office.png"
+    },
+    {
+      "Identity": "C:\\Users\\admcl\\OneDrive\\Área de Trabalho\\Wesley\\pmv-ads-2023-2-e2-proj-int-t5-seiton\\Seiton\\Seiton\\wwwroot\\img\\report.png",
+      "SourceId": "Seiton",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\admcl\\OneDrive\\Área de Trabalho\\Wesley\\pmv-ads-2023-2-e2-proj-int-t5-seiton\\Seiton\\Seiton\\wwwroot\\",
+      "BasePath": "_content/Seiton",
+      "RelativePath": "img/report.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\report.png"
     },
     {
       "Identity": "C:\\Users\\admcl\\OneDrive\\Área de Trabalho\\Wesley\\pmv-ads-2023-2-e2-proj-int-t5-seiton\\Seiton\\Seiton\\wwwroot\\js\\Logado.js",

@@ -9,7 +9,7 @@ function joaquim() {
 };
 
 var openModalBtn = $('#openModalBtn');
-var closeModalBtn = $('#closeModalBtn');
+var closeModalBtn = $('.backPage');
 var modal = $('#myModalE');
 var modalContent = $('#modalContent');
 

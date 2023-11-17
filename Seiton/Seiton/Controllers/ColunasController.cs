@@ -71,7 +71,7 @@ namespace Seiton.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction("Logado", "Logados");
+                return RedirectToAction("Logado", "Logados", new { id = colunas.IdProjeto });
             }
             ViewData["IdProjeto"] = new SelectList(_context.Projetos, "Id", "nome_projeto", colunas.IdProjeto);
             return View(colunas);

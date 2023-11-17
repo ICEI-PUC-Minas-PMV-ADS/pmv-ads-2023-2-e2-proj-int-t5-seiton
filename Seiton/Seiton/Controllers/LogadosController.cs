@@ -23,13 +23,13 @@ namespace Seiton.Controllers
             ViewData["userId"] = int.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier));
             ViewData["userName"] = User.FindFirstValue(ClaimTypes.Name);
 
-            //ViewData["NomeProjeto"]
 
             var userId = int.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier));
 
             try
             {
                 var idVd = int.Parse(caminho.Split('/').LastOrDefault());
+                ViewData["IdProjetoAtual"] = idVd;
 
                 var Nome_projetoVD = (from p in _context.Projetos
                                       where p.Id == idVd
@@ -40,6 +40,8 @@ namespace Seiton.Controllers
                 {
                     ViewData["NomeProjeto"] = VD;
                 }
+
+                ViewData["ProjetoId"] = idVd;
 
             }
             catch (Exception e)
@@ -69,6 +71,8 @@ namespace Seiton.Controllers
                                 select p.Id)
                                  .ToList();
 
+
+
             // Filtrando colunas
             var NomeColuna = (from c in _context.Colunas
                               where c.IdProjeto == id
@@ -79,6 +83,11 @@ namespace Seiton.Controllers
                               where c.IdProjeto == id
                               select c.Id)
                               .ToList();
+
+            var IdColuna1 = (from c in _context.Colunas
+                            where c.IdProjeto == id
+                            select c.Id)
+                            .ToList().FirstOrDefault();
 
             var CorColuna = (from c in _context.Colunas
                             where c.IdProjeto == id
@@ -99,9 +108,14 @@ namespace Seiton.Controllers
                             .ToList();
 
             var IdTarefa = (from t in _context.Tarefas
-                               select t.IdColuna)
+                            orderby t.Id
+                            select t.IdColuna)
                            .ToList();
 
+            var Prioridade = (from p in _context.Tarefas
+                              orderby p.Id
+                              select p.prioridade)
+                                .ToList();
 
             var viewModel = new ViewModel
             {
@@ -113,7 +127,8 @@ namespace Seiton.Controllers
                 NomeTarefas = NomeTarefas,
                 descricao = descricao,
                 Responsavel = Responsavel,
-                CorColuna = CorColuna
+                CorColuna = CorColuna,
+                Prioridade = Prioridade
             };
 
 

@@ -7,13 +7,14 @@ namespace Seiton.Models
     public class Tarefas
     {
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 
         public string nome_tarefas { get; set; }
 
-        public string descricao { get; set;}
+        public string descricao { get; set; }
 
-        public prioridadeOp prioridade { get; set; }
+        public int prioridade { get; set; }
 
         public string responsavel { get; set; }
 
@@ -22,11 +23,13 @@ namespace Seiton.Models
         [ForeignKey("IdColuna")]
         public Colunas Colunas { get; set; }
 
-        public enum prioridadeOp
-        {
-            Alta = 1,
-            Média = 2,
-            Baixa = 3
-        } 
+    }
+    public class prioridadeOp
+    {
+
+        public const int Alta = 3;
+        public const int Média = 2;
+        public const int Baixa = 1;
+
     }
 }

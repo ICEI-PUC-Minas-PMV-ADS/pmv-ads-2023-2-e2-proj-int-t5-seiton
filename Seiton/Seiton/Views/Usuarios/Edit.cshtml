@@ -28,16 +28,10 @@
                 </div>
                 <span asp-validation-for="Senha" class="aviso"></span>
                 <div>
-                    <a asp-controller="Logados" asp-action="Logado">Voltar</a> |
-                    <input class="btn" type="submit" value="Salvar" />
+                    <a class="backPage">Voltar</a> |
+                    <input class="btn" type="submit" value="Editar" />
                 </div>
             </form>
         </div>
     </div>
 </div>
-
-@section Scripts {
-    @{
-        await Html.RenderPartialAsync("_ValidationScriptsPartial");
-    }
-}

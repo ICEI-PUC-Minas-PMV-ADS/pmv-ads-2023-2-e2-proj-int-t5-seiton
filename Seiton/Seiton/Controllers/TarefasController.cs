@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Seiton.Models;
 using SQLitePCL;
 
@@ -44,9 +45,6 @@ namespace Seiton.Controllers
         // GET: Tarefas/Create
         public IActionResult Create()
         {
-
-
-
             ViewData["IdColuna"] = new SelectList(_context.Colunas, "Id", "Id");
             return View();
         }
@@ -56,24 +54,28 @@ namespace Seiton.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,nome_tarefas,descricao,prioridade,responsavel,IdColuna")] Tarefas tarefas, int id)
+        public async Task<IActionResult> Create([Bind("nome_tarefas,descricao,prioridade,responsavel,IdColuna")] Tarefas tarefas)
         {
             if (ModelState.IsValid)
             {
 
 
-                var IdColuna = (from c in _context.Colunas
-                                  where c.IdProjeto == id
-                                  select c.Id)
-                                  .ToList();
+                string caminho = HttpContext.Request.Path;
+                var iProjeto = int.Parse(caminho.Split('/').LastOrDefault());
 
+                var primeiroId = (from c in _context.Colunas
+                                    where c.IdProjeto == iProjeto
+                                    orderby c.Id
+                                    select c.Id)
+                                    .FirstOrDefault();
 
-                tarefas.IdColuna = 1;
-                tarefas.prioridade = Tarefas.prioridadeOp.Alta;
+                tarefas.IdColuna = primeiroId;
                 _context.Add(tarefas);
+
                 await _context.SaveChangesAsync();
 
-                return RedirectToAction("Logado", "Logados");
+                return RedirectToAction("Logado", "Logados", new { id = iProjeto });
+
             }
             ViewData["IdColuna"] = new SelectList(_context.Colunas, "Id", "Id", tarefas.IdColuna);
             return View(tarefas);

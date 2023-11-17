@@ -41,6 +41,10 @@
       "PackagePath": "staticwebassets\\img\\Office.png"
     },
     {
+      "Id": "C:\\Users\\admcl\\OneDrive\\Área de Trabalho\\Wesley\\pmv-ads-2023-2-e2-proj-int-t5-seiton\\Seiton\\Seiton\\wwwroot\\img\\arrow.png",
+      "PackagePath": "staticwebassets\\img\\arrow.png"
+    },
+    {
       "Id": "C:\\Users\\admcl\\OneDrive\\Área de Trabalho\\Wesley\\pmv-ads-2023-2-e2-proj-int-t5-seiton\\Seiton\\Seiton\\wwwroot\\img\\delete.png",
       "PackagePath": "staticwebassets\\img\\delete.png"
     },
@@ -57,8 +61,16 @@
       "PackagePath": "staticwebassets\\img\\imgBanner311.png"
     },
     {
+      "Id": "C:\\Users\\admcl\\OneDrive\\Área de Trabalho\\Wesley\\pmv-ads-2023-2-e2-proj-int-t5-seiton\\Seiton\\Seiton\\wwwroot\\img\\logout.png",
+      "PackagePath": "staticwebassets\\img\\logout.png"
+    },
+    {
       "Id": "C:\\Users\\admcl\\OneDrive\\Área de Trabalho\\Wesley\\pmv-ads-2023-2-e2-proj-int-t5-seiton\\Seiton\\Seiton\\wwwroot\\img\\man.png",
       "PackagePath": "staticwebassets\\img\\man.png"
+    },
+    {
+      "Id": "C:\\Users\\admcl\\OneDrive\\Área de Trabalho\\Wesley\\pmv-ads-2023-2-e2-proj-int-t5-seiton\\Seiton\\Seiton\\wwwroot\\img\\report.png",
+      "PackagePath": "staticwebassets\\img\\report.png"
     },
     {
       "Id": "C:\\Users\\admcl\\OneDrive\\Área de Trabalho\\Wesley\\pmv-ads-2023-2-e2-proj-int-t5-seiton\\Seiton\\Seiton\\wwwroot\\js\\Logado.js",

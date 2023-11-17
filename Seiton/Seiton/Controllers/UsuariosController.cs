@@ -43,8 +43,10 @@ namespace Seiton.Controllers
 
             bool senhaOk = BCrypt.Net.BCrypt.Verify(usuario.Senha, dados.Senha);
 
+
             if (senhaOk)
             {
+
                 var claims = new List<Claim> 
                 {
                     new Claim(ClaimTypes.Name, dados.NomeUsuario),
@@ -62,6 +64,9 @@ namespace Seiton.Controllers
                 };
 
                 await HttpContext.SignInAsync(principal, props);
+
+
+
 
                 return RedirectToAction("Logado", "Logados");
             }
@@ -114,7 +119,6 @@ namespace Seiton.Controllers
             return View(usuario);
         }
 
-
         // GET: Usuarios/Edit
         public async Task<IActionResult> Edit(int? id)
         {
@@ -145,7 +149,6 @@ namespace Seiton.Controllers
             {
                 try
                 {
-                    usuario.Senha = BCrypt.Net.BCrypt.HashPassword(usuario.Senha);
                     _context.Update(usuario);
                     await _context.SaveChangesAsync();
                 }
@@ -160,7 +163,7 @@ namespace Seiton.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction("Logado", "Logados");
+                return RedirectToAction("Logados", "Logado");
             }
             return View(usuario);
         }

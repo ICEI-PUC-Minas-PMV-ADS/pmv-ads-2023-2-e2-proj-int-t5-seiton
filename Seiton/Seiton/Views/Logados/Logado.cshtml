@@ -15,8 +15,6 @@
                 {
                     <li>
                         <a class="project-name" asp-area="" asp-route-id="@projeto.ProjetoId">@projeto.NomeProjeto</a>
-                        <a asp-area="" asp-controller="Projetos" asp-action="Edit" asp-route-id="@projeto.ProjetoId"><img src="/img/edit.png" class="foto-buttons" /></a>
-                        <a asp-area="" asp-controller="Projetos" asp-action="Delete" asp-route-id="@projeto.ProjetoId"><img src="/img/delete.png" class="foto-buttons" /></a>
                     </li>
                 }
                 
@@ -37,9 +35,9 @@
             <div class="dropdown" onclick="joaquim()">
                     <img class="dropdown-image" src="/img/man.png" alt="Imagem de Menu">
                     <div class="dropdown-content">
-                        <button class="nav-link text-dark" asp-area="" onclick="ModalOpen(@ViewData["userId"], '/Usuarios/Edit/')">Editar</button>
-                        <button class="nav-link text-dark" asp-area="" onclick="ModalOpen(@ViewData["userId"], '/Usuarios/Delete/')">Apagar</button>
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Logout">Sair</a>
+                    <button class="nav-link text-dark" asp-area="" onclick="ModalOpen(@ViewData["userId"], '/Usuarios/Edit/')"><img src="/img/edit.png" class="foto-button" />Editar</button>
+                    <button class="nav-link text-dark" asp-area="" onclick="ModalOpen(@ViewData["userId"], '/Usuarios/Delete/')"><img src="/img/delete.png" class="foto-button" />Apagar</button>
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Logout"><img src="/img/logout.png" class="foto-button" />Sair</a>
                     </div>
                 </div>
             }
@@ -47,6 +45,15 @@
         <div class="info_container">
             <h1>Projeto:</h1>
             <h4>@ViewData["NomeProjeto"]</h4>
+            @if (@ViewData["ProjetoId"] != null)
+            {
+                <details>
+                    <summary></summary>
+                    <button class="nav-link text-dark" asp-area="" onclick="ModalOpen(@ViewData["ProjetoId"], '/Projetos/Edit/' )"><img src="/img/edit.png" class="foto-button" />Editar</button>
+                    <button class="nav-link text-dark" asp-area="" onclick="ModalOpen(@ViewData["ProjetoId"], '/Projetos/Delete/')"><img src="/img/delete.png" class="foto-button" />Apagar</button>
+                    <button class="nav-link text-dark" asp-area="" onclick="ModalOpen(@ViewData["ProjetoId"], '/Logados/Report/')"><img src="/img/report.png" class="foto-button" />Relatório</button>
+                </details>
+            }
 
         </div>
 
@@ -58,49 +65,84 @@
                 var colunas = Model.NomeColuna.Zip(Model.IdColuna, (nomecoluna, idcoluna) => new { NomeColuna = nomecoluna, IdColuna = idcoluna })
                 .Zip(Model.CorColuna, (coluna, cor) => new { NomeColuna = coluna.NomeColuna, IdColuna = coluna.IdColuna, CorColuna = cor });
 
+
                 @foreach (var Coluna in colunas)
                 {
+
+                    var tarefasCombinadas = Model.IdTarefa
+                    .Zip(
+                    Model.NomeTarefas.Zip(Model.descricao, (nomeTarefa, desc) => new { NomeTarefa = nomeTarefa, Descricao = desc }),
+                    (idTarefa, tarefa) => new { IdTarefa = idTarefa, Tarefa = tarefa }
+                    )
+                    .Zip(Model.Responsavel.Zip(Model.Prioridade, (resp, prioridade) => new { Responsavel = resp, Prioridade = prioridade }),
+                    (tarefa, respPrioridade) => new
+                    {
+                        IdTarefa = tarefa.IdTarefa,
+                        NomeTarefa = tarefa.Tarefa.NomeTarefa,
+                        Descricao = tarefa.Tarefa.Descricao,
+                        Responsavel = respPrioridade.Responsavel,
+                        Prioridade = respPrioridade.Prioridade
+                    })
+                    .Where(tarefa => tarefa.IdTarefa == Coluna.IdColuna);
+
+
                     <div class="columContainerInt">
                     
                         <div class="coluna">
                             <div class="color_colum" style="background-color: @Coluna.CorColuna;"><div class="icolor_colum"></div></div>
                             <h3>@Coluna.NomeColuna</h3>
-                            <a asp-area="" asp-controller="Colunas" asp-action="Edit" asp-route-id="@Coluna.IdColuna"><img src="/img/edit.png" class="foto-buttons" /></a>
-                            <button type="button" id="openModalBtn" onclick="ModalOpen(@Coluna.IdColuna, '/Colunas/Edit/')">Modal</button>
-
-                            
+                            <button type="button" id="openModalBtn" onclick="ModalOpen(@Coluna.IdColuna, '/Colunas/Edit/')"><img src="/img/edit.png" /></button>
                         </div>
+                        <h4 class="NTarefas">Nº de Tarefas:</h4>
+                        <hr />
+
                             @if (c == 0)
                             {
                                 <div id="adicionarTarefa" >
                                     <span class="material-symbols-outlined">
                                         add
                                     </span>
-                                    <a asp-area="" asp-controller="Tarefas" asp-action="Create">Nova tarefa</a>
+                                <a asp-area="" asp-controller="Tarefas" asp-action="Create" asp-route-id="@ViewData["IdProjetoAtual"]">Nova tarefa</a>
+                                </div>
+                            }
+
+                        @foreach (var tarefa in tarefasCombinadas)
+                        {
+                            if (tarefa.Prioridade == 1)
+                            {
+                                <div class="tarefa prioridade-baixa" id="tarefaId">
+                                    <h4>@tarefa.Responsavel</h4>
+                                    <div class="paragrafo2">
+                                        <h2>@tarefa.NomeTarefa</h2>
+                                    </div>
+                                    <hr>
+                                    <div class="paragrafo"><p>@tarefa.Descricao</p></div>
+                                </div>
+                            }
+                            else if (tarefa.Prioridade == 2)
+                            {
+                                <div class="tarefa prioridade-media" id="tarefaId">
+                                    <h4>@tarefa.Responsavel</h4>
+                                    <div class="paragrafo2">
+                                        <h2>@tarefa.NomeTarefa</h2>
+                                    </div>
+                                    <hr>
+                                    <div class="paragrafo"><p>@tarefa.Descricao</p></div>
+                                </div>
+                            }
+                            else if (tarefa.Prioridade == 3)
+                            {
+                                <div class="tarefa prioridade-alta" id="tarefaId">
+                                    <h4>@tarefa.Responsavel</h4>
+                                    <div class="paragrafo2">
+                                        <h2>@tarefa.NomeTarefa</h2>
+                                    </div>
+                                    <hr>
+                                    <div class="paragrafo"><p>@tarefa.Descricao</p></div>
                                 </div>
                             }
                             
-                            @foreach (var IdTarefa in Model.IdTarefa)
-                            {
-                                var tarefasCombinadas = Model.NomeTarefas.Zip(Model.descricao, (nomeTarefa, desc) => new { NomeTarefa = nomeTarefa, Descricao = desc })
-                                .Zip(Model.Responsavel, (tarefa, resp) => new { NomeTarefa = tarefa.NomeTarefa, Descricao = tarefa.Descricao, Responsavel = resp });
-
-                                @if (@Coluna.IdColuna == IdTarefa)
-                                {
-                                    foreach (var tarefa in tarefasCombinadas)
-                                    {
-                                        <div class="tarefa">
-                                        <h4>@tarefa.Responsavel</h4>
-                                        <div class="paragrafo2">
-                                            <h2>@tarefa.NomeTarefa</h2>
-                                        </div>
-                                        <hr>
-                                        <div class="paragrafo"><p>@tarefa.Descricao</p></div>
-                                        </div>
-                                    }
-                                }
-                                break;
-                            }
+                        }
                     </div>
 
                     c = 1;
