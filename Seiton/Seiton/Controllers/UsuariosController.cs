@@ -65,9 +65,6 @@ namespace Seiton.Controllers
 
                 await HttpContext.SignInAsync(principal, props);
 
-
-
-
                 return RedirectToAction("Logado", "Logados");
             }
 
@@ -138,7 +135,7 @@ namespace Seiton.Controllers
         // POST: Usuarios/Edit
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,NomeUsuario,Email,Senha")] Usuario usuario)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,NomeUsuario,Email,Senha,ConfirmacaoSenha")] Usuario usuario)
         {
             if (id != usuario.Id)
             {
@@ -149,6 +146,8 @@ namespace Seiton.Controllers
             {
                 try
                 {
+                    usuario.Senha = BCrypt.Net.BCrypt.HashPassword(usuario.Senha);
+                    _context.Add(usuario);
                     _context.Update(usuario);
                     await _context.SaveChangesAsync();
                 }
@@ -163,7 +162,7 @@ namespace Seiton.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction("Logados", "Logado");
+                return RedirectToAction("Logado", "Logados");
             }
             return View(usuario);
         }

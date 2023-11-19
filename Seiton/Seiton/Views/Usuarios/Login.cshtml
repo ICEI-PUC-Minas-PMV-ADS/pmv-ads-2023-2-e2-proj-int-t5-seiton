@@ -39,11 +39,11 @@
               <span asp-validation-for="Senha" class="text-danger"></span>
            </div>
 
-            <div class="botoes2">
-            <a class="backPage">Voltar</a>
-            <input type="submit" value="Entrar" class="btn btn-success" />
+           <div class="botoes2">
+              <a class="voltar2" asp-area="" asp-controller="Home" asp-action="Index">Voltar</a>
+              <input type="submit" value="Entrar" class="btn" />
                                 
-        </div>
+           </div>
                         <h3> @ViewBag.Message</h3>
                         </form>
            </div>
