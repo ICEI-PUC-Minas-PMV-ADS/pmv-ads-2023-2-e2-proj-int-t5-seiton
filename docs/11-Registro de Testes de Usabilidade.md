@@ -72,19 +72,19 @@ Segue a análise de teste de usabilidade presencial, para registro uma tabela co
 
 | **Usuário** 	| **Artefato** 	| **Idade** | **Tempo** | **Clicks/Ações** | **Qtd. Erros** | **Se recuperou do erro** | **Comentários e observações** |
 | --- 	| --- 	| --- | --- | ---  | --- | --- | --- |
-| Usuário 1	| CTU-10 | 25 | 00:00:30 | 11 | 00 | --- | Usuário percebeu a responsividade do botão "bugada" e a pagina de criação de tarefa está básica |
-| Usuário 2 | CTU-10 | 17 | 00:00:53 | 11 | 00 | --- | Usuário achou bem fácil a visibilidade da opção de criar 'nova tarefa' |
-| Usuário 3 | CTU-10 | 20 | 00:00:38 | 11 | 00 | --- | Usuário achou o botão de nova tarefa facilmente devido a cor e foi facil criar as informações das tarefas |
-| Usuário 4 | CTU-10 | 30 | 00:00:34 | 13 | 00 | --- | Usuário percebeu que teve que clicar mais de uma vez no botão de criar nova tarefa |
-| Usuário 5	| CTU-10 | 24 | 00:00:35 | 11 | 00 | --- | Usuário notou ser fácil a criação da tarefa e sua visualização |
-| Usuário 6	| CTU-10 | 24 | 00:00:40 | 11 | 00 | --- | Usuário notou a responsividade do botão ruim e notou que a parte de criação de tarefa está bem básica |
+| Usuário 1	| CTU-11 | 25 | 00:00:30 | 11 | 00 | --- | Usuário percebeu a responsividade do botão "bugada" e a pagina de criação de tarefa está básica |
+| Usuário 2 | CTU-11 | 17 | 00:00:53 | 11 | 00 | --- | Usuário achou bem fácil a visibilidade da opção de criar 'nova tarefa' |
+| Usuário 3 | CTU-11 | 20 | 00:00:38 | 11 | 00 | --- | Usuário achou o botão de nova tarefa facilmente devido a cor e foi facil criar as informações das tarefas |
+| Usuário 4 | CTU-11 | 30 | 00:00:34 | 13 | 00 | --- | Usuário percebeu que teve que clicar mais de uma vez no botão de criar nova tarefa |
+| Usuário 5	| CTU-11 | 24 | 00:00:35 | 11 | 00 | --- | Usuário notou ser fácil a criação da tarefa e sua visualização |
+| Usuário 6	| CTU-11 | 24 | 00:00:40 | 11 | 00 | --- | Usuário notou a responsividade do botão ruim e notou que a parte de criação de tarefa está bem básica |
 
 | **Usuário** 	| **Artefato** 	| **Idade** | **Tempo** | **Clicks/Ações** | **Qtd. Erros** | **Se recuperou do erro** | **Comentários e observações** |
 | --- 	| --- 	| --- | --- | ---  | --- | --- | --- |
-| Usuário 1	| CTU-11 | 25 | 00:00:14 | 05 | 00 | --- | Usuário relatou que as informações da tarefa estão de acordo com oque foi criado |
-| Usuário 2 | CTU-11 | 17 | 00:00:28 | 05 | 00 | --- | Usuário relatou que os dados da tarefa foi visualizado corretamente |
-| Usuário 3 | CTU-11 | 20 | 00:00:12 | 05 | 01 | Não | Usuário achou problema ao visualizar as informações da tarefa o nome do responsavel da tarefa ultrapassou o tamanho do campo, fora isso as informações foi criada corretamente |
-| Usuário 4 | CTU-11 | 30 | 00:00:15 | 05 | 01 | Sim, foi corrigido o bug do contador de tarefas | Usuário achou rápido e intuitivo e notou que o número de tarefa está ficando zerado |
-| Usuário 5	| CTU-11 | 24 | 00:00:19 | 05 | 00 | --- | Usuário achou fácil e ituitiva a visualização |
-| Usuário 6	| CTU-11 | 24 | 00:00:20 | 05 | 02 | 1- Não. 2- Sim foi corrigido o bug do contador de tarefas| Usuário encontrou problema ao visualizar as informações da tarefa, algumas informações saem do card da tarefa e notou que o contador estava zerado ao criar tarefas |
+| Usuário 1	| CTU-12 | 25 | 00:00:14 | 05 | 00 | --- | Usuário relatou que as informações da tarefa estão de acordo com oque foi criado |
+| Usuário 2 | CTU-12 | 17 | 00:00:28 | 05 | 00 | --- | Usuário relatou que os dados da tarefa foi visualizado corretamente |
+| Usuário 3 | CTU-12 | 20 | 00:00:12 | 05 | 01 | Não | Usuário achou problema ao visualizar as informações da tarefa o nome do responsavel da tarefa ultrapassou o tamanho do campo, fora isso as informações foi criada corretamente |
+| Usuário 4 | CTU-12 | 30 | 00:00:15 | 05 | 01 | Sim, foi corrigido o bug do contador de tarefas | Usuário achou rápido e intuitivo e notou que o número de tarefa está ficando zerado |
+| Usuário 5	| CTU-12 | 24 | 00:00:19 | 05 | 00 | --- | Usuário achou fácil e ituitiva a visualização |
+| Usuário 6	| CTU-12 | 24 | 00:00:20 | 05 | 02 | 1- Não. 2- Sim foi corrigido o bug do contador de tarefas| Usuário encontrou problema ao visualizar as informações da tarefa, algumas informações saem do card da tarefa e notou que o contador estava zerado ao criar tarefas |
 
