@@ -1,8 +1,9 @@
 ﻿@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Lobster&display=swap');
 
 
-body{
-    font-family:Arimo;
+body {
+    font-family: Arimo;
+    background: linear-gradient(to right, black, Royalblue);
 }
 
 #boxAll { /* Container 2 */

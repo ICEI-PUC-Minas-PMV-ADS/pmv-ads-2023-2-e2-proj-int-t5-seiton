@@ -17,6 +17,7 @@ namespace Seiton.Models
         public string Email { get; set; }
 
         [Required(ErrorMessage = "*Informe uma senha!")]
+        [DataType(DataType.Password)]
         public string Senha { get; set; }
 
         //[Required(ErrorMessage = "Repita a senha novamente!")]

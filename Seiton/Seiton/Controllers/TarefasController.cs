@@ -128,7 +128,9 @@ namespace Seiton.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(Index));
+                string caminho = HttpContext.Request.Path;
+                var iProjeto = int.Parse(caminho.Split('/').LastOrDefault());
+                return RedirectToAction("Logado", "Logados", new { id = iProjeto });
             }
             ViewData["IdColuna"] = new SelectList(_context.Colunas, "Id", "Id", tarefas.IdColuna);
             return View(tarefas);
@@ -169,7 +171,10 @@ namespace Seiton.Controllers
             }
             
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+
+            string caminho = HttpContext.Request.Path;
+            var iProjeto = int.Parse(caminho.Split('/').LastOrDefault());
+            return RedirectToAction("Logado", "Logados", new { id = iProjeto });
         }
 
         private bool TarefasExists(int id)

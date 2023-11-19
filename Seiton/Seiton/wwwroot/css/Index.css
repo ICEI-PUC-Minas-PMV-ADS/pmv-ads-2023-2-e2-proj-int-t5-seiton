@@ -1,6 +1,9 @@
 ﻿@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arimo&family=Lobster&family=Poppins&display=swap');
 
+body {
+    background: linear-gradient(to right, black, Royalblue);
+}
 
 #conatinerHome {
     font-family: 'Arimo';

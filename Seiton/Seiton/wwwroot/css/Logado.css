@@ -147,22 +147,25 @@
     text-align: center;
 }
 
-    .white-blue .adicionar a {
+    .white-blue .adicionar button {
         color: white;
         cursor: pointer;
         font-size: 1.5rem;
         text-decoration: none;
-        margin-top: 2%;
+        margin-top: 4%;
+        margin-left: -5%;
         font-family: sans-serif;
+        background-color: transparent;
+        border: none;
     }
 
-        .white-blue .adicionar a:hover {
+        .white-blue .adicionar button:hover {
             color: #4EAAFF;
         }
 
         .white-blue .adicionar span {
         font-size: 1.5rem;
-        margin-top: 2%;
+        margin-top: 10%;
         color: white;
         padding-left: 30%;
     }
@@ -333,11 +336,14 @@
         font-size: 2rem;
     }
 
-    #adicionarTarefa a {
+    #adicionarTarefa button {
         color: rgba(55, 201, 54, 1);
         font-size: 1.2rem;
         text-decoration: none;
         font-family: sans-serif;
+        background-color: transparent;
+        border: none;
+        margin-left: -5%;
     }
 
 /* Estilo dos cards das Tarefas */

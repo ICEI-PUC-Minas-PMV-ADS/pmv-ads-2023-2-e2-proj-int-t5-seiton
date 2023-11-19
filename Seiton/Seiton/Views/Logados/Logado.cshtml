@@ -21,7 +21,7 @@
             </ul>
             <div class="adicionar">
                 <span class="material-symbols-outlined">add</span>
-                <a asp-controller="Projetos" asp-action="Create">Novo</a>
+                <button class="nav-link text-dark" asp-area="" onclick="ModalOpen(0, '/Projetos/Create/')">Novo</button>
             </div>
             <hr />
         </div>
@@ -115,7 +115,7 @@
                                     <span class="material-symbols-outlined">
                                         add
                                     </span>
-                                <a asp-area="" asp-controller="Tarefas" asp-action="Create" asp-route-id="@ViewData["IdProjetoAtual"]">Nova tarefa</a>
+                                <button class="nav-link text-dark" asp-area="" onclick="ModalOpen(@ViewData["IdProjetoAtual"], '/Tarefas/Create/')">Nova tarefa</button>
                                 </div>
                             }
 

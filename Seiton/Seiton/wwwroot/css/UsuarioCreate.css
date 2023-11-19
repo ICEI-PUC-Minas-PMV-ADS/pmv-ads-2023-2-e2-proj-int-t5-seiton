@@ -2,8 +2,7 @@
 
 body {
     font-family: Arimo;
- 
-  
+    background: linear-gradient(to right, black, Royalblue);
 }
 
 #containerPrincipal {

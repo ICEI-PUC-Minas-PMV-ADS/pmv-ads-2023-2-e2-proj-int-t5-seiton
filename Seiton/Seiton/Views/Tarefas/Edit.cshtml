@@ -1,51 +1,43 @@
 ﻿@model Seiton.Models.Tarefas
 
-@{
-    ViewData["Title"] = "Edit";
-}
-
-<h1>Edit</h1>
-
-<h4>Tarefas</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Edit">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="Id" />
-            <div class="form-group">
-                <label asp-for="nome_tarefas" class="control-label"></label>
-                <input asp-for="nome_tarefas" class="form-control" />
-                <span asp-validation-for="nome_tarefas" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="descricao" class="control-label"></label>
-                <input asp-for="descricao" class="form-control" />
-                <span asp-validation-for="descricao" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="prioridade" class="control-label"></label>
-                <select asp-for="prioridade" class="form-control"></select>
-                <span asp-validation-for="prioridade" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="responsavel" class="control-label"></label>
-                <input asp-for="responsavel" class="form-control" />
-                <span asp-validation-for="responsavel" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="IdColuna" class="control-label"></label>
-                <select asp-for="IdColuna" class="form-control" asp-items="ViewBag.IdColuna"></select>
-                <span asp-validation-for="IdColuna" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
-            </div>
-        </form>
+<div>
+    <div class="modal">
+        <div class="modal-content">
+            <h1>Editar Tarefas</h1>
+            <hr />
+            <form asp-action="Edit">
+                <div asp-validation-summary="ModelOnly" class="aviso"></div>
+                <input type="hidden" asp-for="Id" />
+                <div class="form-group">
+                    <label asp-for="nome_tarefas" class="control-label"></label>
+                    <input asp-for="nome_tarefas" class="form-control" />
+                    <span asp-validation-for="nome_tarefas" class="aviso"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="descricao" class="control-label"></label>
+                    <input asp-for="descricao" class="form-control" />
+                    <span asp-validation-for="descricao" class="aviso"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="prioridade" class="control-label"></label>
+                    <select asp-for="prioridade" class="form-control"></select>
+                    <span asp-validation-for="prioridade" class="aviso"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="responsavel" class="control-label"></label>
+                    <input asp-for="responsavel" class="form-control" />
+                    <span asp-validation-for="responsavel" class="aviso"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="IdColuna" class="control-label"></label>
+                    <select asp-for="IdColuna" class="form-control" asp-items="ViewBag.IdColuna"></select>
+                    <span asp-validation-for="IdColuna" class="aviso"></span>
+                </div>
+                <div>
+                    <a class="backPage">Voltar</a> |
+                    <input class="btn" type="submit" value="Editar" />
+                </div>
+            </form>
+        </div>
     </div>
 </div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
-

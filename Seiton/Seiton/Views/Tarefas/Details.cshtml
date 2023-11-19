@@ -1,48 +1,43 @@
 ﻿@model Seiton.Models.Tarefas
 
-@{
-    ViewData["Title"] = "Details";
-}
-
-<h1>Details</h1>
-
 <div>
-    <h4>Tarefas</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.nome_tarefas)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.nome_tarefas)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.descricao)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.descricao)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.prioridade)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.prioridade)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.responsavel)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.responsavel)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Colunas)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Colunas.Id)
-        </dd>
-    </dl>
-</div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <div class="modal">
+        <div class="modal-content">
+        <h1>Tarefa</h1>
+        <hr />
+        <dl class="row">
+            <dt class = "col-sm-2">
+                @Html.DisplayNameFor(model => model.nome_tarefas)
+            </dt>
+            <dd class = "col-sm-10">
+                @Html.DisplayFor(model => model.nome_tarefas)
+            </dd>
+            <dt class = "col-sm-2">
+                @Html.DisplayNameFor(model => model.descricao)
+            </dt>
+            <dd class = "col-sm-10">
+                @Html.DisplayFor(model => model.descricao)
+            </dd>
+            <dt class = "col-sm-2">
+                @Html.DisplayNameFor(model => model.prioridade)
+            </dt>
+            <dd class = "col-sm-10">
+                @Html.DisplayFor(model => model.prioridade)
+            </dd>
+            <dt class = "col-sm-2">
+                @Html.DisplayNameFor(model => model.responsavel)
+            </dt>
+            <dd class = "col-sm-10">
+                @Html.DisplayFor(model => model.responsavel)
+            </dd>
+            <dt class = "col-sm-2">
+                @Html.DisplayNameFor(model => model.Colunas)
+            </dt>
+            <dd class = "col-sm-10">
+                @Html.DisplayFor(model => model.Colunas.Id)
+            </dd>
+        </dl>
+            <a class="backPage">Voltar</a>
+        </div>
+    </div>
 </div>
