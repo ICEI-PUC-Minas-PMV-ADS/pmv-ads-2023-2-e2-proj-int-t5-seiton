@@ -103,17 +103,17 @@ Segue o roteiro das tarefas de teste
 | **Objetivo do Teste** 	| Avaliar o acesso ao gerenciamento de colunas dentro do projeto 	|
 | **Passos** 	| 1. Acessar navegador;<br>2. Informar o endereço do site;<br>3. Acessar página inicial;<br>4. Efetuar Login;<br>5. Clicar no projeto desejado;<br>6. Interagir com a coluna desejada. 	|
 |  	|  	|
-| **Caso de Teste** 	| **CTU-10 - Adicionar Tarefas** 	|
+| **Caso de Teste** 	| **CTU-11 - Adicionar Tarefas** 	|
 | **Perfil** 	| Usuário 	|
 | **Objetivo do Teste** 	| Avaliar se a tarefa foi adicionada corretamente 	|
 | **Passos** 	| 1. Acessar navegador;<br>2. Informar o endereço do site;<br>3. Acessar página inicial;<br>4. Efetuar Login;<br>5. Clicar no projeto desejado;<br>6. Clicar na coluna desejada;<br>7. Clicar no botão de adicionar tarefa.	|
 |  	|  	|
-| **Caso de Teste** 	| **CTU-11 – Dados da tarefa** 	|
+| **Caso de Teste** 	| **CTU-12 – Dados da tarefa** 	|
 | **Perfil** 	| Usuário 	|
 | **Objetivo do Teste** 	| Avaliar se os dados da tarefa estão corretamente exibidos 	|
 | **Passos** 	| 1. Acessar navegador;<br>2. Informar o endereço do site;<br>3. Acessar página inicial;<br>4. Efetuar Login;<br>5. Clicar no projeto desejado;<br>3. Visualizar os dados da tarefa desejada. 	|
 |  	|  	|
-| **Caso de Teste** 	| **CTU-12 – Alterar tarefas entre colunas** 	|
+| **Caso de Teste** 	| **CTU-13 – Alterar tarefas entre colunas** 	|
 | **Perfil** 	| Avaliar o fluxo de tarefas entre as colunas	|
 | **Objetivo do Teste** 	| Verificar se usuários com deficiências visuais conseguem utilizar todas as ferramentas do site 	|
 | **Ações necessárias** 	| 1. Acessar navegador;<br>2. Informar o endereço do site;<br>3. Acessar página inicial;<br>4. Efetuar Login;<br> 5. Clicar no projeto desejado; <br> 6.Clicar na tarefa desejada; <br> 7. clicar para mover tarefa para outra coluna. 	|
