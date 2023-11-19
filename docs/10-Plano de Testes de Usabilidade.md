@@ -85,7 +85,7 @@ Segue o roteiro das tarefas de teste
 |  	|  	|
 | **Caso de Teste** 	| **CTU-07 – Criar Projetos** 	|
 | **Perfil** 	| Usuário 	|
-| **Objetivo do Teste** 	| valiar se os projetos estão sendo criados 	|
+| **Objetivo do Teste** 	| Avaliar se os projetos estão sendo criados 	|
 | **Passos** 	| 1. Acessar navegador;<br>2. Informar o endereço do site;<br>3. Acessar página inicial;<br>4. Efetuar Login;<br>5. Visualizar página inicial contendo todos os projetos;<br>6. Clicar no botão “criar projetos 	|
 |  	|  	|
 | **Caso de Teste** 	| **CTU-08 – Dados do Projeto(Relatório)** 	|
