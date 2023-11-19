@@ -44,7 +44,7 @@ namespace Seiton.Controllers
                 ViewData["ProjetoId"] = idVd;
 
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 var idVd = 0;
 
@@ -117,6 +117,10 @@ namespace Seiton.Controllers
                               select p.prioridade)
                                 .ToList();
 
+            var IdColunaFK = (from t in _context.Tarefas
+                                select t.IdColuna)
+                            .ToList();
+
             var viewModel = new ViewModel
             {
                 Nome_projeto = Nome_projeto,
@@ -128,7 +132,8 @@ namespace Seiton.Controllers
                 descricao = descricao,
                 Responsavel = Responsavel,
                 CorColuna = CorColuna,
-                Prioridade = Prioridade
+                Prioridade = Prioridade,
+                IdColunaFK = IdColunaFK
             };
 
 

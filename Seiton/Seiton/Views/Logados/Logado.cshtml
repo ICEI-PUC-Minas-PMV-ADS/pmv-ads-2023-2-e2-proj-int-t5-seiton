@@ -70,10 +70,10 @@
                 {
 
                     var tarefasCombinadas = Model.IdTarefa
-                    .Zip(
-                    Model.NomeTarefas.Zip(Model.descricao, (nomeTarefa, desc) => new { NomeTarefa = nomeTarefa, Descricao = desc }),
-                    (idTarefa, tarefa) => new { IdTarefa = idTarefa, Tarefa = tarefa }
-                    )
+
+                    .Zip(Model.NomeTarefas.Zip(Model.descricao, (nomeTarefa, desc) => new { NomeTarefa = nomeTarefa, Descricao = desc }),
+                    (idTarefa, tarefa) => new { IdTarefa = idTarefa, Tarefa = tarefa })
+                    
                     .Zip(Model.Responsavel.Zip(Model.Prioridade, (resp, prioridade) => new { Responsavel = resp, Prioridade = prioridade }),
                     (tarefa, respPrioridade) => new
                     {
@@ -85,6 +85,19 @@
                     })
                     .Where(tarefa => tarefa.IdTarefa == Coluna.IdColuna);
 
+                    // Obtendo a quantidade de tarefas
+
+                    var quant = Model.IdTarefa
+
+                    .Zip(Model.IdTarefa.Zip(Model.IdColunaFK, (id, fkid) => new { IdTarefa = id, IdColunaFK = fkid }),
+                    (idTarefa, fk) => new 
+                    {
+                        IdTarefa = idTarefa,
+                        ColunasId = fk.IdColunaFK
+                    }).Where(tarefa => tarefa.IdTarefa == Coluna.IdColuna);
+
+                    int QuantTarefas = quant.Count(t => t.ColunasId == Coluna.IdColuna);
+                    ViewData["QuantTarefas"] = QuantTarefas;
 
                     <div class="columContainerInt">
                     
@@ -93,7 +106,7 @@
                             <h3>@Coluna.NomeColuna</h3>
                             <button type="button" id="openModalBtn" onclick="ModalOpen(@Coluna.IdColuna, '/Colunas/Edit/')"><img src="/img/edit.png" /></button>
                         </div>
-                        <h4 class="NTarefas">Nº de Tarefas:</h4>
+                        <h4 class="NTarefas">Nº de Tarefas:@ViewData["QuantTarefas"]</h4>
                         <hr />
 
                             @if (c == 0)
