@@ -21,5 +21,6 @@
 |	Vídeo 	|  <video src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t5-seiton/assets/131215140/c5b02587-ca2c-42ed-a563-1f2d1783d2bb">|
 | Testes 	| CT-07 e 08 – Gerenciamento de Tarefas e Visualização de detalhes das tarefas	|
 |:---:	|:---:	|
-|	Vídeo 	|  <video src="">|
+|	Vídeo 	|  <video src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t5-seiton/assets/131215140/34bd43c0-fb96-486d-a324-20b8ebc258be">|
+
 
