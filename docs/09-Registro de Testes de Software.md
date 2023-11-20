@@ -12,4 +12,17 @@
 |	Vídeo 	|  <video src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t5-seiton/assets/131215140/b6e1b905-8e7a-48e5-ab69-942659180ad3">|
 | Testes 	| CT-03 – Criar Projeto	|
 |:---:	|:---:	|
-|	Vídeo 	|  <video src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t5-seiton/assets/131215140/a094015f-5db3-485d-834c-b4b191b3b681">|
+|	Vídeo 	|  <video src="">|
+| Testes 	| CT-04 – Criação de Projetos	|
+|:---:	|:---:	|
+|	Vídeo 	|  <video src="">|
+| Testes 	| CT-05 – Visualização de Projetos	|
+|:---:	|:---:	|
+|	Vídeo 	|  <video src="">|
+| Testes 	| CT-06 – Gerenciamento de Projetos	|
+|:---:	|:---:	|
+|	Vídeo 	|  <video src="">|
+| Testes 	| CT-07 e 08 – Gerenciamento de Tarefas e Visualização de detalhes das tarefas	|
+|:---:	|:---:	|
+|	Vídeo 	|  <video src="">|
+
