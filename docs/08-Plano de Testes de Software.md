@@ -43,8 +43,8 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 | Caso de Teste 	| CT-06 – Gerenciamento de Projetos	|
 |Requisito Associado | RF-03	- A aplicação deve permitir o gerenciamento de projetos. |
 | Objetivo do Teste 	| Verificar se o usuário consegue acessar seus projetos para possíveis edições. |
-| Passos 	| - Acessar o navegador <br> - Informar o endereço do site<br> - Realizar login <br> - Acessar tela principal de projetos <br> - Selecionar projeto desejado |
-|Critério de Êxito | - O usuário consegue acessar a tela inicial e visualizar todos os seus projetos. |
+| Passos 	| - Acessar o navegador <br> - Informar o endereço do site<br> - Realizar login <br> - Acessar tela principal de projetos <br> - Selecionar projeto desejado <br> - Renomear projeto desejado <br> - Excluir o projeto |
+|Critério de Êxito | - O usuário consegue acessar a tela inicial alterar/excluir o projeto desejado. |
 |  	|  	|
 | Caso de Teste 	| CT-07 – Gerenciamento de Tarefas	|
 |Requisito Associado | - RF-04	- A aplicação deve permitir o gerenciamento das tarefas dentro do projeto, no qual toda tarefa criada deverá obrigatoriamente ser associada a uma coluna. <br> - RF-06	- A aplicação deve permitir que seja alterado o status das tarefas entre as colunas. |
