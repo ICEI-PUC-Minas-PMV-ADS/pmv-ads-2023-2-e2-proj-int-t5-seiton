@@ -55,7 +55,7 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 | Caso de Teste 	| CT-08 – Visualização de detalhes das tarefas	|
 |Requisito Associado | - RF-05 – As tarefas deverão ter campo de título, descrição, cor referente a prioridade e nome da pessoa a quem a mesma foi atribuída. <br> - RF-07 – A aplicação deverá permitir aos que os usuários vejam os detalhes da tarefa para ter acesso a descrição completa e as demais informações inseridas. |
 | Objetivo do Teste 	| Verificar se o usuário tem acesso a todas as informações vinculadas às tarefas. |
-| Passos 	| - Acessar o navegador <br> - Informar o endereço do site<br> - Realizar login <br> - Acessar tela principal de projetos <br> - Selecionar projeto desejado <br> - Selecionar a tarefa desejada |
+| Passos 	| - Acessar o navegador <br> - Informar o endereço do site<br> - Realizar login <br> - Acessar tela principal de projetos <br> - Selecionar projeto desejado <br> - Visualizar a tarefa desejada |
 |Critério de Êxito | - O usuário consegue acessar e visualizar todos os detalhes das tarefas desejadas. |
 |  	|  	|
 | Caso de Teste 	| CT-09 – Alteração de Status de Tarefas	|
