@@ -10,12 +10,9 @@
 | Testes 	| CT-03 – Editar Usuário	|
 |:---:	|:---:	|
 |	Vídeo 	|  <video src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t5-seiton/assets/131215140/b6e1b905-8e7a-48e5-ab69-942659180ad3">|
-| Testes 	| CT-03 – Criar Projeto	|
-|:---:	|:---:	|
-|	Vídeo 	|  <video src="">|
 | Testes 	| CT-04 – Criação de Projetos	|
 |:---:	|:---:	|
-|	Vídeo 	|  <video src="">|
+|	Vídeo 	|  <video src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t5-seiton/assets/131215140/7dc1859d-28b6-4866-8a94-b1e8fb49a815">|
 | Testes 	| CT-05 – Visualização de Projetos	|
 |:---:	|:---:	|
 |	Vídeo 	|  <video src="">|
