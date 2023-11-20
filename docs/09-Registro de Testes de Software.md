@@ -15,7 +15,7 @@
 |	Vídeo 	|  <video src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t5-seiton/assets/131215140/7dc1859d-28b6-4866-8a94-b1e8fb49a815">|
 | Testes 	| CT-05 – Visualização de Projetos	|
 |:---:	|:---:	|
-|	Vídeo 	|  <video src="">|
+|	Vídeo 	|  <video src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t5-seiton/assets/131215140/efa3ee3f-4061-40e8-999b-98d9e50e914f">|
 | Testes 	| CT-06 – Gerenciamento de Projetos	|
 |:---:	|:---:	|
 |	Vídeo 	|  <video src="">|
