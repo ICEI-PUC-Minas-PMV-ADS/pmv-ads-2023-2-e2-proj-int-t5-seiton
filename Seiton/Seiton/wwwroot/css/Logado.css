@@ -438,8 +438,11 @@
     color: #343434
 }
 
+.tarefa .Responsavel{
+    width: 100%;
+}
+
 .tarefa h4 {
-    margin-left: -75%;
     color: #343434
 }
 
