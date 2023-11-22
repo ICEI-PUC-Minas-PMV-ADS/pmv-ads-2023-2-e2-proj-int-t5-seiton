@@ -35,9 +35,21 @@
             <div class="dropdown" onclick="joaquim()">
                     <img class="dropdown-image" src="/img/man.png" alt="Imagem de Menu">
                     <div class="dropdown-content">
-                    <button class="nav-link text-dark" asp-area="" onclick="ModalOpen(@ViewData["userId"], '/Usuarios/Edit/')"><img src="/img/edit.png" class="foto-button" />Editar</button>
-                    <button class="nav-link text-dark" asp-area="" onclick="ModalOpen(@ViewData["userId"], '/Usuarios/Delete/')"><img src="/img/delete.png" class="foto-button" />Apagar</button>
-                    <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Logout"><img src="/img/logout.png" class="foto-button" />Sair</a>
+                    <button class="nav-link text-dark" asp-area="" onclick="ModalOpen(@ViewData["userId"], '/Usuarios/Edit/')">
+                        <span class="material-symbols-outlined">
+                            edit
+                        </span>Editar
+                    </button>
+                    <button class="nav-link text-dark" asp-area="" onclick="ModalOpen(@ViewData["userId"], '/Usuarios/Delete/')">
+                        <span class="material-symbols-outlined">
+                            delete
+                        </span>Apagar
+                    </button>
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Logout">
+                        <span class="material-symbols-outlined">
+                            logout
+                        </span>Sair
+                    </a>
                     </div>
                 </div>
             }
@@ -70,11 +82,12 @@
                 {
 
                     var tarefasCombinadas = Model.IdTarefa
-
-                    .Zip(Model.NomeTarefas.Zip(Model.descricao, (nomeTarefa, desc) => new { NomeTarefa = nomeTarefa, Descricao = desc }),
-                    (idTarefa, tarefa) => new { IdTarefa = idTarefa, Tarefa = tarefa })
-                    
-                    .Zip(Model.Responsavel.Zip(Model.Prioridade, (resp, prioridade) => new { Responsavel = resp, Prioridade = prioridade }),
+                    .Zip(
+                    Model.NomeTarefas.Zip(Model.descricao, (nomeTarefa, desc) => new { NomeTarefa = nomeTarefa, Descricao = desc }),
+                    (idTarefa, tarefa) => new { IdTarefa = idTarefa, Tarefa = tarefa }
+                    )
+                    .Zip(
+                    Model.Responsavel.Zip(Model.Prioridade, (resp, prioridade) => new { Responsavel = resp, Prioridade = prioridade }),
                     (tarefa, respPrioridade) => new
                     {
                         IdTarefa = tarefa.IdTarefa,
@@ -82,7 +95,20 @@
                         Descricao = tarefa.Tarefa.Descricao,
                         Responsavel = respPrioridade.Responsavel,
                         Prioridade = respPrioridade.Prioridade
-                    })
+                    }
+                    )
+                    .Zip(
+                    Model.ID,
+                    (tarefa, ID) => new
+                    {
+                        IdTarefa = tarefa.IdTarefa,
+                        NomeTarefa = tarefa.NomeTarefa,
+                        Descricao = tarefa.Descricao,
+                        Responsavel = tarefa.Responsavel,
+                        Prioridade = tarefa.Prioridade,
+                        id = ID
+                    }
+                    )
                     .Where(tarefa => tarefa.IdTarefa == Coluna.IdColuna);
 
                     // Obtendo a quantidade de tarefas
@@ -104,18 +130,23 @@
                         <div class="coluna">
                             <div class="color_colum" style="background-color: @Coluna.CorColuna;"><div class="icolor_colum"></div></div>
                             <h3>@Coluna.NomeColuna</h3>
-                            <button type="button" id="openModalBtn" onclick="ModalOpen(@Coluna.IdColuna, '/Colunas/Edit/')"><img src="/img/edit.png" /></button>
+                            <button type="button" id="openModalBtn" onclick="ModalOpen(@Coluna.IdColuna, '/Colunas/Edit/')">
+                                <span class="material-symbols-outlined">
+                                    edit
+                                </span>
+                            </button>
                         </div>
-                        <h4 class="NTarefas">Nº de Tarefas:@ViewData["QuantTarefas"]</h4>
+                        <h4 class="NTarefas">Nº de Tarefas: @ViewData["QuantTarefas"]</h4>
                         <hr />
 
                             @if (c == 0)
                             {
                                 <div id="adicionarTarefa" >
+                                <button class="nav-link text-dark" asp-area="" onclick="ModalOpen(@ViewData["IdProjetoAtual"], '/Tarefas/Create/')">
                                     <span class="material-symbols-outlined">
                                         add
-                                    </span>
-                                <button class="nav-link text-dark" asp-area="" onclick="ModalOpen(@ViewData["IdProjetoAtual"], '/Tarefas/Create/')">Nova tarefa</button>
+                                    </span>Nova tarefa
+                                </button>
                                 </div>
                             }
 
@@ -130,6 +161,18 @@
                                     </div>
                                     <hr>
                                     <div class="paragrafo"><p>@tarefa.Descricao</p></div>
+                                    <div class="tarefaOp">
+                                        <button onclick="ModalOpen(@tarefa.id, '/Tarefas/Delete/')">
+                                            <span class="material-symbols-outlined">
+                                                delete
+                                            </span>
+                                        </button>
+                                        <button onclick="ModalOpen(@tarefa.id, '/Tarefas/Edit/')">
+                                            <span class="material-symbols-outlined">
+                                                edit
+                                            </span>
+                                        </button>
+                                    </div>
                                 </div>
                             }
                             else if (tarefa.Prioridade == 2)
@@ -141,6 +184,18 @@
                                     </div>
                                     <hr>
                                     <div class="paragrafo"><p>@tarefa.Descricao</p></div>
+                                    <div class="tarefaOp">
+                                        <button onclick="ModalOpen(@tarefa.id, '/Tarefas/Delete/')">
+                                            <span class="material-symbols-outlined">
+                                                delete
+                                            </span>
+                                        </button>
+                                        <button onclick="ModalOpen(@tarefa.id, '/Tarefas/Edit/')">
+                                            <span class="material-symbols-outlined">
+                                                edit
+                                            </span>
+                                        </button>
+                                    </div>
                                 </div>
                             }
                             else if (tarefa.Prioridade == 3)
@@ -152,6 +207,18 @@
                                     </div>
                                     <hr>
                                     <div class="paragrafo"><p>@tarefa.Descricao</p></div>
+                                    <div class="tarefaOp">
+                                        <button onclick="ModalOpen(@tarefa.id, '/Tarefas/Delete/')">
+                                            <span class="material-symbols-outlined">
+                                                delete
+                                            </span>
+                                        </button>
+                                        <button onclick="ModalOpen(@tarefa.id, '/Tarefas/Edit/')">
+                                            <span class="material-symbols-outlined">
+                                                edit
+                                            </span>
+                                        </button>
+                                    </div>
                                 </div>
                             }
                             

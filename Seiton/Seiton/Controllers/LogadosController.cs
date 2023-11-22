@@ -121,6 +121,11 @@ namespace Seiton.Controllers
                                 select t.IdColuna)
                             .ToList();
 
+            var ID = (from t in _context.Tarefas
+                      orderby t.Id
+                      select t.Id)
+                           .ToList();
+
             var viewModel = new ViewModel
             {
                 Nome_projeto = Nome_projeto,
@@ -128,6 +133,7 @@ namespace Seiton.Controllers
                 NomeColuna = NomeColuna,
                 IdColuna = IdColuna,
                 IdTarefa = IdTarefa,
+                ID = ID,
                 NomeTarefas = NomeTarefas,
                 descricao = descricao,
                 Responsavel = Responsavel,

@@ -84,6 +84,70 @@ namespace Seiton.Controllers
         // GET: Tarefas/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
+
+            var IdColunaT = (from c in _context.Tarefas
+                             where c.Id == id
+                             select c.IdColuna)
+                             .ToList();
+
+            var Projeto = 0;
+
+            foreach (var idColuna in IdColunaT)
+            {
+                var IdProjeto = (from c in _context.Colunas
+                                 where c.Id == idColuna
+                                 select c.IdProjeto)
+                              .ToList();
+                foreach (var idProjeto in IdProjeto)
+                {
+                    Projeto = idProjeto;
+                }
+            }
+
+            var NomeColuna = (from c in _context.Colunas
+                              where c.IdProjeto == Projeto
+                              select c.nome_coluna)
+                              .ToList();
+
+
+            var IdColuna = (from c in _context.Colunas
+                            where c.IdProjeto == Projeto
+                            select c.Id)
+                              .ToList();
+
+            
+
+            var cont = 0;
+            foreach (var (Nc, Idc) in NomeColuna.Zip(IdColuna, (v1, v2) => (v1, v2)))
+            {
+                cont++;
+                switch (cont)
+                {
+                    case 1:
+                        ViewBag.NomeColuna1 = Nc;
+                        ViewBag.IdColuna1 = Idc;
+                        break;
+                    case 2:
+                        ViewBag.NomeColuna2 = Nc;
+                        ViewBag.IdColuna2 = Idc;
+                        break;
+                    case 3:
+                        ViewBag.NomeColuna3 = Nc;
+                        ViewBag.IdColuna3 = Idc;
+                        break;
+                    case 4:
+                        ViewBag.NomeColuna4 = Nc;
+                        ViewBag.IdColuna4 = Idc;
+                        break;
+                    case 5:
+                        ViewBag.NomeColuna5 = Nc;
+                        ViewBag.IdColuna5 = Idc;
+                        break;
+                }
+
+            }
+
+
             if (id == null || _context.Tarefas == null)
             {
                 return NotFound();
@@ -105,6 +169,27 @@ namespace Seiton.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("Id,nome_tarefas,descricao,prioridade,responsavel,IdColuna")] Tarefas tarefas)
         {
+
+            var IdColunaT = (from c in _context.Tarefas
+                             where c.Id == id
+                             select c.IdColuna)
+                             .ToList();
+
+            var Projeto = 0;
+
+            foreach (var idColuna in IdColunaT)
+            {
+                var IdProjeto = (from c in _context.Colunas
+                                 where c.Id == idColuna
+                                 select c.IdProjeto)
+                              .ToList();
+                foreach (var idProjeto in IdProjeto)
+                {
+                    Projeto = idProjeto;
+                }
+            }
+
+
             if (id != tarefas.Id)
             {
                 return NotFound();
@@ -128,9 +213,8 @@ namespace Seiton.Controllers
                         throw;
                     }
                 }
-                string caminho = HttpContext.Request.Path;
-                var iProjeto = int.Parse(caminho.Split('/').LastOrDefault());
-                return RedirectToAction("Logado", "Logados", new { id = iProjeto });
+
+                return RedirectToAction("Logado", "Logados", new { id = Projeto });
             }
             ViewData["IdColuna"] = new SelectList(_context.Colunas, "Id", "Id", tarefas.IdColuna);
             return View(tarefas);
@@ -160,6 +244,26 @@ namespace Seiton.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
+
+            var IdColunaT = (from c in _context.Tarefas
+                             where c.Id == id
+                             select c.IdColuna)
+                             .ToList();
+
+            var Projeto = 0;
+
+            foreach (var idColuna in IdColunaT)
+            {
+                var IdProjeto = (from c in _context.Colunas
+                                 where c.Id == idColuna
+                                 select c.IdProjeto)
+                              .ToList();
+                foreach (var idProjeto in IdProjeto)
+                {
+                    Projeto = idProjeto;
+                }
+            }
+
             if (_context.Tarefas == null)
             {
                 return Problem("Entity set 'AppDBContext.Tarefas'  is null.");
@@ -172,9 +276,7 @@ namespace Seiton.Controllers
             
             await _context.SaveChangesAsync();
 
-            string caminho = HttpContext.Request.Path;
-            var iProjeto = int.Parse(caminho.Split('/').LastOrDefault());
-            return RedirectToAction("Logado", "Logados", new { id = iProjeto });
+            return RedirectToAction("Logado", "Logados", new { id = Projeto });
         }
 
         private bool TarefasExists(int id)

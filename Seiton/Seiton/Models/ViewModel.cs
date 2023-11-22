@@ -12,6 +12,7 @@
         public List<string> CorColuna { get; set; }
 
         // Tarefas
+        public List<int> ID { get; set; }
         public List<int> IdTarefa { get; set; }
         public List<int> Prioridade { get; set; }
         public List<string> NomeTarefas { get; set; }

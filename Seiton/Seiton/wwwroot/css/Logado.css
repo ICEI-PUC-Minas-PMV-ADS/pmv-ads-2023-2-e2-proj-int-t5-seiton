@@ -3,6 +3,10 @@
     width: 400px;
 }
 
+*{
+    font-family: sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -69,7 +73,8 @@
         font-family: sans-serif;
         font-size: 0.8rem;
         display: block;
-
+        align-items: center;
+        display: flex;
     }
 
     .dropdown-content button {
@@ -78,6 +83,7 @@
         cursor: pointer;
         border: none;
         text-align: left;
+
     }
 
         /* Altere a cor do link quando passar o mouse sobre ele */
@@ -91,18 +97,19 @@
 .side-bar-background {
     width: 12%;
     float: left;
+    z-index: 1;
     height: 100%;
     background-color: #F2F2F2;
     box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 0px 10px 10px 0px;
 }
 
     .side-bar-background .white-blue {
         background-color: #2A6092;
         height: 98%;
         width: 100%;
-        border-radius: 0px 500px 10px 500px;
+        border-radius: 0px 500px 0px 500px;
         border-top: 20px solid #4EAAFF;
+        border-bottom: 20px solid #4EAAFF;
     }
 
         .side-bar-background .white-blue h1 {
@@ -142,7 +149,7 @@
 
 /* Botão de adicionar projeto*/
 .white-blue .adicionar {
-    margin-top: 10%;
+    margin-top: 5%;
     display: flex;
     text-align: center;
 }
@@ -238,6 +245,7 @@
             }
 
 /* Ícones dos menus*/
+
 .foto-button {
     width: 20px;
     height: 20px;
@@ -249,23 +257,23 @@
     height: auto;
     min-height: 75%;
     width: 100%;
+
 }
 
     .colum_container .coluna {
         margin-top: 5%;
         display: flex;
-        align-items: normal;
-        align-items: flex-start;
         width: 100%;
         min-height: 4%;
         padding: 0;
+        align-items: center;
     }
 
         .colum_container .coluna h3 {
-            float: right;
-            margin-top: 1%;
             color: #343434;
             margin-left: 4%;
+            min-width: 60%;
+            max-width: 60%;
         }
 
         .colum_container .coluna .color_colum {
@@ -276,7 +284,6 @@
             display: flex;
             height: 30px;
             width: 30px;
-
         }
 
             .colum_container .coluna .color_colum .icolor_colum {
@@ -289,11 +296,9 @@
         .colum_container .coluna button {
             background: none;
             border: none;
-            float:right;
-            margin-left: 40%;
             align-items: center;
             justify-content: center;
-            padding: 1px;
+            padding: 0px;
             cursor: pointer;
         }
 
@@ -306,10 +311,11 @@
 }
 
     .columContainerInt .NTarefas {
-        margin-left: 55%;
+        margin-left: -50%;
         margin-top: 2%;
-        font-size: 1rem;
+        font-size: 0.8rem;
         color: #343434;
+        font-family: sans-serif;
     }
 
     .columContainerInt hr {
@@ -328,13 +334,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
 }
 
-    #adicionarTarefa span {
-        color: rgba(55, 201, 54, 1);
-        font-size: 2rem;
-    }
+#adicionarTarefa span {
+    color: rgba(55, 201, 54, 1);
+    font-size: 1.5rem;
+}
 
     #adicionarTarefa button {
         color: rgba(55, 201, 54, 1);
@@ -344,34 +349,56 @@
         background-color: transparent;
         border: none;
         margin-left: -5%;
+        cursor: pointer;
     }
 
 /* Estilo dos cards das Tarefas */
 .tarefa {
     margin-top: 8%;
     padding: 5%;
-    width: 75%;
+    width: 90%;
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    box-shadow: -7px 7px 20px 0px rgba(0,0,0,0.2);
-    -webkit-box-shadow: -7px 5px 22px -2px rgba(0,0,0,0.2);
-    position:relative;
+    -webkit-box-shadow: 0px 6px 5px -1px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 6px 5px -1px rgba(0,0,0,0.1);
+    box-shadow: 0px 6px 5px -1px rgba(0,0,0,0.1);
+    position: relative;
 }
+    .tarefa button {
+        margin-left: 6%;
+        margin-top: 6%;
+        padding: 0px;
+        border: none;
+        background-color: white;
+        text-align: center;
+    }
 
-.prioridade-alta:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 5px; /* Ajuste a altura da borda aqui */
-    box-sizing: border-box;
-    border-radius: 10px 10px 0px 0px;
-    width: 100%;
-    background-color: #FF4167;
-}
+    .tarefa span {
+        color: #343434;
+        cursor: pointer;
+    }
+
+    .tarefa .tarefaOp {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+    .prioridade-alta:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 5px; /* Ajuste a altura da borda aqui */
+        box-sizing: border-box;
+        border-radius: 10px 10px 0px 0px;
+        width: 100%;
+        background-color: #FF4167;
+    }
 
 .prioridade-media:before {
     content: '';
@@ -398,20 +425,23 @@
 }
 
 
-    .tarefa .paragrafo {
-        width: 90%;
-        margin-top: 5%;
-    }
+.tarefa .paragrafo {
+    width: 90%;
+    margin-top: 5%;
+    color: #343434
+}
 
-    .tarefa .paragrafo2 {
-        width: 90%;
-        margin-top: 5%;
-        text-align: center;
-    }
+.tarefa .paragrafo2 {
+    width: 90%;
+    margin-top: 5%;
+    text-align: center;
+    color: #343434
+}
 
-    .tarefa h4 {
-        margin-left: -75%;
-    }
+.tarefa h4 {
+    margin-left: -75%;
+    color: #343434
+}
 
     .tarefa hr {
         width: 95%;

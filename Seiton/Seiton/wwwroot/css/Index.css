@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Arimo&family=Lobster&family=Poppins&display=swap');
 
 body {
-    background: linear-gradient(to right, black, Royalblue);
+    /*background: linear-gradient(to right, black, Royalblue);*/
 }
 
 #conatinerHome {
@@ -332,7 +332,8 @@ p{ /* Texto chamativo*/
 
 @media screen and (min-width: 1921px) and (max-width:2560px) {
 
-    #bannerProject { /* Container */
+    #
+    { /* Container */
         grid-template-rows: 10vmax 25vmax;
         grid-template-columns: 50vmax 40vmax;
     }
