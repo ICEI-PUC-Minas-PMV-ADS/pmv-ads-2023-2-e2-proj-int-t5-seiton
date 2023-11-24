@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Runtime.Intrinsics.X86;
 using System.Security.Cryptography;
 using System;
+using System.ComponentModel;
 
 namespace Seiton.Models
 {
@@ -14,10 +15,13 @@ namespace Seiton.Models
         [Key]
         public int Id { get; set; }
 
+        [DisplayName("Nome da Coluna:")]
         public string nome_coluna { get; set; }
 
+        [DisplayName("Cor da coluna:")]
         public string cor_coluna { get; set; }
 
+        [DisplayName("Quantidade de tarefas:")]
         public int quant_tarefas { get; set; }
 
         public int IdProjeto{ get; set; }

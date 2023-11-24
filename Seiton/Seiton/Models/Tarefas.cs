@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Seiton.Models
@@ -10,16 +11,22 @@ namespace Seiton.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 
+        [DisplayName("Nome da Tarefa:")]
         public string nome_tarefas { get; set; }
 
+        [DisplayName("Descrição:")]
         public string descricao { get; set; }
 
+        [DisplayName("Prioridade:")]
         public int prioridade { get; set; }
 
+        [DisplayName("Responsável:")]
         public string responsavel { get; set; }
 
+        [DisplayName("Coluna:")]
         public int IdColuna { get; set; }
 
+    
         [ForeignKey("IdColuna")]
         public Colunas Colunas { get; set; }
 
