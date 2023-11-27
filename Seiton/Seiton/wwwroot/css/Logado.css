@@ -493,7 +493,66 @@
 }
 
 @media screen and (min-width: 769px) and (max-width:1024px) {
+    #adicionarTarefa { /* Botão de adicionar tarefas*/
+        width: 85%;
+    }
 
+    .project-name-dropdown { /* Nome de usuario*/
+        margin-left: 65vw;
+        margin-top: 2.8vh;
+    }
+
+    .dropdown { /* Imagem do usuario*/
+        margin-left: 60vw;
+        margin-top: 1.4vw;
+    }
+
+    .colum_container .coluna .color_colum { /* Circulos das colunas / cor*/
+        height: 20px;
+        width: 20px;
+    }
+
+        .colum_container .coluna .color_colum .icolor_colum { /* Circulos das colunas / cor*/
+
+            height: 10px;
+            width: 10px;
+        }
+
+    .columContainerInt .NTarefas { /* txt N° tarefas*/
+        margin-left: -30%;
+        margin-top: 2%;
+    }
+
+    .white-blue ul li .project-name { /*Nome do projeto*/
+        font-size: 1rem;
+    }
+
+    .white-blue .adicionar button { /* Txt botão novo*/
+        font-size: 1rem;
+    }
+
+
+    .white-blue .adicionar span { /* Conjunto + novo botão */
+        padding-left: 10%;
+    }
+
+
+    .white-blue hr { /* Barra do botão novo */
+        margin-top: 3%;
+    }
+
+    .side-bar-background .white-blue h1 { /* Projetos txt*/
+        font-size: 1.6rem;
+    }
+
+    /* Estilize a imagem que aciona o menu suspenso perfil */
+    .dropdown-image {
+        width: 40px;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
 
 }
 

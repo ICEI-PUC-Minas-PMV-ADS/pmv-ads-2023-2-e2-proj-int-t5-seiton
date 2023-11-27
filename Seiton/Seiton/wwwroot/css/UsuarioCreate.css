@@ -36,8 +36,8 @@ body {
 }
 
 .titulo2 h1{ /*Grid do titulo*/
-    font-size:2rem;
-    margin-top: 6%;
+    font-size:1.5rem;
+    margin-top: 3%;
 }
 
 #formulario2 { /* Grid da área formulario*/
@@ -71,12 +71,12 @@ body {
 }
 
 .form-group1-create input { /* Todo o formulário */
+   padding-top:0px;
     display: block;
     width: 75%;
     border: none;
     border-bottom: 1px solid white;
     background-color: rgb(42,96,144);
-    color: white;
     border-radius: 0px;
     outline: none;
     color: lightblue;
@@ -103,13 +103,13 @@ p { /* Textos nome, email e senha*/
 }
 
 .botoes1 { /* Container dos botões*/
-    margin-top: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 30px;
-    margin-left: -40px;
-    margin-bottom:15px;
+ 
+    gap: 20px;
+
+
 }
 
 .voltar1 { /* Botão voltar*/
@@ -157,8 +157,11 @@ p { /* Textos nome, email e senha*/
     }
 
 #goToCreate { /* Link para tela criar conta*/
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-top:10px;
     color: white;
-    margin-left: 30%;
 }
 
 #goToCreate:hover {
@@ -205,25 +208,18 @@ p { /* Textos nome, email e senha*/
 
     .botoes1 { /* Container dos botões*/
         margin-top: 9%;
-        margin-left: -40px;
-        margin-bottom: 15px;
+ 
     }
 
-    .voltar1 { /* Botão voltar*/
-        width: 20%;
-        height: 20px;
-        font-size: 9pt;
-    }
-
-    .btn1 { /* Botão ENTRAR */
-        width: 20%;
-        height: 20px;
-        font-size: 9pt;
-    }
+.btn1, .voltar1 { /* Botão ENTRAR */
+    width: 20%;
+    height: 20px;
+    font-size: 9pt;
+}
 
     #goToCreate { /* Link para tela criar conta*/
         font-size: 0.9em;
-        padding: 10px;
+
     }
 
     .text-danger { /* Mensagem caso o usuario não inserir um campo obrigatório*/
@@ -247,7 +243,7 @@ p { /* Textos nome, email e senha*/
     }
 
     ::placeholder { /* Mensagem placeholder*/
-        font-size: 20px;
+        font-size: 10px;
     }
 
     .form-control {
@@ -266,25 +262,16 @@ p { /* Textos nome, email e senha*/
 
     .botoes1 { /* Container dos botões*/
         margin-top: 5%;
-        margin-left: -40px;
-        margin-bottom: 15px;
     }
 
-    .voltar1 { /* Botão voltar*/
-        width: 22%;
-        height: 25px;
-        font-size: 12pt;
-    }
-
-    .btn1 { /* Botão ENTRAR */
-        width: 22%;
-        height: 25px;
-        font-size: 12pt;
-    }
+    .btn1, .voltar1 { /* Botão ENTRAR */
+    width: 22%;
+    height: 25px;
+    font-size: 12pt;
+}
 
     #goToCreate { /* Link para tela criar conta*/
-        font-size: 0.9em;
-        padding: 10px;
+        font-size: 1.4em;
     }
 
     .text-danger { /* Mensagem caso o usuario não inserir um campo obrigatório*/
@@ -292,37 +279,30 @@ p { /* Textos nome, email e senha*/
     }
 
     .form-group1-create input { /* Todo o formulário */
+        padding-top:0px;
         width: 75%;
         height: 3px;
     }
 
-    .form-group2-create input { /* Todo o formulário */
-        width: 75%;
-        height: 20px;
-    }
-
-    .form-group3-create input { /* Todo o formulário */
-        width: 75%;
-        height: 20px;
-    }
     
 }
 
 @media screen and (min-width: 1025px) and (max-width:1200px) {
 
     .containerForm { /* Formulario container */
-        grid-template-rows: 4vmax 27vmax;
+        grid-template-rows: 4vmax 35vmax;
         grid-template-columns: 38vmax 35vmax;
     }
 
     #imgLogin2 { /* Imagem do banner*/
-        width: 109%;
-        margin-top: -60px;
+        width: 115%;
+        margin-top: -40px;
+        margin-left:-30px;
         position: relative;
     }
 
     ::placeholder { /* Mensagem placeholder*/
-        font-size: 25px;
+        font-size: 15px;
     }
 
     .form-control {
@@ -340,26 +320,17 @@ p { /* Textos nome, email e senha*/
     }
 
     .botoes1 { /* Container dos botões*/
-        margin-top: 5%;
-        margin-left: -40px;
-        margin-bottom: 15px;
+        margin-top: 3%;
     }
 
-    .voltar1 { /* Botão voltar*/
-        width: 25%;
-        height: 33px;
-        font-size: 17pt;
-    }
-
-    .btn1 { /* Botão ENTRAR */
-        width: 25%;
-        height: 33px;
-        font-size: 17pt;
-    }
+.btn1, .voltar1 { /* Botão ENTRAR */
+    width: 22%;
+    height: 20px;
+    font-size: 12pt;
+}
 
     #goToCreate { /* Link para tela criar conta*/
-        font-size: 1.3em;
-        padding: 10px;
+        font-size: 1.4em;
     }
 
     .text-danger { /* Mensagem caso o usuario não inserir um campo obrigatório*/
@@ -367,17 +338,7 @@ p { /* Textos nome, email e senha*/
     }
 
     .form-group1-create input { /* Todo o formulário */
-
-        width: 75%;
-        height: 20px;
-    }
-
-    .form-group2-create input { /* Todo o formulário */
-        width: 75%;
-        height: 20px;
-    }
-
-    .form-group3-create input { /* Todo o formulário */
+        padding-top: 0px;
         width: 75%;
         height: 20px;
     }
@@ -387,7 +348,7 @@ p { /* Textos nome, email e senha*/
 @media screen and (min-width: 1201px) and (max-width:1366px) {
 
     .containerForm { /* Formulario container */
-        grid-template-rows: 4vmax 27vmax;
+        grid-template-rows: 3vmax 31vmax;
         grid-template-columns: 38vmax 35vmax;
     }
 
@@ -398,44 +359,37 @@ p { /* Textos nome, email e senha*/
     }
 
     ::placeholder { /* Mensagem placeholder*/
-        font-size: 22px;
+        font-size: 17px;
     }
 
     .form-control {
-        font-size: 27px;
+        font-size: 16px;
     }
 
-    h1 { /*  Titulo */
-        font-size: 2.2em;
-        margin-top: 7px
+
+    .titulo2 h1 { /*Grid do titulo*/
+        font-size: 1.8rem;
+        margin-top: 1%;
     }
 
     p { /* Textos nome, email e senha*/
-        font-size: 1.9em;
+        font-size: 2.3em;
         margin-bottom: 0px;
     }
 
     .botoes1 { /* Container dos botões*/
-        margin-top: 5%;
-        margin-left: -40px;
-        margin-bottom: 15px;
+        margin-top: 2%;
     }
 
-    .voltar1 { /* Botão voltar*/
-        width: 22%;
-        height: 33px;
-        font-size: 17pt;
-    }
-
-    .btn1 { /* Botão ENTRAR */
-        width: 22%;
-        height: 33px;
-        font-size: 17pt;
-    }
+.btn1, .voltar1 { /* Botão ENTRAR */
+    width: 18%;
+    height: 21px;
+    font-size: 11pt;
+}
 
     #goToCreate { /* Link para tela criar conta*/
-        font-size: 1em;
-        padding: 10px;
+        font-size: 1.6em;
+
     }
 
     .text-danger { /* Mensagem caso o usuario não inserir um campo obrigatório*/
@@ -443,20 +397,11 @@ p { /* Textos nome, email e senha*/
     }
 
     .form-group1-create input { /* Todo o formulário */
-
+        margin-top:0px;
         width: 75%;
         height: 20px;
     }
 
-    .form-group2-create input { /* Todo o formulário */
-        width: 75%;
-        height: 20px;
-    }
-
-    .form-group3-create input { /* Todo o formulário */
-        width: 75%;
-        height: 20px;
-    }
   
 }
 
@@ -481,37 +426,28 @@ p { /* Textos nome, email e senha*/
         font-size: 27px;
     }
 
-    h1 { /*  Titulo */
-        font-size: 2.8em;
-        margin-top: 7px
+    .titulo2 h1 { /*Grid do titulo*/
+        font-size: 2.5rem;
+        margin-top: 3%;
     }
 
     p { /* Textos nome, email e senha*/
-        font-size: 2.3em;
+        font-size: 3em;
         margin-bottom: 0px;
     }
 
     .botoes1 { /* Container dos botões*/
-        margin-top: 5%;
-        margin-left: -40px;
-        margin-bottom: 15px;
+        margin-top: 4%;
     }
 
-    .voltar1 { /* Botão voltar*/
-        width: 17%;
-        height: 33px;
-        font-size: 17pt;
-    }
-
-    .btn1 { /* Botão ENTRAR */
+    .btn1, .voltar1 { /* Botão ENTRAR */
         width: 17%;
         height: 33px;
         font-size: 17pt;
     }
 
     #goToCreate { /* Link para tela criar conta*/
-        font-size: 1.5em;
-        padding: 10px;
+        font-size: 2.1em;
     }
 
     .text-danger { /* Mensagem caso o usuario não inserir um campo obrigatório*/
@@ -519,17 +455,7 @@ p { /* Textos nome, email e senha*/
     }
 
     .form-group1-create input { /* Todo o formulário */
-
-        width: 75%;
-        height: 20px;
-    }
-
-    .form-group2-create input { /* Todo o formulário */
-        width: 75%;
-        height: 20px;
-    }
-
-    .form-group3-create input { /* Todo o formulário */
+        padding-top:6px;
         width: 75%;
         height: 20px;
     }
@@ -540,7 +466,7 @@ p { /* Textos nome, email e senha*/
 
 
     .containerForm { /* Formulario container */
-        grid-template-rows: 4vmax 27vmax;
+        grid-template-rows: 4vmax 29vmax;
         grid-template-columns: 38vmax 35vmax;
     }
 
@@ -551,16 +477,16 @@ p { /* Textos nome, email e senha*/
     }
 
     ::placeholder { /* Mensagem placeholder*/
-        font-size: 27px;
+        font-size: 20px;
     }
 
     .form-control {
         font-size: 27px;
     }
 
-    h1 { /*  Titulo */
-        font-size: 2.8em;
-        margin-top: 7px
+    .titulo2 h1 { /*Grid do titulo*/
+        font-size: 2rem;
+        margin-top: 3%;
     }
 
     p { /* Textos nome, email e senha*/
@@ -569,26 +495,17 @@ p { /* Textos nome, email e senha*/
     }
 
     .botoes1 { /* Container dos botões*/
-        margin-top: 5%;
-        margin-left: -40px;
-        margin-bottom: 15px;
+        margin-top: 2%;
     }
 
-    .voltar1 { /* Botão voltar*/
-        width: 17%;
-        height: 33px;
-        font-size: 17pt;
-    }
-
-    .btn1 { /* Botão ENTRAR */
-        width: 17%;
-        height: 33px;
-        font-size: 17pt;
-    }
+.btn1, .voltar1 { /* Botão ENTRAR */
+    width: 19%;
+    height: 26px;
+    font-size: 13pt;
+}
 
     #goToCreate { /* Link para tela criar conta*/
-        font-size: 1.3em;
-        padding: 10px;
+        font-size: 1.7em;
     }
 
     .text-danger { /* Mensagem caso o usuario não inserir um campo obrigatório*/
@@ -596,20 +513,11 @@ p { /* Textos nome, email e senha*/
     }
 
     .form-group1-create input { /* Todo o formulário */
-
+        padding:4px;
         width: 75%;
         height: 20px;
     }
 
-    .form-group2-create input { /* Todo o formulário */
-        width: 75%;
-        height: 20px;
-    }
-
-    .form-group3-create input { /* Todo o formulário */
-        width: 75%;
-        height: 20px;
-    }
 }
 
 @media screen and (min-width: 1921px) and (max-width:2560px) {
@@ -626,7 +534,7 @@ p { /* Textos nome, email e senha*/
     }
 
     ::placeholder { /* Mensagem placeholder*/
-        font-size: 29px;
+        font-size: 25px;
     }
 
     .form-control{
@@ -634,9 +542,9 @@ p { /* Textos nome, email e senha*/
     }
 
 
-    h1 { /*  Titulo */
-        font-size: 3.7em;
-        margin-top: 7px
+    .titulo2 h1 { /*Grid do titulo*/
+        font-size: 2.5rem;
+        margin-top: 3%;
     }
 
     p { /* Textos nome, email e senha*/
@@ -645,26 +553,18 @@ p { /* Textos nome, email e senha*/
     }
 
     .botoes1 { /* Container dos botões*/
-        margin-top: 5%;
-        margin-left: -40px;
-        margin-bottom: 15px;
+        margin-top: 4.8%;
+        margin-bottom: 0px;
     }
 
-    .voltar1 { /* Botão voltar*/
-        width: 15%;
-        height: 35px;
-        font-size: 17pt;
-    }
-
-    .btn1 { /* Botão ENTRAR */
-        width: 15%;
-        height: 35px;
-        font-size: 17pt;  
-    }
+.btn1, .voltar1 { /* Botão ENTRAR */
+    width: 17%;
+    height: 30px;
+    font-size: 17pt;
+}
 
     #goToCreate { /* Link para tela criar conta*/
-        font-size: 1.7em;
-        padding:40px;
+        font-size: 2.3em;
     }
 
     .text-danger { /* Mensagem caso o usuario não inserir um campo obrigatório*/
@@ -672,22 +572,10 @@ p { /* Textos nome, email e senha*/
     }
 
     .form-group1-create input { /* Todo o formulário */
-
+        padding-top:10px;
         width: 75%;
         height: 20px;
     
     }
-
-    .form-group2-create input { /* Todo o formulário */
-        width: 75%;
-        height: 20px;
-    }
-
-    .form-group3-create input { /* Todo o formulário */
-        width: 75%;
-        height: 20px;
-        
-    }
-
 
 }
