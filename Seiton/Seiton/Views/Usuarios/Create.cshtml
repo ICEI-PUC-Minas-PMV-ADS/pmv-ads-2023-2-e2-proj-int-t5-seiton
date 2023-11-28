@@ -25,40 +25,23 @@
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                 <div class="form-group1-create formAll">
                     <p>Usuário</p>
-                    <input asp-for="NomeUsuario" class="form-control" placeholder="Digite um nome de usuário:" pattern="[A-Za-z0-9].{5,}" title=" Insira Um nome de Usuario com pelo menos 6 Caracteres. Não é permitido caracteres especiais Ex: !#$%&*()_+ )" />
-                    <span asp-validation-for="NomeUsuario" class="text-danger"></span>
-
-
-                    <p>E-mail</p>
-                    <input asp-for="Email" class="form-control" placeholder="Digite seu e-mail:" type="email" pattern=".{14,}" title="Seu email precisa conter pelo menos 15 caracteres" />
-                    <span asp-validation-for="Email" class="text-danger"></span>
-
-
-
+                        <input asp-for="NomeUsuario" class="form-control" maxlength="10" placeholder="Digite um nome de usuário:" pattern="[A-Za-z0-9].{5,}" title=" Insira Um nome de Usuario com pelo menos 6 Caracteres. Não é permitido caracteres especiais Ex: !#$%&*()_+ )" />
+                        <span asp-validation-for="NomeUsuario" class="text-danger"></span>
+                        <p>E-mail</p>
+                        <input asp-for="Email" class="form-control" placeholder="Digite seu e-mail:" type="email" pattern=".{14,}" title="Seu email precisa conter pelo menos 15 caracteres" />
+                        <span asp-validation-for="Email" class="text-danger"></span>
                         <p>Senha</p>
-                          
-                            <input asp-for="Senha" class="form-control" type="password" placeholder="Digite sua senha:" />
-                            <span asp-validation-for="Senha" class="text-danger"></span>
-
-
-                        
-
+                        <input asp-for="Senha" class="form-control" type="password" placeholder="Digite sua senha:" />
+                        <span asp-validation-for="Senha" class="text-danger"></span>
                         <p>Repetir senha</p>
-                            
-                            <input asp-for="ConfirmacaoSenha" class="form-control" type="password" placeholder="Confirme sua senha:" />
-                            <span asp-validation-for="ConfirmacaoSenha" class="text-danger"></span>
+                        <input asp-for="ConfirmacaoSenha" class="form-control" type="password" placeholder="Confirme sua senha:" />
+                        <span asp-validation-for="ConfirmacaoSenha" class="text-danger"></span>
                         </div>
-
-
-                <div class="botoes1">
-                  
+                <div class="botoes1">                  
                 <a class="voltar1" asp-area="" asp-controller="Home" asp-action="Index">Voltar</a>
                 <input type="submit" value="Cadastrar" class="btn1" />
-                       
-              
                 </div>
                     <a id="goToCreate" asp-area="" asp-controller="Usuarios" asp-action="Login">Já possui uma conta? Faça login!</a>
-                
             </form>
 
         </main>

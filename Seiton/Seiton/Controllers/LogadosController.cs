@@ -22,8 +22,7 @@ namespace Seiton.Controllers
 
             ViewData["userId"] = int.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier));
             ViewData["userName"] = User.FindFirstValue(ClaimTypes.Name);
-
-
+            
             var userId = int.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier));
 
             try

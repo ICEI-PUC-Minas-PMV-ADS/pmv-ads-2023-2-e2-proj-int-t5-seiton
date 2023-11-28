@@ -146,6 +146,24 @@ namespace Seiton.Controllers
             {
                 try
                 {
+                    var claims = new List<Claim>
+                    {
+                        new Claim(ClaimTypes.Name, usuario.NomeUsuario),
+                        new Claim(ClaimTypes.NameIdentifier, usuario.Id.ToString())
+                    };
+
+                    var usuarioIdentity = new ClaimsIdentity(claims, "login");
+                    ClaimsPrincipal principal = new ClaimsPrincipal(usuarioIdentity);
+
+                    var props = new AuthenticationProperties
+                    {
+                        AllowRefresh = true,
+                        ExpiresUtc = DateTime.UtcNow.ToLocalTime().AddHours(8),
+                        IsPersistent = true,
+                    };
+
+                    await HttpContext.SignInAsync(principal, props);
+
                     usuario.Senha = BCrypt.Net.BCrypt.HashPassword(usuario.Senha);
                     _context.Add(usuario);
                     _context.Update(usuario);

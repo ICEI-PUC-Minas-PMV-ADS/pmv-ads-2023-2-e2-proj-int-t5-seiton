@@ -14,7 +14,7 @@
                 <input type="hidden" asp-for="Id" />
                 <div class="form-group">
                     <label asp-for="NomeUsuario" class="control-label">Nome: </label>
-                    <input asp-for="NomeUsuario" class="form-control" />
+                    <input asp-for="NomeUsuario" maxlength="10" class="form-control" />
                 </div>
                 <span asp-validation-for="NomeUsuario" class="aviso"></span>
                 <div class="form-group">

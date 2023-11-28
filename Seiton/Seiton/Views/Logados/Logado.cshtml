@@ -32,7 +32,7 @@
             {
                 <h1 class="project-name-dropdown">@ViewData["userName"]</h1>
 
-            <div class="dropdown" onclick="joaquim()">
+                <div class="dropdown" onclick="joaquim()">
                     <img class="dropdown-image" src="/img/man.png" alt="Imagem de Menu">
                     <div class="dropdown-content">
                     <button class="nav-link text-dark" asp-area="" onclick="ModalOpen(@ViewData["userId"], '/Usuarios/Edit/')">
@@ -63,7 +63,7 @@
                     <summary></summary>
                     <button class="nav-link text-dark" asp-area="" onclick="ModalOpen(@ViewData["ProjetoId"], '/Projetos/Edit/' )"><img src="/img/edit.png" class="foto-button" />Editar</button>
                     <button class="nav-link text-dark" asp-area="" onclick="ModalOpen(@ViewData["ProjetoId"], '/Projetos/Delete/')"><img src="/img/delete.png" class="foto-button" />Apagar</button>
-                    <button class="nav-link text-dark" asp-area="" onclick="ModalOpen(@ViewData["ProjetoId"], '/Logados/Report/')"><img src="/img/report.png" class="foto-button" />Relatório</button>
+                    <button class="nav-link text-dark" asp-area="" onclick="abrirRelatorioModal()"><img src="/img/report.png" class="foto-button" />Relatório</button>
                 </details>
             }
 
@@ -77,6 +77,7 @@
                 var colunas = Model.NomeColuna.Zip(Model.IdColuna, (nomecoluna, idcoluna) => new { NomeColuna = nomecoluna, IdColuna = idcoluna })
                 .Zip(Model.CorColuna, (coluna, cor) => new { NomeColuna = coluna.NomeColuna, IdColuna = coluna.IdColuna, CorColuna = cor });
 
+                var somaTotalTarefas = 0;
 
                 @foreach (var Coluna in colunas)
                 {
@@ -120,10 +121,27 @@
                     {
                         IdTarefa = idTarefa,
                         ColunasId = fk.IdColunaFK
-                    }).Where(tarefa => tarefa.IdTarefa == Coluna.IdColuna);
+                    });
 
                     int QuantTarefas = quant.Count(t => t.ColunasId == Coluna.IdColuna);
                     ViewData["QuantTarefas"] = QuantTarefas;
+
+                    // Obtendo a quantidade de tarefas da ultima coluna
+
+                    var ultimaColuna = colunas.LastOrDefault();
+                    int quantTarefasUltimaColuna = ultimaColuna != null && ViewData["QuantTarefas"] != null ? Convert.ToInt32(ViewData["QuantTarefas"]) : 0;
+
+                    // Adicione a quantidade de tarefas ao total
+                    somaTotalTarefas += QuantTarefas;
+                    ViewData["somaTotal"] = somaTotalTarefas;
+
+                    // Porcentagem de progresso
+                    if  (somaTotalTarefas != 0) 
+                    {
+                        var porcentagem = (quantTarefasUltimaColuna * 100) / somaTotalTarefas;
+                        ViewData["porcentagem"] = porcentagem;
+                    }
+
 
                     <div class="columContainerInt">
                     
@@ -233,6 +251,17 @@
 
                     c = 1;
                 }
+                <!-- Modal do relatório -->
+                <div id="relatorioModal" class="modal" display="none">
+                    <div class="modal-content">
+                        <span class="close" onclick="fecharModal()">&times;</span>
+                        <p>Porcentagem de Progresso:</p> @ViewData["porcentagem"] %
+                        <div class="progress">
+                            <div id="progressBar" class="progress-bar" style="width: @ViewData["porcentagem"]%"></div>
+                        </div>
+                        <p>Soma Total de Tarefas:</p> @ViewData["somaTotal"]
+                    </div>
+                </div>
             }
         </div>
     </div>

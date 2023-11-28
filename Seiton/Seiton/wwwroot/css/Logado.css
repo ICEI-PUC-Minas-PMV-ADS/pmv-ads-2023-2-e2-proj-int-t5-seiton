@@ -3,15 +3,36 @@
     width: 400px;
 }
 
-*{
-    font-family: sans-serif;
-}
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
     /*border: 2px solid red;*/
+}
+
+::-webkit-scrollbar-track {
+    background-color: #F4F4F4;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background: #F4F4F4;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #2A6092;
+}
+
+.progress {
+    width: 100%;
+    background-color: #f1f1f1;
+}
+
+.progress-bar {
+    height: 20px;
+    background-color: #4CAF50; /* Green color */
 }
 
 .Container {
@@ -25,6 +46,7 @@
         padding: 0;
         display: block;
         height: auto;
+        margin-left: 12%;
         
     }
 
@@ -96,6 +118,7 @@
 /*Barra lateral com os projetos*/
 .side-bar-background {
     width: 12%;
+    position: fixed;
     float: left;
     z-index: 1;
     height: 100%;
@@ -113,15 +136,13 @@
     }
 
         .side-bar-background .white-blue h1 {
-            margin-top: 11%;
+            margin-top: 90%;
             position: absolute;
             font-family: sans-serif;
             font-size: 2rem;
             color: white;
             margin-left: 0.5%;
         }
-
-
 
 /* Lista de projetos */
 .white-blue ul {
@@ -135,7 +156,7 @@
 }
 
     .white-blue ul li .project-name {
-        color: lightgrey;
+        color: white;
         text-decoration: none;
         margin-left: 15%;
         font-size: 1.8rem;
@@ -308,6 +329,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 3%;
 }
 
     .columContainerInt .NTarefas {
@@ -328,8 +350,8 @@
 #adicionarTarefa {
     border: 2px solid #37C936;
     width: 50%;
-    min-height: 5%;
-    max-height: 5%;
+    min-height: 4vh;
+    max-height: 4vh;
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -388,17 +410,44 @@
         align-items: flex-end;
     }
 
-    .prioridade-alta:before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 5px; /* Ajuste a altura da borda aqui */
-        box-sizing: border-box;
-        border-radius: 10px 10px 0px 0px;
-        width: 100%;
-        background-color: #FF4167;
+    .tarefa .Responsavel {
+        width: 100%
     }
+
+    .tarefa .paragrafo {
+        width: 90%;
+        margin-top: 5%;
+        color: #343434
+    }
+
+    .tarefa .paragrafo2 {
+        width: 90%;
+        margin-top: 5%;
+        text-align: center;
+        color: #343434;
+    }
+
+    .tarefa h4 {
+        float:left;
+        color: #343434
+    }
+
+    .tarefa hr {
+        width: 95%;
+        margin-top: 5%;
+    }
+
+.prioridade-alta:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5px; /* Ajuste a altura da borda aqui */
+    box-sizing: border-box;
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+    background-color: #FF4167;
+}
 
 .prioridade-media:before {
     content: '';
@@ -423,30 +472,6 @@
     width: 33.33%;
     background-color: #37C936;
 }
-
-
-.tarefa .paragrafo {
-    width: 90%;
-    margin-top: 5%;
-    color: #343434
-}
-
-.tarefa .paragrafo2 {
-    width: 90%;
-    margin-top: 5%;
-    text-align: center;
-    color: #343434
-}
-
-.tarefa h4 {
-    margin-left: -75%;
-    color: #343434
-}
-
-    .tarefa hr {
-        width: 95%;
-        margin-top: 5%;
-    }
 
 
 /* Configuação dos modais */
@@ -485,11 +510,11 @@
     cursor: pointer;
 }
 
-
+.form-group {
+    padding: 2px;
+}
 
 @media screen and (min-width: 481px) and (max-width:768px) {
-
-
 }
 
 @media screen and (min-width: 769px) and (max-width:1024px) {
@@ -672,81 +697,6 @@
     }
 
 }
-
-@media screen and (min-width: 1880px) and (max-width:1920px) {
-
-    /* Botão de adicionar tarefas*/
-    #adicionarTarefa {
-        width: 65%;
-    }
-
-    p {
-        font-size: 16pt;
-    }
-
-    h3 {
-        font-size: 20pt;
-    }
-
-    h4 {
-        font-size: 17pt;
-    }
-
-    .project-name-dropdown { /* Nome de usuario*/
-        margin-left: 77vw;
-        margin-top: 4.5vh;
-        font-size: 2rem;
-    }
-
-    .dropdown { /* Imagem do usuario*/
-        margin-left: 72vw;
-
-    }
-
-    .dropdown-image { /* Estilize a imagem que aciona o menu suspenso perfil */
-        width: 65px;
-    }
-
-    .columContainerInt .NTarefas {
-        margin-left: -50%;
-        margin-top: 2%;
-        font-size:13pt;
-    }
-
-    .columContainerInt {
-        width: 20%;
-   
-    }
-
-    .info_container {
-        width: 100%;
-    }
-
-    .white-blue ul li .project-name { /*Nome do projeto*/
-        font-size: 1.5rem;
-    }
-
-    .white-blue .adicionar button { /* Txt botão novo*/
-        font-size: 2rem;
-    }
-
-
-    .white-blue .adicionar span { /* Conjunto + novo botão */
-        font-size: 2rem;
-        margin-top: 10%;
-        padding-left: 20%;
-    }
-
-
-    .white-blue hr { /* Barra do botão Novo */
-        margin-top: 3%;
-    }
-
-    .side-bar-background .white-blue h1 { /* Projetos txt*/
-        font-size: 2.7rem;
-    }
-}
-
 
 @media screen and (min-width: 1367px) and (max-width:1880px) {
 

@@ -23,12 +23,12 @@
                 <input type="hidden" asp-for="Id" />
                 <div class="form-group">
                     <label asp-for="nome_tarefas" class="control-label"></label>
-                    <input asp-for="nome_tarefas" class="form-control" />
+                    <input asp-for="nome_tarefas" maxlength="20" class="form-control" />
                     <span asp-validation-for="nome_tarefas" class="aviso"></span>
                 </div>
                 <div class="form-group">
                     <label asp-for="descricao" class="control-label"></label>
-                    <textarea asp-for="descricao" class="form-control" id="desc"></textarea>
+                    <textarea asp-for="descricao" maxlength="300" class="form-control" id="desc"></textarea>
                     <span asp-validation-for="descricao" class="aviso"></span>
                 </div>
                 <div class="form-group">
@@ -42,7 +42,7 @@
                 </div>
                 <div class="form-group">
                     <label asp-for="responsavel" class="control-label"></label>
-                    <input asp-for="responsavel" class="form-control" />
+                    <input asp-for="responsavel" maxlength="15" class="form-control" />
                     <span asp-validation-for="responsavel" class="aviso"></span>
                 </div>
                 <div class="form-group">

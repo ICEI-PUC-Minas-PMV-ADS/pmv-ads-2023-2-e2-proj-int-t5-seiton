@@ -39,3 +39,14 @@ $(window).on('click', function (event) {
         modal.hide();
     }
 });
+
+function abrirRelatorioModal(somaTotalTarefas, porcentagem) {
+
+    // Exibe o modal
+    document.getElementById('relatorioModal').style.display = 'block';
+}
+
+function fecharModal() {
+    // Fecha o modal
+    document.getElementById('relatorioModal').style.display = 'none';
+}
