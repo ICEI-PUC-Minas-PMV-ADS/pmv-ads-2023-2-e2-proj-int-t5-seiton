@@ -40,13 +40,14 @@ $(window).on('click', function (event) {
     }
 });
 
-function abrirRelatorioModal(somaTotalTarefas, porcentagem) {
 
-    // Exibe o modal
-    document.getElementById('relatorioModal').style.display = 'block';
+//Relatório
+function abrirRelatorioModal() {
+    var modal = document.getElementById('relatorioModal');
+    modal.classList.remove('hidden');
 }
 
-function fecharModal() {
-    // Fecha o modal
-    document.getElementById('relatorioModal').style.display = 'none';
+function fecharRelatorioModal() {
+    var modal = document.getElementById('relatorioModal');
+    modal.classList.add('hidden');
 }

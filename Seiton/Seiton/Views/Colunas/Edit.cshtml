@@ -15,8 +15,8 @@
                 <div class="form-group">
                     <label asp-for="nome_coluna" class="control-label"></label>
                     <input asp-for="nome_coluna" class="form-control" />
-                    <span asp-validation-for="nome_coluna" class="aviso"></span>
                 </div>
+                <span asp-validation-for="nome_coluna" class="aviso"></span>
                 <div class="form-group">
                     <label asp-for="cor_coluna" class="control-label"></label>
                     <select asp-for="cor_coluna" class="form-control">
@@ -26,13 +26,13 @@
                         <option value="@cores.DimGray">Cinza</option>
                         <option value="@cores.LimeGreen">Verde</option>
                     </select>
-                    <span asp-validation-for="cor_coluna" class="aviso"></span>
                 </div>
+                <span asp-validation-for="cor_coluna" class="aviso"></span>
                 <div class="form-group" style="display: none;">
                     <label asp-for="IdProjeto" class="control-label"></label>
                     <select asp-for="IdProjeto" class="form-control" asp-items="ViewBag.IdProjeto"></select>
-                    <span asp-validation-for="IdProjeto" class="aviso"></span>
                 </div>
+                <span asp-validation-for="IdProjeto" class="aviso"></span>
                 <div>
                     <a class="backPage">Voltar</a> |
                     <input class="btn" type="submit" value="Editar" />
@@ -41,3 +41,9 @@
         </div>
     </div>
 </div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

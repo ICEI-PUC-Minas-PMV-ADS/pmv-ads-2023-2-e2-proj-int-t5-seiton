@@ -15,9 +15,11 @@ namespace Seiton.Models
         [Key]
         public int Id { get; set; }
 
+        [Required(ErrorMessage = "*Informe um nome para a coluna!")]
         [DisplayName("Nome da Coluna:")]
         public string nome_coluna { get; set; }
 
+        [Required(ErrorMessage = "*Informe uma cor para a coluna!")]
         [DisplayName("Cor da coluna:")]
         public string cor_coluna { get; set; }
 

@@ -25,16 +25,6 @@
     background: #2A6092;
 }
 
-.progress {
-    width: 100%;
-    background-color: #f1f1f1;
-}
-
-.progress-bar {
-    height: 20px;
-    background-color: #4CAF50; /* Green color */
-}
-
 .Container {
     display: inline;
     display: flex;
@@ -474,7 +464,7 @@
 }
 
 
-/* Configuação dos modais */
+/* Configuração dos modais */
 .modal {
     display: none;
     position: absolute;

@@ -1,0 +1,26 @@
+﻿@model Seiton.Models.ViewModel
+
+<div>
+    <div class="modal">
+        <div class="modal-content">
+            <h1>Relatório</h1>
+            <hr />
+            
+            <p>Porcentagem de Progresso:</p> @ViewData["porcentagem"] %
+            
+            <div class="progress">
+                <div id="progressBar" class="progress-bar" style="width: @ViewData["porcentagem"]%"></div>
+            </div>
+            
+            p>Soma Total de Tarefas:</p> @ViewData["somaTotal"]
+            
+            <a class="backPage">Voltar</a>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

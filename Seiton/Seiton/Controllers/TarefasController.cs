@@ -23,7 +23,7 @@ namespace Seiton.Controllers
             return View(await appDBContext.ToListAsync());
         }
 
-        // GET: Tarefas/Details/5
+        // GET: Tarefas/Details
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.Tarefas == null)
@@ -50,8 +50,6 @@ namespace Seiton.Controllers
         }
 
         // POST: Tarefas/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("nome_tarefas,descricao,prioridade,responsavel,IdColuna")] Tarefas tarefas)
@@ -81,7 +79,7 @@ namespace Seiton.Controllers
             return View(tarefas);
         }
 
-        // GET: Tarefas/Edit/5
+        // GET: Tarefas/Edit
         public async Task<IActionResult> Edit(int? id)
         {
 
@@ -162,9 +160,7 @@ namespace Seiton.Controllers
             return View(tarefas);
         }
 
-        // POST: Tarefas/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        // POST: Tarefas/Edit
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("Id,nome_tarefas,descricao,prioridade,responsavel,IdColuna")] Tarefas tarefas)

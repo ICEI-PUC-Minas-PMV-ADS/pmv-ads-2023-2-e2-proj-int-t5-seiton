@@ -63,7 +63,7 @@
                     <summary></summary>
                     <button class="nav-link text-dark" asp-area="" onclick="ModalOpen(@ViewData["ProjetoId"], '/Projetos/Edit/' )"><img src="/img/edit.png" class="foto-button" />Editar</button>
                     <button class="nav-link text-dark" asp-area="" onclick="ModalOpen(@ViewData["ProjetoId"], '/Projetos/Delete/')"><img src="/img/delete.png" class="foto-button" />Apagar</button>
-                    <button class="nav-link text-dark" asp-area="" onclick="abrirRelatorioModal()"><img src="/img/report.png" class="foto-button" />Relatório</button>
+                    <button class="nav-link text-dark" onclick="abrirRelatorioModal()"><img src="/img/report.png" class="foto-button" />Relatório</button>
                 </details>
             }
 
@@ -139,6 +139,11 @@
                     if  (somaTotalTarefas != 0) 
                     {
                         var porcentagem = (quantTarefasUltimaColuna * 100) / somaTotalTarefas;
+                        ViewData["porcentagem"] = porcentagem;
+                    }
+                    else
+                    {
+                        var porcentagem = 0;
                         ViewData["porcentagem"] = porcentagem;
                     }
 
@@ -251,15 +256,17 @@
 
                     c = 1;
                 }
-                <!-- Modal do relatório -->
-                <div id="relatorioModal" class="modal" display="none">
-                    <div class="modal-content">
-                        <span class="close" onclick="fecharModal()">&times;</span>
-                        <p>Porcentagem de Progresso:</p> @ViewData["porcentagem"] %
+                <!-- Modal Relatório -->
+                <div class="modal2 hidden" id="relatorioModal">
+                    <div class="modal-content2">
+                        <h1>Relatório</h1>
+                        <hr />
+                        <p>Total de Tarefas:@ViewData["somaTotal"]</p>
+                        <p>Porcentagem de Progresso: @ViewData["porcentagem"] %</p>
                         <div class="progress">
                             <div id="progressBar" class="progress-bar" style="width: @ViewData["porcentagem"]%"></div>
                         </div>
-                        <p>Soma Total de Tarefas:</p> @ViewData["somaTotal"]
+                        <a class="backPage" onclick="fecharRelatorioModal()">Voltar</a>
                     </div>
                 </div>
             }

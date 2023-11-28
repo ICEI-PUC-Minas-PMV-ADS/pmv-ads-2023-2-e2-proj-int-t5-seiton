@@ -10,7 +10,9 @@
     <Content Remove="Views\Colunas\Create.cshtml" />
     <Content Remove="Views\Colunas\Delete.cshtml" />
     <Content Remove="Views\Colunas\Details.cshtml" />
+    <Content Remove="Views\Logados\Relatorio.cshtml" />
     <Content Remove="Views\Shared\Delete.cshtml" />
+    <Content Remove="Views\Tarefas\Details.cshtml" />
     <Content Remove="wwwroot\css\Logado - Cópia.css" />
     <Content Remove="wwwroot\css\ProjetoCreate.css" />
     <Content Remove="wwwroot\css\UsuarioDelete.css" />

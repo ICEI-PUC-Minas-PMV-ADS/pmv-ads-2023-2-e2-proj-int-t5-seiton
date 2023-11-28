@@ -11,12 +11,14 @@ namespace Seiton.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 
+        [Required(ErrorMessage = "*Informe o nome da tarefa!")]
         [DisplayName("Nome da Tarefa:")]
         public string nome_tarefas { get; set; }
 
         [DisplayName("Descrição:")]
         public string descricao { get; set; }
 
+        [Required(ErrorMessage = "*Informe a prioridade!")]
         [DisplayName("Prioridade:")]
         public int prioridade { get; set; }
 
@@ -26,7 +28,6 @@ namespace Seiton.Models
         [DisplayName("Coluna:")]
         public int IdColuna { get; set; }
 
-    
         [ForeignKey("IdColuna")]
         public Colunas Colunas { get; set; }
 

@@ -28,7 +28,7 @@ namespace Seiton.Controllers
             return View(await _context.Projetos.ToListAsync());
         }
 
-        // GET: Projetos/Details/5
+        // GET: Projetos/Details
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.Projetos == null)
@@ -135,7 +135,7 @@ namespace Seiton.Controllers
                         throw;
                     }
                 }
-                
+
                 return RedirectToAction("Logado", "Logados", new { id });
             }
             ViewData["IdUsuario"] = new SelectList(_context.Usuarios, "Id", "NomeUsuario", projeto.IdUsuario);
