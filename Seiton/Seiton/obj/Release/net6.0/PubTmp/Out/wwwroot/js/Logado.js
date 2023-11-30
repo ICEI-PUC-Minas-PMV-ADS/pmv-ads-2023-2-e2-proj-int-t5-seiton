@@ -39,3 +39,15 @@ $(window).on('click', function (event) {
         modal.hide();
     }
 });
+
+
+//Relatório
+function abrirRelatorioModal() {
+    var modal = document.getElementById('relatorioModal');
+    modal.classList.remove('hidden');
+}
+
+function fecharRelatorioModal() {
+    var modal = document.getElementById('relatorioModal');
+    modal.classList.add('hidden');
+}

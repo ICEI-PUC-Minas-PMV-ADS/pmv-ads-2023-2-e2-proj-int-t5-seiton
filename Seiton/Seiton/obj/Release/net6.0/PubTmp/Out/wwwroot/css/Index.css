@@ -329,7 +329,8 @@ p{ /* Texto chamativo*/
 
 @media screen and (min-width: 1921px) and (max-width:2560px) {
 
-    #bannerProject { /* Container */
+    #
+    { /* Container */
         grid-template-rows: 10vmax 25vmax;
         grid-template-columns: 50vmax 40vmax;
     }
