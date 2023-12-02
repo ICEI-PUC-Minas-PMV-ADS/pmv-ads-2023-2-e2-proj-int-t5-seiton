@@ -88,3 +88,16 @@ Segue a análise de teste de usabilidade presencial, para registro uma tabela co
 | Usuário 5	| CTU-12 | 24 | 00:00:19 | 05 | 00 | --- | Usuário achou fácil e ituitiva a visualização |
 | Usuário 6	| CTU-12 | 24 | 00:00:20 | 05 | 02 | 1- Não. 2- Sim foi corrigido o bug do contador de tarefas| Usuário encontrou problema ao visualizar as informações da tarefa, algumas informações saem do card da tarefa e notou que o contador estava zerado ao criar tarefas |
 
+| **Usuário** 	| **Artefato** 	| **Idade** | **Tempo** | **Clicks/Ações** | **Qtd. Erros** | **Se recuperou do erro** | **Comentários e observações** |
+| --- 	| --- 	| --- | --- | ---  | --- | --- | --- |
+| Usuário 1	| CTU-09 | 23 | 00:00:38 | 19 a 26 | 00 | --- | Usuário achou simples e funcional, e sugeriu limite de caracteres na descrição das tarefas |
+| Usuário 2 | CTU-09 |  |  |  | 00 | --- |  |
+| Usuário 3 | CTU-09 |  |  |  | 00 | --- |  |
+| Usuário 4 | CTU-09 |  |  |  | 00 | --- |  |
+
+| **Usuário** 	| **Artefato** 	| **Idade** | **Tempo** | **Clicks/Ações** | **Qtd. Erros** | **Se recuperou do erro** | **Comentários e observações** |
+| --- 	| --- 	| --- | --- | ---  | --- | --- | --- |
+| Usuário 1	| CTU-13 |  |  |  | 00 | --- |  |
+| Usuário 2 | CTU-13 |  |  |  | 00 | --- |  |
+| Usuário 3 | CTU-13 |  |  |  | 00 | --- |  |
+| Usuário 4 | CTU-13 |  |  |  | 00 | --- |  |
