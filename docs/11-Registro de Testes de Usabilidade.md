@@ -49,7 +49,7 @@ Segue a análise de teste de usabilidade presencial, para registro uma tabela co
 | Usuário 2 | CTU-06 | 17 | 00:00:24 | 05 | 00 | --- | Usuário achou fácil acessar o projeto após a visualização |
 | Usuário 3 | CTU-06 | 20 | 00:00:14 | 05 | 00 | --- | Usuário achou fácil o acesso |
 | Usuário 4 | CTU-06 | 30 | 00:00:20 | 05 | 00 | --- | Usuário achou fácil e intuitivo o acesso |
-| Usuário 5	| CTU-06 | 24 | 00:00:20| 05 | 00 | --- | Usuário achou acesso fácil |
+| Usuário 5	| CTU-06 | 24 | 00:00:20 | 05 | 00 | --- | Usuário achou acesso fácil |
 | Usuário 6	| CTU-06 | 24 | 00:00:27 | 05 | 00 | --- | Usuário achou fluido e bem tranquilo o acesso |
 
 | **Usuário** 	| **Artefato** 	| **Idade** | **Tempo** | **Clicks/Ações** | **Qtd. Erros** | **Se recuperou do erro** | **Comentários e observações** |
@@ -63,12 +63,12 @@ Segue a análise de teste de usabilidade presencial, para registro uma tabela co
 
 | **Usuário** 	| **Artefato** 	| **Idade** | **Tempo** | **Clicks/Ações** | **Qtd. Erros** | **Se recuperou do erro** | **Comentários e observações** |
 | --- 	| --- 	| --- | --- | ---  | --- | --- | --- |
-| Usuário 1	| CTU-10 | 25 | 00:00:31 | 09 a 25 | 00 | --- | Usuário achou fácil as alterções nas colunas |
-| Usuário 2 | CTU-10 | 17 | 00:00:49 | 09 a 25 | 00 | --- | Usuário achou fácil a localização do botão de editar as colunas devido ao simbolo do "lápis" |
-| Usuário 3 | CTU-10 | 20 | 00:00:29 | 09 a 25 | 00 | --- | Usuário não encontrou dificulade para realizar as modificações nas colunas, da pra identificar facilmente o botão de modificação. |
-| Usuário 4 | CTU-10 | 30 | 00:00:24 | 09 a 25 | 00 | --- | Usuário disse ser tranquilo o acesso porém disse ter a necessidade de uma melhora no visual da parte de criação de tarefa |
-| Usuário 5	| CTU-10 | 24 | 00:00:29 | 09 a 25 | 00 | --- | Usuário achou fácil interação e visualização das colunas |
-| Usuário 6	| CTU-10 | 24 | 00:00:33 | 09 a 25 | 00 | --- | Usuário demonstrou facilidade para realizar as modificações nas colunas e para idedntificar |
+| Usuário 1	| CTU-10 | 25 | 00:00:31 | 25 | 00 | --- | Usuário achou fácil as alterções nas colunas |
+| Usuário 2 | CTU-10 | 17 | 00:00:49 | 09 | 00 | --- | Usuário achou fácil a localização do botão de editar as colunas devido ao simbolo do "lápis" |
+| Usuário 3 | CTU-10 | 20 | 00:00:29 | 09 | 00 | --- | Usuário não encontrou dificulade para realizar as modificações nas colunas, da pra identificar facilmente o botão de modificação. |
+| Usuário 4 | CTU-10 | 30 | 00:00:24 | 09 | 00 | --- | Usuário disse ser tranquilo o acesso porém disse ter a necessidade de uma melhora no visual da parte de criação de tarefa |
+| Usuário 5	| CTU-10 | 24 | 00:00:29 | 13 | 00 | --- | Usuário achou fácil interação e visualização das colunas |
+| Usuário 6	| CTU-10 | 24 | 00:00:33 | 11 | 00 | --- | Usuário demonstrou facilidade para realizar as modificações nas colunas e para idedntificar |
 
 | **Usuário** 	| **Artefato** 	| **Idade** | **Tempo** | **Clicks/Ações** | **Qtd. Erros** | **Se recuperou do erro** | **Comentários e observações** |
 | --- 	| --- 	| --- | --- | ---  | --- | --- | --- |
@@ -83,14 +83,14 @@ Segue a análise de teste de usabilidade presencial, para registro uma tabela co
 | --- 	| --- 	| --- | --- | ---  | --- | --- | --- |
 | Usuário 1	| CTU-12 | 25 | 00:00:14 | 05 | 00 | --- | Usuário relatou que as informações da tarefa estão de acordo com oque foi criado |
 | Usuário 2 | CTU-12 | 17 | 00:00:28 | 05 | 00 | --- | Usuário relatou que os dados da tarefa foi visualizado corretamente |
-| Usuário 3 | CTU-12 | 20 | 00:00:12 | 05 | 01 | Não | Usuário achou problema ao visualizar as informações da tarefa o nome do responsavel da tarefa ultrapassou o tamanho do campo, fora isso as informações foi criada corretamente |
+| Usuário 3 | CTU-12 | 20 | 00:00:12 | 05 | 01 | Não | Usuário achou problema ao visualizar as informações da tarefa o nome do responsavel da tarefa ultrapassou o tamanho do campo, fora isso as informações foram criadas corretamente |
 | Usuário 4 | CTU-12 | 30 | 00:00:15 | 05 | 01 | Sim, foi corrigido o bug do contador de tarefas | Usuário achou rápido e intuitivo e notou que o número de tarefa está ficando zerado |
 | Usuário 5	| CTU-12 | 24 | 00:00:19 | 05 | 00 | --- | Usuário achou fácil e ituitiva a visualização |
 | Usuário 6	| CTU-12 | 24 | 00:00:20 | 05 | 02 | 1- Não. 2- Sim foi corrigido o bug do contador de tarefas| Usuário encontrou problema ao visualizar as informações da tarefa, algumas informações saem do card da tarefa e notou que o contador estava zerado ao criar tarefas |
 
 | **Usuário** 	| **Artefato** 	| **Idade** | **Tempo** | **Clicks/Ações** | **Qtd. Erros** | **Se recuperou do erro** | **Comentários e observações** |
 | --- 	| --- 	| --- | --- | ---  | --- | --- | --- |
-| Usuário 1	| CTU-09 | 23 | 00:00:38 | 19 a 26 | 00 | --- | Usuário achou simples e funcional, e sugeriu limite de caracteres na descrição das tarefas |
+| Usuário 1	| CTU-09 | 23 | 00:00:38 | 19 | 00 | --- | Usuário achou simples e funcional, e sugeriu limite de caracteres na descrição das tarefas |
 | Usuário 2 | CTU-09 |  |  |  | 00 | --- |  |
 | Usuário 3 | CTU-09 |  |  |  | 00 | --- |  |
 | Usuário 4 | CTU-09 |  |  |  | 00 | --- |  |
