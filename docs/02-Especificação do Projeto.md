@@ -89,7 +89,7 @@ A tabela a seguir apresenta os requisitos do projeto, identificando a prioridade
 |RF-05| As tarefas deverão ter campo de titulo, descrição, cor referente a prioridade e nome da pessoa a quem a mesma foi atribuída. |ALTA|
 |RF-06| A aplicação deve permitir que seja alterado o status das tarefas entre as colunas. |ALTA|
 |RF-07| A aplicação deverá permitir aos que os usuários vejam os detalhes da tarefa para ter acesso a descrição completa e as demais informações inseridas.|ALTA|
-|RF-08| A aplicação deverá permitir a visualização do andamento do projeto por meio de informações como a porcentagem de progressoe o  total geral de tarefas |ALTA|
+|RF-08| A aplicação deverá permitir a visualização do andamento do projeto por meio de informações como a porcentagem de progresso e o  total geral de tarefas. |ALTA|
 
 ### Requisitos não Funcionais
 
