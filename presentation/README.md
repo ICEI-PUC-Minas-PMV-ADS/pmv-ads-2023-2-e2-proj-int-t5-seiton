@@ -1,4 +1,4 @@
 # Apresentação da Solução
 
-[[![Projeto Seiton - Apresentação da solução](img/Logo.png)](https://youtu.be/KlytjP50A74)
+[[![Projeto Seiton - Apresentação da solução](./docs/img/Logo.png)(https://youtu.be/KlytjP50A74)
 
