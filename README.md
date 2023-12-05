@@ -1,6 +1,6 @@
 # Seiton
 
-![Wireframe](../docs/img/Logo.png)
+![Logo](./docs/img/Logo.png)
 
 
 `Tecnologia em Análise e Desenvolvimento de Sistemas`
