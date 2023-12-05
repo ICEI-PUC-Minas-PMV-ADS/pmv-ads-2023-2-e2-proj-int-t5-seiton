@@ -1,6 +1,6 @@
 # Seiton
 
-<img src="./docs/img/Logo.png" alt="Logo" width="250" height="250">
+<img src="./docs/img/Logo.png" alt="Logo" width="300" height="250">
 
 
 
