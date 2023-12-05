@@ -1,5 +1,7 @@
 # Seiton
 
+<img src="./img/Logo.png">
+
 `Tecnologia em Análise e Desenvolvimento de Sistemas`
 
 `Desenvolvimento de uma aplicação interativa`
