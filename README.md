@@ -1,6 +1,7 @@
 # Seiton
 
-<img src="./img/Logo.png">
+![Wireframe](img/Logo.png) <sub> Figura 03 - Tela de Cadastro <sub>
+
 
 `Tecnologia em Análise e Desenvolvimento de Sistemas`
 
