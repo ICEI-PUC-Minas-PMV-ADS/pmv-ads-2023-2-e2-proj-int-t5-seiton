@@ -115,5 +115,5 @@ Segue o roteiro das tarefas de teste
 |  	|  	|
 | **Caso de Teste** 	| **CTU-13 – Alterar tarefas entre colunas** 	|
 | **Perfil** 	| Avaliar o fluxo de tarefas entre as colunas	|
-| **Objetivo do Teste** 	| Verificar se usuários com deficiências visuais conseguem utilizar todas as ferramentas do site 	|
+| **Objetivo do Teste** 	| Verificar se os usuários conseguem movimentar as tarefas entre colunas 	|
 | **Ações necessárias** 	| 1. Acessar navegador;<br>2. Informar o endereço do site;<br>3. Acessar página inicial;<br>4. Efetuar Login;<br> 5. Clicar no projeto desejado; <br> 6.Clicar na tarefa desejada; <br> 7. clicar para mover tarefa para outra coluna. 	|
