@@ -54,12 +54,12 @@ Segue a análise de teste de usabilidade presencial, para registro uma tabela co
 
 | **Usuário** 	| **Artefato** 	| **Idade** | **Tempo** | **Clicks/Ações** | **Qtd. Erros** | **Se recuperou do erro** | **Comentários e observações** |
 | --- 	| --- 	| --- | --- | ---  | --- | --- | --- |
-| Usuário 1	| CTU-08 | 25 | 00:00:24 | 10 | 01 | Não | Usuário achou difícil encontrar o botão onde fica o relátorio e notou que não abre o relatório ao clicar nele |
-| Usuário 2 | CTU-08 | 17 | 00:00:39 | 13 | 01 | Não | Usuário encontrou dificuldades em encontrar o botão que estava o relatório e alegou que o botão de relatório não estava funcionando |
-| Usuário 3 | CTU-08 | 20 | 00:01:20 | 15 | 01 | Não | Usuário achou que o botão relatorio está com dificil acesso. |
-| Usuário 4 | CTU-08 | 30 | 00:00:36 | 09 | 01 | Não | Usuário achou difícil o acesso ao relatório |
-| Usuário 5	| CTU-08 | 24 | 00:00:41 | 07 | 01 | Não | Usuário solicitou o botão do relatório mais visível |
-| Usuário 6	| CTU-08 | 24 | 00:00:31 | 10 | 01 | Não | Usuário encontrou dificuldade para achar o botão onde redirecionava para relatório e notou que o botão de relatório não estava funcionando |
+| Usuário 1	| CTU-08 | 25 | 00:00:26 | 10 | 00 |  | Usuário achou difícil encontrar o botão onde fica o relátorio |
+| Usuário 2 | CTU-08 | 17 | 00:00:40 | 13 | 00 |  | Usuário encontrou dificuldades em encontrar o botão para abrir o relatório |
+| Usuário 3 | CTU-08 | 20 | 00:01:22 | 15 | 00 |  | Usuário achou que o botão relatorio está com dificil acesso. |
+| Usuário 4 | CTU-08 | 30 | 00:00:38 | 09 | 00 |  | Usuário achou difícil o acesso ao relatório |
+| Usuário 5	| CTU-08 | 24 | 00:00:43 | 07 | 00 |  | Usuário solicitou o botão do relatório mais visível |
+| Usuário 6	| CTU-08 | 24 | 00:00:33 | 10 | 00 |  | Usuário encontrou dificuldade para achar o botão onde mostrava o botão do relatório |
 
 | **Usuário** 	| **Artefato** 	| **Idade** | **Tempo** | **Clicks/Ações** | **Qtd. Erros** | **Se recuperou do erro** | **Comentários e observações** |
 | --- 	| --- 	| --- | --- | ---  | --- | --- | --- |
@@ -86,7 +86,7 @@ Segue a análise de teste de usabilidade presencial, para registro uma tabela co
 | Usuário 3 | CTU-12 | 20 | 00:00:12 | 05 | 01 | Não | Usuário achou problema ao visualizar as informações da tarefa o nome do responsavel da tarefa ultrapassou o tamanho do campo, fora isso as informações foram criadas corretamente |
 | Usuário 4 | CTU-12 | 30 | 00:00:15 | 05 | 01 | Sim, foi corrigido o bug do contador de tarefas | Usuário achou rápido e intuitivo e notou que o número de tarefa está ficando zerado |
 | Usuário 5	| CTU-12 | 24 | 00:00:19 | 05 | 00 | --- | Usuário achou fácil e ituitiva a visualização |
-| Usuário 6	| CTU-12 | 24 | 00:00:20 | 05 | 02 | 1- Não. 2- Sim foi corrigido o bug do contador de tarefas| Usuário encontrou problema ao visualizar as informações da tarefa, algumas informações saem do card da tarefa e notou que o contador estava zerado ao criar tarefas |
+| Usuário 6	| CTU-12 | 24 | 00:00:20 | 05 | 02 | 1- Não. 2- Sim foi corrigido o bug do contador de tarefas | Usuário encontrou problema ao visualizar as informações da tarefa, algumas informações saem do card da tarefa e notou que o contador estava zerado ao criar tarefas |
 
 | **Usuário** 	| **Artefato** 	| **Idade** | **Tempo** | **Clicks/Ações** | **Qtd. Erros** | **Se recuperou do erro** | **Comentários e observações** |
 | --- 	| --- 	| --- | --- | ---  | --- | --- | --- |
