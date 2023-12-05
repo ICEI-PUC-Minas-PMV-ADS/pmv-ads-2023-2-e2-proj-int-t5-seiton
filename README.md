@@ -1,6 +1,7 @@
 # Seiton
 
-![Logo](./docs/img/Logo.png" width="100px" height="100px")
+![Logo](./docs/img/Logo.png =100x100)
+
 
 
 `Tecnologia em Análise e Desenvolvimento de Sistemas`
