@@ -38,9 +38,9 @@ O objetivo deste relatório é indicar se a aplicação atende aos requisitos pr
 |	Requisito	| RF-04 - A aplicação deve permitir o gerenciamento das tarefas dentro do projeto, no qual toda tarefa criada deverá obrigatoriamente ser associada a uma coluna. 	<br> RF-05 - As tarefas deverão ter campo de titulo, descrição, cor referente a prioridade e nome da pessoa a quem a mesma foi atribuída. 	<br> RF-06 - A aplicação deve permitir que seja alterado o status das tarefas entre as colunas. <br> RF-07 - A aplicação deverá permitir aos que os usuários vejam os detalhes da tarefa para ter acesso a descrição completa e as demais informações inseridas. |
 | Observação | Na página de projetos, a funcionalidade de criação de tarefas pode ser acionada ao clicar no botão "+ Nova Tarefa". Após inserir os dados desejados da tarefa(Nome da tarefa, descrição, prioridade e responsável) a tarefa é criada na coluna desejada, podendo ser editada e movida para diferentes colunas. Com essa análise, é possível atestar que a aplicação Seiton atende ao requisito de <b> gerenciamento de tarefas. |
 |  	|  	|
-| 4 | (TÍTULO) |
-|	Requisito	| RF-00X -  |
-| Observação | (OBSERVAÇÃO) |
+| 4 | Vizualização de Status das Tarefas |
+|	Requisito	| RF-08 - A aplicação deverá permitir a visualização do andamento do projeto por meio de informações como a porcentagem de progresso e o total geral de tarefas. |
+| Observação | O usuário consegue conferir o andamento das tarefas através dos status das colunas e os contadores de tarefas. Com essa análise, é possível atestar que a aplicação Seiton atende ao requisito de <b> Vizualização de Status das Tarefas. |
 |  	|  	|
 
 <br>
