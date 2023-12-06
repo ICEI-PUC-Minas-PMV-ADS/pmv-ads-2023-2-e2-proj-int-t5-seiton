@@ -1,8 +1,9 @@
 # Instruções de utilização
 
-1 - Acesse o site pelo seu desktop  [Clicando aqui!](https://projetoseiton.azurewebsites.net/)
-2 - Faça o cadastro usando seus dados;
-3 - Faça login e crie seus projetos e tarefas; 
+1 - Acesse o site pelo seu desktop  [Clicando aqui!](https://projetoseiton.azurewebsites.net/)<br>
+2 - Faça o cadastro usando seus dados;<br>
+3 - Faça login e crie seus projetos e tarefas; <br>
+
 ## Instalação do Site
 
 O site em HTML/CSS/JS é um projeto estático, logo pode ser utilizado tanto em servidores...
