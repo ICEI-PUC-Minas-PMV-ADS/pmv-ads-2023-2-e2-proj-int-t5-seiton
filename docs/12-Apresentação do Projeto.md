@@ -1,6 +1,6 @@
 # Apresentação
 
-<span style="color:red">Pré-requisitos: Todos os demais artefatos</span>
+[Seiton - Video apresentação final](https://youtu.be/KlytjP50A74)
 
 ## Título do Projeto
 
