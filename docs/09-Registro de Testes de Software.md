@@ -24,3 +24,63 @@
 |	Vídeo 	|  <video src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t5-seiton/assets/131215140/34bd43c0-fb96-486d-a324-20b8ebc258be">|
 
 
+
+<h2>Relatório de Testes de Software</h2>
+  
+O objetivo deste relatório é indicar se a aplicação atende aos requisitos propostos previamente e sugerir correções.
+
+<br> 
+  
+| 1 | (TÍTULO) 	|
+|:---:	|:---:	|
+|	Requisito	| RF-00X -  |
+| Observação | (OBSERVAÇÃO) |
+|  	|  	|
+| 2 | (TÍTULO) 	|
+|:---:	|:---:	|
+|	Requisito	| RF-00X -  |
+| Observação | (OBSERVAÇÃO) |
+|  	|  	|
+| 3 | (TÍTULO) 	|
+|:---:	|:---:	|
+|	Requisito	| RF-00X -  |
+| Observação | (OBSERVAÇÃO) |
+|  	|  	|
+| 4 | (TÍTULO) 	|
+|:---:	|:---:	|
+|	Requisito	| RF-00X -  |
+| Observação | (OBSERVAÇÃO) |
+|  	|  	|
+| 5 | (TÍTULO) 	|
+|:---:	|:---:	|
+|	Requisito	| RF-00X -  |
+| Observação | (OBSERVAÇÃO) |
+|  	|  	|
+| 6 | (TÍTULO) 	|
+|:---:	|:---:	|
+|	Requisito	| RF-00X -  |
+| Observação | (OBSERVAÇÃO) |
+|  	|  	|
+| 7 | (TÍTULO) 	|
+|:---:	|:---:	|
+|	Requisito	| RF-00X -  |
+| Observação | (OBSERVAÇÃO) |
+|  	|  	|
+| 8 | (TÍTULO) 	|
+|:---:	|:---:	|
+|	Requisito	| RF-00X -  |
+| Observação | (OBSERVAÇÃO) |
+|  	|  	|
+| 9 | (TÍTULO) 	|
+|:---:	|:---:	|
+|	Requisito	| RF-00X -  |
+| Observação | (OBSERVAÇÃO) |
+|  	|  	|
+
+<br>
+
+**Possíveis pontos de correção:**
+  
+-
+-
+-
