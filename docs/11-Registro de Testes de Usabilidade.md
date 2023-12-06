@@ -91,16 +91,16 @@ Segue a análise de teste de usabilidade presencial, para registro uma tabela co
 | **Usuário** 	| **Artefato** 	| **Idade** | **Tempo** | **Clicks/Ações** | **Qtd. Erros** | **Se recuperou do erro** | **Comentários e observações** |
 | --- 	| --- 	| --- | --- | ---  | --- | --- | --- |
 | Usuário 1	| CTU-09 | 23 | 00:00:38 | 19 | 00 | --- | Usuário achou simples e funcional, e sugeriu limite de caracteres na descrição das tarefas |
-| Usuário 2 | CTU-09 |  |  |  | 00 | --- |  |
-| Usuário 3 | CTU-09 |  |  |  | 00 | --- |  |
-| Usuário 4 | CTU-09 |  |  |  | 00 | --- |  |
+| Usuário 2 | CTU-09 | 27 | 00:00:43 | 22 | 00 | --- | Usuário relatou fácil entendimento para gerenciar as tarefas criadas |
+| Usuário 3 | CTU-09 | 20 | 00:00:40 | 19 | 00 | --- | Usuário relatou ser simples e facil o gerenciamento |
+| Usuário 4 | CTU-09 | 22 | 00:00:47 | 21 | 00 | --- | Usuário achou tranquilo e pratico |
 
 | **Usuário** 	| **Artefato** 	| **Idade** | **Tempo** | **Clicks/Ações** | **Qtd. Erros** | **Se recuperou do erro** | **Comentários e observações** |
 | --- 	| --- 	| --- | --- | ---  | --- | --- | --- |
-| Usuário 1	| CTU-13 |  |  |  | 00 | --- |  |
-| Usuário 2 | CTU-13 |  |  |  | 00 | --- |  |
-| Usuário 3 | CTU-13 |  |  |  | 00 | --- |  |
-| Usuário 4 | CTU-13 |  |  |  | 00 | --- |  |
+| Usuário 1	| CTU-13 | 23 | 00:00:50 | 24 | 00 | --- | Usuário achou fluido e fácil de movimentar as tarefas |
+| Usuário 2 | CTU-13 | 27 | 00:00:55 | 27 | 00 | --- | Usuário achou facil para movimentar as tarefas de posição porém um pouco "oculto" para ver como movimentar |
+| Usuário 3 | CTU-13 | 22 | 00:00:53 | 24 | 00 | --- | Usuário gostou do método de alterar as tarefas entre as colunas e prático |
+
 
 
 <h1>Observações e Conclusão</h1>
