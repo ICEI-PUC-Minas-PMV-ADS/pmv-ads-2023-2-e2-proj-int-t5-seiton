@@ -35,30 +35,10 @@ O objetivo deste relatório é indicar se a aplicação atende aos requisitos pr
 | Observação | Na página de projetos, a funcionalidade de criação de projetos pode ser acionada ao clicar no botão "+ Novo". Após inserir o nome do projeto, o usuário é encaminhado para a página com o projeto aberto no modelo padrão, com 5 colunas com cores e nomes customizáveis. Com essa análise, é possível atestar que a aplicação Seiton atende ao requisito de <b> Gerenciamento de Projetos. |
 |  	|  	|
 | 3 | Gerenciamento de Tarefas |
-|	Requisito	| RF-04 - A aplicação deve permitir o gerenciamento das tarefas dentro do projeto, no qual toda tarefa criada deverá obrigatoriamente ser associada a uma coluna. 	<br> RF-05 - As tarefas deverão ter campo de titulo, descrição, cor referente a prioridade e nome da pessoa a quem a mesma foi atribuída. 	<br> RF-06 - A aplicação deve permitir que seja alterado o status das tarefas entre as colunas. |
+|	Requisito	| RF-04 - A aplicação deve permitir o gerenciamento das tarefas dentro do projeto, no qual toda tarefa criada deverá obrigatoriamente ser associada a uma coluna. 	<br> RF-05 - As tarefas deverão ter campo de titulo, descrição, cor referente a prioridade e nome da pessoa a quem a mesma foi atribuída. 	<br> RF-06 - A aplicação deve permitir que seja alterado o status das tarefas entre as colunas. <br> RF-07 - A aplicação deverá permitir aos que os usuários vejam os detalhes da tarefa para ter acesso a descrição completa e as demais informações inseridas. |
 | Observação | Na página de projetos, a funcionalidade de criação de tarefas pode ser acionada ao clicar no botão "+ Nova Tarefa". Após inserir os dados desejados da tarefa(Nome da tarefa, descrição, prioridade e responsável) a tarefa é criada na coluna desejada, podendo ser editada e movida para diferentes colunas. Com essa análise, é possível atestar que a aplicação Seiton atende ao requisito de <b> gerenciamento de tarefas. |
 |  	|  	|
 | 4 | (TÍTULO) |
-|	Requisito	| RF-00X -  |
-| Observação | (OBSERVAÇÃO) |
-|  	|  	|
-| 5 | (TÍTULO) |
-|	Requisito	| RF-00X -  |
-| Observação | (OBSERVAÇÃO) |
-|  	|  	|
-| 6 | (TÍTULO) |
-|	Requisito	| RF-00X -  |
-| Observação | (OBSERVAÇÃO) |
-|  	|  	|
-| 7 | (TÍTULO) |
-|	Requisito	| RF-00X -  |
-| Observação | (OBSERVAÇÃO) |
-|  	|  	|
-| 8 | (TÍTULO) |
-|	Requisito	| RF-00X -  |
-| Observação | (OBSERVAÇÃO) |
-|  	|  	|
-| 9 | (TÍTULO) |
 |	Requisito	| RF-00X -  |
 | Observação | (OBSERVAÇÃO) |
 |  	|  	|
