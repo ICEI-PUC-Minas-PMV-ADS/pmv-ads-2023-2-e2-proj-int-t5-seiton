@@ -131,6 +131,10 @@ A aplicação, submetida a testes de usabilidade, apresentou os seguintes result
 
 <strong>Criação de Links nas Listas de Tarefas:</strong>  Sugerido pelos usuários e a ser implementado em uma atualização futura.
 
+<strong>Acessibilidade:</strong> Reconhecemos a importância da acessibilidade para garantir uma experiência inclusiva para todos os usuários, independentemente de suas habilidades e necessidades.
+
+Embora a implementação completa de recursos de acessibilidade ainda não tenha sido realizada, tais como: Contraste de Cores, Tamanho de Texto Ajustável, Teclado Navegável,  queremos assegurar que esse aspecto é uma prioridade em nossos planos futuros. Estamos comprometidos em tornar o site acessível a todos e planejamos incorporar as práticas recomendadas de acessibilidade para garantir que o conteúdo seja percebido, operável e compreensível por uma ampla variedade de usuários.
+
 <strong>Interação com as Listas de Tarefas:</strong> Bem recebida e apreciada pelos usuários, indicando uma interação positiva.
 
 <strong>Responsividade do Sistema:</strong> A aplicação se mostrou responsiva em todos os ambientes testados.
