@@ -133,7 +133,7 @@ A aplicação, submetida a testes de usabilidade, apresentou os seguintes result
 
 <strong>Interação com as Listas de Tarefas:</strong> Bem recebida e apreciada pelos usuários, indicando uma interação positiva.
 
-<strong>Acessibilidade</strong>  não tem acessibilidade para pessoas com deficiência
+<strong>Acessibilidade:</strong>  Não tem acessibilidade para pessoas com deficiência
 
 <strong>Responsividade do Sistema:</strong> A aplicação se mostrou responsiva em todos os ambientes testados.
 
