@@ -8,7 +8,7 @@ SEITON
 
 ## Identidade Visual (Marca, Design)
 
-<img src="./docs/img/Logo.png" alt="Logo" width="300" height="250">
+<img src="./img/Logo.png" alt="Logo" width="300" height="250">
 
 ## Conjunto de Slides (Estrutura)
 
