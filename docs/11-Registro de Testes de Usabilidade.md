@@ -113,29 +113,29 @@ Para os testes de acessibilidade, foi utilizado o Google Chrome nos dispositivos
 
 A aplicação, submetida a testes de usabilidade, apresentou os seguintes resultados:
 
-Cadastro de Usuário: Todos os usuários realizaram esta ação sem problemas, indicando uma interface eficaz e intuitiva.
+<strong>Cadastro de Usuário:</strong> Todos os usuários realizaram esta ação sem problemas, indicando uma interface eficaz e intuitiva.
 
-Login de Usuário: Semelhante ao cadastro, esta funcionalidade não apresentou problemas, sugerindo uma boa experiência do usuário.
+<strong>Login de Usuário:</strong> Semelhante ao cadastro, esta funcionalidade não apresentou problemas, sugerindo uma boa experiência do usuário.
 
-Edição de Perfil: Alguns usuários enfrentaram dificuldades para salvar alterações, com um caso de erro não salvamenteo dos dados alterados. 
+<strong>Edição de Perfil:</strong> Alguns usuários enfrentaram dificuldades para salvar alterações, com um caso de erro não salvamenteo dos dados alterados. 
 
-Gerenciar Listas: A maioria dos usuários se mostrou confusa nesta seção, sugerindo a necessidade de instruções mais claras.
+<strong>Gerenciar Listas:</strong> A maioria dos usuários se mostrou confusa nesta seção, sugerindo a necessidade de instruções mais claras.
 
-Exibição de Tarefas: Esta funcionalidade foi bem recebida, indicando uma navegação intuitiva e eficiente.
+<strong>Exibição de Tarefas:</strong> Esta funcionalidade foi bem recebida, indicando uma navegação intuitiva e eficiente.
 
-Criação de Lista de Tarefas: Os usuários sentiram falta de informações, apontando para a necessidade de melhorias na interface.
+<strong>Criação de Lista de Tarefas:</strong> Os usuários sentiram falta de informações, apontando para a necessidade de melhorias na interface.
 
-Pesquisa e Busca de Tarefas: Executada com sucesso por todos os usuários, demonstrando eficiência nesta área.
+<strong>Pesquisa e Busca de Tarefas:</strong>  Executada com sucesso por todos os usuários, demonstrando eficiência nesta área.
 
-Cadastro de Tarefas na Lista: Esta seção foi considerada simples mas enfrentando alguns problemas visuais como numero de digitação e problema no botão onde ele é clickado.
+<strong>Cadastro de Tarefas na Lista:</strong> Esta seção foi considerada simples mas enfrentando alguns problemas visuais como numero de digitação e problema no botão onde ele é clickado.
 
-Criação de Links nas Listas de Tarefas: Sugerido pelos usuários e a ser implementado em uma atualização futura.
+<strong>Criação de Links nas Listas de Tarefas:</strong>  Sugerido pelos usuários e a ser implementado em uma atualização futura.
 
-Interação com as Listas de Tarefas: Bem recebida e apreciada pelos usuários, indicando uma interação positiva.
+<strong>Interação com as Listas de Tarefas:</strong> Bem recebida e apreciada pelos usuários, indicando uma interação positiva.
 
-Responsividade do Sistema: A aplicação se mostrou responsiva em todos os ambientes testados.
+<strong>Responsividade do Sistema:</strong> A aplicação se mostrou responsiva em todos os ambientes testados.
 
-Acessibilidade: acessibilidade.
+<strong>Acessibilidade: (Ainda precisa editar)</strong> 
 
 <h1>Problemas de Usabilidade e Plano de Correção:</h1>
 
