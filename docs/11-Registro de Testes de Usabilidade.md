@@ -105,18 +105,19 @@ Segue a análise de teste de usabilidade presencial, para registro uma tabela co
 
 <h1>Observações e Conclusão</h1>
 
-A análise dos testes de usabilidade realizados com os artefatos CTU-01, 02, 03-04, 05, 06, 07, 08, 09, 10, 11 e 12 revelou insights valiosos sobre a experiência do usuário. Observou-se que os usuários encontraram dificuldades em várias áreas, indicando a necessidade de aprimoramentos na aplicação. Destacam-se problemas como dificuldade em encontrar botões específicos, confusões com a responsividade da página, erros de redirecionamento e desafios na localização e utilização de certas funcionalidades.
+A análise dos testes de usabilidade realizados com os artefatos CTU-01, 02, 03-04, 05, 06, 07, 08, 09, 10, 11 e 12 revelou insights valiosos sobre a experiência do usuário. Observou-se que os usuários encontraram dificuldades em algumas áreas, indicando a necessidade de aprimoramentos na aplicação. Destacam-se problemas como dificuldade em encontrar botões específicos, confusões com o botão salvar edição de usuario, erros visuais e desafios na localização e utilização de certas funcionalidades.
 
-Para os testes de acessibilidade, foi utilizado o TalkBack do Google nos dispositivos Android e o Safari em dispositivos iOS, revelando diferenças na experiência do usuário em diferentes plataformas. Estas observações são cruciais para orientar as próximas etapas de desenvolvimento, focando na correção de erros, melhoria da interface do usuário e garantindo a acessibilidade da aplicação.
+Para os testes de acessibilidade, foi utilizado o Google Chrome nos dispositivos Windows e Linux e Iphone IOS, revelando diferenças na experiência do usuário em diferentes plataformas. Estas observações são cruciais para orientar as próximas etapas de desenvolvimento, focando na correção de erros, melhoria da interface do usuário e garantindo a acessibilidade da aplicação.
 
 <h1>Relatório</h1>
 
 A aplicação, submetida a testes de usabilidade, apresentou os seguintes resultados:
+
 Cadastro de Usuário: Todos os usuários realizaram esta ação sem problemas, indicando uma interface eficaz e intuitiva.
 
 Login de Usuário: Semelhante ao cadastro, esta funcionalidade não apresentou problemas, sugerindo uma boa experiência do usuário.
 
-Edição de Perfil: Alguns usuários enfrentaram dificuldades para salvar alterações, com um caso de erro 405. Essa área necessita de atenção e correção.
+Edição de Perfil: Alguns usuários enfrentaram dificuldades para salvar alterações, com um caso de erro não salvamenteo dos dados alterados. 
 
 Gerenciar Listas: A maioria dos usuários se mostrou confusa nesta seção, sugerindo a necessidade de instruções mais claras.
 
@@ -126,7 +127,7 @@ Criação de Lista de Tarefas: Os usuários sentiram falta de informações, apo
 
 Pesquisa e Busca de Tarefas: Executada com sucesso por todos os usuários, demonstrando eficiência nesta área.
 
-Cadastro de Tarefas na Lista: Esta seção foi considerada confusa por muitos usuários, necessitando de explicação adicional.
+Cadastro de Tarefas na Lista: Esta seção foi considerada simples mas enfrentando alguns problemas visuais como numero de digitação e problema no botão onde ele é clickado.
 
 Criação de Links nas Listas de Tarefas: Sugerido pelos usuários e a ser implementado em uma atualização futura.
 
@@ -134,7 +135,7 @@ Interação com as Listas de Tarefas: Bem recebida e apreciada pelos usuários, 
 
 Responsividade do Sistema: A aplicação se mostrou responsiva em todos os ambientes testados.
 
-Acessibilidade: Diferenças foram observadas entre os dispositivos, com o iPhone e Safari oferecendo uma experiência mais completa em termos de acessibilidade.
+Acessibilidade: acessibilidade.
 
 <h1>Problemas de Usabilidade e Plano de Correção:</h1>
 
