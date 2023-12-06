@@ -103,97 +103,52 @@ Segue a análise de teste de usabilidade presencial, para registro uma tabela co
 | Usuário 4 | CTU-13 |  |  |  | 00 | --- |  |
 
 
-<h1>Observações e conclusão</h1>  
+<h1>Observações e Conclusão</h1>
 
-A partir do teste realizado com os artefatos CTU - 01, 02, 05, 07 e 11, observou-se que tanto a funcionalidade do artefato 08 e 15, necessitam de maiores explicações e informações sobre sobre a aplicação e sua funcionalidade.
-Nesta segunda etapa dos testes de usabilidade foram adicionadas 3 usuários além dos 5 que realizaram o teste anteriormente, os quais testaram a aplicação em sua totalidade, os quais são representados na tabela a partir do Usuário 6.
+A análise dos testes de usabilidade realizados com os artefatos CTU-01, 02, 03-04, 05, 06, 07, 08, 09, 10, 11 e 12 revelou insights valiosos sobre a experiência do usuário. Observou-se que os usuários encontraram dificuldades em várias áreas, indicando a necessidade de aprimoramentos na aplicação. Destacam-se problemas como dificuldade em encontrar botões específicos, confusões com a responsividade da página, erros de redirecionamento e desafios na localização e utilização de certas funcionalidades.
 
-Para realizar aos testes de acessibilidade, os usuários 1, 3, 4, 5, 6, 7 e 8 usaram a função acessibilidade do Android, que inclui o TalkBack do Google. Já o usuário 2 utilizou IOS 15.5 e Safari para realizar testes mas teve que habilitar as opções de acessibilidade no telefone.
-
-A partir dos testes realizados, observou-se que a aplicação precisa da inclusão de textos para direcionar seus usuários e acertar alguns erros de direcionamento e processos não conclusivos como nos casos de teste 3, 7 e 9.
-
-Estes problemas serão acertados na próxima etapa.
+Para os testes de acessibilidade, foi utilizado o TalkBack do Google nos dispositivos Android e o Safari em dispositivos iOS, revelando diferenças na experiência do usuário em diferentes plataformas. Estas observações são cruciais para orientar as próximas etapas de desenvolvimento, focando na correção de erros, melhoria da interface do usuário e garantindo a acessibilidade da aplicação.
 
 <h1>Relatório</h1>
-Teste de Usabilidade da aplicação M@tchBook: estudo de caso
 
-A tecnologia e as redes sociais ganharam o mundo num piscar de olhos, a pandemia da Covid-19 acelerou e dinamizou este processo, o tempo de navegação cresceu 20% no mundo todo, tendo as redes sociais a função de criar relações entre pessoas por meio do diálogo e da troca de ideias. Segundo Santos (2022), no Brasil, oito em cada 10 brasileiros estão conectados de alguma maneira, ou seja, são presentes digitalmete. Este teste tem o objetivo de analisar e avaliar os resultados obtidos mediante o teste de usabilidade da aplicação M@tchBook.
+A aplicação, submetida a testes de usabilidade, apresentou os seguintes resultados:
+Cadastro de Usuário: Todos os usuários realizaram esta ação sem problemas, indicando uma interface eficaz e intuitiva.
 
-O método utilizado foi a observação do uso da ferramenta com parâmetros de tempo, clicks, erros e observações. A partir dos dados coletados, realizamos o mapeamento dos padrões de comportamento, possíveis problemas e soluções.
+Login de Usuário: Semelhante ao cadastro, esta funcionalidade não apresentou problemas, sugerindo uma boa experiência do usuário.
 
-O teste foi realizado em duas etapas: em um primeiro momento 5 usuários testaram os casos de testes 01, 02, 05, 07 e 11 e, na, segunda etapa, os primeiros 5 usuários testaram o restante dos casos 03, 04, 06, 08, 09, 10 e 12 e, os outros 3 testaram a aplicação em sua totalidade.
+Edição de Perfil: Alguns usuários enfrentaram dificuldades para salvar alterações, com um caso de erro 405. Essa área necessita de atenção e correção.
 
-Seguem resultados:
+Gerenciar Listas: A maioria dos usuários se mostrou confusa nesta seção, sugerindo a necessidade de instruções mais claras.
 
-1- Cadastro de usuário
+Exibição de Tarefas: Esta funcionalidade foi bem recebida, indicando uma navegação intuitiva e eficiente.
 
-Todos os usuários deram a mesma quantidade de clicks para efetuar a ação e não tiveram problemas e nem sugestões.
+Criação de Lista de Tarefas: Os usuários sentiram falta de informações, apontando para a necessidade de melhorias na interface.
 
-2- Login de usuário
+Pesquisa e Busca de Tarefas: Executada com sucesso por todos os usuários, demonstrando eficiência nesta área.
 
-Todos os usuários deram a mesma quantidade de clicks para efetuar a ação e não tiveram problemas e nem sugestões.
+Cadastro de Tarefas na Lista: Esta seção foi considerada confusa por muitos usuários, necessitando de explicação adicional.
 
-3- Editar informações de perfil
+Criação de Links nas Listas de Tarefas: Sugerido pelos usuários e a ser implementado em uma atualização futura.
 
-Essa funcionalidade precisa ser revista pois alguns usuários não conseguiram salvar as alterações ou apagar seus dados e, também foi detectado o erro 405 Not Alowed por um usuário na tentativa de Apagar usuário. A quantidade de clicks variaram de 4 a 5 e, de erros entre 1 e 2.
+Interação com as Listas de Tarefas: Bem recebida e apreciada pelos usuários, indicando uma interação positiva.
 
-4- Gerenciar Listas
+Responsividade do Sistema: A aplicação se mostrou responsiva em todos os ambientes testados.
 
-A maioria dos usuários não soube o que fazer nesta página, ficando perdidos ou confusos.
+Acessibilidade: Diferenças foram observadas entre os dispositivos, com o iPhone e Safari oferecendo uma experiência mais completa em termos de acessibilidade.
 
-Sugestão: Inserir informações explicativas.
+<h1>Problemas de Usabilidade e Plano de Correção:</h1>
 
-5- Exibição dos livros existentes
+Erros na funcionalidade de edição de perfil e gerenciamento de listas.
+Necessidade de melhorar a interface e as instruções em várias seções.
+Ajustes para melhor reconhecimento de imagens em diferentes navegadores e sistemas.
 
-Teste bem explorado pelos usuários, o tempo de pesquisa ficou entre 26 a 50 segundos, bem executada, o que mostrou que a página é intuitiva.
 
-6- Criação de lista de livros
+<h1>Conclusão</h1>
 
-Página da aplicação necessita de melhorias pois todos os usuários sentiram que estava faltando informações.
+Os resultados dos testes de usabilidade são fundamentais para a evolução da aplicação, apontando áreas que precisam de melhorias para atender às necessidades dos usuários de forma mais eficaz. A aplicação continuará a ser aprimorada com base nessas descobertas, garantindo uma experiência de usuário mais intuitiva e acessível.
 
-7- Pesquisa e busca de livros
 
-Teste realizado com sucesso por todos usuários.
 
-8- Cadastro de livros na lista, selecionando-os na lista preexistente
 
-Página da aplicação foi relatada na maioria dos testes como confusa, precisa de explicação.
 
-Sugestão: Inclusão de informações na página.
 
-9- Cadastro de livros na lista pesquisando livros
-
-A maioria dos testes foi realizado sem necessidade de explicações e, houve sugestão da lista ficar como link, o que será implementado posteriormente.
-
-10- Curtir/Match nas Listas de Livros
-
-Página de interação e mais apreciada pelos usuários.
-
-11- Verificar se o sistema é responsivo
-
-Os testes demonstraram que a aplicação é responsiva em todos os ambientes testados.
-
-12- Acessibilidade
-
-Somente no teste realizado com Iphone e Safari toda a tela foi lida, inclusive as imagens, no Edge e Chrome, as imagens não foram reconhecidasmas os detalhes dos livros sim. Testado com usuários sem PCD.
-
-Melhoria: Verificar como as imagens podem ser reconhecidas nos navegadores Edge, Chrome e sistema Android.
-
-Problemas de usabilidade
-
-Os problemas de usabilidade presentes em uma aplicação podem impedir que os usuários concluam uma tarefa. Os principais problemas de usabilidade levantados a partir dos testes foram:
-
-Tempo de resposta ou falta da mesma em Editar Perfil;
-A interação da interface com o usuário.
-Plano de correção:
-
-As seguintes ações foram previstas e algumas já foram todas para correção dos problemas de usabilidade. Seguem:
-
-Inclusão de informação/instruções nas interfaces: Livros disponíveis, Gerenciar Listas e Criar listas (Implementado);
-Melhoria no tempo de resposta e acerto dos erros de execução em Gerenciar/editar Perfil/Salvar e Apagar usuário (implementado);
-Melhoria: Verificar como as imagens podem ser reconhecidas nos navegadores Edge, Chrome e sistema Android. (a ser implementado);
-Criação de links nas listas dos usuário;
-Testar usabilidade de acessibilidade com usuário portador de deficiência visual.
-Conclusão
-
-Os resultados dos testes de usabilidade mantem a aplicação viva e interativa, fazendo que a mesma atenda as necessidades do usuáarios e evolua com os resultados levantados.
