@@ -47,6 +47,6 @@ O objetivo deste relatório é indicar se a aplicação atende aos requisitos pr
 
 **Possíveis pontos de correção:**
   
--
--
--
+- O cadastro não apresenta notificação de "cadastro efetuado com sucesso"
+- Não é possível criar ou excluir colunas, mantendo sempre o padrão de 5 colunas.
+- Sem responsividade para pequenos aparelhos.
