@@ -31,47 +31,47 @@ O objetivo deste relatório é indicar se a aplicação atende aos requisitos pr
 
 <br> 
   
-| 1 | (TÍTULO) 	|
+| 1 | Gerenciamento de Usuários |
+|:---:	|:---:	|
+|	Requisito	| RF-01 - A aplicação deve oferecer gerenciamento de usuários. |
+| Observação | Na página inicial, a funcionalidade de cadastro pode ser acionada ao clicar no botão "cadastrar". Após o preenchimento das informações de cadastro (Nome de usuário, e-mail e senha), o usuário é encaminhado para a tela de Login para que possa acessar a aplicação. É possível fazer alterações às informações de cadastro usando a funcionalidade "editar" disponível no menu suspenso ao selecionar o ícone no canto superior direito. Com essa análise, é possível atestar que a aplicação Seiton atende ao requisito de <b> Gerenciamento de Usuários. |
+|  	|  	|
+| 2 | (TÍTULO) |
 |:---:	|:---:	|
 |	Requisito	| RF-00X -  |
 | Observação | (OBSERVAÇÃO) |
 |  	|  	|
-| 2 | (TÍTULO) 	|
+| 3 | (TÍTULO) |
 |:---:	|:---:	|
 |	Requisito	| RF-00X -  |
 | Observação | (OBSERVAÇÃO) |
 |  	|  	|
-| 3 | (TÍTULO) 	|
+| 4 | (TÍTULO) |
 |:---:	|:---:	|
 |	Requisito	| RF-00X -  |
 | Observação | (OBSERVAÇÃO) |
 |  	|  	|
-| 4 | (TÍTULO) 	|
+| 5 | (TÍTULO) |
 |:---:	|:---:	|
 |	Requisito	| RF-00X -  |
 | Observação | (OBSERVAÇÃO) |
 |  	|  	|
-| 5 | (TÍTULO) 	|
+| 6 | (TÍTULO) |
 |:---:	|:---:	|
 |	Requisito	| RF-00X -  |
 | Observação | (OBSERVAÇÃO) |
 |  	|  	|
-| 6 | (TÍTULO) 	|
+| 7 | (TÍTULO) |
 |:---:	|:---:	|
 |	Requisito	| RF-00X -  |
 | Observação | (OBSERVAÇÃO) |
 |  	|  	|
-| 7 | (TÍTULO) 	|
+| 8 | (TÍTULO) |
 |:---:	|:---:	|
 |	Requisito	| RF-00X -  |
 | Observação | (OBSERVAÇÃO) |
 |  	|  	|
-| 8 | (TÍTULO) 	|
-|:---:	|:---:	|
-|	Requisito	| RF-00X -  |
-| Observação | (OBSERVAÇÃO) |
-|  	|  	|
-| 9 | (TÍTULO) 	|
+| 9 | (TÍTULO) |
 |:---:	|:---:	|
 |	Requisito	| RF-00X -  |
 | Observação | (OBSERVAÇÃO) |
