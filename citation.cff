@@ -1,25 +1,27 @@
 cff-version: 1.0.1
 message: Please cite this software using these metadata.
-title:
-authors:
-  - family-names:
-    given-names:
-  - family-names:
-    given-names:
-  - family-names:
-    given-names:
-  - family-names:
-    given-names:
-  - family-names:
-    given-names:
-  - name-suffix: Professor XXXX
+title: Seiton
+authors: Wesley Correa Gomes, Bruno Henrique Arantes Dias, Marcos Teixeira Dias, Pedro Ferreira Andrade, Renan Gonçalves da Cunha, Gustavo da Silva Candido
+  - family-names: Wesley
+    given-names: Correa Gomes
+  - family-names: Bruno
+    given-names: Henrique Arantes Dias
+  - family-names: Marcos
+    given-names: Teixeira Dias
+  - family-names: Pedro
+    given-names: Ferreira Andrade
+  - family-names: Renan
+    given-names: Gonçalves da Cunha
+  - family-names: Gustavo
+    given-names: da Silva Candido
+  - name-suffix: Professora Luciana de Nardin 
     affiliation: PUC Minas
-    family-names:
-    given-names:
+    family-names: Luciana 
+    given-names: de Nardin
 keywords:
   -
   -
-repository-code:
+repository-code: https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t5-seiton
 license: CC-BY-4.0
 version: 1.0.0
-date-released: 2023-06-30
+date-released: 2023-12-06
