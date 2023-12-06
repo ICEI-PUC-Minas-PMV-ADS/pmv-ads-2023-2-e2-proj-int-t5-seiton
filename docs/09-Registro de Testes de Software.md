@@ -33,13 +33,13 @@ O objetivo deste relatório é indicar se a aplicação atende aos requisitos pr
   
 | 1 | Gerenciamento de Usuários |
 |:---:	|:---:	|
-|	Requisito	| RF-01 - A aplicação deve oferecer gerenciamento de usuários. |
+|	Requisito	| RF-01 - A aplicação deve oferecer gerenciamento de usuários. 	<br> RF-02 - A aplicação deve permitir que usuários pré-cadastrados realizem login. |
 | Observação | Na página inicial, a funcionalidade de cadastro pode ser acionada ao clicar no botão "cadastrar". Após o preenchimento das informações de cadastro (Nome de usuário, e-mail e senha), o usuário é encaminhado para a tela de Login para que possa acessar a aplicação. É possível fazer alterações às informações de cadastro usando a funcionalidade "editar" disponível no menu suspenso ao selecionar o ícone no canto superior direito. Com essa análise, é possível atestar que a aplicação Seiton atende ao requisito de <b> Gerenciamento de Usuários. |
 |  	|  	|
-| 2 | (TÍTULO) |
+| 2 | Gerenciamento de Projetos |
 |:---:	|:---:	|
-|	Requisito	| RF-00X -  |
-| Observação | (OBSERVAÇÃO) |
+|	Requisito	| RF-03 - A aplicação deve permitir o gerenciamento de projetos. Quando um projeto for criado, a esse projeto serão associadas 5 colunas fixas, nas quais será possível alterar o nome e a cor. |
+| Observação | Na página de projetos, a funcionalidade de criação de projetos pode ser acionada ao clicar no botão "+ Novo". Após inserir o nome do projeto, o usuário é encaminhado para a página com o projeto aberto no modelo padrão, com 5 colunas com cores e nomes customizáveis. Com essa análise, é possível atestar que a aplicação Seiton atende ao requisito de <b> Gerenciamento de Projetos. |
 |  	|  	|
 | 3 | (TÍTULO) |
 |:---:	|:---:	|
