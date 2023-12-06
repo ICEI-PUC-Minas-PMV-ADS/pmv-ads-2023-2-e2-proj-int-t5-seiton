@@ -105,7 +105,7 @@ Segue a análise de teste de usabilidade presencial, para registro uma tabela co
 
 <h1>Observações e Conclusão</h1>
 
-A análise dos testes de usabilidade realizados com os artefatos CTU-01, 02, 03-04, 05, 06, 07, 08, 09, 10, 11 e 12 revelou insights valiosos sobre a experiência do usuário. Observou-se que os usuários encontraram dificuldades em algumas áreas, indicando a necessidade de aprimoramentos na aplicação. Destacam-se problemas como dificuldade em encontrar botões específicos, confusões com o botão salvar edição de usuario, erros visuais e desafios na localização e utilização de certas funcionalidades.
+A análise dos testes de usabilidade realizados com os artefatos CTU-01, 02, 03-04, 05, 06, 07, 08, 09, 10, 11, 12 e 13 revelou insights valiosos sobre a experiência do usuário. Observou-se que os usuários encontraram dificuldades em algumas áreas, indicando a necessidade de aprimoramentos na aplicação. Destacam-se problemas como dificuldade em encontrar botões específicos, confusões com o botão salvar edição de usuario, erros visuais e desafios na localização e utilização de certas funcionalidades.
 
 Para os testes de acessibilidade, foi utilizado o Google Chrome nos dispositivos Windows e Linux e Iphone IOS, revelando diferenças na experiência do usuário em diferentes plataformas. Estas observações são cruciais para orientar as próximas etapas de desenvolvimento, focando na correção de erros, melhoria da interface do usuário e garantindo a acessibilidade da aplicação.
 
