@@ -2,4 +2,4 @@
 
 [Seiton - Video apresentação final](https://youtu.be/KlytjP50A74)
 
-[Apresentação em Slide](/slide.pdf)
+[Apresentação em Slide](/presentation/slide.pdf)
